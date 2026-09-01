@@ -3,150 +3,318 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Facturación Agosto 2026 - LATINBIEN</title>
+<title>CIERRE COMERCIAL | FACTURACIÓN AGOSTO 2026 - LATINBIEN</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--primary:#213C83;--primary-dark:#1a2f66;--primary-light:#3D6194;--accent:#F98B10;--success:#10b981;--danger:#ef4444;--bg:#f0f2f5;--card:#fff;--text:#1a1a2e;--text-light:#666;--border:#e0e0e0}
-body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+/* ===== VARIABLES ===== */
+:root {
+  --primary: #00205B;
+  --primary-dark: #001845;
+  --primary-light: #003399;
+  --accent: #FF6600;
+  --accent-light: #FF8533;
+  --bg: #F4F6F9;
+  --card: #FFFFFF;
+  --text: #1E293B;
+  --text-secondary: #64748B;
+  --border: #E2E8F0;
+  --success: #10B981;
+  --success-bg: #ECFDF5;
+  --danger: #EF4444;
+  --danger-bg: #FEF2F2;
+  --warning: #D97706;
+  --warning-bg: #FFFBEB;
+  --warning-border: #FCD34D;
+}
 
-/* HEADER */
-.header{background:linear-gradient(135deg,var(--primary) 0%,#0f2a5a 100%);color:#fff;padding:24px 36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;position:relative;overflow:hidden}
-.header::before{content:'';position:absolute;top:-50%;right:-15%;width:400px;height:400px;background:radial-gradient(circle,rgba(249,139,16,0.1) 0%,transparent 70%);border-radius:50%}
-.header-left{display:flex;align-items:center;gap:16px;position:relative;z-index:1}
-.header-left img{height:48px;width:auto;border-radius:8px}
-.header-left .divider{width:2px;height:36px;background:rgba(255,255,255,0.2)}
-.header-left h1{font-size:22px;font-weight:700;letter-spacing:-0.3px}
-.header-left h1 span{font-weight:300;opacity:0.85}
-.header-left p{font-size:12px;opacity:0.75;margin-top:2px}
-.header-meta{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1}
-.header-meta .meta-item{background:rgba(255,255,255,0.1);padding:8px 16px;border-radius:10px;text-align:center;min-width:90px}
-.header-meta .meta-item .meta-val{font-size:18px;font-weight:700;color:var(--accent)}
-.header-meta .meta-item .meta-lbl{font-size:10px;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:.4px}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
 
-.container{max-width:1400px;margin:0 auto;padding:24px}
+/* ===== HEADER ===== */
+.header {
+  background: var(--primary);
+  padding: 28px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid var(--accent);
+  position: relative;
+  overflow: hidden;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(255,102,0,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.header-left { position: relative; z-index: 1; }
+.header-left .tag {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.header-left h1 { font-size: 26px; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+.header-left h1 span { color: var(--accent); font-weight: 300; }
+.header-left p { font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 4px; font-style: italic; }
+.header-right { position: relative; z-index: 1; }
+.header-right img { height: 52px; width: auto; filter: brightness(0) invert(1); }
 
-/* KPI CARDS */
-.kpi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px;margin-bottom:24px}
-.kpi-card{background:var(--card);border-radius:14px;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,.06);display:flex;align-items:center;gap:12px;transition:transform .2s;border-top:4px solid var(--primary-light)}
-.kpi-card:hover{transform:translateY(-3px);box-shadow:0 4px 20px rgba(0,0,0,.1)}
-.kpi-icon{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-.kpi-icon.green{background:#e6f4ea;color:var(--success)}
-.kpi-icon.blue{background:#e8f0fe;color:var(--primary)}
-.kpi-icon.orange{background:#fef7e0;color:var(--accent)}
-.kpi-icon.red{background:#fce8e6;color:var(--danger)}
-.kpi-icon.gray{background:#f1f3f4;color:#5f6368}
-.kpi-info .kpi-val{font-size:19px;font-weight:700;color:var(--text)}
-.kpi-info .kpi-lbl{font-size:11px;color:var(--text-light);text-transform:uppercase;letter-spacing:.3px}
-.kpi-card.glow{border:2px solid var(--danger);animation:pulse-glow 2s infinite;box-shadow:0 0 15px rgba(239,68,68,.25)}
-@keyframes pulse-glow{0%,100%{box-shadow:0 0 15px rgba(239,68,68,.25)}50%{box-shadow:0 0 25px rgba(239,68,68,.5)}}
+/* ===== CONTAINER ===== */
+.container { max-width: 1400px; margin: 0 auto; padding: 28px 24px; }
 
-/* SECTIONS */
-.section{background:var(--card);border-radius:14px;padding:22px;margin-bottom:24px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.section-title{font-size:16px;font-weight:700;margin-bottom:14px;color:var(--primary);display:flex;align-items:center;gap:8px}
+/* ===== KPI GRID 4 COLS ===== */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+@media (max-width: 900px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+.kpi-card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  text-align: center;
+  border-top: 4px solid var(--primary);
+  transition: transform 0.2s;
+}
+.kpi-card:hover { transform: translateY(-3px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+.kpi-card .icon { font-size: 28px; margin-bottom: 6px; }
+.kpi-card .value { font-size: 26px; font-weight: 800; color: var(--primary); }
+.kpi-card .value.accent { color: var(--accent); }
+.kpi-card .value.green { color: var(--success); }
+.kpi-card .label { font-size: 11px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
 
-/* CHARTS */
-.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px}
-@media(max-width:768px){.chart-row{grid-template-columns:1fr}}
-.chart-box{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.chart-box canvas{max-height:320px}
+/* ===== SECTION ===== */
+.section {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border);
+}
 
-/* DSCTO SECTION */
-.dscto-section{border:2px solid var(--accent);background:#fffaf0;border-radius:14px;padding:24px;margin-bottom:24px;box-shadow:0 2px 12px rgba(249,139,16,.12)}
-.dscto-section .section-title{color:#e65100}
-.dscto-kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin-bottom:18px}
-.dscto-kpi{background:#fff;border-radius:10px;padding:14px;text-align:center;border:1px solid #ffe0b2}
-.dscto-kpi .val{font-size:20px;font-weight:700;color:#e65100}
-.dscto-kpi .lbl{font-size:10px;color:#bf360c;text-transform:uppercase;letter-spacing:.3px}
+/* ===== GRID 2 COLS ===== */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+@media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
 
-/* TABLES */
-table{width:100%;border-collapse:collapse;font-size:12px}
-thead th{background:var(--primary);color:#fff;padding:10px 12px;text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.3px;position:sticky;top:0;z-index:1}
-tbody td{padding:8px 12px;border-bottom:1px solid var(--border);font-size:12px}
-tbody tr:hover{background:#f8f9fc}
-tbody tr.dscto-row{border-left:4px solid var(--accent);background:#fffaf0}
-tbody tr.cancel-row{border-left:4px solid var(--danger);background:#fff5f5;opacity:.7}
-.scroll-table{overflow-x:auto;max-height:480px;overflow-y:auto}
-.money{font-weight:600}
-.money.green{color:var(--success)}
-.money.red{color:var(--danger)}
+/* ===== CHARTS ===== */
+.chart-box {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.chart-box canvas { max-height: 300px; }
 
-.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:700;white-space:nowrap}
-.badge-entregado{background:#d1fae5;color:#065f46}
-.badge-aprobado{background:#dbeafe;color:#1e40af}
-.badge-cancel{background:#fee2e2;color:#991b1b}
-.badge-sinasignar{background:#f1f3f4;color:#5f6368}
+/* ===== WARNING CARD (DSCTO) ===== */
+.warning-card {
+  background: var(--warning-bg);
+  border: 1px solid var(--warning-border);
+  border-left: 5px solid var(--warning);
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 24px;
+}
+.warning-card .section-title { color: var(--warning); border-bottom-color: var(--warning-border); }
+.dscto-kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+@media (max-width: 768px) { .dscto-kpis { grid-template-columns: repeat(2, 1fr); } }
+.dscto-kpi {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid var(--warning-border);
+}
+.dscto-kpi .val { font-size: 20px; font-weight: 700; color: var(--warning); }
+.dscto-kpi .lbl { font-size: 10px; color: #92400e; text-transform: uppercase; letter-spacing: 0.3px; }
 
-.footer{text-align:center;padding:20px;color:#999;font-size:11px;border-top:1px solid var(--border);margin-top:10px}
-.footer strong{color:var(--primary)}
+/* ===== TABLES ===== */
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+thead th {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+thead th.text-right { text-align: right; }
+tbody td { padding: 9px 12px; border-bottom: 1px solid var(--border); font-size: 12px; }
+tbody td.text-right { text-align: right; }
+tbody tr:hover { background: #f8f9fc; }
+.scroll-table { overflow-x: auto; max-height: 480px; overflow-y: auto; }
+
+.money { font-weight: 600; }
+.money.green { color: var(--success); }
+.money.red { color: var(--danger); }
+.money.orange { color: var(--accent); }
+
+/* ===== BADGES ===== */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.badge-entregado { background: #D1FAE5; color: #065F46; }
+.badge-aprobado { background: #DBEAFE; color: #1E40AF; }
+.badge-cancel { background: #FEE2E2; color: #991B1B; }
+.badge-leader { background: var(--accent); color: #fff; font-size: 11px; }
+.badge-perfect { background: var(--success); color: #fff; font-size: 11px; }
+
+/* ===== DSCTO TABLE ROWS ===== */
+tbody tr.dscto-row { border-left: 4px solid var(--warning); background: var(--warning-bg); }
+tbody tr.cancel-row { border-left: 4px solid var(--danger); background: var(--danger-bg); opacity: 0.7; }
+
+/* ===== OPERATIONS BADGES ===== */
+.ops-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+.ops-badge {
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+.ops-badge .num { font-size: 22px; font-weight: 800; }
+.ops-badge .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.3px; }
+.ops-entregado { background: var(--success-bg); border: 1px solid #A7F3D0; }
+.ops-entregado .num { color: var(--success); }
+.ops-entregado .lbl { color: #065F46; }
+.ops-aprobado { background: #EFF6FF; border: 1px solid #BFDBFE; }
+.ops-aprobado .num { color: #2563EB; }
+.ops-aprobado .lbl { color: #1E40AF; }
+.ops-cancel { background: var(--danger-bg); border: 1px solid #FECACA; }
+.ops-cancel .num { color: var(--danger); }
+.ops-cancel .lbl { color: #991B1B; }
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--primary);
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding: 18px 24px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.footer strong { color: var(--accent); }
 </style>
 </head>
 <body>
 
+<!-- ===== HEADER ===== -->
 <div class="header">
   <div class="header-left">
-    <img src="https://latinbien.com/web/image/website/1/logo/LATINBIEN?unique=4695b15" alt="LATINBIEN" onerror="this.style.display='none'">
-    <div class="divider"></div>
-    <div>
-      <h1>LATINBIEN <span>| Facturación Agosto 2026</span></h1>
-      <p>Dashboard de consulta — Análisis de facturación mensual</p>
-    </div>
+    <div class="tag">Reporte Comercial</div>
+    <h1>CIERRE COMERCIAL | FACTURACIÓN <span>AGOSTO 2026</span></h1>
+    <p>LATINBIEN — Trabajo en equipo, resultados que nos mueven</p>
   </div>
-  <div class="header-meta">
-    <div class="meta-item"><div class="meta-val" id="h-facturado"></div><div class="meta-lbl">Facturado</div></div>
-    <div class="meta-item"><div class="meta-val" id="h-facturas"></div><div class="meta-lbl">Facturas</div></div>
-    <div class="meta-item"><div class="meta-val" id="h-clientes"></div><div class="meta-lbl">Clientes</div></div>
-    <div class="meta-item"><div class="meta-val" id="h-margen"></div><div class="meta-lbl">Margen</div></div>
+  <div class="header-right">
+    <img src="https://latinbien.com/web/image/website/1/logo/LATINBIEN?unique=4695b15" alt="LATINBIEN" onerror="this.style.display='none'">
   </div>
 </div>
 
 <div class="container">
+
+  <!-- ===== KPI GRID 4 COLS ===== -->
   <div class="kpi-grid" id="kpi-grid"></div>
 
-  <div class="chart-row">
+  <!-- ===== GRID 2 COLS: CHART + OPERACIONES ===== -->
+  <div class="grid-2">
     <div class="chart-box">
       <div class="section-title">📊 Resumen General</div>
       <canvas id="chartResumen"></canvas>
     </div>
     <div class="chart-box">
-      <div class="section-title">🏆 Top Productos por Monto</div>
-      <canvas id="chartTopProdBar"></canvas>
+      <div class="section-title">📋 Estado de Operaciones</div>
+      <div class="ops-grid" id="ops-grid"></div>
+      <canvas id="chartOps"></canvas>
     </div>
   </div>
 
-  <div class="dscto-section">
-    <div class="section-title" style="font-size:16px">⚠️ Facturas con Dscto en Gasto Administrativo</div>
+  <!-- ===== GRID 2 COLS: TOP PRODUCTOS CANTIDAD + MONTO ===== -->
+  <div class="grid-2">
+    <div class="chart-box">
+      <div class="section-title">📦 Productos Más Vendidos — Por Cantidad</div>
+      <canvas id="chartProdQty"></canvas>
+    </div>
+    <div class="chart-box">
+      <div class="section-title">💰 Productos Más Vendidos — Por Monto</div>
+      <canvas id="chartProdMonto"></canvas>
+    </div>
+  </div>
+
+  <!-- ===== GRID 2 COLS: DISTRIBUCION + TOP POR MONTO ===== -->
+  <div class="grid-2">
+    <div class="chart-box">
+      <div class="section-title">🍩 Distribución de Productos</div>
+      <canvas id="chartDist"></canvas>
+    </div>
+    <div class="chart-box">
+      <div class="section-title">🏆 Top Producto por Monto</div>
+      <canvas id="chartTopMonto"></canvas>
+    </div>
+  </div>
+
+  <!-- ===== DSCTO SECTION ===== -->
+  <div class="warning-card">
+    <div class="section-title">⚠️ Facturas con Descuento en Gasto Administrativo</div>
     <div class="dscto-kpis" id="dscto-kpis"></div>
     <div class="scroll-table">
       <table>
         <thead>
-          <tr><th>#</th><th>Cliente</th><th>Factura</th><th>Ejecutivo</th><th>Admin Esperado (30%)</th><th>Dscto %</th><th>Admin Real</th><th>Ahorro</th><th>Fecha</th><th>Status</th></tr>
+          <tr><th>#</th><th>Cliente</th><th>Factura</th><th>Ejecutivo</th><th class="text-right">Admin Esperado</th><th class="text-right">Dscto %</th><th class="text-right">Admin Real</th><th class="text-right">Ahorro</th><th>Fecha</th><th>Status</th></tr>
         </thead>
         <tbody id="dscto-table"></tbody>
       </table>
     </div>
   </div>
 
-  <div class="chart-row">
-    <div class="chart-box">
-      <div class="section-title">👔 Ejecutivos de Ventas</div>
-      <div class="scroll-table" style="max-height:360px">
-        <table>
-          <thead><tr><th>#</th><th>Nombre</th><th class="text-right">Facturado</th><th class="text-right">Costo</th><th class="text-right">Margen</th><th class="text-right">Facturas</th><th class="text-right">Unidades</th></tr></thead>
-          <tbody id="ejec-table"></tbody>
-        </table>
-      </div>
-    </div>
-    <div class="chart-box">
-      <div class="section-title">📦 Top Productos — Distribución</div>
-      <canvas id="chartTopProdDoughnut"></canvas>
+  <!-- ===== TABLA EJECUTIVOS ===== -->
+  <div class="section">
+    <div class="section-title">👔 Desempeño por Ejecutivo de Ventas</div>
+    <div class="scroll-table">
+      <table>
+        <thead>
+          <tr><th>#</th><th>Ejecutivo</th><th class="text-right">Facturas</th><th class="text-right">Unidades</th><th class="text-right">Monto Vendido</th><th class="text-right">Costo</th><th class="text-right">Margen</th><th>Desempeño</th></tr>
+        </thead>
+        <tbody id="ejec-table"></tbody>
+      </table>
     </div>
   </div>
 
+  <!-- ===== TABLA TOP PRODUCTOS ===== -->
   <div class="section">
-    <div class="section-title">📋 Detalle Top Productos</div>
-    <div class="scroll-table" style="max-height:340px">
+    <div class="section-title">📦 Detalle Completo de Productos</div>
+    <div class="scroll-table" style="max-height:420px">
       <table>
         <thead><tr><th>#</th><th>Producto</th><th class="text-right">Cantidad</th><th class="text-right">Monto</th></tr></thead>
         <tbody id="top-prod-table"></tbody>
@@ -154,9 +322,10 @@ tbody tr.cancel-row{border-left:4px solid var(--danger);background:#fff5f5;opaci
     </div>
   </div>
 
+  <!-- ===== TABLA FACTURAS ===== -->
   <div class="section">
-    <div class="section-title">📋 Detalle Facturas (74)</div>
-    <div class="scroll-table" style="max-height:600px">
+    <div class="section-title">📋 Detalle Facturas</div>
+    <div class="scroll-table" style="max-height:550px">
       <table>
         <thead><tr><th>#</th><th>Orden</th><th>Cliente</th><th>Ejecutivo</th><th class="text-right">Monto</th><th class="text-right">Costo</th><th class="text-right">Admin</th><th>Fecha</th><th>Status</th></tr></thead>
         <tbody id="facturas-table"></tbody>
@@ -165,49 +334,60 @@ tbody tr.cancel-row{border-left:4px solid var(--danger);background:#fff5f5;opaci
   </div>
 </div>
 
-<div class="footer"><strong>LATINBIEN</strong> — Dashboard Facturación Agosto 2026</div>
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  <strong>LATINBIEN</strong> — Cierre Comercial Agosto 2026 &nbsp;|&nbsp; Trabajo en equipo, resultados que nos mueven
+</div>
 
 <script>
-const DATA = {"facturacion_agosto": {"facturas": [{"orden": "LB-ORDEN-04180", "cliente": "PUEBLO MUSEO LOS ALEROS C. A.", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 256.26, "costo": 138.4, "admin": 77.21, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04193", "cliente": "LA MONTAÃA DE LOS SUEÃOS, C.A", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 837.69, "costo": 434.82, "admin": 252.71, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04192", "cliente": "ALEXIS Y LA VENEZUELA DE ANTIER C.A.", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 737.4, "costo": 397.04, "admin": 222.31, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04194", "cliente": "DOUGLAS JOSE RAMIREZ SUESCUN", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 595.23, "costo": 355.25, "admin": 179.57, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04176", "cliente": "JESUS ELBANO SOTO BELANDRIA", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 2953.07, "costo": 1410.0, "admin": 890.87, "status": "Aprobado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04191", "cliente": "JEAN CARLOS MONTERREY BONILLA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 902.69, "costo": 432.85, "admin": 270.75, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04190", "cliente": "MARVELIS KATERINE BUZEK MORENO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 715.0, "costo": 342.85, "admin": 214.19, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04189", "cliente": "YESENIA COROMOTO GOMEZ CONTRERAS", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 411.61, "costo": 232.85, "admin": 72.19, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04185", "cliente": "BELKIS CAROLINA GAMEZ PAREDES", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1232.67, "costo": 659.0, "admin": 268.85, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04183", "cliente": "HEBER JOSE TORRES ANGULO", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 87.25, "costo": 74.57, "admin": 0, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04184", "cliente": "YAJAIRA COROMOTO SANTIAGO MONTILLA", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 409.51, "costo": 280.0, "admin": 0, "status": "Entregado", "fecha": "2026-08-29"}, {"orden": "LB-ORDEN-04182", "cliente": "MARIA GABRIELA CONTRERAS ARAQUE", "ejecutivo": "JUHENDIS ESTHER VALLADARES LOPEZ", "monto": 98.56, "costo": 74.57, "admin": 11.31, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04181", "cliente": "MARIA SOLEDAD GONZALEZ REYES", "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ", "monto": 713.73, "costo": 488.0, "admin": 0, "status": "CancelaciÃ³n Total", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04175", "cliente": "JOSE IGNACIO RODRIGUEZ GARRIDO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 424.14, "costo": 290.0, "admin": 0, "status": "CancelaciÃ³n Total", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04171", "cliente": "JOSELYN DEL VALLE ANDUEZA RODRIGUEZ", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 57.04, "costo": 39.0, "admin": 0.0, "status": "CancelaciÃ³n Total", "fecha": "2026-08-28"}, {"orden": "LB-ORDEN-04172", "cliente": "KRISTYN MAVIEL VARELA GUZMAN", "ejecutivo": "DANIEL CASTELLANOS", "monto": 1803.36, "costo": 1060.0, "admin": 743.36, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04174", "cliente": "NELSON ORANGEL GUERRERO PEÃA", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 343.48, "costo": 164.0, "admin": 103.62, "status": "Entregado", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04170", "cliente": "MARIBEL CARINA TORRES GONZALEZ", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 113.83, "costo": 90.0, "admin": 8.53, "status": "Entregado", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04173", "cliente": "HOTEL CABAÃAS TURISTICAS LOS LIRIOS C.A.", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 1089.44, "costo": 695.33, "admin": 124.99, "status": "Entregado", "fecha": "2026-08-28"}, {"orden": "LB-ORDEN-04168", "cliente": "MARCELL ALEJANDRO RIVERO BALZA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 91.02, "costo": 49.0, "admin": 19.35, "status": "Entregado", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04164", "cliente": "RAIZA VILLARREAL BALZA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 863.5, "costo": 460.0, "admin": 190.73, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04167", "cliente": "MARCELL ALEJANDRO RIVERO BALZA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1380.19, "costo": 659.0, "admin": 416.37, "status": "Entregado", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04165", "cliente": "JESUS ALEJANDRO LOPEZ RANGEL", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 649.25, "costo": 310.0, "admin": 195.86, "status": "Entregado", "fecha": "2026-08-26"}, {"orden": "LB-ORDEN-04162", "cliente": "MARIENELLA TREJO MORALES", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1469.75, "costo": 759.0, "admin": 359.67, "status": "Entregado", "fecha": "2026-08-25"}, {"orden": "LB-ORDEN-04160", "cliente": "YACKSON WLADIMIR OVALLES VILLASMIL", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 95.73, "costo": 74.57, "admin": 8.48, "status": "Entregado", "fecha": "2026-08-25"}, {"orden": "LB-ORDEN-04159", "cliente": "JESUS MANUEL GUTIERREZ PEREIRA", "ejecutivo": "ELIO CHAMATE", "monto": 21.94, "costo": 15.0, "admin": 0.0, "status": "CancelaciÃ³n Total", "fecha": "2026-08-25"}, {"orden": "LB-ORDEN-04158", "cliente": "JOSE ALMERICO TORO BERBESI", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 98.56, "costo": 74.57, "admin": 11.31, "status": "Entregado", "fecha": "2026-08-26"}, {"orden": "LB-ORDEN-04156", "cliente": "KEILI KARINA SALAS PEREIRA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1191.7, "costo": 569.0, "admin": 359.51, "status": "Entregado", "fecha": "2026-08-26"}, {"orden": "LB-ORDEN-04155", "cliente": "MARYORI DEL VALLE GARCIA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 510.15, "costo": 403.41, "admin": 38.14, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04150", "cliente": "JOHANSRY AMANDA MENA VELASCO", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 474.43, "costo": 306.25, "admin": 116.1, "status": "Entregado", "fecha": "2026-08-25"}, {"orden": "LB-ORDEN-04151", "cliente": "GENESIS VANESSA PEÃA FLORES", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 1380.19, "costo": 659.0, "admin": 416.37, "status": "Entregado", "fecha": "2026-08-24"}, {"orden": "LB-ORDEN-04149", "cliente": "JOSE ROSARIO PUENTES ARAQUE", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 335.1, "costo": 180.0, "admin": 101.09, "status": "Entregado", "fecha": "2026-08-24"}, {"orden": "LB-ORDEN-04145", "cliente": "MARIA JOSE ROMAN VILLASMIL", "ejecutivo": "ELIO CHAMATE", "monto": 282.66, "costo": 149.0, "admin": 50.21, "status": "Entregado", "fecha": "2026-08-22"}, {"orden": "LB-ORDEN-04143", "cliente": "JESUS MANUEL VILLARREAL VILLARREAL", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 826.78, "costo": 371.85, "admin": 247.67, "status": "Entregado", "fecha": "2026-08-22"}, {"orden": "LB-ORDEN-04144", "cliente": "JESUS ALEJANDRO LOPEZ RANGEL", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 449.23, "costo": 202.85, "admin": 133.77, "status": "Entregado", "fecha": "2026-08-22"}, {"orden": "LB-ORDEN-04138", "cliente": "ANGEL EDUARDO RODRIGUEZ UZCATEGUI", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 133.61, "costo": 76.92, "admin": 13.61, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04129", "cliente": "JOSELYN DEL VALLE ANDUEZA RODRIGUEZ", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 2576.01, "costo": 1462.85, "admin": 294.88, "status": "Entregado", "fecha": "2026-08-26"}, {"orden": "LB-ORDEN-04134", "cliente": "MARIANGEL CASTILLO CEBALLOS", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 497.88, "costo": 241.04, "admin": 121.84, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04133", "cliente": "HOMERO JAVIER RIVAS VARELA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 201.07, "costo": 90.0, "admin": 60.66, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04132", "cliente": "JAMES ALEXANDER CANO BRICEÃO", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 856.03, "costo": 386.7, "admin": 254.75, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04130", "cliente": "JOSE DE JESUS GOYO RIVAS", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 570.14, "costo": 306.25, "admin": 172.0, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04128", "cliente": "GENARO ANTONIO VILLARREAL VILLARREAL", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 1139.32, "costo": 569.0, "admin": 251.65, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04124", "cliente": "GRACE YETZALYA CHIRINOS PINEDA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1784.96, "costo": 799.0, "admin": 538.48, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04127", "cliente": "MARYCRUZ PEREZ MARQUEZ", "ejecutivo": "ELIO CHAMATE", "monto": 284.86, "costo": 164.0, "admin": 29.01, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04125", "cliente": "KARELYZ NOHELY ARAQUE SALAS", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 679.14, "costo": 304.0, "admin": 204.88, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04123", "cliente": "FRANGY NAYLETH FLORES TORIN", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 802.01, "costo": 359.0, "admin": 241.95, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04117", "cliente": "PIERA MANUELA ROJAS LA MANTIA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 476.04, "costo": 214.85, "admin": 141.86, "status": "Entregado", "fecha": "2026-08-17"}, {"orden": "LB-ORDEN-04116", "cliente": "HOMERO JAVIER RIVAS VARELA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 332.87, "costo": 149.0, "admin": 100.42, "status": "Entregado", "fecha": "2026-08-17"}, {"orden": "LB-ORDEN-04114", "cliente": "YLEANA KAROLINA CEDEÃO ROJAS", "ejecutivo": "DANIEL JOSE RODRIGUEZ VALECILLOS", "monto": 335.9, "costo": 187.5, "admin": 92.14, "status": "Entregado", "fecha": "2026-08-17"}, {"orden": "LB-ORDEN-04113", "cliente": "KATHERINE JOSEFINA ZERPA DE DIAZ", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 90.89, "costo": 49.0, "admin": 14.45, "status": "Entregado", "fecha": "2026-08-16"}, {"orden": "LB-ORDEN-04112", "cliente": "MARIA CLAUDIA DEL ROSARIO PEREZ PEREZ", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 299.05, "costo": 187.5, "admin": 55.29, "status": "Entregado", "fecha": "2026-08-17"}, {"orden": "LB-ORDEN-04108", "cliente": "YULIMAR ZOYLIM MONSALVE DE LOBO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 627.96, "costo": 282.85, "admin": 187.69, "status": "Entregado", "fecha": "2026-08-15"}, {"orden": "LB-ORDEN-04107", "cliente": "ELVIS JOSE PEÃA UZCATEGUI", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 759.76, "costo": 341.85, "admin": 227.45, "status": "Entregado", "fecha": "2026-08-15"}, {"orden": "LB-ORDEN-04104", "cliente": "RICARDO JAVIER PEÃUELA DIAZ", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 1101.35, "costo": 493.0, "admin": 332.25, "status": "Entregado", "fecha": "2026-08-14"}, {"orden": "LB-ORDEN-04102", "cliente": "JUAN PABLO MOLINA DAVILA", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 991.45, "costo": 462.85, "admin": 270.37, "status": "Entregado", "fecha": "2026-08-14"}, {"orden": "LB-ORDEN-04100", "cliente": "VASHANA WELLNESS GROUP C.A.", "ejecutivo": "OSMARA G. SOTO. GOMEZ", "monto": 34.8, "costo": 26.77, "admin": 0, "status": "Sin asignar", "fecha": "2026-08-14"}, {"orden": "LB-ORDEN-04099", "cliente": "IRIS FABIOLA BRICEÃO VELA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 455.31, "costo": 228.85, "admin": 99.29, "status": "Entregado", "fecha": "2026-08-13"}, {"orden": "LB-ORDEN-04092", "cliente": "MARIA DE JESUS PEREZ BITRIAGO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 268.08, "costo": 120.0, "admin": 80.87, "status": "Entregado", "fecha": "2026-08-12"}, {"orden": "LB-ORDEN-04091", "cliente": "CLARA INES PEÃA PEÃA", "ejecutivo": "ELIO CHAMATE", "monto": 1631.66, "costo": 759.0, "admin": 447.58, "status": "Entregado", "fecha": "2026-08-11"}, {"orden": "LB-ORDEN-04067", "cliente": "LEIBER JOSE PARRA CAMACHO", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 1739.59, "costo": 809.2, "admin": 477.19, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04086", "cliente": "LENY ORLANGEL SILGUERO VILLAMIZAR", "ejecutivo": "DANIEL JOSE RODRIGUEZ VALECILLOS", "monto": 679.14, "costo": 304.0, "admin": 204.88, "status": "Entregado", "fecha": "2026-08-11"}, {"orden": "LB-ORDEN-04069", "cliente": "MARIA JOSE ROMAN VILLASMIL", "ejecutivo": "ELIO CHAMATE", "monto": 865.53, "costo": 467.85, "admin": 136.66, "status": "Entregado", "fecha": "2026-08-06"}, {"orden": "LB-ORDEN-04082", "cliente": "LEOMAR ENRIQUE RODRIGUEZ PEÃA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 714.13, "costo": 333.85, "admin": 194.3, "status": "Entregado", "fecha": "2026-08-07"}, {"orden": "LB-ORDEN-04081", "cliente": "JOSE RICARDO MENDOZA ALARCON", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 714.13, "costo": 333.85, "admin": 194.3, "status": "Entregado", "fecha": "2026-08-07"}, {"orden": "LB-ORDEN-04070", "cliente": "SANDRA ELIZABETH MORENO LABRADOR", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 779.67, "costo": 349.0, "admin": 235.21, "status": "Entregado", "fecha": "2026-08-05"}, {"orden": "LB-ORDEN-04076", "cliente": "GREYSY KARINA ROJAS MADRID", "ejecutivo": "DANIEL JOSE RODRIGUEZ VALECILLOS", "monto": 711.98, "costo": 332.85, "admin": 193.71, "status": "Entregado", "fecha": "2026-08-07"}, {"orden": "LB-ORDEN-04075", "cliente": "LUIS ALBERTO SANDOVAL UZCATEGUI", "ejecutivo": "DANIEL JOSE RODRIGUEZ VALECILLOS", "monto": 653.53, "costo": 304.0, "admin": 179.27, "status": "Entregado", "fecha": "2026-08-07"}, {"orden": "LB-ORDEN-04072", "cliente": "CARMEN FABIOLA LINARES ACEVEDO", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 165.53, "costo": 77.0, "admin": 45.41, "status": "Entregado", "fecha": "2026-08-06"}, {"orden": "LB-ORDEN-04068", "cliente": "ANTHONY JOSUE REY QUINTERO", "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ", "monto": 484.24, "costo": 259.0, "admin": 80.19, "status": "Entregado", "fecha": "2026-08-06"}, {"orden": "LB-ORDEN-04063", "cliente": "CARMEN FABIOLA LINARES ACEVEDO", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 1659.58, "costo": 809.2, "admin": 397.18, "status": "Entregado", "fecha": "2026-08-03"}, {"orden": "LB-ORDEN-04064", "cliente": "JORGE LUIS DELGADO OLIVARES", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 991.45, "costo": 462.85, "admin": 270.37, "status": "Entregado", "fecha": "2026-08-04"}, {"orden": "LB-ORDEN-04061", "cliente": "JEINY DEL CARMEN DABOIN PULIDO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 458.31, "costo": 214.85, "admin": 124.13, "status": "Entregado", "fecha": "2026-08-03"}, {"orden": "LB-ORDEN-04059", "cliente": "DANIEL ALI ALVAREZ GARCIA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 324.77, "costo": 151.07, "admin": 89.09, "status": "Entregado", "fecha": "2026-08-01"}, {"orden": "LB-ORDEN-04042", "cliente": "PAMELA VANESSA VIVAS MENDEZ", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 2237.15, "costo": 963.2, "admin": 673.14, "status": "Entregado", "fecha": "2026-08-12"}], "facturas_dscto": [{"orden": "LB-ORDEN-04112", "cliente": "MARIA CLAUDIA DEL ROSARIO PEREZ PEREZ", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 299.05, "admin_esperado": 89.72, "admin_real": 55.29, "descuento_pct": 38.4, "descuento_monto": 34.43, "fecha": "2026-08-17", "status": "Entregado"}, {"orden": "LB-ORDEN-04068", "cliente": "ANTHONY JOSUE REY QUINTERO", "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ", "monto": 484.24, "admin_esperado": 145.27, "admin_real": 80.19, "descuento_pct": 44.8, "descuento_monto": 65.08, "fecha": "2026-08-06", "status": "Entregado"}], "ejecutivos": [{"nombre": "GABRIEL ALEJANDRO PARRA MOLINA", "facturado": 16484.28, "costo": 7996.84, "margen": 8487.44, "facturas": 26, "unidades": 66}, {"nombre": "MARSOLAIRE ANGULO RANGEL ", "facturado": 11576.58, "costo": 5990.95, "margen": 5585.63, "facturas": 11, "unidades": 25}, {"nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "facturado": 7627.81, "costo": 3728.35, "margen": 3899.46, "facturas": 12, "unidades": 30}, {"nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO", "facturado": 5873.86, "costo": 3075.59, "margen": 2798.28, "facturas": 5, "unidades": 1277}, {"nombre": "LADY DIANA TORO RIVERA", "facturado": 3846.6, "costo": 1951.31, "margen": 1895.29, "facturas": 6, "unidades": 14}, {"nombre": "ELIO CHAMATE", "facturado": 3086.65, "costo": 1554.85, "margen": 1531.8, "facturas": 5, "unidades": 12}, {"nombre": "DANIEL JOSE RODRIGUEZ VALECILLOS", "facturado": 2380.55, "costo": 1128.35, "margen": 1252.2, "facturas": 4, "unidades": 9}, {"nombre": "DANIEL CASTELLANOS", "facturado": 1803.36, "costo": 1060.0, "margen": 743.36, "facturas": 1, "unidades": 2}, {"nombre": "GERARDO JOSE RAMIREZ FERNANDEZ", "facturado": 1197.97, "costo": 747.0, "margen": 450.97, "facturas": 2, "unidades": 4}, {"nombre": "JUHENDIS ESTHER VALLADARES LOPEZ", "facturado": 98.56, "costo": 74.57, "margen": 23.99, "facturas": 1, "unidades": 2}, {"nombre": "OSMARA G. SOTO. GOMEZ", "facturado": 34.8, "costo": 26.77, "margen": 8.03, "facturas": 1, "unidades": 1}], "top_productos": [{"nombre": "Gasto Administrativo y Gestion de Cobranza", "cantidad": 69, "monto": 13833.49}, {"nombre": "Sony Playstation 5 Slim Disc Drive Fortnite Flowering Chaos (USA) 1TB, White.,", "cantidad": 2, "monto": 2176.56}, {"nombre": "Laptop Lenovo IdeaPad Slim 5 16IRU9 83FW000XUS, Intel Core 7 150U, 8GB, 512GB SSD, 16\", US, W11.", "cantidad": 2, "monto": 1977.73}, {"nombre": "[CEL000-01071] Samsung Galaxy S26 Ultra 16GB/1TB", "cantidad": 1, "monto": 1962.17}, {"nombre": "[CEL005-01034] iPhone 17 Pro Max 256GB Esim", "cantidad": 1, "monto": 1702.11}, {"nombre": "Laptop Compaq QL15R7BM16512, AMD Ryzen 7 5825U 16GB, 512GB SSD, 15.6\", W11.", "cantidad": 2, "monto": 1661.76}, {"nombre": "Laptop HP 15-fd0230wm â Intel Core i3-N305 / 8GB / 256GB SSD / 15.6â / US / W11", "cantidad": 2, "monto": 1482.64}, {"nombre": "Xiaomi 17 12 GB / 512 GB", "cantidad": 1, "monto": 1343.97}, {"nombre": "[CEL01B-00252] Infinix Note 60 Pro 5G 8GB/256GB", "cantidad": 2, "monto": 1234.6}, {"nombre": "[LAP019-00008] Laptop Compaq QL14N45BM8128, Intel N45. 8GB, 128GB, 14\", W11.", "cantidad": 3, "monto": 1226.52}, {"nombre": "Laptop Lenovo IdeaPad Slim 3 83K700G8US, AMD Ryzen 7 170, 16GB, 512GB SSD, 15.3\" 2K Touchscreen, US, W11.", "cantidad": 1, "monto": 1074.55}, {"nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).", "cantidad": 3, "monto": 1010.46}, {"nombre": "Laptop Compaq QL15I3BM8256, Intel Core i3-1215U, 8GB, 256GB, 15.6\", W11.", "cantidad": 2, "monto": 965.62}, {"nombre": "Motocicleta Bel KEIKO 150", "cantidad": 1, "monto": 913.79}, {"nombre": "[CEL01A-00229] Tecno Camon 50 Pro â 6.78â 8GB/256GB", "cantidad": 2, "monto": 887.62}], "colaboradores": [{"nombre": "GABRIEL ALEJANDRO PARRA MOLINA", "facturado": 16484.28, "costo": 7996.84, "margen": 8487.44, "facturas": 26, "unidades": 66}, {"nombre": "MARSOLAIRE ANGULO RANGEL ", "facturado": 11576.58, "costo": 5990.95, "margen": 5585.63, "facturas": 11, "unidades": 25}, {"nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "facturado": 7627.81, "costo": 3728.35, "margen": 3899.46, "facturas": 12, "unidades": 30}, {"nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO", "facturado": 5873.86, "costo": 3075.59, "margen": 2798.28, "facturas": 5, "unidades": 1277}, {"nombre": "LADY DIANA TORO RIVERA", "facturado": 3846.6, "costo": 1951.31, "margen": 1895.29, "facturas": 6, "unidades": 14}, {"nombre": "ELIO CHAMATE", "facturado": 3086.65, "costo": 1554.85, "margen": 1531.8, "facturas": 5, "unidades": 12}, {"nombre": "DANIEL JOSE RODRIGUEZ VALECILLOS", "facturado": 2380.55, "costo": 1128.35, "margen": 1252.2, "facturas": 4, "unidades": 9}, {"nombre": "DANIEL CASTELLANOS", "facturado": 1803.36, "costo": 1060.0, "margen": 743.36, "facturas": 1, "unidades": 2}, {"nombre": "GERARDO JOSE RAMIREZ FERNANDEZ", "facturado": 1197.97, "costo": 747.0, "margen": 450.97, "facturas": 2, "unidades": 4}, {"nombre": "JUHENDIS ESTHER VALLADARES LOPEZ", "facturado": 98.56, "costo": 74.57, "margen": 23.99, "facturas": 1, "unidades": 2}, {"nombre": "OSMARA G. SOTO. GOMEZ", "facturado": 34.8, "costo": 26.77, "margen": 8.03, "facturas": 1, "unidades": 1}], "total_facturado": 54011.02, "total_facturas": 74, "total_clientes": 68, "total_productos": 40177.53, "total_admin": 13833.49, "total_admin_dscto": 135.48, "total_ahorro_dscto": 99.51, "total_costo": 27334.58, "total_margen": 12842.95, "cancelaciones_count": 4, "cancelaciones_monto": 1216.85}};
-
+const DATA = {"facturacion_agosto": {"facturas": [{"orden": "LB-ORDEN-04180", "cliente": "PUEBLO MUSEO LOS ALEROS C. A.", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 256.26, "costo": 138.4, "admin": 77.21, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04193", "cliente": "LA MONTAÃA DE LOS SUEÃOS, C.A", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 837.69, "costo": 434.82, "admin": 252.71, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04192", "cliente": "ALEXIS Y LA VENEZUELA DE ANTIER C.A.", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 737.4, "costo": 397.04, "admin": 222.31, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04194", "cliente": "DOUGLAS JOSE RAMIREZ SUESCUN", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 595.23, "costo": 355.25, "admin": 179.57, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04176", "cliente": "JESUS ELBANO SOTO BELANDRIA", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 2953.07, "costo": 1410.0, "admin": 890.87, "status": "Aprobado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04191", "cliente": "JEAN CARLOS MONTERREY BONILLA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 902.69, "costo": 432.85, "admin": 270.75, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04190", "cliente": "MARVELIS KATERINE BUZEK MORENO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 715.0, "costo": 342.85, "admin": 214.19, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04189", "cliente": "YESENIA COROMOTO GOMEZ CONTRERAS", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 411.61, "costo": 232.85, "admin": 72.19, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04185", "cliente": "BELKIS CAROLINA GAMEZ PAREDES", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1232.67, "costo": 659.0, "admin": 268.85, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04183", "cliente": "HEBER JOSE TORRES ANGULO", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 87.25, "costo": 74.57, "admin": 0, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04184", "cliente": "YAJAIRA COROMOTO SANTIAGO MONTILLA", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 409.51, "costo": 280.0, "admin": 0, "status": "Entregado", "fecha": "2026-08-29"}, {"orden": "LB-ORDEN-04182", "cliente": "MARIA GABRIELA CONTRERAS ARAQUE", "ejecutivo": "JUHENDIS ESTHER VALLADARES LOPEZ", "monto": 98.56, "costo": 74.57, "admin": 11.31, "status": "Entregado", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04181", "cliente": "MARIA SOLEDAD GONZALEZ REYES", "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ", "monto": 713.73, "costo": 488.0, "admin": 0, "status": "CancelaciÃ³n Total", "fecha": "2026-08-30"}, {"orden": "LB-ORDEN-04175", "cliente": "JOSE IGNACIO RODRIGUEZ GARRIDO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 424.14, "costo": 290.0, "admin": 0, "status": "CancelaciÃ³n Total", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04171", "cliente": "JOSELYN DEL VALLE ANDUEZA RODRIGUEZ", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 57.04, "costo": 39.0, "admin": 0.0, "status": "CancelaciÃ³n Total", "fecha": "2026-08-28"}, {"orden": "LB-ORDEN-04172", "cliente": "KRISTYN MAVIEL VARELA GUZMAN", "ejecutivo": "DANIEL CASTELLANOS", "monto": 1803.36, "costo": 1060.0, "admin": 743.36, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04174", "cliente": "NELSON ORANGEL GUERRERO PEÃA", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 343.48, "costo": 164.0, "admin": 103.62, "status": "Entregado", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04170", "cliente": "MARIBEL CARINA TORRES GONZALEZ", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 113.83, "costo": 90.0, "admin": 8.53, "status": "Entregado", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04173", "cliente": "HOTEL CABAÃAS TURISTICAS LOS LIRIOS C.A.", "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO", "monto": 1089.44, "costo": 695.33, "admin": 124.99, "status": "Entregado", "fecha": "2026-08-28"}, {"orden": "LB-ORDEN-04168", "cliente": "MARCELL ALEJANDRO RIVERO BALZA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 91.02, "costo": 49.0, "admin": 19.35, "status": "Entregado", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04164", "cliente": "RAIZA VILLARREAL BALZA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 863.5, "costo": 460.0, "admin": 190.73, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04167", "cliente": "MARCELL ALEJANDRO RIVERO BALZA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1380.19, "costo": 659.0, "admin": 416.37, "status": "Entregado", "fecha": "2026-08-27"}, {"orden": "LB-ORDEN-04165", "cliente": "JESUS ALEJANDRO LOPEZ RANGEL", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 649.25, "costo": 310.0, "admin": 195.86, "status": "Entregado", "fecha": "2026-08-26"}, {"orden": "LB-ORDEN-04162", "cliente": "MARIENELLA TREJO MORALES", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1469.75, "costo": 759.0, "admin": 359.67, "status": "Entregado", "fecha": "2026-08-25"}, {"orden": "LB-ORDEN-04160", "cliente": "YACKSON WLADIMIR OVALLES VILLASMIL", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 95.73, "costo": 74.57, "admin": 8.48, "status": "Entregado", "fecha": "2026-08-25"}, {"orden": "LB-ORDEN-04159", "cliente": "JESUS MANUEL GUTIERREZ PEREIRA", "ejecutivo": "ELIO CHAMATE", "monto": 21.94, "costo": 15.0, "admin": 0.0, "status": "CancelaciÃ³n Total", "fecha": "2026-08-25"}, {"orden": "LB-ORDEN-04158", "cliente": "JOSE ALMERICO TORO BERBESI", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 98.56, "costo": 74.57, "admin": 11.31, "status": "Entregado", "fecha": "2026-08-26"}, {"orden": "LB-ORDEN-04156", "cliente": "KEILI KARINA SALAS PEREIRA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1191.7, "costo": 569.0, "admin": 359.51, "status": "Entregado", "fecha": "2026-08-26"}, {"orden": "LB-ORDEN-04155", "cliente": "MARYORI DEL VALLE GARCIA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 510.15, "costo": 403.41, "admin": 38.14, "status": "Entregado", "fecha": "2026-08-31"}, {"orden": "LB-ORDEN-04150", "cliente": "JOHANSRY AMANDA MENA VELASCO", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 474.43, "costo": 306.25, "admin": 116.1, "status": "Entregado", "fecha": "2026-08-25"}, {"orden": "LB-ORDEN-04151", "cliente": "GENESIS VANESSA PEÃA FLORES", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 1380.19, "costo": 659.0, "admin": 416.37, "status": "Entregado", "fecha": "2026-08-24"}, {"orden": "LB-ORDEN-04149", "cliente": "JOSE ROSARIO PUENTES ARAQUE", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 335.1, "costo": 180.0, "admin": 101.09, "status": "Entregado", "fecha": "2026-08-24"}, {"orden": "LB-ORDEN-04145", "cliente": "MARIA JOSE ROMAN VILLASMIL", "ejecutivo": "ELIO CHAMATE", "monto": 282.66, "costo": 149.0, "admin": 50.21, "status": "Entregado", "fecha": "2026-08-22"}, {"orden": "LB-ORDEN-04143", "cliente": "JESUS MANUEL VILLARREAL VILLARREAL", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 826.78, "costo": 371.85, "admin": 247.67, "status": "Entregado", "fecha": "2026-08-22"}, {"orden": "LB-ORDEN-04144", "cliente": "JESUS ALEJANDRO LOPEZ RANGEL", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 449.23, "costo": 202.85, "admin": 133.77, "status": "Entregado", "fecha": "2026-08-22"}, {"orden": "LB-ORDEN-04138", "cliente": "ANGEL EDUARDO RODRIGUEZ UZCATEGUI", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 133.61, "costo": 76.92, "admin": 13.61, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04129", "cliente": "JOSELYN DEL VALLE ANDUEZA RODRIGUEZ", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 2576.01, "costo": 1462.85, "admin": 294.88, "status": "Entregado", "fecha": "2026-08-26"}, {"orden": "LB-ORDEN-04134", "cliente": "MARIANGEL CASTILLO CEBALLOS", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 497.88, "costo": 241.04, "admin": 121.84, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04133", "cliente": "HOMERO JAVIER RIVAS VARELA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 201.07, "costo": 90.0, "admin": 60.66, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04132", "cliente": "JAMES ALEXANDER CANO BRICEÃO", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 856.03, "costo": 386.7, "admin": 254.75, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04130", "cliente": "JOSE DE JESUS GOYO RIVAS", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 570.14, "costo": 306.25, "admin": 172.0, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04128", "cliente": "GENARO ANTONIO VILLARREAL VILLARREAL", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 1139.32, "costo": 569.0, "admin": 251.65, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04124", "cliente": "GRACE YETZALYA CHIRINOS PINEDA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 1784.96, "costo": 799.0, "admin": 538.48, "status": "Entregado", "fecha": "2026-08-21"}, {"orden": "LB-ORDEN-04127", "cliente": "MARYCRUZ PEREZ MARQUEZ", "ejecutivo": "ELIO CHAMATE", "monto": 284.86, "costo": 164.0, "admin": 29.01, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04125", "cliente": "KARELYZ NOHELY ARAQUE SALAS", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 679.14, "costo": 304.0, "admin": 204.88, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04123", "cliente": "FRANGY NAYLETH FLORES TORIN", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 802.01, "costo": 359.0, "admin": 241.95, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04117", "cliente": "PIERA MANUELA ROJAS LA MANTIA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 476.04, "costo": 214.85, "admin": 141.86, "status": "Entregado", "fecha": "2026-08-17"}, {"orden": "LB-ORDEN-04116", "cliente": "HOMERO JAVIER RIVAS VARELA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 332.87, "costo": 149.0, "admin": 100.42, "status": "Entregado", "fecha": "2026-08-17"}, {"orden": "LB-ORDEN-04114", "cliente": "YLEANA KAROLINA CEDEÃO ROJAS", "ejecutivo": "DANIEL JOSE RODRIGUEZ VALECILLOS", "monto": 335.9, "costo": 187.5, "admin": 92.14, "status": "Entregado", "fecha": "2026-08-17"}, {"orden": "LB-ORDEN-04113", "cliente": "KATHERINE JOSEFINA ZERPA DE DIAZ", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 90.89, "costo": 49.0, "admin": 14.45, "status": "Entregado", "fecha": "2026-08-16"}, {"orden": "LB-ORDEN-04112", "cliente": "MARIA CLAUDIA DEL ROSARIO PEREZ PEREZ", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 299.05, "costo": 187.5, "admin": 55.29, "status": "Entregado", "fecha": "2026-08-17"}, {"orden": "LB-ORDEN-04108", "cliente": "YULIMAR ZOYLIM MONSALVE DE LOBO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 627.96, "costo": 282.85, "admin": 187.69, "status": "Entregado", "fecha": "2026-08-15"}, {"orden": "LB-ORDEN-04107", "cliente": "ELVIS JOSE PEÃA UZCATEGUI", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 759.76, "costo": 341.85, "admin": 227.45, "status": "Entregado", "fecha": "2026-08-15"}, {"orden": "LB-ORDEN-04104", "cliente": "RICARDO JAVIER PEÃUELA DIAZ", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 1101.35, "costo": 493.0, "admin": 332.25, "status": "Entregado", "fecha": "2026-08-14"}, {"orden": "LB-ORDEN-04102", "cliente": "JUAN PABLO MOLINA DAVILA", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 991.45, "costo": 462.85, "admin": 270.37, "status": "Entregado", "fecha": "2026-08-14"}, {"orden": "LB-ORDEN-04100", "cliente": "VASHANA WELLNESS GROUP C.A.", "ejecutivo": "OSMARA G. SOTO. GOMEZ", "monto": 34.8, "costo": 26.77, "admin": 0, "status": "Sin asignar", "fecha": "2026-08-14"}, {"orden": "LB-ORDEN-04099", "cliente": "IRIS FABIOLA BRICEÃO VELA", "ejecutivo": "MARSOLAIRE ANGULO RANGEL ", "monto": 455.31, "costo": 228.85, "admin": 99.29, "status": "Entregado", "fecha": "2026-08-13"}, {"orden": "LB-ORDEN-04092", "cliente": "MARIA DE JESUS PEREZ BITRIAGO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 268.08, "costo": 120.0, "admin": 80.87, "status": "Entregado", "fecha": "2026-08-12"}, {"orden": "LB-ORDEN-04091", "cliente": "CLARA INES PEÃA PEÃA", "ejecutivo": "ELIO CHAMATE", "monto": 1631.66, "costo": 759.0, "admin": 447.58, "status": "Entregado", "fecha": "2026-08-11"}, {"orden": "LB-ORDEN-04067", "cliente": "LEIBER JOSE PARRA CAMACHO", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 1739.59, "costo": 809.2, "admin": 477.19, "status": "Entregado", "fecha": "2026-08-19"}, {"orden": "LB-ORDEN-04086", "cliente": "LENY ORLANGEL SILGUERO VILLAMIZAR", "ejecutivo": "DANIEL JOSE RODRIGUEZ VALECILLOS", "monto": 679.14, "costo": 304.0, "admin": 204.88, "status": "Entregado", "fecha": "2026-08-11"}, {"orden": "LB-ORDEN-04069", "cliente": "MARIA JOSE ROMAN VILLASMIL", "ejecutivo": "ELIO CHAMATE", "monto": 865.53, "costo": 467.85, "admin": 136.66, "status": "Entregado", "fecha": "2026-08-06"}, {"orden": "LB-ORDEN-04082", "cliente": "LEOMAR ENRIQUE RODRIGUEZ PEÃA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 714.13, "costo": 333.85, "admin": 194.3, "status": "Entregado", "fecha": "2026-08-07"}, {"orden": "LB-ORDEN-04081", "cliente": "JOSE RICARDO MENDOZA ALARCON", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 714.13, "costo": 333.85, "admin": 194.3, "status": "Entregado", "fecha": "2026-08-07"}, {"orden": "LB-ORDEN-04070", "cliente": "SANDRA ELIZABETH MORENO LABRADOR", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 779.67, "costo": 349.0, "admin": 235.21, "status": "Entregado", "fecha": "2026-08-05"}, {"orden": "LB-ORDEN-04076", "cliente": "GREYSY KARINA ROJAS MADRID", "ejecutivo": "DANIEL JOSE RODRIGUEZ VALECILLOS", "monto": 711.98, "costo": 332.85, "admin": 193.71, "status": "Entregado", "fecha": "2026-08-07"}, {"orden": "LB-ORDEN-04075", "cliente": "LUIS ALBERTO SANDOVAL UZCATEGUI", "ejecutivo": "DANIEL JOSE RODRIGUEZ VALECILLOS", "monto": 653.53, "costo": 304.0, "admin": 179.27, "status": "Entregado", "fecha": "2026-08-07"}, {"orden": "LB-ORDEN-04072", "cliente": "CARMEN FABIOLA LINARES ACEVEDO", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 165.53, "costo": 77.0, "admin": 45.41, "status": "Entregado", "fecha": "2026-08-06"}, {"orden": "LB-ORDEN-04068", "cliente": "ANTHONY JOSUE REY QUINTERO", "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ", "monto": 484.24, "costo": 259.0, "admin": 80.19, "status": "Entregado", "fecha": "2026-08-06"}, {"orden": "LB-ORDEN-04063", "cliente": "CARMEN FABIOLA LINARES ACEVEDO", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 1659.58, "costo": 809.2, "admin": 397.18, "status": "Entregado", "fecha": "2026-08-03"}, {"orden": "LB-ORDEN-04064", "cliente": "JORGE LUIS DELGADO OLIVARES", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 991.45, "costo": 462.85, "admin": 270.37, "status": "Entregado", "fecha": "2026-08-04"}, {"orden": "LB-ORDEN-04061", "cliente": "JEINY DEL CARMEN DABOIN PULIDO", "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "monto": 458.31, "costo": 214.85, "admin": 124.13, "status": "Entregado", "fecha": "2026-08-03"}, {"orden": "LB-ORDEN-04059", "cliente": "DANIEL ALI ALVAREZ GARCIA", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 324.77, "costo": 151.07, "admin": 89.09, "status": "Entregado", "fecha": "2026-08-01"}, {"orden": "LB-ORDEN-04042", "cliente": "PAMELA VANESSA VIVAS MENDEZ", "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA", "monto": 2237.15, "costo": 963.2, "admin": 673.14, "status": "Entregado", "fecha": "2026-08-12"}], "facturas_dscto": [{"orden": "LB-ORDEN-04112", "cliente": "MARIA CLAUDIA DEL ROSARIO PEREZ PEREZ", "ejecutivo": "LADY DIANA TORO RIVERA", "monto": 299.05, "admin_esperado": 89.72, "admin_real": 55.29, "descuento_pct": 38.4, "descuento_monto": 34.43, "fecha": "2026-08-17", "status": "Entregado"}, {"orden": "LB-ORDEN-04068", "cliente": "ANTHONY JOSUE REY QUINTERO", "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ", "monto": 484.24, "admin_esperado": 145.27, "admin_real": 80.19, "descuento_pct": 44.8, "descuento_monto": 65.08, "fecha": "2026-08-06", "status": "Entregado"}], "ejecutivos": [{"nombre": "GABRIEL ALEJANDRO PARRA MOLINA", "facturado": 16484.28, "costo": 7996.84, "margen": 8487.44, "facturas": 26, "unidades": 66}, {"nombre": "MARSOLAIRE ANGULO RANGEL ", "facturado": 11576.58, "costo": 5990.95, "margen": 5585.63, "facturas": 11, "unidades": 25}, {"nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ", "facturado": 7627.81, "costo": 3728.35, "margen": 3899.46, "facturas": 12, "unidades": 30}, {"nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO", "facturado": 5873.86, "costo": 3075.59, "margen": 2798.28, "facturas": 5, "unidades": 1277}, {"nombre": "LADY DIANA TORO RIVERA", "facturado": 3846.6, "costo": 1951.31, "margen": 1895.29, "facturas": 6, "unidades": 14}, {"nombre": "ELIO CHAMATE", "facturado": 3086.65, "costo": 1554.85, "margen": 1531.8, "facturas": 5, "unidades": 12}, {"nombre": "DANIEL JOSE RODRIGUEZ VALECILLOS", "facturado": 2380.55, "costo": 1128.35, "margen": 1252.2, "facturas": 4, "unidades": 9}, {"nombre": "DANIEL CASTELLANOS", "facturado": 1803.36, "costo": 1060.0, "margen": 743.36, "facturas": 1, "unidades": 2}, {"nombre": "GERARDO JOSE RAMIREZ FERNANDEZ", "facturado": 1197.97, "costo": 747.0, "margen": 450.97, "facturas": 2, "unidades": 4}, {"nombre": "JUHENDIS ESTHER VALLADARES LOPEZ", "facturado": 98.56, "costo": 74.57, "margen": 23.99, "facturas": 1, "unidades": 2}, {"nombre": "OSMARA G. SOTO. GOMEZ", "facturado": 34.8, "costo": 26.77, "margen": 8.03, "facturas": 1, "unidades": 1}], "top_productos": [{"nombre": "Gasto Administrativo y Gestion de Cobranza", "cantidad": 69, "monto": 13833.49}, {"nombre": "Sony Playstation 5 Slim Disc Drive Fortnite Flowering Chaos (USA) 1TB, White.,", "cantidad": 2, "monto": 2176.56}, {"nombre": "Laptop Lenovo IdeaPad Slim 5 16IRU9 83FW000XUS, Intel Core 7 150U, 8GB, 512GB SSD, 16\", US, W11.", "cantidad": 2, "monto": 1977.73}, {"nombre": "[CEL000-01071] Samsung Galaxy S26 Ultra 16GB/1TB", "cantidad": 1, "monto": 1962.17}, {"nombre": "[CEL005-01034] iPhone 17 Pro Max 256GB Esim", "cantidad": 1, "monto": 1702.11}, {"nombre": "Laptop Compaq QL15R7BM16512, AMD Ryzen 7 5825U 16GB, 512GB SSD, 15.6\", W11.", "cantidad": 2, "monto": 1661.76}, {"nombre": "Laptop HP 15-fd0230wm â Intel Core i3-N305 / 8GB / 256GB SSD / 15.6â / US / W11", "cantidad": 2, "monto": 1482.64}, {"nombre": "Xiaomi 17 12 GB / 512 GB", "cantidad": 1, "monto": 1343.97}, {"nombre": "[CEL01B-00252] Infinix Note 60 Pro 5G 8GB/256GB", "cantidad": 2, "monto": 1234.6}, {"nombre": "[LAP019-00008] Laptop Compaq QL14N45BM8128, Intel N45. 8GB, 128GB, 14\", W11.", "cantidad": 3, "monto": 1226.52}, {"nombre": "Laptop Lenovo IdeaPad Slim 3 83K700G8US, AMD Ryzen 7 170, 16GB, 512GB SSD, 15.3\" 2K Touchscreen, US, W11.", "cantidad": 1, "monto": 1074.55}, {"nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).", "cantidad": 3, "monto": 1010.46}, {"nombre": "Laptop Compaq QL15I3BM8256, Intel Core i3-1215U, 8GB, 256GB, 15.6\", W11.", "cantidad": 2, "monto": 965.62}, {"nombre": "Motocicleta Bel KEIKO 150", "cantidad": 1, "monto": 913.79}, {"nombre": "[CEL01A-00229] Tecno Camon 50 Pro â 6.78â 8GB/256GB", "cantidad": 2, "monto": 887.62}], "total_facturado": 54011.02, "total_facturas": 74, "total_clientes": 68, "total_productos": 40177.53, "total_admin": 13833.49, "total_admin_dscto": 135.48, "total_ahorro_dscto": 99.51, "total_costo": 27334.58, "total_margen": 12842.95, "cancelaciones_count": 4, "cancelaciones_monto": 1216.85}};
 const F = DATA.facturacion_agosto;
+
+// ===== UTILS =====
 const fmt = v => '$' + Number(v).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
 const fmtShort = v => '$' + Number(v).toLocaleString('en-US', {maximumFractionDigits:0});
 
-document.getElementById('h-facturado').textContent = fmtShort(F.total_facturado);
-document.getElementById('h-facturas').textContent = F.total_facturas;
-document.getElementById('h-clientes').textContent = F.total_clientes;
-document.getElementById('h-margen').textContent = fmtShort(F.total_margen);
-
+// ===== KPI CARDS (4 COLS) =====
+const margenPct = ((F.total_margen / F.total_facturado) * 100).toFixed(1);
 const kpis = [
-  {label:'Total Facturado', value:fmt(F.total_facturado), icon:'💰', cls:'green'},
-  {label:'Total Productos', value:fmt(F.total_productos), icon:'📦', cls:'blue'},
-  {label:'Gasto Admin', value:fmt(F.total_admin), icon:'📋', cls:'orange'},
-  {label:'Gasto Admin c/Dscto', value:fmt(F.total_admin_dscto), icon:'⚡', cls:'red', glow:true},
-  {label:'Costo Total', value:fmt(F.total_costo), icon:'🔧', cls:'gray'},
-  {label:'Margen Bruto', value:fmt(F.total_margen), icon:'📈', cls:'green'},
-  {label:'Facturas', value:F.total_facturas, icon:'📄', cls:'blue'},
-  {label:'Clientes', value:F.total_clientes, icon:'👥', cls:'orange'},
-  {label:'Cancelaciones', value:F.cancelaciones_count, icon:'❌', cls:'red'}
+  {icon:'💰', value:fmt(F.total_facturado), label:'Total Facturado', cls:'accent'},
+  {icon:'📄', value:F.total_facturas, label:'Facturas', cls:''},
+  {icon:'👥', value:F.total_clientes, label:'Clientes', cls:''},
+  {icon:'📈', value:margenPct+'%', label:'Margen Bruto', cls:'green'}
 ];
-
 const kpiGrid = document.getElementById('kpi-grid');
 kpis.forEach(k => {
-  const card = document.createElement('div');
-  card.className = 'kpi-card' + (k.glow ? ' glow' : '');
-  card.innerHTML = '<div class="kpi-icon '+k.cls+'">'+k.icon+'</div><div class="kpi-info"><div class="kpi-val">'+k.value+'</div><div class="kpi-lbl">'+k.label+'</div></div>';
-  kpiGrid.appendChild(card);
+  const div = document.createElement('div');
+  div.className = 'kpi-card';
+  div.innerHTML = '<div class="icon">'+k.icon+'</div><div class="value '+k.cls+'">'+k.value+'</div><div class="label">'+k.label+'</div>';
+  kpiGrid.appendChild(div);
 });
 
-// DSCTO KPIs
+// ===== OPS BADGES =====
+const entregados = F.facturas.filter(f => f.status === 'Entregado').length;
+const aprobados = F.facturas.filter(f => f.status === 'Aprobado').length;
+const cancelados = F.cancelaciones_count;
+const opsGrid = document.getElementById('ops-grid');
+[
+  {num:entregados, lbl:'Entregados', cls:'ops-entregado'},
+  {num:aprobados, lbl:'Aprobados', cls:'ops-aprobado'},
+  {num:cancelados, lbl:'Cancelaciones', cls:'ops-cancel'}
+].forEach(o => {
+  const div = document.createElement('div');
+  div.className = 'ops-badge ' + o.cls;
+  div.innerHTML = '<div class="num">'+o.num+'</div><div class="lbl">'+o.lbl+'</div>';
+  opsGrid.appendChild(div);
+});
+
+// ===== DSCTO KPIs & TABLE =====
 const dsctoKpis = document.getElementById('dscto-kpis');
 const dsctoMontoTotal = F.facturas_dscto.reduce((s,d) => s + d.monto, 0);
 const dsctoAdminReal = F.facturas_dscto.reduce((s,d) => s + d.admin_real, 0);
 [
-  {label:'Facturas con Dscto', value:F.facturas_dscto.length},
+  {label:'Facturas', value:F.facturas_dscto.length},
   {label:'Monto Total', value:fmt(dsctoMontoTotal)},
-  {label:'Ahorro Total', value:fmt(F.total_ahorro_dscto)},
-  {label:'Admin Real (estas 2)', value:fmt(dsctoAdminReal)}
+  {label:'Ahorro', value:fmt(F.total_ahorro_dscto)},
+  {label:'Admin Real', value:fmt(dsctoAdminReal)}
 ].forEach(d => {
   const div = document.createElement('div');
   div.className = 'dscto-kpi';
@@ -215,114 +395,206 @@ const dsctoAdminReal = F.facturas_dscto.reduce((s,d) => s + d.admin_real, 0);
   dsctoKpis.appendChild(div);
 });
 
-// DSCTO TABLE
 const dsctoTbody = document.getElementById('dscto-table');
 F.facturas_dscto.forEach((f,i) => {
   const tr = document.createElement('tr');
   tr.className = 'dscto-row';
-  const statusBadge = f.status==='Entregado'?'badge-entregado':'badge-aprobado';
-  tr.innerHTML = '<td>'+(i+1)+'</td><td>'+f.cliente+'</td><td>'+f.orden+'</td><td>'+f.ejecutivo+'</td><td class="money">'+fmt(f.admin_esperado)+'</td><td><strong>'+f.descuento_pct+'%</strong></td><td class="money">'+fmt(f.admin_real)+'</td><td class="money green">'+fmt(f.descuento_monto)+'</td><td>'+f.fecha+'</td><td><span class="badge '+statusBadge+'">'+f.status+'</span></td>';
+  const badge = f.status === 'Entregado' ? 'badge-entregado' : 'badge-aprobado';
+  tr.innerHTML = '<td>'+(i+1)+'</td><td>'+f.cliente+'</td><td>'+f.orden+'</td><td>'+f.ejecutivo+'</td><td class="text-right money">'+fmt(f.admin_esperado)+'</td><td class="text-right"><strong>'+f.descuento_pct+'%</strong></td><td class="text-right money">'+fmt(f.admin_real)+'</td><td class="text-right money green">'+fmt(f.descuento_monto)+'</td><td>'+f.fecha+'</td><td><span class="badge '+badge+'">'+f.status+'</span></td>';
   dsctoTbody.appendChild(tr);
 });
 
-// EJECUTIVOS TABLE
+// ===== EJECUTIVOS TABLE =====
 const ejecTb = document.getElementById('ejec-table');
-F.ejecutivos.forEach((r,i) => {
+const maxFact = Math.max(...F.ejecutivos.map(e => e.facturado));
+const totalFacturasEjec = F.ejecutivos.reduce((s,e) => s + e.facturas, 0);
+F.ejecutivos.forEach((e,i) => {
   const tr = document.createElement('tr');
-  tr.innerHTML = '<td>'+(i+1)+'</td><td>'+r.nombre+'</td><td class="money text-right">'+fmt(r.facturado)+'</td><td class="money text-right">'+fmt(r.costo)+'</td><td class="money text-right">'+fmt(r.margen)+'</td><td class="text-right">'+r.facturas+'</td><td class="text-right">'+r.unidades+'</td>';
+  let badgeHtml = '';
+  if (i === 0) badgeHtml = '<span class="badge badge-leader">🏆 Líder del Mes</span>';
+  else if (e.facturas > 0 && (e.facturado / e.facturas) > 800) badgeHtml = '<span class="badge badge-perfect">🎯 Alto Rendimiento</span>';
+  const margenE = e.facturado - (e.costo || 0);
+  tr.innerHTML = '<td>'+(i+1)+'</td><td><strong>'+e.nombre+'</strong></td><td class="text-right">'+e.facturas+'</td><td class="text-right">'+e.unidades+'</td><td class="text-right money">'+fmt(e.facturado)+'</td><td class="text-right money">'+fmt(e.costo)+'</td><td class="text-right money green">'+fmt(margenE)+'</td><td>'+badgeHtml+'</td>';
   ejecTb.appendChild(tr);
 });
 
-// TOP PRODUCTOS TABLE
+// ===== TOP PRODUCTOS TABLE =====
 const topProdTb = document.getElementById('top-prod-table');
 F.top_productos.forEach((p,i) => {
   const tr = document.createElement('tr');
-  tr.innerHTML = '<td>'+(i+1)+'</td><td style="max-width:300px">'+p.nombre+'</td><td class="text-right">'+p.cantidad+'</td><td class="money text-right">'+fmt(p.monto)+'</td>';
+  tr.innerHTML = '<td>'+(i+1)+'</td><td style="max-width:350px">'+p.nombre+'</td><td class="text-right">'+p.cantidad+'</td><td class="text-right money">'+fmt(p.monto)+'</td>';
   topProdTb.appendChild(tr);
 });
 
-// DETALLE FACTURAS TABLE
+// ===== FACTURAS TABLE =====
 const factTb = document.getElementById('facturas-table');
 const dsctoOrd = new Set(F.facturas_dscto.map(d => d.orden));
-const cancelStatuses = F.facturas.filter(f => f.status.includes('Cancelaci')).map(f => f.orden);
+const cancelOrd = new Set(F.facturas.filter(f => f.status.includes('Cancelaci')).map(f => f.orden));
 F.facturas.forEach((f,i) => {
   const tr = document.createElement('tr');
   if (dsctoOrd.has(f.orden)) tr.className = 'dscto-row';
-  else if (cancelStatuses.includes(f.orden)) tr.className = 'cancel-row';
+  else if (cancelOrd.has(f.orden)) tr.className = 'cancel-row';
   let badge = 'badge-sinasignar';
   if (f.status==='Entregado') badge='badge-entregado';
   else if (f.status==='Aprobado') badge='badge-aprobado';
   else if (f.status.includes('Cancelaci')) badge='badge-cancel';
-  tr.innerHTML = '<td>'+(i+1)+'</td><td>'+f.orden+'</td><td>'+f.cliente+'</td><td>'+f.ejecutivo+'</td><td class="money text-right">'+fmt(f.monto)+'</td><td class="money text-right">'+fmt(f.costo)+'</td><td class="money text-right">'+fmt(f.admin)+'</td><td>'+f.fecha+'</td><td><span class="badge '+badge+'">'+f.status+'</span></td>';
+  tr.innerHTML = '<td>'+(i+1)+'</td><td>'+f.orden+'</td><td>'+f.cliente+'</td><td>'+f.ejecutivo+'</td><td class="text-right money">'+fmt(f.monto)+'</td><td class="text-right money">'+fmt(f.costo)+'</td><td class="text-right money">'+fmt(f.admin)+'</td><td>'+f.fecha+'</td><td><span class="badge '+badge+'">'+f.status+'</span></td>';
   factTb.appendChild(tr);
 });
 
-// CHARTS
-const chartColors = ['#213C83','#F98B10','#10b981','#ef4444','#5f6368','#8e24aa'];
+// ===== CHARTS =====
 Chart.register(ChartDataLabels);
+const cColors = ['#00205B','#FF6600','#10B981','#EF4444','#64748B','#8B5CF6','#06B6D4','#F59E0B','#EC4899','#84CC16','#6366F1','#14B8A6','#F97316','#A855F7','#22D3EE'];
 
+// --- CHART RESUMEN: Facturado, Productos, Admin, Costos (sin Dscto ni Margen) ---
 new Chart(document.getElementById('chartResumen'), {
-  type:'bar',
-  data:{
-    labels:['Facturado','Productos','Admin','Admin Dscto','Costo','Margen'],
-    datasets:[{
-      data:[F.total_facturado,F.total_productos,F.total_admin,F.total_admin_dscto,F.total_costo,F.total_margen],
-      backgroundColor:chartColors,
-      borderRadius:6
+  type: 'bar',
+  data: {
+    labels: ['Total Facturado','Total Productos','Gasto Administrativo','Costo Total'],
+    datasets: [{
+      data: [F.total_facturado, F.total_productos, F.total_admin, F.total_costo],
+      backgroundColor: ['#00205B','#FF6600','#F59E0B','#64748B'],
+      borderRadius: 6,
+      barPercentage: 0.65
     }]
   },
-  options:{
-    responsive:true,
-    plugins:{
-      legend:{display:false},
-      datalabels:{display:true,anchor:'end',align:'top',color:'#333',font:{weight:'bold',size:11},formatter:v=>fmtShort(v)},
-      tooltip:{callbacks:{label:ctx=>fmt(ctx.raw)}}
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {display: false},
+      datalabels: {display: true, anchor: 'end', align: 'top', color: '#1E293B', font: {weight: 'bold', size: 11}, formatter: v => fmtShort(v)},
+      tooltip: {callbacks: {label: ctx => fmt(ctx.raw)}}
     },
-    scales:{y:{beginAtZero:true,ticks:{callback:v=>fmtShort(v)}},x:{ticks:{font:{size:11}}}}
+    scales: {
+      y: {beginAtZero: true, ticks: {callback: v => fmtShort(v), font: {size: 10}}, grid: {color: '#E2E8F0'}},
+      x: {ticks: {font: {size: 11}}, grid: {display: false}}
+    }
   }
 });
 
-const prodLabels = F.top_productos.slice(0,10).map(p => p.nombre.length > 28 ? p.nombre.substring(0,25)+'...' : p.nombre);
-const prodValues = F.top_productos.slice(0,10).map(p => p.monto);
-new Chart(document.getElementById('chartTopProdBar'), {
-  type:'bar',
-  data:{
-    labels:prodLabels,
-    datasets:[{
-      data:prodValues,
-      backgroundColor:['#213C83','#F98B10','#10b981','#ef4444','#5f6368','#8e24aa','#00bcd4','#ff9800','#795548','#607d8b'],
-      borderRadius:4
+// --- CHART OPERATIONS PIE ---
+new Chart(document.getElementById('chartOps'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Entregados','Aprobados','Cancelaciones'],
+    datasets: [{
+      data: [entregados, aprobados, cancelados],
+      backgroundColor: ['#10B981','#3B82F6','#EF4444'],
+      borderWidth: 2,
+      borderColor: '#fff'
     }]
   },
-  options:{
-    indexAxis:'y',
-    responsive:true,
-    plugins:{
-      legend:{display:false},
-      datalabels:{display:true,anchor:'end',align:'right',color:'#333',font:{weight:'bold',size:10},formatter:v=>fmtShort(v)},
-      tooltip:{callbacks:{label:ctx=>fmt(ctx.raw)}}
-    },
-    scales:{x:{beginAtZero:true,ticks:{callback:v=>fmtShort(v)}},y:{ticks:{font:{size:10}}}}
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {position: 'bottom', labels: {font: {size: 11}, padding: 12}},
+      datalabels: {display: true, color: '#fff', font: {weight: 'bold', size: 13}, formatter: v => v}
+    }
   }
 });
 
-new Chart(document.getElementById('chartTopProdDoughnut'), {
-  type:'doughnut',
-  data:{
-    labels:F.top_productos.slice(0,8).map(p=>p.nombre.length>30?p.nombre.substring(0,27)+'...':p.nombre),
-    datasets:[{
-      data:F.top_productos.slice(0,8).map(p=>p.monto),
-      backgroundColor:['#213C83','#F98B10','#10b981','#ef4444','#5f6368','#8e24aa','#00bcd4','#ff9800'],
-      borderWidth:2,
-      borderColor:'#fff'
+// --- CHART PRODUCTOS POR CANTIDAD (TODOS, verticales, mayor a menor) ---
+const prodQty = [...F.top_productos].sort((a,b) => b.cantidad - a.cantidad);
+new Chart(document.getElementById('chartProdQty'), {
+  type: 'bar',
+  data: {
+    labels: prodQty.map(p => p.nombre.length > 22 ? p.nombre.substring(0,19)+'...' : p.nombre),
+    datasets: [{
+      label: 'Cantidad',
+      data: prodQty.map(p => p.cantidad),
+      backgroundColor: cColors.slice(0, prodQty.length),
+      borderRadius: 4,
+      barPercentage: 0.7
     }]
   },
-  options:{
-    responsive:true,
-    plugins:{
-      legend:{position:'right',labels:{font:{size:10},boxWidth:12}},
-      datalabels:{display:true,color:'#fff',font:{weight:'bold',size:10},formatter:v=>fmtShort(v)},
-      tooltip:{callbacks:{label:ctx=>fmt(ctx.raw)}}
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {display: false},
+      datalabels: {display: true, anchor: 'end', align: 'top', color: '#1E293B', font: {weight: 'bold', size: 10}, formatter: v => v},
+      tooltip: {callbacks: {label: ctx => 'Cantidad: '+ctx.raw}}
+    },
+    scales: {
+      y: {beginAtZero: true, ticks: {stepSize: 1, font: {size: 10}}, grid: {color: '#E2E8F0'}},
+      x: {ticks: {font: {size: 9}, maxRotation: 45, minRotation: 30}, grid: {display: false}}
+    }
+  }
+});
+
+// --- CHART PRODUCTOS POR MONTO (TODOS, verticales, mayor a menor) ---
+const prodMonto = [...F.top_productos].sort((a,b) => b.monto - a.monto);
+new Chart(document.getElementById('chartProdMonto'), {
+  type: 'bar',
+  data: {
+    labels: prodMonto.map(p => p.nombre.length > 22 ? p.nombre.substring(0,19)+'...' : p.nombre),
+    datasets: [{
+      label: 'Monto',
+      data: prodMonto.map(p => p.monto),
+      backgroundColor: cColors.slice(0, prodMonto.length),
+      borderRadius: 4,
+      barPercentage: 0.7
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {display: false},
+      datalabels: {display: true, anchor: 'end', align: 'top', color: '#1E293B', font: {weight: 'bold', size: 9}, formatter: v => fmtShort(v)},
+      tooltip: {callbacks: {label: ctx => fmt(ctx.raw)}}
+    },
+    scales: {
+      y: {beginAtZero: true, ticks: {callback: v => fmtShort(v), font: {size: 10}}, grid: {color: '#E2E8F0'}},
+      x: {ticks: {font: {size: 9}, maxRotation: 45, minRotation: 30}, grid: {display: false}}
+    }
+  }
+});
+
+// --- CHART DISTRIBUCION CIRCULAR ---
+new Chart(document.getElementById('chartDist'), {
+  type: 'doughnut',
+  data: {
+    labels: F.top_productos.map(p => p.nombre.length > 30 ? p.nombre.substring(0,27)+'...' : p.nombre),
+    datasets: [{
+      data: F.top_productos.map(p => p.monto),
+      backgroundColor: cColors.slice(0, F.top_productos.length),
+      borderWidth: 2,
+      borderColor: '#fff'
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {position: 'right', labels: {font: {size: 9}, boxWidth: 10, padding: 6}},
+      datalabels: {display: true, color: '#fff', font: {weight: 'bold', size: 9}, formatter: v => fmtShort(v)},
+      tooltip: {callbacks: {label: ctx => fmt(ctx.raw)}}
+    }
+  }
+});
+
+// --- CHART TOP PRODUCTO POR MONTO (horizontal) ---
+const topMonto = [...F.top_productos].sort((a,b) => b.monto - a.monto).slice(0,8);
+new Chart(document.getElementById('chartTopMonto'), {
+  type: 'bar',
+  data: {
+    labels: topMonto.map(p => p.nombre.length > 25 ? p.nombre.substring(0,22)+'...' : p.nombre),
+    datasets: [{
+      data: topMonto.map(p => p.monto),
+      backgroundColor: '#00205B',
+      borderRadius: 4,
+      barPercentage: 0.65
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: {display: false},
+      datalabels: {display: true, anchor: 'end', align: 'right', color: '#1E293B', font: {weight: 'bold', size: 10}, formatter: v => fmtShort(v)},
+      tooltip: {callbacks: {label: ctx => fmt(ctx.raw)}}
+    },
+    scales: {
+      x: {beginAtZero: true, ticks: {callback: v => fmtShort(v), font: {size: 10}}, grid: {color: '#E2E8F0'}},
+      y: {ticks: {font: {size: 10}}, grid: {display: false}}
     }
   }
 });
