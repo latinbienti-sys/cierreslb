@@ -281,7 +281,7 @@ new Chart(document.getElementById('chartTopMonto'), { type:'bar', data:{labels:t
 
 // ===== SEPTIEMBRE TAB =====
 const septKpis = document.getElementById('kpi-sept');
-const septKpisData = [{icon:'📄', value:SEPT.count, label:'Facturas', cls:''}, {icon:'💰', value:fmt(SEPT.total), label:'Total Facturado', cls:'accent'}, {icon:'👥', value:'1', label:'Clientes', cls:''}, {icon:'📈', value:((SEPT.total && SEPT.facturas.length) ? ((SEPT.facturas[0] ? (SEPT.facturas[0].monto - (SEPT.facturas[0].costo||0)) : 0) / SEPT.total * 100) : 0).toFixed(1)+'%' : '0%', label:'Margen', cls:'green'}];
+const septKpisData = [{icon:'📄', value:SEPT.count, label:'Facturas', cls:''}, {icon:'💰', value:fmt(SEPT.total), label:'Total Facturado', cls:'accent'}, {icon:'👥', value:'1', label:'Clientes', cls:''}, {icon:'📈', value:(SEPT.total && SEPT.facturas.length && SEPT.facturas[0]) ? (((SEPT.facturas[0].monto - (SEPT.facturas[0].costo||0)) / SEPT.total * 100).toFixed(1)+'%') : '0%', label:'Margen', cls:'green'}];
 septKpisData.forEach(k => { const div=document.createElement('div'); div.className='kpi-card'; div.innerHTML='<div class="icon">'+k.icon+'</div><div class="value '+k.cls+'">'+k.value+'</div><div class="label">'+k.label+'</div>'; septKpis.appendChild(div); });
 
 const septTable = document.getElementById('sept-table');
