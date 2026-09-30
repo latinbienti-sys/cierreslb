@@ -278,7 +278,7 @@ tbody tr.cancel-row{border-left:4px solid var(--danger);background:var(--danger-
     </div>
   </div>
   <div class="section">
-    <div class="section-title">🏆 Facturación y Valoración por Tecnología <span style="font-weight:400;font-size:11px;color:#64748B">(Septiembre solo <strong>Entregado</strong> + Cartera entregada — clic en la fila para ver clientes)</span></div>
+    <div class="section-title">🏆 Facturación y Valoración por Tecnología <span style="font-weight:400;font-size:11px;color:#64748B">(Entregado + 1 aprobada en espera · Motos incluye 2 facturadas en ago — clic en la fila para ver clientes)</span></div>
     <div class="scroll-table" style="max-height:420px"><table><thead><tr><th>#</th><th>Tecnología</th><th class="text-right">Fact. Sept</th><th class="text-right">Facturado Sept</th><th class="text-right">Costo</th><th class="text-right">G. Admin Sept</th><th class="text-right">Margen</th><th class="text-right">Fact. Cartera</th><th class="text-right">Monto Cartera</th><th class="text-right">G. Admin Cart.</th><th class="text-right">Cobrado</th><th class="text-right">Saldo</th><th class="text-right">Moroso</th><th class="text-right">Cuotas Venc.</th><th class="text-right">% Cobrado</th><th class="text-right">% Morosidad</th></tr></thead><tbody id="tec-table"></tbody></table></div>
   </div>
   <div class="chart-box" style="margin-bottom:14px">
@@ -544,7 +544,7 @@ const TopMorosos = (typeof TECNO !== 'undefined' && TECNO && TECNO.top_clientes_
 
 // ===== CARTERA / TECNOLOGÍA TAB =====
 if (typeof TECNO !== 'undefined' && TECNO && TECNO.por_tecnologia) {
-  const TE = TECNO.por_tecnologia;
+  const TE = [...(TECNO.por_monto_sept || TECNO.por_tecnologia)].sort((a,b)=>(b.sm||0)-(a.sm||0));
   const TEtot = TECNO.totales || {};
   const fmtPctv = v => Number(v).toFixed(1)+'%';
   // KPIs
