@@ -547,7 +547,10 @@ if (typeof TECNO !== 'undefined' && TECNO && TECNO.por_tecnologia) {
   const fmtPctv = v => Number(v).toFixed(1)+'%';
   // KPIs
   const kpiTec = document.getElementById('kpi-tec');
+  const kpTecMotos = TE.find(r=>r.t==='Motos');
+  const septSinMotos = (TEtot.sept_facturado||0) - (kpTecMotos?kpTecMotos.sm:0);
   [{icon:'💰', value:fmt(TEtot.sept_facturado||0), label:'Facturado Sept. (Entregado + Aprobada)', cls:'accent'},
+   {icon:'🧮', value:fmt(septSinMotos), label:'Facturado Sept. Tecnología (sin Motos)', cls:'green'},
    {icon:'🏷️', value:fmt(TEtot.sept_precio||0), label:'Precio Producto Sept.', cls:''},
    {icon:'📦', value:fmt(TEtot.sept_costo||0), label:'Costo Sept. (Entregado + Aprobada)', cls:''},
    {icon:'🧾', value:fmt(TEtot.sept_admin||0), label:'G. Admin Sept.', cls:''},
