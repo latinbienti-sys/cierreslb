@@ -62,6 +62,16 @@
    "fecha": "2026-10-17"
   },
   {
+   "orden": "LB-ORDEN-04404",
+   "cliente": "KIMBERLY ALBIRENE ALBORNOZ DIAZ",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 72.65,
+   "costo": 47.0,
+   "admin": 11.55,
+   "status": "Entregado",
+   "fecha": "2026-10-17"
+  },
+  {
    "orden": "LB-ORDEN-04398",
    "cliente": "YANN MANUEL RIVAS VELAZQUEZ",
    "ejecutivo": "LADY DIANA TORO RIVERA",
@@ -551,20 +561,20 @@
    "unidades": 1.0
   },
   {
+   "nombre": "LADY DIANA TORO RIVERA",
+   "facturado": 1520.65,
+   "costo": 757.0,
+   "margen": 763.65,
+   "facturas": 8,
+   "unidades": 8.0
+  },
+  {
    "nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO",
    "facturado": 1489.29,
    "costo": 666.65,
    "margen": 822.64,
    "facturas": 1,
    "unidades": 1.0
-  },
-  {
-   "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 1448.0,
-   "costo": 710.0,
-   "margen": 738.0,
-   "facturas": 7,
-   "unidades": 7.0
   },
   {
    "nombre": "JUHENDIS ESTHER VALLADARES LOPEZ",
@@ -578,8 +588,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 45,
-   "monto": 9992.48
+   "cantidad": 46,
+   "monto": 10004.03
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -673,8 +683,8 @@
   },
   {
    "nombre": "[UPS003-00002] MARSRIVA en KP3 -10000mAh/ 18W",
-   "cantidad": 9,
-   "monto": 474.03
+   "cantidad": 10,
+   "monto": 526.7
   },
   {
    "nombre": "[AAC002-00006] Aiwa Home AWHACC12D01 Aire Acondicionado Split Essential 12K BTU.",
@@ -752,18 +762,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 36233.29,
- "total_facturas": 49,
- "total_clientes": 48,
- "total_productos": 26240.81,
- "total_admin": 9992.48,
+ "total_facturado": 36305.94,
+ "total_facturas": 50,
+ "total_clientes": 49,
+ "total_productos": 26301.91,
+ "total_admin": 10004.03,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 18700.68,
- "total_margen": 17532.61,
+ "total_costo": 18747.68,
+ "total_margen": 17558.26,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 36233.29,
- "count": 49,
+ "total": 36305.94,
+ "count": 50,
  "colaboradores": []
 }

@@ -5,6 +5,7 @@ Regenera, para el mes actual (America/Caracas):
   - const MES        (pestana "Mes en curso")        -> update_mes.py
   - const TECNO_OCT  (Cartera/Tecnologia, facturacion) -> update_tecnologia.py
   - const CATS_OCT   (Categorias)                    -> update_categorias.py
+  - DATA.tendencia   (Dash Facturacion)              -> update_tendencia.py
 y, si hubo cambios, hace commit + push a origin/main.
 
 SOLO LECTURA en Odoo. Pensado para ejecutarse desde el Programador de tareas.
@@ -42,6 +43,7 @@ def main():
     ok &= run("update_mes.py")
     ok &= run("update_tecnologia.py")
     ok &= run("update_categorias.py")
+    ok &= run("update_tendencia.py")
     if not ok:
         log("Actualizacion Odoo incompleta; no se hace commit.")
         return 1
