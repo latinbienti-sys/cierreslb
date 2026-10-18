@@ -18,6 +18,11 @@
     <StartWhenAvailable>true</StartWhenAvailable>
     <Enabled>true</Enabled>
     <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <IdleSettings>
+      <StopOnIdleEnd>false</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
   </Settings>
   <Triggers>
     <TimeTrigger>
