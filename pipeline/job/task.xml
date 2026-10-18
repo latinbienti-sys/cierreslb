@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.3" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>Actualiza el tablero Cierre LB (mes en curso: Mes, Cartera/Tecnologia, Categorias) cada hora desde el ERP.</Description>
+    <URI>\CierreLB Dashboard Horario</URI>
+  </RegistrationInfo>
+  <Principals>
+    <Principal id="Author">
+      <UserId>S-1-5-21-2291795146-3919178899-2471247066-1004</UserId>
+      <LogonType>InteractiveToken</LogonType>
+    </Principal>
+  </Principals>
+  <Settings>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <Enabled>true</Enabled>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+  </Settings>
+  <Triggers>
+    <TimeTrigger>
+      <StartBoundary>2026-09-30T14:53:29-04:00</StartBoundary>
+      <Repetition>
+        <Interval>PT1H</Interval>
+        <StopAtDurationEnd>true</StopAtDurationEnd>
+      </Repetition>
+    </TimeTrigger>
+  </Triggers>
+  <Actions Context="Author">
+    <Exec>
+      <Command>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Command>
+      <Arguments>-NoProfile -ExecutionPolicy Bypass -File "C:\Users\yarleyc\cierre-dashboard\run_hourly.ps1"</Arguments>
+    </Exec>
+  </Actions>
+</Task>
