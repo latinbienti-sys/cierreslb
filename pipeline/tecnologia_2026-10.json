@@ -1,0 +1,554 @@
+{
+ "por_tecnologia": [
+  {
+   "t": "Computación",
+   "sf": 10,
+   "sc": 10,
+   "sm": 11395.13,
+   "sp": 8584.83,
+   "sk": 5757.0,
+   "sa": 2810.3,
+   "sg": 5638.13,
+   "se": [
+    {
+     "o": "LB-ORDEN-04401",
+     "c": "EDGAR ALEXANDER CERRADA ARAQUE",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-18",
+     "m": 1561.57,
+     "k": 699.0,
+     "a": 471.09
+    },
+    {
+     "o": "LB-ORDEN-04387",
+     "c": "NESTOR GREGORIO ORDOÑEZ URBINA",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-15",
+     "m": 1137.11,
+     "k": 509.0,
+     "a": 343.04
+    },
+    {
+     "o": "LB-ORDEN-04382",
+     "c": "MARIA DE LOS ANGELES ROJAS ZAMBRANO",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-14",
+     "m": 1035.96,
+     "k": 699.0,
+     "a": 0.0
+    },
+    {
+     "o": "LB-ORDEN-04320",
+     "c": "GLADIMAR MORA MOLINA",
+     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
+     "f": "2026-10-08",
+     "m": 1268.92,
+     "k": 699.0,
+     "a": 287.49
+    },
+    {
+     "o": "LB-ORDEN-04354",
+     "c": "DEISY DEL CARMEN BUSTAMANTE DUARTE",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-04",
+     "m": 1481.27,
+     "k": 719.0,
+     "a": 406.33
+    },
+    {
+     "o": "LB-ORDEN-04352",
+     "c": "CARLOS EDUARDO CARRERO PARRA",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-04",
+     "m": 1494.83,
+     "k": 779.0,
+     "a": 330.18
+    },
+    {
+     "o": "LB-ORDEN-04349",
+     "c": "YOSDAN RAFAEL HERRERA LEAL",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-03",
+     "m": 696.72,
+     "k": 338.0,
+     "a": 191.39
+    },
+    {
+     "o": "LB-ORDEN-04348",
+     "c": "RONALD JOSE RIVERO GOMEZ",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-02",
+     "m": 1440.07,
+     "k": 699.0,
+     "a": 395.03
+    },
+    {
+     "o": "LB-ORDEN-04343",
+     "c": "NEYLA ALEJANDRA RODRIGUEZ ROJAS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-02",
+     "m": 659.41,
+     "k": 308.0,
+     "a": 198.93
+    },
+    {
+     "o": "LB-ORDEN-04339",
+     "c": "JESUS ALEXANDER LOBO MONSALVE",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-01",
+     "m": 619.27,
+     "k": 308.0,
+     "a": 186.82
+    }
+   ]
+  },
+  {
+   "t": "Telefonos",
+   "sf": 11,
+   "sc": 11,
+   "sm": 8146.67,
+   "sp": 5972.82,
+   "sk": 4002.84,
+   "sa": 2173.85,
+   "sg": 4143.83,
+   "se": [
+    {
+     "o": "LB-ORDEN-04407",
+     "c": "ESTEFANY GLAYRE GUERRERO BENCOMO",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-17",
+     "m": 1012.73,
+     "k": 491.85,
+     "a": 246.41
+    },
+    {
+     "o": "LB-ORDEN-04397",
+     "c": "ADRIANA CAROLINA BAUTISTA ZAMBRANO",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-17",
+     "m": 873.69,
+     "k": 392.85,
+     "a": 261.82
+    },
+    {
+     "o": "LB-ORDEN-04399",
+     "c": "EDGAR HORACIO CERRADA VERGARA",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-16",
+     "m": 272.42,
+     "k": 157.85,
+     "a": 27.16
+    },
+    {
+     "o": "LB-ORDEN-04391",
+     "c": "HILMAR DANIELA MENDEZ ESCALONA",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-16",
+     "m": 583.27,
+     "k": 262.85,
+     "a": 174.21
+    },
+    {
+     "o": "LB-ORDEN-04392",
+     "c": "ERNESTO JOSUE FERNANDEZ VARGAS",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-15",
+     "m": 272.42,
+     "k": 157.85,
+     "a": 27.16
+    },
+    {
+     "o": "LB-ORDEN-04366",
+     "c": "LUIS ERNESTO ROSAS IRIARTE",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-08",
+     "m": 484.98,
+     "k": 218.85,
+     "a": 144.56
+    },
+    {
+     "o": "LB-ORDEN-04335",
+     "c": "YNIRIDA DEL VALLE CASTRO NADALES",
+     "e": "ELIO CHAMATE",
+     "f": "2026-10-05",
+     "m": 2149.33,
+     "k": 1069.0,
+     "a": 648.4
+    },
+    {
+     "o": "LB-ORDEN-04345",
+     "c": "YONNY YOSMAR MONSALVE MORENO",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-02",
+     "m": 872.14,
+     "k": 455.85,
+     "a": 191.36
+    },
+    {
+     "o": "LB-ORDEN-04342",
+     "c": "ZENAIDA MONCADA MORA",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-02",
+     "m": 886.48,
+     "k": 431.85,
+     "a": 241.58
+    },
+    {
+     "o": "LB-ORDEN-04341",
+     "c": "ESTEFANI PAOLA RANGEL ARAQUE",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-01",
+     "m": 436.56,
+     "k": 205.77,
+     "a": 129.76
+    },
+    {
+     "o": "LB-ORDEN-04314",
+     "c": "JAMES ALEXANDER CANO BRICEÑO",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-01",
+     "m": 302.65,
+     "k": 158.27,
+     "a": 81.43
+    }
+   ]
+  },
+  {
+   "t": "Motos",
+   "sf": 2,
+   "sc": 2,
+   "sm": 6389.25,
+   "sp": 3380.0,
+   "sk": 3380.0,
+   "sa": 3009.25,
+   "sg": 3009.25,
+   "se": [
+    {
+     "o": "LB-ORDEN-04371",
+     "c": "ADOLFO MORA NOGUERA",
+     "e": "CLAUDIA MILENA ZAPATA",
+     "f": "2026-10-13",
+     "m": 2986.69,
+     "k": 1580.0,
+     "a": 1406.69
+    },
+    {
+     "o": "LB-ORDEN-04370",
+     "c": "MAXIMILIAN ANTONI ESCORCIA ANDRADE",
+     "e": "YOHANA AUDREY LOPEZ",
+     "f": "2026-10-13",
+     "m": 3402.56,
+     "k": 1800.0,
+     "a": 1602.56
+    }
+   ]
+  },
+  {
+   "t": "Hogar",
+   "sf": 3,
+   "sc": 3,
+   "sm": 3832.29,
+   "sp": 3383.01,
+   "sk": 2231.65,
+   "sa": 449.28,
+   "sg": 1600.64,
+   "se": [
+    {
+     "o": "LB-ORDEN-04386",
+     "c": "HOTEL CABAÑAS TURISTICAS LOS LIRIOS C.A.",
+     "e": "MARIA ALEJANDRA RODRIGUEZ SOJO",
+     "f": "2026-10-16",
+     "m": 1489.29,
+     "k": 666.65,
+     "a": 449.28
+    },
+    {
+     "o": "LB-ORDEN-04373",
+     "c": "JULIO CESAR MORENO PUENTES",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-10",
+     "m": 78.0,
+     "k": 50.0,
+     "a": 0.0
+    },
+    {
+     "o": "LB-ORDEN-04355",
+     "c": "COLIBRI WOOD´S C.A",
+     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
+     "f": "2026-10-06",
+     "m": 2265.0,
+     "k": 1515.0,
+     "a": 0.0
+    }
+   ]
+  },
+  {
+   "t": "Accesorios",
+   "sf": 6,
+   "sc": 6,
+   "sm": 2006.07,
+   "sp": 1547.76,
+   "sk": 1053.0,
+   "sa": 458.31,
+   "sg": 953.07,
+   "se": [
+    {
+     "o": "LB-ORDEN-04408",
+     "c": "DANIEL JOSE RODRIGUEZ VALECILLOS",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-17",
+     "m": 109.46,
+     "k": 49.0,
+     "a": 33.02
+    },
+    {
+     "o": "LB-ORDEN-04388",
+     "c": "ROSELYN NAZARETH PEÑA DAVILA",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-15",
+     "m": 580.68,
+     "k": 290.0,
+     "a": 128.26
+    },
+    {
+     "o": "LB-ORDEN-04369",
+     "c": "REINA KARELIS MENDOZA BASTIDAS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-09",
+     "m": 123.3,
+     "k": 65.0,
+     "a": 21.9
+    },
+    {
+     "o": "LB-ORDEN-04305",
+     "c": "ANTONY DAVID LOPEZ BENCOMO",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-06",
+     "m": 561.08,
+     "k": 290.0,
+     "a": 153.91
+    },
+    {
+     "o": "LB-ORDEN-04351",
+     "c": "DANIEL JOSE RODRIGUEZ VALECILLOS",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-04",
+     "m": 125.44,
+     "k": 69.0,
+     "a": 22.28
+    },
+    {
+     "o": "LB-ORDEN-04340",
+     "c": "NELSON JESUS CHAVEZ VELAZCO",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-01",
+     "m": 506.11,
+     "k": 290.0,
+     "a": 98.94
+    }
+   ]
+  },
+  {
+   "t": "Televisores",
+   "sf": 2,
+   "sc": 2,
+   "sm": 828.81,
+   "sp": 578.78,
+   "sk": 371.0,
+   "sa": 250.03,
+   "sg": 457.81,
+   "se": [
+    {
+     "o": "LB-ORDEN-04409",
+     "c": "JOHAN ANTONIO MONTES PALMERA",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-19",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04393",
+     "c": "ASDRUBAL JESUS VELASQUEZ MENDEZ",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-16",
+     "m": 332.87,
+     "k": 149.0,
+     "a": 100.42
+    }
+   ]
+  },
+  {
+   "t": "Estacion de carga",
+   "sf": 9,
+   "sc": 9,
+   "sm": 623.81,
+   "sp": 549.9,
+   "sk": 423.0,
+   "sa": 73.91,
+   "sg": 200.81,
+   "se": [
+    {
+     "o": "LB-ORDEN-04405",
+     "c": "ANGELO ENRIQUE SALAS ZERPA",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-18",
+     "m": 78.42,
+     "k": 47.0,
+     "a": 17.32
+    },
+    {
+     "o": "LB-ORDEN-04398",
+     "c": "YANN MANUEL RIVAS VELAZQUEZ",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-17",
+     "m": 78.42,
+     "k": 47.0,
+     "a": 17.32
+    },
+    {
+     "o": "LB-ORDEN-04381",
+     "c": "YARLEY CAROLINA CARMONA HIDALGO",
+     "e": "JUHENDIS ESTHER VALLADARES LOPEZ",
+     "f": "2026-10-13",
+     "m": 70.34,
+     "k": 47.0,
+     "a": 9.24
+    },
+    {
+     "o": "LB-ORDEN-04376",
+     "c": "JOSE FROILAN MARQUINA BARRIOS",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-11",
+     "m": 61.1,
+     "k": 47.0,
+     "a": 0.0
+    },
+    {
+     "o": "LB-ORDEN-04375",
+     "c": "MARTINA DE LOS SANTOS RIVAS ALVARADO",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-11",
+     "m": 61.1,
+     "k": 47.0,
+     "a": 0.0
+    },
+    {
+     "o": "LB-ORDEN-04374",
+     "c": "JHEMIREET CRISTINA ERAZO RANGEL",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-11",
+     "m": 68.03,
+     "k": 47.0,
+     "a": 6.93
+    },
+    {
+     "o": "LB-ORDEN-04367",
+     "c": "NINOSKA JOSEFINA FEBRES DE SOSA",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-08",
+     "m": 68.03,
+     "k": 47.0,
+     "a": 6.93
+    },
+    {
+     "o": "LB-ORDEN-04356",
+     "c": "ANTHONY JOSUE REY QUINTERO",
+     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
+     "f": "2026-10-06",
+     "m": 70.34,
+     "k": 47.0,
+     "a": 9.24
+    },
+    {
+     "o": "LB-ORDEN-04357",
+     "c": "EXARIANNY YULIE MONTILLA ZAMBRANO",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-05",
+     "m": 68.03,
+     "k": 47.0,
+     "a": 6.93
+    }
+   ]
+  },
+  {
+   "t": "Otros",
+   "sf": 2,
+   "sc": 2,
+   "sm": 550.84,
+   "sp": 389.96,
+   "sk": 266.92,
+   "sa": 160.88,
+   "sg": 283.92,
+   "se": [
+    {
+     "o": "LB-ORDEN-04347",
+     "c": "JEAN CARLOS PUENTES GUILLEN",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-05",
+     "m": 357.37,
+     "k": 166.92,
+     "a": 107.81
+    },
+    {
+     "o": "LB-ORDEN-04336",
+     "c": "NILSE TRINIDAD SOSA UZCATEGUI",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-01",
+     "m": 193.47,
+     "k": 100.0,
+     "a": 53.07
+    }
+   ]
+  },
+  {
+   "t": "Refrigeración",
+   "sf": 1,
+   "sc": 1,
+   "sm": 490.27,
+   "sp": 342.37,
+   "sk": 229.0,
+   "sa": 147.9,
+   "sg": 261.27,
+   "se": [
+    {
+     "o": "LB-ORDEN-04350",
+     "c": "ORIANA TIBISAY TORRES DE ROJAS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-09",
+     "m": 490.27,
+     "k": 229.0,
+     "a": 147.9
+    }
+   ]
+  },
+  {
+   "t": "Tablets",
+   "sf": 1,
+   "sc": 1,
+   "sm": 261.28,
+   "sp": 235.26,
+   "sk": 168.27,
+   "sa": 26.02,
+   "sg": 93.01,
+   "se": [
+    {
+     "o": "LB-ORDEN-04331",
+     "c": "ANDRES CRISTOBAL GONCALVES VALDES",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-02",
+     "m": 261.28,
+     "k": 168.27,
+     "a": 26.02
+    }
+   ]
+  }
+ ],
+ "totales": {
+  "oct_facturas": 47,
+  "oct_facturado": 34524.42,
+  "oct_precio": 24964.69,
+  "oct_costo": 17882.68,
+  "oct_admin": 9559.73
+ }
+}
