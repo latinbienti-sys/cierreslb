@@ -51,7 +51,7 @@ def main():
         log("Sin cambios; nada que commitear.")
         return 0
 
-    git("add", "index.html", "pipeline")
+    git("add", "-A")
     ts = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
     c = git("commit", "-m", f"auto: actualizacion horaria {ts}")
     log((c.stdout or c.stderr).strip())

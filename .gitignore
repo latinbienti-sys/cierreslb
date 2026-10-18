@@ -1,3 +1,4 @@
 main_script.js
 __pycache__/
 *.pyc
+hourly.log
