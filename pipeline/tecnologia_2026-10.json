@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Computación",
-   "sf": 10,
-   "sc": 10,
-   "sm": 11395.13,
-   "sp": 8584.83,
-   "sk": 5757.0,
-   "sa": 2810.3,
-   "sg": 5638.13,
+   "sf": 11,
+   "sc": 11,
+   "sm": 12611.71,
+   "sp": 9503.7,
+   "sk": 6346.0,
+   "sa": 3108.01,
+   "sg": 6265.71,
    "se": [
+    {
+     "o": "LB-ORDEN-04411",
+     "c": "ANGY DEL CARMEN CORONA ROJAS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-18",
+     "m": 1216.58,
+     "k": 589.0,
+     "a": 297.71
+    },
     {
      "o": "LB-ORDEN-04401",
      "c": "EDGAR ALEXANDER CERRADA ARAQUE",
@@ -349,6 +358,36 @@
    ]
   },
   {
+   "t": "Refrigeración",
+   "sf": 2,
+   "sc": 2,
+   "sm": 982.56,
+   "sp": 699.62,
+   "sk": 458.0,
+   "sa": 282.94,
+   "sg": 524.56,
+   "se": [
+    {
+     "o": "LB-ORDEN-04372",
+     "c": "SILVIA ANALI HERNANDEZ PEÑA",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-16",
+     "m": 492.29,
+     "k": 229.0,
+     "a": 135.04
+    },
+    {
+     "o": "LB-ORDEN-04350",
+     "c": "ORIANA TIBISAY TORRES DE ROJAS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-09",
+     "m": 490.27,
+     "k": 229.0,
+     "a": 147.9
+    }
+   ]
+  },
+  {
    "t": "Televisores",
    "sf": 2,
    "sc": 2,
@@ -502,27 +541,6 @@
    ]
   },
   {
-   "t": "Refrigeración",
-   "sf": 1,
-   "sc": 1,
-   "sm": 490.27,
-   "sp": 342.37,
-   "sk": 229.0,
-   "sa": 147.9,
-   "sg": 261.27,
-   "se": [
-    {
-     "o": "LB-ORDEN-04350",
-     "c": "ORIANA TIBISAY TORRES DE ROJAS",
-     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
-     "f": "2026-10-09",
-     "m": 490.27,
-     "k": 229.0,
-     "a": 147.9
-    }
-   ]
-  },
-  {
    "t": "Tablets",
    "sf": 1,
    "sc": 1,
@@ -545,10 +563,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 47,
-  "oct_facturado": 34524.42,
-  "oct_precio": 24964.69,
-  "oct_costo": 17882.68,
-  "oct_admin": 9559.73
+  "oct_facturas": 49,
+  "oct_facturado": 36233.29,
+  "oct_precio": 26240.81,
+  "oct_costo": 18700.68,
+  "oct_admin": 9992.48
  }
 }

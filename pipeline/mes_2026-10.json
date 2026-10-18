@@ -12,6 +12,16 @@
    "fecha": "2026-10-19"
   },
   {
+   "orden": "LB-ORDEN-04411",
+   "cliente": "ANGY DEL CARMEN CORONA ROJAS",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 1216.58,
+   "costo": 589.0,
+   "admin": 297.71,
+   "status": "Entregado",
+   "fecha": "2026-10-18"
+  },
+  {
    "orden": "LB-ORDEN-04401",
    "cliente": "EDGAR ALEXANDER CERRADA ARAQUE",
    "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
@@ -108,6 +118,16 @@
    "monto": 1489.29,
    "costo": 666.65,
    "admin": 449.28,
+   "status": "Entregado",
+   "fecha": "2026-10-16"
+  },
+  {
+   "orden": "LB-ORDEN-04372",
+   "cliente": "SILVIA ANALI HERNANDEZ PEÑA",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 492.29,
+   "costo": 229.0,
+   "admin": 135.04,
    "status": "Entregado",
    "fecha": "2026-10-16"
   },
@@ -475,20 +495,20 @@
  "facturas_dscto": [],
  "ejecutivos": [
   {
+   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": 7856.13,
+   "costo": 3791.09,
+   "margen": 4065.04,
+   "facturas": 14,
+   "unidades": 20.0
+  },
+  {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
    "facturado": 7662.37,
    "costo": 3950.62,
    "margen": 3711.75,
    "facturas": 12,
    "unidades": 18.0
-  },
-  {
-   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 6639.55,
-   "costo": 3202.09,
-   "margen": 3437.46,
-   "facturas": 13,
-   "unidades": 19.0
   },
   {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
@@ -540,11 +560,11 @@
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 955.71,
-   "costo": 481.0,
-   "margen": 474.71,
-   "facturas": 6,
-   "unidades": 6.0
+   "facturado": 1448.0,
+   "costo": 710.0,
+   "margen": 738.0,
+   "facturas": 7,
+   "unidades": 7.0
   },
   {
    "nombre": "JUHENDIS ESTHER VALLADARES LOPEZ",
@@ -558,8 +578,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 43,
-   "monto": 9559.73
+   "cantidad": 45,
+   "monto": 9992.48
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -612,6 +632,11 @@
    "monto": 896.56
   },
   {
+   "nombre": "[LDELL-15250] Laptop Dell LDC15250-5315BLK, Intel Core i5-1334U, 8GB, 512GB SSD, 15.6\" 2K Touchscreen, US, W11.",
+   "cantidad": 1,
+   "monto": 792.13
+  },
+  {
    "nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).",
    "cantidad": 2,
    "monto": 769.77
@@ -625,6 +650,11 @@
    "nombre": "[CEL000-01087] Samsung Galaxy A57 8GB/256GB",
    "cantidad": 1,
    "monto": 603.85
+  },
+  {
+   "nombre": "[EIH000-00002] Aiwa Congelador Horizontal, 141LT (5CuFt).",
+   "cantidad": 2,
+   "monto": 603.12
   },
   {
    "nombre": "[CEL01B-00242] Infinix Smart 20, 4GB/128GB",
@@ -665,11 +695,6 @@
    "nombre": "[TV016-00027] Aiwa QLED 43\"1080p  Smart TV Google TV.",
    "cantidad": 1,
    "monto": 298.56
-  },
-  {
-   "nombre": "[EIH000-00002] Aiwa Congelador Horizontal, 141LT (5CuFt).",
-   "cantidad": 1,
-   "monto": 295.15
   },
   {
    "nombre": "CAUCHO 185/60R14 APLUS",
@@ -727,18 +752,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 34524.42,
- "total_facturas": 47,
- "total_clientes": 46,
- "total_productos": 24964.69,
- "total_admin": 9559.73,
+ "total_facturado": 36233.29,
+ "total_facturas": 49,
+ "total_clientes": 48,
+ "total_productos": 26240.81,
+ "total_admin": 9992.48,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 17882.68,
- "total_margen": 16641.74,
+ "total_costo": 18700.68,
+ "total_margen": 17532.61,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 34524.42,
- "count": 47,
+ "total": 36233.29,
+ "count": 49,
  "colaboradores": []
 }
