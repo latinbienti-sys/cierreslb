@@ -2,6 +2,16 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04413",
+   "cliente": "COLIBRI WOOD´S C.A",
+   "ejecutivo": "OSMARA G. SOTO. GOMEZ",
+   "monto": 2090.48,
+   "costo": 1340.0,
+   "admin": 0.0,
+   "status": "Presupuesto",
+   "fecha": "2026-10-20"
+  },
+  {
    "orden": "LB-ORDEN-04409",
    "cliente": "JOHAN ANTONIO MONTES PALMERA",
    "ejecutivo": "LADY DIANA TORO RIVERA",
@@ -561,6 +571,14 @@
    "unidades": 1.0
   },
   {
+   "nombre": "OSMARA G. SOTO. GOMEZ",
+   "facturado": 2090.48,
+   "costo": 1340.0,
+   "margen": 750.48,
+   "facturas": 1,
+   "unidades": 2.0
+  },
+  {
    "nombre": "LADY DIANA TORO RIVERA",
    "facturado": 1520.65,
    "costo": 757.0,
@@ -595,6 +613,11 @@
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
    "cantidad": 4,
    "monto": 3580.1
+  },
+  {
+   "nombre": "Laptop Compaq QL15R5BM16256 – AMD Ryzen 5 7430U / 16 GB / 256 GB SSD / 15.6” / W11",
+   "cantidad": 2,
+   "monto": 1802.14
   },
   {
    "nombre": "Motocicleta Bel TT 150",
@@ -762,18 +785,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 36305.94,
- "total_facturas": 50,
+ "total_facturado": 38396.42,
+ "total_facturas": 51,
  "total_clientes": 49,
- "total_productos": 26301.91,
+ "total_productos": 28392.39,
  "total_admin": 10004.03,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 18747.68,
- "total_margen": 17558.26,
+ "total_costo": 20087.68,
+ "total_margen": 18308.74,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 36305.94,
- "count": 50,
+ "total": 38396.42,
+ "count": 51,
  "colaboradores": []
 }

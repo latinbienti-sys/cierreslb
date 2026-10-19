@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Computación",
-   "sf": 11,
-   "sc": 11,
-   "sm": 12611.71,
-   "sp": 9503.7,
-   "sk": 6346.0,
+   "sf": 12,
+   "sc": 12,
+   "sm": 14702.19,
+   "sp": 11594.18,
+   "sk": 7686.0,
    "sa": 3108.01,
-   "sg": 6265.71,
+   "sg": 7016.19,
    "se": [
+    {
+     "o": "LB-ORDEN-04413",
+     "c": "COLIBRI WOOD´S C.A",
+     "e": "OSMARA G. SOTO. GOMEZ",
+     "f": "2026-10-20",
+     "m": 2090.48,
+     "k": 1340.0,
+     "a": 0.0
+    },
     {
      "o": "LB-ORDEN-04411",
      "c": "ANGY DEL CARMEN CORONA ROJAS",
@@ -572,10 +581,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 50,
-  "oct_facturado": 36305.94,
-  "oct_precio": 26301.91,
-  "oct_costo": 18747.68,
+  "oct_facturas": 51,
+  "oct_facturado": 38396.42,
+  "oct_precio": 28392.39,
+  "oct_costo": 20087.68,
   "oct_admin": 10004.03
  }
 }
