@@ -2,13 +2,13 @@
  "por_tecnologia": [
   {
    "t": "Computación",
-   "sf": 12,
-   "sc": 12,
-   "sm": 14702.19,
-   "sp": 11594.18,
-   "sk": 7686.0,
-   "sa": 3108.01,
-   "sg": 7016.19,
+   "sf": 13,
+   "sc": 13,
+   "sm": 16018.01,
+   "sp": 12513.05,
+   "sk": 8275.0,
+   "sa": 3504.96,
+   "sg": 7743.01,
    "se": [
     {
      "o": "LB-ORDEN-04413",
@@ -18,6 +18,15 @@
      "m": 2090.48,
      "k": 1340.0,
      "a": 0.0
+    },
+    {
+     "o": "LB-ORDEN-04410",
+     "c": "ALEJANDRA YOSELINE ZAMBRANO DIAZ",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-19",
+     "m": 1315.82,
+     "k": 589.0,
+     "a": 396.95
     },
     {
      "o": "LB-ORDEN-04411",
@@ -122,13 +131,13 @@
   },
   {
    "t": "Telefonos",
-   "sf": 12,
-   "sc": 12,
-   "sm": 10063.98,
-   "sp": 7890.13,
-   "sk": 5231.84,
-   "sa": 2173.85,
-   "sg": 4832.14,
+   "sf": 13,
+   "sc": 13,
+   "sm": 10758.96,
+   "sp": 8377.2,
+   "sk": 5544.69,
+   "sa": 2381.76,
+   "sg": 5214.27,
    "se": [
     {
      "o": "LB-ORDEN-04414",
@@ -138,6 +147,15 @@
      "m": 1917.31,
      "k": 1229.0,
      "a": 0.0
+    },
+    {
+     "o": "LB-ORDEN-04417",
+     "c": "DEICY CAROLINA MEZA",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-19",
+     "m": 694.98,
+     "k": 312.85,
+     "a": 207.91
     },
     {
      "o": "LB-ORDEN-04407",
@@ -376,6 +394,45 @@
    ]
   },
   {
+   "t": "Televisores",
+   "sf": 3,
+   "sc": 3,
+   "sm": 1764.85,
+   "sp": 1232.44,
+   "sk": 790.0,
+   "sa": 532.41,
+   "sg": 974.85,
+   "se": [
+    {
+     "o": "LB-ORDEN-04416",
+     "c": "YONATHAN RUBEN SULBARAN RIVAS",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-20",
+     "m": 936.04,
+     "k": 419.0,
+     "a": 282.38
+    },
+    {
+     "o": "LB-ORDEN-04409",
+     "c": "JOHAN ANTONIO MONTES PALMERA",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-19",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04393",
+     "c": "ASDRUBAL JESUS VELASQUEZ MENDEZ",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-16",
+     "m": 332.87,
+     "k": 149.0,
+     "a": 100.42
+    }
+   ]
+  },
+  {
    "t": "Refrigeración",
    "sf": 2,
    "sc": 2,
@@ -402,36 +459,6 @@
      "m": 490.27,
      "k": 229.0,
      "a": 147.9
-    }
-   ]
-  },
-  {
-   "t": "Televisores",
-   "sf": 2,
-   "sc": 2,
-   "sm": 828.81,
-   "sp": 578.78,
-   "sk": 371.0,
-   "sa": 250.03,
-   "sg": 457.81,
-   "se": [
-    {
-     "o": "LB-ORDEN-04409",
-     "c": "JOHAN ANTONIO MONTES PALMERA",
-     "e": "LADY DIANA TORO RIVERA",
-     "f": "2026-10-19",
-     "m": 495.94,
-     "k": 222.0,
-     "a": 149.61
-    },
-    {
-     "o": "LB-ORDEN-04393",
-     "c": "ASDRUBAL JESUS VELASQUEZ MENDEZ",
-     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
-     "f": "2026-10-16",
-     "m": 332.87,
-     "k": 149.0,
-     "a": 100.42
     }
    ]
   },
@@ -590,10 +617,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 52,
-  "oct_facturado": 40313.73,
-  "oct_precio": 30309.7,
-  "oct_costo": 21316.68,
-  "oct_admin": 10004.03
+  "oct_facturas": 55,
+  "oct_facturado": 43260.57,
+  "oct_precio": 32369.3,
+  "oct_costo": 22637.53,
+  "oct_admin": 10891.27
  }
 }

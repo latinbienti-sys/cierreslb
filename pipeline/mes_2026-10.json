@@ -2,6 +2,16 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04416",
+   "cliente": "YONATHAN RUBEN SULBARAN RIVAS",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 936.04,
+   "costo": 419.0,
+   "admin": 282.38,
+   "status": "Entregado",
+   "fecha": "2026-10-20"
+  },
+  {
    "orden": "LB-ORDEN-04414",
    "cliente": "COLIBRI WOOD´S C.A",
    "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ",
@@ -20,6 +30,26 @@
    "admin": 0.0,
    "status": "Congelado (Entregado)",
    "fecha": "2026-10-20"
+  },
+  {
+   "orden": "LB-ORDEN-04417",
+   "cliente": "DEICY CAROLINA MEZA",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 694.98,
+   "costo": 312.85,
+   "admin": 207.91,
+   "status": "Entregado",
+   "fecha": "2026-10-19"
+  },
+  {
+   "orden": "LB-ORDEN-04410",
+   "cliente": "ALEJANDRA YOSELINE ZAMBRANO DIAZ",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 1315.82,
+   "costo": 589.0,
+   "admin": 396.95,
+   "status": "Entregado",
+   "fecha": "2026-10-19"
   },
   {
    "orden": "LB-ORDEN-04409",
@@ -525,20 +555,20 @@
  "facturas_dscto": [],
  "ejecutivos": [
   {
-   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 7856.13,
-   "costo": 3791.09,
-   "margen": 4065.04,
-   "facturas": 14,
-   "unidades": 20.0
+   "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "facturado": 8978.19,
+   "costo": 4539.62,
+   "margen": 4438.57,
+   "facturas": 13,
+   "unidades": 19.0
   },
   {
-   "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 7662.37,
-   "costo": 3950.62,
-   "margen": 3711.75,
-   "facturas": 12,
-   "unidades": 18.0
+   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": 8551.11,
+   "costo": 4103.94,
+   "margen": 4447.17,
+   "facturas": 15,
+   "unidades": 22.0
   },
   {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
@@ -573,6 +603,14 @@
    "unidades": 1.0
   },
   {
+   "nombre": "LADY DIANA TORO RIVERA",
+   "facturado": 2456.69,
+   "costo": 1176.0,
+   "margen": 1280.69,
+   "facturas": 9,
+   "unidades": 9.0
+  },
+  {
    "nombre": "ELIO CHAMATE",
    "facturado": 2149.33,
    "costo": 1069.0,
@@ -587,14 +625,6 @@
    "margen": 750.48,
    "facturas": 1,
    "unidades": 2.0
-  },
-  {
-   "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 1520.65,
-   "costo": 757.0,
-   "margen": 763.65,
-   "facturas": 8,
-   "unidades": 8.0
   },
   {
    "nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO",
@@ -616,8 +646,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 46,
-   "monto": 10004.03
+   "cantidad": 49,
+   "monto": 10891.27
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -633,6 +663,11 @@
    "nombre": "[CEL000-01067] Samsung Galaxy S26 Ultra 12GB/512GB",
    "cantidad": 1,
    "monto": 1652.85
+  },
+  {
+   "nombre": "[LDELL-15250] Laptop Dell LDC15250-5315BLK, Intel Core i5-1334U, 8GB, 512GB SSD, 15.6\" 2K Touchscreen, US, W11.",
+   "cantidad": 2,
+   "monto": 1584.26
   },
   {
    "nombre": "Motocicleta Bel TT 150",
@@ -680,11 +715,6 @@
    "monto": 896.56
   },
   {
-   "nombre": "[LDELL-15250] Laptop Dell LDC15250-5315BLK, Intel Core i5-1334U, 8GB, 512GB SSD, 15.6\" 2K Touchscreen, US, W11.",
-   "cantidad": 1,
-   "monto": 792.13
-  },
-  {
    "nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).",
    "cantidad": 2,
    "monto": 769.77
@@ -710,6 +740,11 @@
    "monto": 600.62
   },
   {
+   "nombre": "[TV016-00032] Aiwa 55\" QLED UHD 4K AW55B4Q Google TV.",
+   "cantidad": 1,
+   "monto": 563.5
+  },
+  {
    "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
    "cantidad": 2,
    "monto": 548.85
@@ -733,6 +768,11 @@
    "nombre": "Laptop Lenovo IdeaPad Slim 3 15ITN9 83L7002KUS – Intel N150 / 8GB / 128GB UFS / 15.6” / US / W11",
    "cantidad": 1,
    "monto": 435.63
+  },
+  {
+   "nombre": "[CEL007-00115] Honor X7D 8GB/256GB",
+   "cantidad": 1,
+   "monto": 415.57
   },
   {
    "nombre": "Infinix Hot 70 (X6895) 8GB/256GB",
@@ -791,8 +831,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 11,
-   "monto": 55.63
+   "cantidad": 12,
+   "monto": 60.64
   },
   {
    "nombre": "[0001-7] Base para Televisor Aiwa Soporte Fijo Pared 32/70 pulgadas",
@@ -800,18 +840,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 40313.73,
- "total_facturas": 52,
- "total_clientes": 49,
- "total_productos": 30309.7,
- "total_admin": 10004.03,
+ "total_facturado": 43260.57,
+ "total_facturas": 55,
+ "total_clientes": 52,
+ "total_productos": 32369.3,
+ "total_admin": 10891.27,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 21316.68,
- "total_margen": 18997.05,
+ "total_costo": 22637.53,
+ "total_margen": 20623.04,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 40313.73,
- "count": 52,
+ "total": 43260.57,
+ "count": 55,
  "colaboradores": []
 }
