@@ -122,14 +122,23 @@
   },
   {
    "t": "Telefonos",
-   "sf": 11,
-   "sc": 11,
-   "sm": 8146.67,
-   "sp": 5972.82,
-   "sk": 4002.84,
+   "sf": 12,
+   "sc": 12,
+   "sm": 10063.98,
+   "sp": 7890.13,
+   "sk": 5231.84,
    "sa": 2173.85,
-   "sg": 4143.83,
+   "sg": 4832.14,
    "se": [
+    {
+     "o": "LB-ORDEN-04414",
+     "c": "COLIBRI WOOD´S C.A",
+     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
+     "f": "2026-10-20",
+     "m": 1917.31,
+     "k": 1229.0,
+     "a": 0.0
+    },
     {
      "o": "LB-ORDEN-04407",
      "c": "ESTEFANY GLAYRE GUERRERO BENCOMO",
@@ -581,10 +590,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 51,
-  "oct_facturado": 38396.42,
-  "oct_precio": 28392.39,
-  "oct_costo": 20087.68,
+  "oct_facturas": 52,
+  "oct_facturado": 40313.73,
+  "oct_precio": 30309.7,
+  "oct_costo": 21316.68,
   "oct_admin": 10004.03
  }
 }

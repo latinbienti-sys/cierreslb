@@ -2,13 +2,23 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04414",
+   "cliente": "COLIBRI WOOD´S C.A",
+   "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ",
+   "monto": 1917.31,
+   "costo": 1229.0,
+   "admin": 0.0,
+   "status": "Congelado (Entregado)",
+   "fecha": "2026-10-20"
+  },
+  {
    "orden": "LB-ORDEN-04413",
    "cliente": "COLIBRI WOOD´S C.A",
    "ejecutivo": "OSMARA G. SOTO. GOMEZ",
    "monto": 2090.48,
    "costo": 1340.0,
    "admin": 0.0,
-   "status": "Presupuesto",
+   "status": "Congelado (Entregado)",
    "fecha": "2026-10-20"
   },
   {
@@ -540,11 +550,11 @@
   },
   {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
-   "facturado": 3604.26,
-   "costo": 2261.0,
-   "margen": 1343.26,
-   "facturas": 3,
-   "unidades": 5.0
+   "facturado": 5521.57,
+   "costo": 3490.0,
+   "margen": 2031.57,
+   "facturas": 4,
+   "unidades": 6.0
   },
   {
    "nombre": "YOHANA AUDREY LOPEZ",
@@ -618,6 +628,11 @@
    "nombre": "Laptop Compaq QL15R5BM16256 – AMD Ryzen 5 7430U / 16 GB / 256 GB SSD / 15.6” / W11",
    "cantidad": 2,
    "monto": 1802.14
+  },
+  {
+   "nombre": "[CEL000-01067] Samsung Galaxy S26 Ultra 12GB/512GB",
+   "cantidad": 1,
+   "monto": 1652.85
   },
   {
    "nombre": "Motocicleta Bel TT 150",
@@ -785,18 +800,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 38396.42,
- "total_facturas": 51,
+ "total_facturado": 40313.73,
+ "total_facturas": 52,
  "total_clientes": 49,
- "total_productos": 28392.39,
+ "total_productos": 30309.7,
  "total_admin": 10004.03,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 20087.68,
- "total_margen": 18308.74,
+ "total_costo": 21316.68,
+ "total_margen": 18997.05,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 38396.42,
- "count": 51,
+ "total": 40313.73,
+ "count": 52,
  "colaboradores": []
 }
