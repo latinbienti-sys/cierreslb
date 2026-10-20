@@ -2,6 +2,16 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04418",
+   "cliente": "QUIAVANA DEL SOL FLORES VILLASMIL",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 2464.31,
+   "costo": 1104.85,
+   "admin": 741.67,
+   "status": "Entregado",
+   "fecha": "2026-10-20"
+  },
+  {
    "orden": "LB-ORDEN-04416",
    "cliente": "YONATHAN RUBEN SULBARAN RIVAS",
    "ejecutivo": "LADY DIANA TORO RIVERA",
@@ -30,6 +40,16 @@
    "admin": 0.0,
    "status": "Congelado (Entregado)",
    "fecha": "2026-10-20"
+  },
+  {
+   "orden": "LB-ORDEN-04419",
+   "cliente": "JENNYFER JORDANA CASANOVA RUIZ",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 873.69,
+   "costo": 392.85,
+   "admin": 261.82,
+   "status": "Entregado",
+   "fecha": "2026-10-19"
   },
   {
    "orden": "LB-ORDEN-04417",
@@ -555,20 +575,20 @@
  "facturas_dscto": [],
  "ejecutivos": [
   {
-   "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 8978.19,
-   "costo": 4539.62,
-   "margen": 4438.57,
-   "facturas": 13,
-   "unidades": 19.0
+   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": 11015.42,
+   "costo": 5208.79,
+   "margen": 5806.63,
+   "facturas": 16,
+   "unidades": 25.0
   },
   {
-   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 8551.11,
-   "costo": 4103.94,
-   "margen": 4447.17,
-   "facturas": 15,
-   "unidades": 22.0
+   "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "facturado": 9851.88,
+   "costo": 4932.47,
+   "margen": 4919.41,
+   "facturas": 14,
+   "unidades": 21.0
   },
   {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
@@ -646,8 +666,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 49,
-   "monto": 10891.27
+   "cantidad": 51,
+   "monto": 11894.76
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -715,6 +735,11 @@
    "monto": 896.56
   },
   {
+   "nombre": "Laptop Lenovo V15 G4 IRU 83A100PBUS Intel Core i3-1315U, 16GB, 512GB SSD, 15.6\", US, W11",
+   "cantidad": 1,
+   "monto": 859.38
+  },
+  {
    "nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).",
    "cantidad": 2,
    "monto": 769.77
@@ -723,6 +748,11 @@
    "nombre": "Laptop Lenovo IdeaPad Slim 3i 82XB00C2US, Intel Core i3-N305, 8GB, 128GB UFS, 15.6\", US, W11.",
    "cantidad": 1,
    "monto": 684.54
+  },
+  {
+   "nombre": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB",
+   "cantidad": 1,
+   "monto": 621.34
   },
   {
    "nombre": "[CEL000-01087] Samsung Galaxy A57 8GB/256GB",
@@ -758,6 +788,11 @@
    "nombre": "[UPS003-00002] MARSRIVA en KP3 -10000mAh/ 18W",
    "cantidad": 10,
    "monto": 526.7
+  },
+  {
+   "nombre": "[CEL01A-00229] Tecno Camon 50 Pro – 6.78” 8GB/256GB",
+   "cantidad": 1,
+   "monto": 523.16
   },
   {
    "nombre": "[AAC002-00006] Aiwa Home AWHACC12D01 Aire Acondicionado Split Essential 12K BTU.",
@@ -820,6 +855,11 @@
    "monto": 87.41
   },
   {
+   "nombre": "[0001-56] Seguro de Reserva de Dominio",
+   "cantidad": 14,
+   "monto": 70.66
+  },
+  {
    "nombre": "Tostador KitchenAid Clasico 2 Rebanadas",
    "cantidad": 1,
    "monto": 67.24
@@ -830,28 +870,23 @@
    "monto": 65.9
   },
   {
-   "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 12,
-   "monto": 60.64
-  },
-  {
    "nombre": "[0001-7] Base para Televisor Aiwa Soporte Fijo Pared 32/70 pulgadas",
    "cantidad": 0,
    "monto": 0.0
   }
  ],
- "total_facturado": 43260.57,
- "total_facturas": 55,
- "total_clientes": 52,
- "total_productos": 32369.3,
- "total_admin": 10891.27,
+ "total_facturado": 46598.57,
+ "total_facturas": 57,
+ "total_clientes": 54,
+ "total_productos": 34703.81,
+ "total_admin": 11894.76,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 22637.53,
- "total_margen": 20623.04,
+ "total_costo": 24135.23,
+ "total_margen": 22463.34,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 43260.57,
- "count": 55,
+ "total": 46598.57,
+ "count": 57,
  "colaboradores": []
 }

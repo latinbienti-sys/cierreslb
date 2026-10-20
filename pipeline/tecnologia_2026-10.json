@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Computación",
-   "sf": 13,
-   "sc": 13,
-   "sm": 16018.01,
-   "sp": 12513.05,
-   "sk": 8275.0,
-   "sa": 3504.96,
-   "sg": 7743.01,
+   "sf": 14,
+   "sc": 14,
+   "sm": 18482.32,
+   "sp": 14235.69,
+   "sk": 9379.85,
+   "sa": 4246.63,
+   "sg": 9102.47,
    "se": [
+    {
+     "o": "LB-ORDEN-04418",
+     "c": "QUIAVANA DEL SOL FLORES VILLASMIL",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-20",
+     "m": 2464.31,
+     "k": 1104.85,
+     "a": 741.67
+    },
     {
      "o": "LB-ORDEN-04413",
      "c": "COLIBRI WOOD´S C.A",
@@ -131,13 +140,13 @@
   },
   {
    "t": "Telefonos",
-   "sf": 13,
-   "sc": 13,
-   "sm": 10758.96,
-   "sp": 8377.2,
-   "sk": 5544.69,
-   "sa": 2381.76,
-   "sg": 5214.27,
+   "sf": 14,
+   "sc": 14,
+   "sm": 11632.65,
+   "sp": 8989.07,
+   "sk": 5937.54,
+   "sa": 2643.58,
+   "sg": 5695.11,
    "se": [
     {
      "o": "LB-ORDEN-04414",
@@ -147,6 +156,15 @@
      "m": 1917.31,
      "k": 1229.0,
      "a": 0.0
+    },
+    {
+     "o": "LB-ORDEN-04419",
+     "c": "JENNYFER JORDANA CASANOVA RUIZ",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-19",
+     "m": 873.69,
+     "k": 392.85,
+     "a": 261.82
     },
     {
      "o": "LB-ORDEN-04417",
@@ -617,10 +635,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 55,
-  "oct_facturado": 43260.57,
-  "oct_precio": 32369.3,
-  "oct_costo": 22637.53,
-  "oct_admin": 10891.27
+  "oct_facturas": 57,
+  "oct_facturado": 46598.57,
+  "oct_precio": 34703.81,
+  "oct_costo": 24135.23,
+  "oct_admin": 11894.76
  }
 }
