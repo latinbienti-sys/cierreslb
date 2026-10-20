@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Computación",
-   "sf": 14,
-   "sc": 14,
-   "sm": 18482.32,
-   "sp": 14235.69,
-   "sk": 9379.85,
-   "sa": 4246.63,
-   "sg": 9102.47,
+   "sf": 15,
+   "sc": 15,
+   "sm": 19001.82,
+   "sp": 14634.57,
+   "sk": 9686.67,
+   "sa": 4367.25,
+   "sg": 9315.15,
    "se": [
+    {
+     "o": "LB-ORDEN-04422",
+     "c": "ALECNY HERNANDEZ JEREZ",
+     "e": "JUHENDIS ESTHER VALLADARES LOPEZ",
+     "f": "2026-10-21",
+     "m": 519.5,
+     "k": 306.82,
+     "a": 120.62
+    },
     {
      "o": "LB-ORDEN-04418",
      "c": "QUIAVANA DEL SOL FLORES VILLASMIL",
@@ -481,54 +490,24 @@
    ]
   },
   {
-   "t": "Otros",
-   "sf": 3,
-   "sc": 3,
-   "sm": 729.55,
-   "sp": 514.76,
-   "sk": 346.92,
-   "sa": 214.79,
-   "sg": 382.63,
-   "se": [
-    {
-     "o": "LB-ORDEN-04421",
-     "c": "EDUARDO RAMIREZ MORA",
-     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
-     "f": "2026-10-21",
-     "m": 178.71,
-     "k": 80.0,
-     "a": 53.91
-    },
-    {
-     "o": "LB-ORDEN-04347",
-     "c": "JEAN CARLOS PUENTES GUILLEN",
-     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-     "f": "2026-10-05",
-     "m": 357.37,
-     "k": 166.92,
-     "a": 107.81
-    },
-    {
-     "o": "LB-ORDEN-04336",
-     "c": "NILSE TRINIDAD SOSA UZCATEGUI",
-     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
-     "f": "2026-10-01",
-     "m": 193.47,
-     "k": 100.0,
-     "a": 53.07
-    }
-   ]
-  },
-  {
    "t": "Estacion de carga",
-   "sf": 10,
-   "sc": 10,
-   "sm": 696.46,
-   "sp": 611.0,
-   "sk": 470.0,
-   "sa": 85.46,
-   "sg": 226.46,
+   "sf": 11,
+   "sc": 11,
+   "sm": 765.65,
+   "sp": 672.1,
+   "sk": 517.0,
+   "sa": 93.55,
+   "sg": 248.65,
    "se": [
+    {
+     "o": "LB-ORDEN-04423",
+     "c": "JHONY OCTAVIANO PEÑA SANCHEZ",
+     "e": "JUHENDIS ESTHER VALLADARES LOPEZ",
+     "f": "2026-10-21",
+     "m": 69.19,
+     "k": 47.0,
+     "a": 8.09
+    },
     {
      "o": "LB-ORDEN-04405",
      "c": "ANGELO ENRIQUE SALAS ZERPA",
@@ -622,6 +601,45 @@
    ]
   },
   {
+   "t": "Otros",
+   "sf": 3,
+   "sc": 3,
+   "sm": 729.55,
+   "sp": 514.76,
+   "sk": 346.92,
+   "sa": 214.79,
+   "sg": 382.63,
+   "se": [
+    {
+     "o": "LB-ORDEN-04421",
+     "c": "EDUARDO RAMIREZ MORA",
+     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
+     "f": "2026-10-21",
+     "m": 178.71,
+     "k": 80.0,
+     "a": 53.91
+    },
+    {
+     "o": "LB-ORDEN-04347",
+     "c": "JEAN CARLOS PUENTES GUILLEN",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-05",
+     "m": 357.37,
+     "k": 166.92,
+     "a": 107.81
+    },
+    {
+     "o": "LB-ORDEN-04336",
+     "c": "NILSE TRINIDAD SOSA UZCATEGUI",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-01",
+     "m": 193.47,
+     "k": 100.0,
+     "a": 53.07
+    }
+   ]
+  },
+  {
    "t": "Tablets",
    "sf": 1,
    "sc": 1,
@@ -644,10 +662,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 58,
-  "oct_facturado": 46777.28,
-  "oct_precio": 34828.61,
-  "oct_costo": 24215.23,
-  "oct_admin": 11948.67
+  "oct_facturas": 60,
+  "oct_facturado": 47365.97,
+  "oct_precio": 35288.59,
+  "oct_costo": 24569.05,
+  "oct_admin": 12077.38
  }
 }

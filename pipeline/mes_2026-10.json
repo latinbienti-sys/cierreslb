@@ -2,6 +2,26 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04423",
+   "cliente": "JHONY OCTAVIANO PEÑA SANCHEZ",
+   "ejecutivo": "JUHENDIS ESTHER VALLADARES LOPEZ",
+   "monto": 69.19,
+   "costo": 47.0,
+   "admin": 8.09,
+   "status": "Entregado",
+   "fecha": "2026-10-21"
+  },
+  {
+   "orden": "LB-ORDEN-04422",
+   "cliente": "ALECNY HERNANDEZ JEREZ",
+   "ejecutivo": "JUHENDIS ESTHER VALLADARES LOPEZ",
+   "monto": 519.5,
+   "costo": 306.82,
+   "admin": 120.62,
+   "status": "Entregado",
+   "fecha": "2026-10-21"
+  },
+  {
    "orden": "LB-ORDEN-04421",
    "cliente": "EDUARDO RAMIREZ MORA",
    "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ",
@@ -666,18 +686,18 @@
   },
   {
    "nombre": "JUHENDIS ESTHER VALLADARES LOPEZ",
-   "facturado": 70.34,
-   "costo": 47.0,
-   "margen": 23.34,
-   "facturas": 1,
-   "unidades": 1.0
+   "facturado": 659.03,
+   "costo": 400.82,
+   "margen": 258.21,
+   "facturas": 3,
+   "unidades": 3.0
   }
  ],
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 52,
-   "monto": 11948.67
+   "cantidad": 54,
+   "monto": 12077.38
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -780,6 +800,11 @@
    "monto": 600.62
   },
   {
+   "nombre": "[UPS003-00002] MARSRIVA en KP3 -10000mAh/ 18W",
+   "cantidad": 11,
+   "monto": 579.37
+  },
+  {
    "nombre": "[TV016-00032] Aiwa 55\" QLED UHD 4K AW55B4Q Google TV.",
    "cantidad": 1,
    "monto": 563.5
@@ -793,11 +818,6 @@
    "nombre": "[CEL000-00970] Samsung Galaxy A56 5G 8GB/256GB",
    "cantidad": 1,
    "monto": 532.29
-  },
-  {
-   "nombre": "[UPS003-00002] MARSRIVA en KP3 -10000mAh/ 18W",
-   "cantidad": 10,
-   "monto": 526.7
   },
   {
    "nombre": "[CEL01A-00229] Tecno Camon 50 Pro – 6.78” 8GB/256GB",
@@ -823,6 +843,11 @@
    "nombre": "Infinix Hot 70 (X6895) 8GB/256GB",
    "cantidad": 1,
    "monto": 348.32
+  },
+  {
+   "nombre": "Impresora Epson Tinta Continua EcoTank L3350 (Multifuncional/Color).",
+   "cantidad": 1,
+   "monto": 343.86
   },
   {
    "nombre": "[TV016-00027] Aiwa QLED 43\"1080p  Smart TV Google TV.",
@@ -890,18 +915,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 46777.28,
- "total_facturas": 58,
- "total_clientes": 55,
- "total_productos": 34828.61,
- "total_admin": 11948.67,
+ "total_facturado": 47365.97,
+ "total_facturas": 60,
+ "total_clientes": 57,
+ "total_productos": 35288.59,
+ "total_admin": 12077.38,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 24215.23,
- "total_margen": 22562.05,
+ "total_costo": 24569.05,
+ "total_margen": 22796.92,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 46777.28,
- "count": 58,
+ "total": 47365.97,
+ "count": 60,
  "colaboradores": []
 }
