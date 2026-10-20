@@ -481,6 +481,45 @@
    ]
   },
   {
+   "t": "Otros",
+   "sf": 3,
+   "sc": 3,
+   "sm": 729.55,
+   "sp": 514.76,
+   "sk": 346.92,
+   "sa": 214.79,
+   "sg": 382.63,
+   "se": [
+    {
+     "o": "LB-ORDEN-04421",
+     "c": "EDUARDO RAMIREZ MORA",
+     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
+     "f": "2026-10-21",
+     "m": 178.71,
+     "k": 80.0,
+     "a": 53.91
+    },
+    {
+     "o": "LB-ORDEN-04347",
+     "c": "JEAN CARLOS PUENTES GUILLEN",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-05",
+     "m": 357.37,
+     "k": 166.92,
+     "a": 107.81
+    },
+    {
+     "o": "LB-ORDEN-04336",
+     "c": "NILSE TRINIDAD SOSA UZCATEGUI",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-01",
+     "m": 193.47,
+     "k": 100.0,
+     "a": 53.07
+    }
+   ]
+  },
+  {
    "t": "Estacion de carga",
    "sf": 10,
    "sc": 10,
@@ -583,36 +622,6 @@
    ]
   },
   {
-   "t": "Otros",
-   "sf": 2,
-   "sc": 2,
-   "sm": 550.84,
-   "sp": 389.96,
-   "sk": 266.92,
-   "sa": 160.88,
-   "sg": 283.92,
-   "se": [
-    {
-     "o": "LB-ORDEN-04347",
-     "c": "JEAN CARLOS PUENTES GUILLEN",
-     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-     "f": "2026-10-05",
-     "m": 357.37,
-     "k": 166.92,
-     "a": 107.81
-    },
-    {
-     "o": "LB-ORDEN-04336",
-     "c": "NILSE TRINIDAD SOSA UZCATEGUI",
-     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
-     "f": "2026-10-01",
-     "m": 193.47,
-     "k": 100.0,
-     "a": 53.07
-    }
-   ]
-  },
-  {
    "t": "Tablets",
    "sf": 1,
    "sc": 1,
@@ -635,10 +644,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 57,
-  "oct_facturado": 46598.57,
-  "oct_precio": 34703.81,
-  "oct_costo": 24135.23,
-  "oct_admin": 11894.76
+  "oct_facturas": 58,
+  "oct_facturado": 46777.28,
+  "oct_precio": 34828.61,
+  "oct_costo": 24215.23,
+  "oct_admin": 11948.67
  }
 }

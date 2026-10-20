@@ -2,6 +2,16 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04421",
+   "cliente": "EDUARDO RAMIREZ MORA",
+   "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ",
+   "monto": 178.71,
+   "costo": 80.0,
+   "admin": 53.91,
+   "status": "Presupuesto",
+   "fecha": "2026-10-21"
+  },
+  {
    "orden": "LB-ORDEN-04418",
    "cliente": "QUIAVANA DEL SOL FLORES VILLASMIL",
    "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -591,20 +601,20 @@
    "unidades": 21.0
   },
   {
+   "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
+   "facturado": 5700.28,
+   "costo": 3570.0,
+   "margen": 2130.28,
+   "facturas": 5,
+   "unidades": 7.0
+  },
+  {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
    "facturado": 5564.32,
    "costo": 2825.32,
    "margen": 2739.0,
    "facturas": 8,
    "unidades": 14.0
-  },
-  {
-   "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
-   "facturado": 5521.57,
-   "costo": 3490.0,
-   "margen": 2031.57,
-   "facturas": 4,
-   "unidades": 6.0
   },
   {
    "nombre": "YOHANA AUDREY LOPEZ",
@@ -666,8 +676,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 51,
-   "monto": 11894.76
+   "cantidad": 52,
+   "monto": 11948.67
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -845,6 +855,11 @@
    "monto": 121.03
   },
   {
+   "nombre": "Mini DC UPS Pro 20000 Olax mAh",
+   "cantidad": 1,
+   "monto": 107.59
+  },
+  {
    "nombre": "[AUD008-00011] Huawei Freebuds SE 3 T0016",
    "cantidad": 1,
    "monto": 88.93
@@ -875,18 +890,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 46598.57,
- "total_facturas": 57,
- "total_clientes": 54,
- "total_productos": 34703.81,
- "total_admin": 11894.76,
+ "total_facturado": 46777.28,
+ "total_facturas": 58,
+ "total_clientes": 55,
+ "total_productos": 34828.61,
+ "total_admin": 11948.67,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 24135.23,
- "total_margen": 22463.34,
+ "total_costo": 24215.23,
+ "total_margen": 22562.05,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 46598.57,
- "count": 57,
+ "total": 46777.28,
+ "count": 58,
  "colaboradores": []
 }
