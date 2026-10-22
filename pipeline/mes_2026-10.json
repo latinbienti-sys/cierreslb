@@ -52,6 +52,16 @@
    "fecha": "2026-10-20"
   },
   {
+   "orden": "LB-ORDEN-04406",
+   "cliente": "DANIEL ALFONSO BRICEÑO GARCIA",
+   "ejecutivo": "DANIEL CASTELLANOS",
+   "monto": 3402.56,
+   "costo": 1800.0,
+   "admin": 1602.56,
+   "status": "Entregado",
+   "fecha": "2026-10-20"
+  },
+  {
    "orden": "LB-ORDEN-04414",
    "cliente": "COLIBRI WOOD´S C.A",
    "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ",
@@ -637,6 +647,14 @@
    "unidades": 14.0
   },
   {
+   "nombre": "DANIEL CASTELLANOS",
+   "facturado": 3402.56,
+   "costo": 1800.0,
+   "margen": 1602.56,
+   "facturas": 1,
+   "unidades": 1.0
+  },
+  {
    "nombre": "YOHANA AUDREY LOPEZ",
    "facturado": 3402.56,
    "costo": 1800.0,
@@ -696,13 +714,18 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 54,
-   "monto": 12077.38
+   "cantidad": 55,
+   "monto": 13679.94
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
    "cantidad": 4,
    "monto": 3580.1
+  },
+  {
+   "nombre": "Motocicleta Bel TT 150",
+   "cantidad": 2,
+   "monto": 3103.44
   },
   {
    "nombre": "Laptop Compaq QL15R5BM16256 – AMD Ryzen 5 7430U / 16 GB / 256 GB SSD / 15.6” / W11",
@@ -718,11 +741,6 @@
    "nombre": "[LDELL-15250] Laptop Dell LDC15250-5315BLK, Intel Core i5-1334U, 8GB, 512GB SSD, 15.6\" 2K Touchscreen, US, W11.",
    "cantidad": 2,
    "monto": 1584.26
-  },
-  {
-   "nombre": "Motocicleta Bel TT 150",
-   "cantidad": 1,
-   "monto": 1551.72
   },
   {
    "nombre": "[AAC002-00015] Aiwa Home AWHACC24DI03P Aire Acondicionado Split Efficient Inverter 24K BTU Wi-Fi.",
@@ -915,18 +933,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 47365.97,
- "total_facturas": 60,
- "total_clientes": 57,
- "total_productos": 35288.59,
- "total_admin": 12077.38,
+ "total_facturado": 50768.53,
+ "total_facturas": 61,
+ "total_clientes": 58,
+ "total_productos": 37088.59,
+ "total_admin": 13679.94,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 24569.05,
- "total_margen": 22796.92,
+ "total_costo": 26369.05,
+ "total_margen": 24399.48,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 47365.97,
- "count": 60,
+ "total": 50768.53,
+ "count": 61,
  "colaboradores": []
 }

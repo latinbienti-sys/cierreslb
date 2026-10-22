@@ -287,14 +287,23 @@
   },
   {
    "t": "Motos",
-   "sf": 2,
-   "sc": 2,
-   "sm": 6389.25,
-   "sp": 3380.0,
-   "sk": 3380.0,
-   "sa": 3009.25,
-   "sg": 3009.25,
+   "sf": 3,
+   "sc": 3,
+   "sm": 9791.81,
+   "sp": 5180.0,
+   "sk": 5180.0,
+   "sa": 4611.81,
+   "sg": 4611.81,
    "se": [
+    {
+     "o": "LB-ORDEN-04406",
+     "c": "DANIEL ALFONSO BRICEÑO GARCIA",
+     "e": "DANIEL CASTELLANOS",
+     "f": "2026-10-20",
+     "m": 3402.56,
+     "k": 1800.0,
+     "a": 1602.56
+    },
     {
      "o": "LB-ORDEN-04371",
      "c": "ADOLFO MORA NOGUERA",
@@ -662,10 +671,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 60,
-  "oct_facturado": 47365.97,
-  "oct_precio": 35288.59,
-  "oct_costo": 24569.05,
-  "oct_admin": 12077.38
+  "oct_facturas": 61,
+  "oct_facturado": 50768.53,
+  "oct_precio": 37088.59,
+  "oct_costo": 26369.05,
+  "oct_admin": 13679.94
  }
 }
