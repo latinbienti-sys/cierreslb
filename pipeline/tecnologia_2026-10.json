@@ -149,13 +149,13 @@
   },
   {
    "t": "Telefonos",
-   "sf": 14,
-   "sc": 14,
-   "sm": 11632.65,
-   "sp": 8989.07,
-   "sk": 5937.54,
-   "sa": 2643.58,
-   "sg": 5695.11,
+   "sf": 15,
+   "sc": 15,
+   "sm": 12336.56,
+   "sp": 9482.38,
+   "sk": 6254.39,
+   "sa": 2854.18,
+   "sg": 6082.17,
    "se": [
     {
      "o": "LB-ORDEN-04414",
@@ -201,6 +201,15 @@
      "m": 873.69,
      "k": 392.85,
      "a": 261.82
+    },
+    {
+     "o": "LB-ORDEN-04400",
+     "c": "ALEX MANUEL CONTRERAS RAMOS",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-16",
+     "m": 703.91,
+     "k": 316.85,
+     "a": 210.6
     },
     {
      "o": "LB-ORDEN-04399",
@@ -671,10 +680,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 61,
-  "oct_facturado": 50768.53,
-  "oct_precio": 37088.59,
-  "oct_costo": 26369.05,
-  "oct_admin": 13679.94
+  "oct_facturas": 62,
+  "oct_facturado": 51472.44,
+  "oct_precio": 37581.9,
+  "oct_costo": 26685.9,
+  "oct_admin": 13890.54
  }
 }
