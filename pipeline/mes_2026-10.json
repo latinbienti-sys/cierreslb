@@ -2,6 +2,16 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04437",
+   "cliente": "ANGEL EDUARDO RODRIGUEZ UZCATEGUI",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 963.17,
+   "costo": 402.85,
+   "admin": 335.7,
+   "status": "Entregado",
+   "fecha": "2026-10-24"
+  },
+  {
    "orden": "LB-ORDEN-04423",
    "cliente": "JHONY OCTAVIANO PEÑA SANCHEZ",
    "ejecutivo": "JUHENDIS ESTHER VALLADARES LOPEZ",
@@ -626,11 +636,11 @@
  "ejecutivos": [
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 11015.42,
-   "costo": 5208.79,
-   "margen": 5806.63,
-   "facturas": 16,
-   "unidades": 25.0
+   "facturado": 11978.59,
+   "costo": 5611.64,
+   "margen": 6366.95,
+   "facturas": 17,
+   "unidades": 27.0
   },
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
@@ -724,8 +734,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 56,
-   "monto": 13890.54
+   "cantidad": 57,
+   "monto": 14226.24
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -843,6 +853,11 @@
    "monto": 548.85
   },
   {
+   "nombre": "[CEL003-00956] Xiaomi Redmi Note 15 Pro  5G 8GB/256GB",
+   "cantidad": 1,
+   "monto": 536.6
+  },
+  {
    "nombre": "[CEL000-00970] Samsung Galaxy A56 5G 8GB/256GB",
    "cantidad": 1,
    "monto": 532.29
@@ -929,8 +944,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 15,
-   "monto": 75.67
+   "cantidad": 16,
+   "monto": 80.68
   },
   {
    "nombre": "Tostador KitchenAid Clasico 2 Rebanadas",
@@ -948,18 +963,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 51472.44,
- "total_facturas": 62,
- "total_clientes": 59,
- "total_productos": 37581.9,
- "total_admin": 13890.54,
+ "total_facturado": 52435.61,
+ "total_facturas": 63,
+ "total_clientes": 60,
+ "total_productos": 38209.37,
+ "total_admin": 14226.24,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 26685.9,
- "total_margen": 24786.54,
+ "total_costo": 27088.75,
+ "total_margen": 25346.86,
  "cancelaciones_count": 4,
  "cancelaciones_monto": 1236.16,
- "total": 51472.44,
- "count": 62,
+ "total": 52435.61,
+ "count": 63,
  "colaboradores": []
 }

@@ -149,14 +149,23 @@
   },
   {
    "t": "Telefonos",
-   "sf": 15,
-   "sc": 15,
-   "sm": 12336.56,
-   "sp": 9482.38,
-   "sk": 6254.39,
-   "sa": 2854.18,
-   "sg": 6082.17,
+   "sf": 16,
+   "sc": 16,
+   "sm": 13299.73,
+   "sp": 10109.85,
+   "sk": 6657.24,
+   "sa": 3189.88,
+   "sg": 6642.49,
    "se": [
+    {
+     "o": "LB-ORDEN-04437",
+     "c": "ANGEL EDUARDO RODRIGUEZ UZCATEGUI",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-24",
+     "m": 963.17,
+     "k": 402.85,
+     "a": 335.7
+    },
     {
      "o": "LB-ORDEN-04414",
      "c": "COLIBRI WOOD´S C.A",
@@ -680,10 +689,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 62,
-  "oct_facturado": 51472.44,
-  "oct_precio": 37581.9,
-  "oct_costo": 26685.9,
-  "oct_admin": 13890.54
+  "oct_facturas": 63,
+  "oct_facturado": 52435.61,
+  "oct_precio": 38209.37,
+  "oct_costo": 27088.75,
+  "oct_admin": 14226.24
  }
 }
