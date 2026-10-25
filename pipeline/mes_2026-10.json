@@ -2,12 +2,52 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04441",
+   "cliente": "ANA VIRGINIA GONZALEZ",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 758.97,
+   "costo": 317.85,
+   "admin": 264.1,
+   "status": "Aprobado",
+   "fecha": "2026-10-25"
+  },
+  {
+   "orden": "LB-ORDEN-04439",
+   "cliente": "JESUS ALEXANDER ROSALES CORTEZ",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 452.42,
+   "costo": 290.0,
+   "admin": 0.0,
+   "status": "Cancelación Total",
+   "fecha": "2026-10-25"
+  },
+  {
+   "orden": "LB-ORDEN-04438",
+   "cliente": "PATRICIO ANTONIO FIGUEROA NAVAS",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 1131.35,
+   "costo": 472.85,
+   "admin": 394.67,
+   "status": "Entregado",
+   "fecha": "2026-10-24"
+  },
+  {
    "orden": "LB-ORDEN-04437",
    "cliente": "ANGEL EDUARDO RODRIGUEZ UZCATEGUI",
    "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
    "monto": 963.17,
    "costo": 402.85,
    "admin": 335.7,
+   "status": "Entregado",
+   "fecha": "2026-10-24"
+  },
+  {
+   "orden": "LB-ORDEN-04436",
+   "cliente": "LUIS HENRIQUE PAREDES CHIRINO",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 1030.08,
+   "costo": 462.85,
+   "admin": 309.0,
    "status": "Entregado",
    "fecha": "2026-10-24"
   },
@@ -189,6 +229,16 @@
    "costo": 47.0,
    "admin": 11.55,
    "status": "Entregado",
+   "fecha": "2026-10-17"
+  },
+  {
+   "orden": "LB-ORDEN-04402",
+   "cliente": "JOAN CARLOS PEREIRA RIVAS",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 1226.47,
+   "costo": 549.0,
+   "admin": 370.0,
+   "status": "Aprobado",
    "fecha": "2026-10-17"
   },
   {
@@ -635,20 +685,20 @@
  "facturas_dscto": [],
  "ejecutivos": [
   {
-   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 11978.59,
-   "costo": 5611.64,
-   "margen": 6366.95,
-   "facturas": 17,
-   "unidades": 27.0
+   "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "facturado": 13169.64,
+   "costo": 6475.02,
+   "margen": 6694.62,
+   "facturas": 18,
+   "unidades": 28.0
   },
   {
-   "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 10555.79,
-   "costo": 5249.32,
-   "margen": 5306.47,
-   "facturas": 15,
-   "unidades": 23.0
+   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": 12737.56,
+   "costo": 5929.49,
+   "margen": 6808.07,
+   "facturas": 18,
+   "unidades": 29.0
   },
   {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
@@ -665,6 +715,14 @@
    "margen": 2739.0,
    "facturas": 8,
    "unidades": 14.0
+  },
+  {
+   "nombre": "LADY DIANA TORO RIVERA",
+   "facturado": 3683.16,
+   "costo": 1725.0,
+   "margen": 1958.16,
+   "facturas": 10,
+   "unidades": 10.0
   },
   {
    "nombre": "DANIEL CASTELLANOS",
@@ -689,14 +747,6 @@
    "margen": 1406.69,
    "facturas": 1,
    "unidades": 1.0
-  },
-  {
-   "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 2456.69,
-   "costo": 1176.0,
-   "margen": 1280.69,
-   "facturas": 9,
-   "unidades": 9.0
   },
   {
    "nombre": "ELIO CHAMATE",
@@ -734,8 +784,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 57,
-   "monto": 14226.24
+   "cantidad": 61,
+   "monto": 15564.01
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -768,6 +818,11 @@
    "monto": 1515.67
   },
   {
+   "nombre": "[A.S000-00012] Starlink Mini Dual-Band Wi-Fi System",
+   "cantidad": 4,
+   "monto": 1482.06
+  },
+  {
    "nombre": "Motocicleta Bel By UM Nitrox Sport",
    "cantidad": 1,
    "monto": 1362.07
@@ -778,9 +833,9 @@
    "monto": 1293.91
   },
   {
-   "nombre": "[A.S000-00012] Starlink Mini Dual-Band Wi-Fi System",
-   "cantidad": 3,
-   "monto": 1092.04
+   "nombre": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB",
+   "cantidad": 2,
+   "monto": 1252.09
   },
   {
    "nombre": "[CEL000-01077] Samsung Galaxy A37 8GB/256GB",
@@ -813,14 +868,19 @@
    "monto": 769.77
   },
   {
+   "nombre": "[WA15CG5441BWAP] Samsung Lavadora de Carga Superior Digital 15KG",
+   "cantidad": 1,
+   "monto": 738.34
+  },
+  {
    "nombre": "Laptop Lenovo IdeaPad Slim 3i 82XB00C2US, Intel Core i3-N305, 8GB, 128GB UFS, 15.6\", US, W11.",
    "cantidad": 1,
    "monto": 684.54
   },
   {
-   "nombre": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB",
+   "nombre": "[CEL01B-00252] Infinix Note 60 Pro 5G 8GB/256GB",
    "cantidad": 1,
-   "monto": 621.34
+   "monto": 617.3
   },
   {
    "nombre": "[CEL000-01087] Samsung Galaxy A57 8GB/256GB",
@@ -878,6 +938,11 @@
    "monto": 435.63
   },
   {
+   "nombre": "[CEL000-01018] Samsung Galaxy A17 8GB/256GB",
+   "cantidad": 1,
+   "monto": 422.29
+  },
+  {
    "nombre": "[CEL000-01073] Samsung Galaxy A37 6GB/128GB",
    "cantidad": 1,
    "monto": 420.95
@@ -933,6 +998,11 @@
    "monto": 107.59
   },
   {
+   "nombre": "[0001-56] Seguro de Reserva de Dominio",
+   "cantidad": 19,
+   "monto": 95.71
+  },
+  {
    "nombre": "[AUD008-00011] Huawei Freebuds SE 3 T0016",
    "cantidad": 1,
    "monto": 88.93
@@ -941,11 +1011,6 @@
    "nombre": "Xiaomi Redmi Watch 5 Lite (BHR8789GL)",
    "cantidad": 1,
    "monto": 87.41
-  },
-  {
-   "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 16,
-   "monto": 80.68
   },
   {
    "nombre": "Tostador KitchenAid Clasico 2 Rebanadas",
@@ -963,18 +1028,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 52435.61,
- "total_facturas": 63,
- "total_clientes": 60,
- "total_productos": 38209.37,
- "total_admin": 14226.24,
+ "total_facturado": 57034.9,
+ "total_facturas": 68,
+ "total_clientes": 65,
+ "total_productos": 41470.89,
+ "total_admin": 15564.01,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 27088.75,
- "total_margen": 25346.86,
- "cancelaciones_count": 4,
- "cancelaciones_monto": 1236.16,
- "total": 52435.61,
- "count": 63,
+ "total_costo": 29181.3,
+ "total_margen": 27853.6,
+ "cancelaciones_count": 5,
+ "cancelaciones_monto": 1688.58,
+ "total": 57034.9,
+ "count": 68,
  "colaboradores": []
 }

@@ -149,14 +149,32 @@
   },
   {
    "t": "Telefonos",
-   "sf": 16,
-   "sc": 16,
-   "sm": 13299.73,
-   "sp": 10109.85,
-   "sk": 6657.24,
-   "sa": 3189.88,
-   "sg": 6642.49,
+   "sf": 19,
+   "sc": 19,
+   "sm": 16220.13,
+   "sp": 12062.48,
+   "sk": 7910.79,
+   "sa": 4157.65,
+   "sg": 8309.34,
    "se": [
+    {
+     "o": "LB-ORDEN-04441",
+     "c": "ANA VIRGINIA GONZALEZ",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-25",
+     "m": 758.97,
+     "k": 317.85,
+     "a": 264.1
+    },
+    {
+     "o": "LB-ORDEN-04438",
+     "c": "PATRICIO ANTONIO FIGUEROA NAVAS",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-24",
+     "m": 1131.35,
+     "k": 472.85,
+     "a": 394.67
+    },
     {
      "o": "LB-ORDEN-04437",
      "c": "ANGEL EDUARDO RODRIGUEZ UZCATEGUI",
@@ -165,6 +183,15 @@
      "m": 963.17,
      "k": 402.85,
      "a": 335.7
+    },
+    {
+     "o": "LB-ORDEN-04436",
+     "c": "LUIS HENRIQUE PAREDES CHIRINO",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-24",
+     "m": 1030.08,
+     "k": 462.85,
+     "a": 309.0
     },
     {
      "o": "LB-ORDEN-04414",
@@ -344,14 +371,23 @@
   },
   {
    "t": "Hogar",
-   "sf": 3,
-   "sc": 3,
-   "sm": 3832.29,
-   "sp": 3383.01,
-   "sk": 2231.65,
-   "sa": 449.28,
-   "sg": 1600.64,
+   "sf": 4,
+   "sc": 4,
+   "sm": 5058.76,
+   "sp": 4239.48,
+   "sk": 2780.65,
+   "sa": 819.28,
+   "sg": 2278.11,
    "se": [
+    {
+     "o": "LB-ORDEN-04402",
+     "c": "JOAN CARLOS PEREIRA RIVAS",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-17",
+     "m": 1226.47,
+     "k": 549.0,
+     "a": 370.0
+    },
     {
      "o": "LB-ORDEN-04386",
      "c": "HOTEL CABAÑAS TURISTICAS LOS LIRIOS C.A.",
@@ -383,14 +419,23 @@
   },
   {
    "t": "Accesorios",
-   "sf": 6,
-   "sc": 6,
-   "sm": 2006.07,
-   "sp": 1547.76,
-   "sk": 1053.0,
+   "sf": 7,
+   "sc": 7,
+   "sm": 2458.49,
+   "sp": 2000.18,
+   "sk": 1343.0,
    "sa": 458.31,
-   "sg": 953.07,
+   "sg": 1115.49,
    "se": [
+    {
+     "o": "LB-ORDEN-04439",
+     "c": "JESUS ALEXANDER ROSALES CORTEZ",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-25",
+     "m": 452.42,
+     "k": 290.0,
+     "a": 0.0
+    },
     {
      "o": "LB-ORDEN-04408",
      "c": "DANIEL JOSE RODRIGUEZ VALECILLOS",
@@ -689,10 +734,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 63,
-  "oct_facturado": 52435.61,
-  "oct_precio": 38209.37,
-  "oct_costo": 27088.75,
-  "oct_admin": 14226.24
+  "oct_facturas": 68,
+  "oct_facturado": 57034.9,
+  "oct_precio": 41470.89,
+  "oct_costo": 29181.3,
+  "oct_admin": 15564.01
  }
 }
