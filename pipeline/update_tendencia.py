@@ -17,8 +17,8 @@ sys.path.insert(0, r"C:\Users\yarleyc\Desktop\crmlatinbien")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_mes as B
 
-REPO = r"C:\Users\yarleyc\AppData\Local\Temp\opencode\cierreslb"
-HTML = REPO + r"\index.html"
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HTML = os.path.join(REPO, "index.html")
 TZ = timezone(timedelta(hours=-4))
 MES_ABBR = {1:"Ene",2:"Feb",3:"Mar",4:"Abr",5:"May",6:"Jun",7:"Jul",8:"Ago",9:"Sep",10:"Oct",11:"Nov",12:"Dic"}
 
@@ -54,7 +54,7 @@ def main():
     now = datetime.now(TZ)
     year, month = a.year or now.year, a.month or now.month
 
-    s = io.open(HTML, encoding="utf-8").read()
+    s = io.open(HTML, encoding="utf-8", newline="").read()
     dm = re.search(r"const DATA =", s)
     dstart = s.index("{", dm.end())
     dend = find_obj(s, dstart)
@@ -77,7 +77,7 @@ def main():
 
     new_txt = json.dumps(DATA, ensure_ascii=False, separators=(", ", ": "))
     s = s[:dstart] + new_txt + s[dend:]
-    io.open(HTML, "w", encoding="utf-8").write(s)
+    io.open(HTML, "w", encoding="utf-8", newline="").write(s)
     print(f"tendencia +{newrow['key']}: rows={[r['key'] for r in rows]} actual={T['actual']['label']} "
           f"delta={T['actual']['delta']} mejor={T['mejor']['label']} acum={T['acumulado']['facturado']} "
           f"| tendencia keys ahora=1")

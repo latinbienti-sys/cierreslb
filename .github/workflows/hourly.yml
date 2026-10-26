@@ -1,0 +1,41 @@
+name: Horario - Cierre LB
+
+on:
+  schedule:
+    # Cada hora en el minuto 53 (equivale al :53 en hora de Caracas, UTC-4)
+    - cron: "53 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cierrlb-horario
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Identidad Git
+        run: |
+          git config user.name "cierrlb-bot"
+          git config user.email "cierrlb-bot@users.noreply.github.com"
+
+      # Refresca MES (Mes en curso), TECNO_OCT (Cartera/Tecnologia),
+      # CATS_OCT (Categorias) y DATA.tendencia (Dash Facturacion) para el
+      # mes actual (America/Caracas). SOLO LECTURA de Odoo.
+      - name: Actualizar mes en curso
+        env:
+          ODOO_URL: ${{ secrets.ODOO_URL }}
+          ODOO_DB: ${{ secrets.ODOO_DB }}
+          ODOO_USER: ${{ secrets.ODOO_USER }}
+          ODOO_API_KEY: ${{ secrets.ODOO_API_KEY }}
+        run: python pipeline/update_hourly.py

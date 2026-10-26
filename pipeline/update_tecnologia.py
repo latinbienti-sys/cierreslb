@@ -16,8 +16,8 @@ sys.path.insert(0, r"C:\Users\yarleyc\Desktop\crmlatinbien")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_tecnologia as BT
 
-REPO = r"C:\Users\yarleyc\AppData\Local\Temp\opencode\cierreslb"
-HTML = REPO + r"\index.html"
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HTML = os.path.join(REPO, "index.html")
 TZ = timezone(timedelta(hours=-4))
 
 def find_obj(t, start):
@@ -47,17 +47,17 @@ def main():
 
     oc = BT.connect()
     data = BT.build(oc, year, month)
-    json.dump(data, io.open(f"{REPO}\\pipeline\\tecnologia_{year:04d}-{month:02d}.json", "w", encoding="utf-8"),
-              ensure_ascii=False, indent=1)
+    json.dump(data, io.open(os.path.join(REPO, "pipeline", f"tecnologia_{year:04d}-{month:02d}.json"),
+                            "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=1)
     payload = {"por_tecnologia": data["por_tecnologia"], "totales": data["totales"]}
 
-    s = io.open(HTML, encoding="utf-8").read()
+    s = io.open(HTML, encoding="utf-8", newline="").read()
     i = s.index("const TECNO_OCT =")
     b = s.index("{", i)
     e = find_obj(s, b)
     new_txt = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     s = s[:b] + new_txt + s[e:]
-    io.open(HTML, "w", encoding="utf-8").write(s)
+    io.open(HTML, "w", encoding="utf-8", newline="").write(s)
     t = data["totales"]
     print(f"TECNO_OCT -> {year}-{month:02d}: facturas={t['oct_facturas']} facturado={t['oct_facturado']} "
           f"admin={t['oct_admin']} costo={t['oct_costo']}")

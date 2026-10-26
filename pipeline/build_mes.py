@@ -6,10 +6,7 @@ Solo lectura. Uso:  python build_mes.py 2026 10  -> escribe mes_2026-10.json
 import sys, json, unicodedata, argparse
 from datetime import datetime, timedelta, timezone
 from collections import defaultdict
-sys.path.insert(0, r"C:\Users\yarleyc\Desktop\crmlatinbien")
-from odoo_client import OdooClient
-
-CFG = json.load(open(r"C:\Users\yarleyc\Desktop\crmlatinbien\config.json", encoding="utf-8"))["odoo"]
+import erp
 TZ = timezone(timedelta(hours=-4))
 ADMIN_NAME = "gasto administrativo y gestion de cobranza"
 STATUS_LABEL = {"6": "Entregado", "8": "Cancelación Total", "12": "Congelado (Entregado)",
@@ -22,7 +19,7 @@ def norm(x):
     return "".join(c for c in x if not unicodedata.combining(c)).lower().strip()
 
 def connect():
-    return OdooClient(CFG["url"], CFG["db"], CFG["user"], CFG["api_key"]).connect()
+    return erp.connect()
 
 def build_month(oc, year, month):
     lo = datetime(year, month, 1, 0, 0, tzinfo=TZ)

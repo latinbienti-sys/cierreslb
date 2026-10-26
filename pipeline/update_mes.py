@@ -10,14 +10,14 @@ Uso:
   python update_mes.py            -> mes actual
   python update_mes.py 2026 10    -> octubre 2026
 """
-import io, re, json, sys, argparse
+import io, os, re, json, sys, argparse
 from datetime import datetime, timedelta, timezone
-sys.path.insert(0, r"C:\Users\yarleyc\Desktop\crmlatinbien")
-sys.path.insert(0, __import__("os").path.dirname(__import__("os").path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_mes as B
 
-REPO = r"C:\Users\yarleyc\AppData\Local\Temp\opencode\cierreslb"
-HTML = REPO + r"\index.html"
+HERE = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(HERE)
+HTML = os.path.join(REPO, "index.html")
 TZ = timezone(timedelta(hours=-4))
 
 def main():
@@ -30,15 +30,15 @@ def main():
     month = a.month or now.month
     oc = B.connect()
     data = B.build_month(oc, year, month)
-    json.dump(data, io.open(f"{REPO}\\pipeline\\mes_{year:04d}-{month:02d}.json", "w", encoding="utf-8"),
-              ensure_ascii=False, indent=1)
+    json.dump(data, io.open(os.path.join(REPO, "pipeline", f"mes_{year:04d}-{month:02d}.json"),
+                            "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=1)
     new_line = "const MES = " + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n"
-    s = io.open(HTML, encoding="utf-8").read()
+    s = io.open(HTML, encoding="utf-8", newline="").read()
     if re.search(r"^const MES = .*?;\n", s, re.M):
         s = re.sub(r"^const MES = .*?;\n", new_line, s, count=1, flags=re.M)
     else:
         s = s.replace("// ===== TAB SWITCH =====", new_line + "// ===== TAB SWITCH =====", 1)
-    io.open(HTML, "w", encoding="utf-8").write(s)
+    io.open(HTML, "w", encoding="utf-8", newline="").write(s)
     print(f"MES -> {year}-{month:02d}: facturas={data['total_facturas']} facturado={data['total_facturado']} "
           f"admin={data['total_admin']} costo={data['total_costo']}")
 

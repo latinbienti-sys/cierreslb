@@ -2,13 +2,53 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04425",
+   "cliente": "MARTHA GABRIELA VERA FLORES",
+   "ejecutivo": "JUHENDIS ESTHER VALLADARES LOPEZ",
+   "monto": 88.0,
+   "costo": 49.0,
+   "admin": 11.56,
+   "status": "Entregado",
+   "fecha": "2026-10-26"
+  },
+  {
+   "orden": "LB-ORDEN-04446",
+   "cliente": "ALEXIS GIOVANNI MARQUEZ SULBARAN",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 326.05,
+   "costo": 209.0,
+   "admin": 0.0,
+   "status": "Cancelación Total",
+   "fecha": "2026-10-25"
+  },
+  {
+   "orden": "LB-ORDEN-04445",
+   "cliente": "JARLY KARIN ARAQUE ARAQUE",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 650.86,
+   "costo": 272.85,
+   "admin": 226.19,
+   "status": "Entregado",
+   "fecha": "2026-10-25"
+  },
+  {
+   "orden": "LB-ORDEN-04443",
+   "cliente": "LESLIE ALESSANDRA MOROS VILORIA",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 650.86,
+   "costo": 272.85,
+   "admin": 226.19,
+   "status": "Entregado",
+   "fecha": "2026-10-25"
+  },
+  {
    "orden": "LB-ORDEN-04441",
    "cliente": "ANA VIRGINIA GONZALEZ",
    "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
    "monto": 758.97,
    "costo": 317.85,
    "admin": 264.1,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-25"
   },
   {
@@ -686,19 +726,19 @@
  "ejecutivos": [
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 13169.64,
-   "costo": 6475.02,
-   "margen": 6694.62,
-   "facturas": 18,
-   "unidades": 28.0
+   "facturado": 14146.55,
+   "costo": 6956.87,
+   "margen": 7189.68,
+   "facturas": 20,
+   "unidades": 31.0
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 12737.56,
-   "costo": 5929.49,
-   "margen": 6808.07,
-   "facturas": 18,
-   "unidades": 29.0
+   "facturado": 13388.42,
+   "costo": 6202.34,
+   "margen": 7186.08,
+   "facturas": 19,
+   "unidades": 31.0
   },
   {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
@@ -774,18 +814,18 @@
   },
   {
    "nombre": "JUHENDIS ESTHER VALLADARES LOPEZ",
-   "facturado": 659.03,
-   "costo": 400.82,
-   "margen": 258.21,
-   "facturas": 3,
-   "unidades": 3.0
+   "facturado": 747.03,
+   "costo": 449.82,
+   "margen": 297.21,
+   "facturas": 4,
+   "unidades": 4.0
   }
  ],
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 61,
-   "monto": 15564.01
+   "cantidad": 64,
+   "monto": 16027.95
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -863,6 +903,11 @@
    "monto": 859.38
   },
   {
+   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
+   "cantidad": 3,
+   "monto": 829.93
+  },
+  {
    "nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).",
    "cantidad": 2,
    "monto": 769.77
@@ -871,6 +916,11 @@
    "nombre": "[WA15CG5441BWAP] Samsung Lavadora de Carga Superior Digital 15KG",
    "cantidad": 1,
    "monto": 738.34
+  },
+  {
+   "nombre": "[CEL003-00952] Xiaomi Redmi Note 15 8GB/256GB",
+   "cantidad": 2,
+   "monto": 723.56
   },
   {
    "nombre": "Laptop Lenovo IdeaPad Slim 3i 82XB00C2US, Intel Core i3-N305, 8GB, 128GB UFS, 15.6\", US, W11.",
@@ -906,11 +956,6 @@
    "nombre": "[TV016-00032] Aiwa 55\" QLED UHD 4K AW55B4Q Google TV.",
    "cantidad": 1,
    "monto": 563.5
-  },
-  {
-   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
-   "cantidad": 2,
-   "monto": 548.85
   },
   {
    "nombre": "[CEL003-00956] Xiaomi Redmi Note 15 Pro  5G 8GB/256GB",
@@ -988,6 +1033,11 @@
    "monto": 152.99
   },
   {
+   "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
+   "cantidad": 2,
+   "monto": 131.8
+  },
+  {
    "nombre": "CAUCHO 165/95R15 APLUS",
    "cantidad": 2,
    "monto": 121.03
@@ -999,8 +1049,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 19,
-   "monto": 95.71
+   "cantidad": 21,
+   "monto": 105.73
   },
   {
    "nombre": "[AUD008-00011] Huawei Freebuds SE 3 T0016",
@@ -1018,28 +1068,23 @@
    "monto": 67.24
   },
   {
-   "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
-   "cantidad": 1,
-   "monto": 65.9
-  },
-  {
    "nombre": "[0001-7] Base para Televisor Aiwa Soporte Fijo Pared 32/70 pulgadas",
    "cantidad": 0,
    "monto": 0.0
   }
  ],
- "total_facturado": 57034.9,
- "total_facturas": 68,
- "total_clientes": 65,
- "total_productos": 41470.89,
- "total_admin": 15564.01,
+ "total_facturado": 58750.67,
+ "total_facturas": 72,
+ "total_clientes": 69,
+ "total_productos": 42722.72,
+ "total_admin": 16027.95,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 29181.3,
- "total_margen": 27853.6,
- "cancelaciones_count": 5,
- "cancelaciones_monto": 1688.58,
- "total": 57034.9,
- "count": 68,
+ "total_costo": 29985.0,
+ "total_margen": 28765.67,
+ "cancelaciones_count": 6,
+ "cancelaciones_monto": 2014.63,
+ "total": 58750.67,
+ "count": 72,
  "colaboradores": []
 }

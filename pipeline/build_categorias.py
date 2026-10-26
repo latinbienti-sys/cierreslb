@@ -11,8 +11,7 @@ Uso:
 import sys, json, unicodedata, argparse
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
-sys.path.insert(0, r"C:\Users\yarleyc\Desktop\crmlatinbien")
-from odoo_client import OdooClient
+import erp
 
 ADMIN = "gasto administrativo y gestion de cobranza"
 TZ = timezone(timedelta(hours=-4))
@@ -49,8 +48,7 @@ def classify(name):
     return "Otros"
 
 def build(year, month):
-    cfg = json.load(open(r"C:\Users\yarleyc\Desktop\crmlatinbien\config.json", encoding="utf-8"))["odoo"]
-    oc = OdooClient(cfg["url"], cfg["db"], cfg["user"], cfg["api_key"]).connect()
+    oc = erp.connect()
     lo = datetime(year, month, 1, tzinfo=TZ).astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     ny, nm = (year + 1, 1) if month == 12 else (year, month + 1)
     hi = datetime(ny, nm, 1, tzinfo=TZ).astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")

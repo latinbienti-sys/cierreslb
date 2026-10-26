@@ -8,9 +8,7 @@ Uso: python build_tecnologia.py 2026 10
 import sys, json, io, unicodedata, argparse
 from datetime import datetime, timedelta, timezone
 from collections import defaultdict
-sys.path.insert(0, r"C:\Users\yarleyc\Desktop\crmlatinbien")
-from odoo_client import OdooClient
-CFG = json.load(open(r"C:\Users\yarleyc\Desktop\crmlatinbien\config.json", encoding="utf-8"))["odoo"]
+import erp
 TZ = timezone(timedelta(hours=-4))
 ADMIN = "gasto administrativo y gestion de cobranza"
 
@@ -31,7 +29,7 @@ FALLBACK = [
 ]
 
 def connect():
-    return OdooClient(CFG["url"], CFG["db"], CFG["user"], CFG["api_key"]).connect()
+    return erp.connect()
 
 def load_cats(oc):
     cats = {c["id"]: c for c in oc.search_read("product.public.category", [], ["name", "parent_id"])}

@@ -149,14 +149,41 @@
   },
   {
    "t": "Telefonos",
-   "sf": 19,
-   "sc": 19,
-   "sm": 16220.13,
-   "sp": 12062.48,
-   "sk": 7910.79,
-   "sa": 4157.65,
-   "sg": 8309.34,
+   "sf": 22,
+   "sc": 22,
+   "sm": 17847.9,
+   "sp": 13237.87,
+   "sk": 8665.49,
+   "sa": 4610.03,
+   "sg": 9182.41,
    "se": [
+    {
+     "o": "LB-ORDEN-04446",
+     "c": "ALEXIS GIOVANNI MARQUEZ SULBARAN",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-25",
+     "m": 326.05,
+     "k": 209.0,
+     "a": 0.0
+    },
+    {
+     "o": "LB-ORDEN-04445",
+     "c": "JARLY KARIN ARAQUE ARAQUE",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-25",
+     "m": 650.86,
+     "k": 272.85,
+     "a": 226.19
+    },
+    {
+     "o": "LB-ORDEN-04443",
+     "c": "LESLIE ALESSANDRA MOROS VILORIA",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-25",
+     "m": 650.86,
+     "k": 272.85,
+     "a": 226.19
+    },
     {
      "o": "LB-ORDEN-04441",
      "c": "ANA VIRGINIA GONZALEZ",
@@ -419,14 +446,23 @@
   },
   {
    "t": "Accesorios",
-   "sf": 7,
-   "sc": 7,
-   "sm": 2458.49,
-   "sp": 2000.18,
-   "sk": 1343.0,
-   "sa": 458.31,
-   "sg": 1115.49,
+   "sf": 8,
+   "sc": 8,
+   "sm": 2546.49,
+   "sp": 2076.62,
+   "sk": 1392.0,
+   "sa": 469.87,
+   "sg": 1154.49,
    "se": [
+    {
+     "o": "LB-ORDEN-04425",
+     "c": "MARTHA GABRIELA VERA FLORES",
+     "e": "JUHENDIS ESTHER VALLADARES LOPEZ",
+     "f": "2026-10-26",
+     "m": 88.0,
+     "k": 49.0,
+     "a": 11.56
+    },
     {
      "o": "LB-ORDEN-04439",
      "c": "JESUS ALEXANDER ROSALES CORTEZ",
@@ -734,10 +770,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 68,
-  "oct_facturado": 57034.9,
-  "oct_precio": 41470.89,
-  "oct_costo": 29181.3,
-  "oct_admin": 15564.01
+  "oct_facturas": 72,
+  "oct_facturado": 58750.67,
+  "oct_precio": 42722.72,
+  "oct_costo": 29985.0,
+  "oct_admin": 16027.95
  }
 }
