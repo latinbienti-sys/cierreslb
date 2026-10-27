@@ -38,7 +38,10 @@ def main():
     if m:
         s = s[:m.start()] + new_json + s[m.end():]
     else:
-        s = s.replace("// ===== TAB SWITCH =====", new_json + "\n// ===== TAB SWITCH =====", 1)
+        m2 = re.search(r"^\(function\(\)\{\s*\r?\n\s*const MES_NAMES=", s, re.M)
+        if not m2:
+            raise SystemExit("No se encontro el anclaje de const MES (IIFE que usa MES_NAMES)")
+        s = s[:m2.start()] + new_json + "\n\n" + s[m2.start():]
     io.open(HTML, "w", encoding="utf-8", newline="").write(s)
     print(f"MES -> {year}-{month:02d}: facturas={data['total_facturas']} facturado={data['total_facturado']} "
           f"admin={data['total_admin']} costo={data['total_costo']}")
