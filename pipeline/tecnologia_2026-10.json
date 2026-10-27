@@ -634,6 +634,54 @@
    ]
   },
   {
+   "t": "Otros",
+   "sf": 4,
+   "sc": 4,
+   "sm": 874.13,
+   "sp": 623.96,
+   "sk": 416.92,
+   "sa": 250.17,
+   "sg": 457.21,
+   "se": [
+    {
+     "o": "LB-ORDEN-04462",
+     "c": "FERNANDO JAVIER ALBARRAN MALDONADO",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-27",
+     "m": 144.58,
+     "k": 70.0,
+     "a": 35.38
+    },
+    {
+     "o": "LB-ORDEN-04421",
+     "c": "EDUARDO RAMIREZ MORA",
+     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
+     "f": "2026-10-21",
+     "m": 178.71,
+     "k": 80.0,
+     "a": 53.91
+    },
+    {
+     "o": "LB-ORDEN-04347",
+     "c": "JEAN CARLOS PUENTES GUILLEN",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-05",
+     "m": 357.37,
+     "k": 166.92,
+     "a": 107.81
+    },
+    {
+     "o": "LB-ORDEN-04336",
+     "c": "NILSE TRINIDAD SOSA UZCATEGUI",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-01",
+     "m": 193.47,
+     "k": 100.0,
+     "a": 53.07
+    }
+   ]
+  },
+  {
    "t": "Estacion de carga",
    "sf": 11,
    "sc": 11,
@@ -745,45 +793,6 @@
    ]
   },
   {
-   "t": "Otros",
-   "sf": 3,
-   "sc": 3,
-   "sm": 729.55,
-   "sp": 514.76,
-   "sk": 346.92,
-   "sa": 214.79,
-   "sg": 382.63,
-   "se": [
-    {
-     "o": "LB-ORDEN-04421",
-     "c": "EDUARDO RAMIREZ MORA",
-     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
-     "f": "2026-10-21",
-     "m": 178.71,
-     "k": 80.0,
-     "a": 53.91
-    },
-    {
-     "o": "LB-ORDEN-04347",
-     "c": "JEAN CARLOS PUENTES GUILLEN",
-     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-     "f": "2026-10-05",
-     "m": 357.37,
-     "k": 166.92,
-     "a": 107.81
-    },
-    {
-     "o": "LB-ORDEN-04336",
-     "c": "NILSE TRINIDAD SOSA UZCATEGUI",
-     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
-     "f": "2026-10-01",
-     "m": 193.47,
-     "k": 100.0,
-     "a": 53.07
-    }
-   ]
-  },
-  {
    "t": "Tablets",
    "sf": 1,
    "sc": 1,
@@ -806,10 +815,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 76,
-  "oct_facturado": 61212.53,
-  "oct_precio": 44391.03,
-  "oct_costo": 31075.05,
-  "oct_admin": 16821.5
+  "oct_facturas": 77,
+  "oct_facturado": 61357.11,
+  "oct_precio": 44500.23,
+  "oct_costo": 31145.05,
+  "oct_admin": 16856.88
  }
 }

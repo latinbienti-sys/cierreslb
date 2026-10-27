@@ -2,6 +2,16 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04462",
+   "cliente": "FERNANDO JAVIER ALBARRAN MALDONADO",
+   "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
+   "monto": 144.58,
+   "costo": 70.0,
+   "admin": 35.38,
+   "status": "Entregado",
+   "fecha": "2026-10-27"
+  },
+  {
    "orden": "LB-ORDEN-04460",
    "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
    "ejecutivo": "LADY DIANA TORO RIVERA",
@@ -790,11 +800,11 @@
   },
   {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
-   "facturado": 5773.76,
-   "costo": 2937.82,
-   "margen": 2835.94,
-   "facturas": 9,
-   "unidades": 15.0
+   "facturado": 5918.34,
+   "costo": 3007.82,
+   "margen": 2910.52,
+   "facturas": 10,
+   "unidades": 16.0
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
@@ -856,8 +866,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 68,
-   "monto": 16821.5
+   "cantidad": 69,
+   "monto": 16856.88
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1055,6 +1065,11 @@
    "monto": 205.44
   },
   {
+   "nombre": "Mini DC UPS Pro 20000 Olax mAh",
+   "cantidad": 2,
+   "monto": 201.73
+  },
+  {
    "nombre": "[TV016-00002] Aiwa 32\" HD Smart TV, Google TV.",
    "cantidad": 1,
    "monto": 200.39
@@ -1085,11 +1100,6 @@
    "monto": 120.76
   },
   {
-   "nombre": "Mini DC UPS Pro 20000 Olax mAh",
-   "cantidad": 1,
-   "monto": 107.59
-  },
-  {
    "nombre": "[AUD008-00011] Huawei Freebuds SE 3 T0016",
    "cantidad": 1,
    "monto": 88.93
@@ -1110,24 +1120,31 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 61212.53,
- "total_facturas": 76,
- "total_clientes": 72,
- "total_productos": 44391.03,
- "total_admin": 16821.5,
+ "total_facturado": 61357.11,
+ "total_facturas": 77,
+ "total_clientes": 73,
+ "total_productos": 44500.23,
+ "total_admin": 16856.88,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 31075.05,
- "total_margen": 30137.48,
+ "total_costo": 31145.05,
+ "total_margen": 30212.06,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 67,
-   "monto": 45554.33,
-   "unidades": 98.0,
-   "admin": 10322.91,
-   "costo": 23311.8,
+   "facturas": 68,
+   "monto": 45698.91,
+   "unidades": 99.0,
+   "admin": 10358.29,
+   "costo": 23381.8,
    "items": [
+    {
+     "orden": "LB-ORDEN-04462",
+     "cliente": "FERNANDO JAVIER ALBARRAN MALDONADO",
+     "unidades": 1.0,
+     "monto": 144.58,
+     "fecha": "2026-10-27"
+    },
     {
      "orden": "LB-ORDEN-04460",
      "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
@@ -1705,7 +1722,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 61212.53,
- "count": 76,
+ "total": 61357.11,
+ "count": 77,
  "colaboradores": []
 }
