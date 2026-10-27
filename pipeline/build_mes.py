@@ -30,7 +30,7 @@ def build_month(oc, year, month):
            ("commitment_date", "<", hg.strftime("%Y-%m-%d %H:%M:%S"))]
     orders = oc.search_read("sale.order", dom,
         ["name", "amount_total", "order_line", "partner_id", "user_id",
-         "x_status_operativos", "commitment_date"])
+         "x_status_operativos", "commitment_date", "campaign_id"])
     allids = [i for o in orders for i in o["order_line"]]
     lines = oc.search_read("sale.order.line", [("id", "in", allids)],
         ["order_id", "product_id", "product_uom_qty", "price_subtotal", "purchase_price"])
@@ -58,6 +58,7 @@ def build_month(oc, year, month):
 
     facturas, ejec_agg, clientes, cancel_n, cancel_m = [], defaultdict(
         lambda: {"facturado": 0.0, "costo": 0.0, "facturas": 0, "unidades": 0}), set(), 0, 0.0
+    campana_agg = defaultdict(lambda: {"facturas": 0, "monto": 0.0})
     for o in orders:
         oid = o["id"]
         ops = (o["x_status_operativos"] or "").split(".")[0].strip()
@@ -83,6 +84,9 @@ def build_month(oc, year, month):
         if ops == "8":
             cancel_n += 1
             cancel_m += monto
+        camp = o["campaign_id"][1] if o.get("campaign_id") else "Sin campaña"
+        campana_agg[camp]["facturas"] += 1
+        campana_agg[camp]["monto"] += monto
 
     total_facturado = round(sum(f["monto"] for f in facturas), 2)
     total_admin = round(sum(f["admin"] for f in facturas), 2)
@@ -94,6 +98,9 @@ def build_month(oc, year, month):
     top_productos = [{"nombre": k, "cantidad": round(v["cantidad"], 2) if v["cantidad"] % 1 else int(v["cantidad"]),
                       "monto": round(v["monto"], 2)} for k, v in prod_agg.items()]
     top_productos.sort(key=lambda p: p["monto"], reverse=True)
+    campanas = [{"nombre": k, "facturas": v["facturas"], "monto": round(v["monto"], 2)}
+                for k, v in campana_agg.items()]
+    campanas.sort(key=lambda c: c["monto"], reverse=True)
 
     return {
         "mes": f"{year:04d}-{month:02d}",
@@ -110,6 +117,7 @@ def build_month(oc, year, month):
         "total_ahorro_dscto": 0.0,
         "total_costo": total_costo,
         "total_margen": round(total_facturado - total_costo, 2),
+        "campanas": campanas,
         "cancelaciones_count": cancel_n,
         "cancelaciones_monto": round(cancel_m, 2),
         "total": total_facturado,

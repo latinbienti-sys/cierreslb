@@ -1127,6 +1127,33 @@
  "total_ahorro_dscto": 0.0,
  "total_costo": 31075.05,
  "total_margen": 30137.48,
+ "campanas": [
+  {
+   "nombre": "Sin campaña",
+   "facturas": 67,
+   "monto": 45554.33
+  },
+  {
+   "nombre": "CREDIMOTO",
+   "facturas": 3,
+   "monto": 9791.81
+  },
+  {
+   "nombre": "0INICIAL",
+   "facturas": 4,
+   "monto": 3396.24
+  },
+  {
+   "nombre": "FUNCIONARIOSDESEGURIDAD2026",
+   "facturas": 1,
+   "monto": 1440.07
+  },
+  {
+   "nombre": "SEMANADELTERROR",
+   "facturas": 1,
+   "monto": 1030.08
+  }
+ ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
  "total": 61212.53,
