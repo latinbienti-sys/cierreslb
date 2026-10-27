@@ -873,7 +873,7 @@ const MES = {"mes":"2026-10","facturas":[{"orden":"LB-ORDEN-04460","cliente":"MA
   const ft=document.getElementById('facturas-mes-table');
   MES.facturas.forEach((f,i)=>{const tr=document.createElement('tr');let b='badge-sinasignar';if(f.status==='Entregado')b='badge-entregado';else if(f.status==='Aprobado')b='badge-aprobado';else if(f.status.indexOf('Cancelaci')>=0)b='badge-cancel';else if(f.status.indexOf('Congelado')>=0)b='badge-congelado';tr.innerHTML='<td>'+(i+1)+'</td><td>'+f.orden+'</td><td>'+f.cliente+'</td><td>'+f.ejecutivo+'</td><td class="text-right money">'+fmt(f.monto)+'</td><td class="text-right money">'+fmt(f.costo)+'</td><td class="text-right money">'+fmt(f.admin)+'</td><td>'+f.fecha+'</td><td><span class="badge '+b+'">'+f.status+'</span></td>';ft.appendChild(tr);});
   // ===== SUB-PESTAÑA CAMPAÑAS (Resumen General + filtro) =====
-  const CAMPS=(MES.campanas||[]).map(c=>({nombre:c.nombre, facturas:c.facturas||0, monto:c.monto||0, unidades:c.unidades||0, items:c.items||[]}));
+  const CAMPS=(MES.campanas||[]).map(c=>({nombre:c.nombre, facturas:c.facturas||0, monto:c.monto||0, unidades:c.unidades||0, admin:c.admin||0, costo:c.costo||0, items:c.items||[]}));
   let campSel=new Set(CAMPS.map(c=>c.nombre));
   let campChart=null;
   const campPct=v=>MES.total_facturado?((v/MES.total_facturado)*100).toFixed(1)+'%':'—';
