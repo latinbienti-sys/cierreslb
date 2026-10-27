@@ -204,7 +204,7 @@
   {
    "orden": "LB-ORDEN-04413",
    "cliente": "COLIBRI WOOD´S C.A",
-   "ejecutivo": "OSMARA G. SOTO. GOMEZ",
+   "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ",
    "monto": 2090.48,
    "costo": 1340.0,
    "admin": 0.0,
@@ -781,20 +781,20 @@
    "unidades": 31.0
   },
   {
+   "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
+   "facturado": 7790.76,
+   "costo": 4910.0,
+   "margen": 2880.76,
+   "facturas": 6,
+   "unidades": 9.0
+  },
+  {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
    "facturado": 5773.76,
    "costo": 2937.82,
    "margen": 2835.94,
    "facturas": 9,
    "unidades": 15.0
-  },
-  {
-   "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
-   "facturado": 5700.28,
-   "costo": 3570.0,
-   "margen": 2130.28,
-   "facturas": 5,
-   "unidades": 7.0
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
@@ -835,14 +835,6 @@
    "margen": 1080.33,
    "facturas": 1,
    "unidades": 1.0
-  },
-  {
-   "nombre": "OSMARA G. SOTO. GOMEZ",
-   "facturado": 2090.48,
-   "costo": 1340.0,
-   "margen": 750.48,
-   "facturas": 1,
-   "unidades": 2.0
   },
   {
    "nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO",
