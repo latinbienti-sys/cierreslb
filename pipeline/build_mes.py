@@ -59,7 +59,8 @@ def build_month(oc, year, month):
 
     facturas, ejec_agg, clientes, cancel_n, cancel_m = [], defaultdict(
         lambda: {"facturado": 0.0, "costo": 0.0, "facturas": 0, "unidades": 0}), set(), 0, 0.0
-    campana_agg = defaultdict(lambda: {"facturas": 0, "monto": 0.0, "unidades": 0.0, "items": []})
+    campana_agg = defaultdict(lambda: {"facturas": 0, "monto": 0.0, "unidades": 0.0,
+                                       "admin": 0.0, "costo": 0.0, "items": []})
     for o in orders:
         oid = o["id"]
         ops = (o["x_status_operativos"] or "").split(".")[0].strip()
@@ -88,6 +89,8 @@ def build_month(oc, year, month):
         camp = o["campaign_id"][1] if o.get("campaign_id") else "Sin campaña"
         campana_agg[camp]["facturas"] += 1
         campana_agg[camp]["monto"] += monto
+        campana_agg[camp]["admin"] += admin
+        campana_agg[camp]["costo"] += costo
         campana_agg[camp]["unidades"] += per[oid]["unidades"]
         campana_agg[camp]["items"].append({"orden": o["name"], "cliente": cliente,
                                            "unidades": round(per[oid]["unidades"], 2),
@@ -108,7 +111,8 @@ def build_month(oc, year, month):
         items = sorted(v["items"], key=lambda i: (i["fecha"], i["orden"]), reverse=True)
         unidades = round(v["unidades"], 2)
         campanas.append({"nombre": k, "facturas": v["facturas"], "monto": round(v["monto"], 2),
-                         "unidades": int(unidades) if unidades % 1 else unidades, "items": items})
+                         "unidades": int(unidades) if unidades % 1 else unidades,
+                         "admin": round(v["admin"], 2), "costo": round(v["costo"], 2), "items": items})
     campanas.sort(key=lambda c: c["monto"], reverse=True)
 
     return {

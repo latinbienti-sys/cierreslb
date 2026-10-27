@@ -1133,6 +1133,8 @@
    "facturas": 67,
    "monto": 45554.33,
    "unidades": 98.0,
+   "admin": 10322.91,
+   "costo": 23311.8,
    "items": [
     {
      "orden": "LB-ORDEN-04460",
@@ -1610,6 +1612,8 @@
    "facturas": 3,
    "monto": 9791.81,
    "unidades": 3.0,
+   "admin": 4611.81,
+   "costo": 5180.0,
    "items": [
     {
      "orden": "LB-ORDEN-04406",
@@ -1639,6 +1643,8 @@
    "facturas": 4,
    "monto": 3396.24,
    "unidades": 8.0,
+   "admin": 1182.75,
+   "costo": 1421.4,
    "items": [
     {
      "orden": "LB-ORDEN-04453",
@@ -1675,6 +1681,8 @@
    "facturas": 1,
    "monto": 1440.07,
    "unidades": 1.0,
+   "admin": 395.03,
+   "costo": 699.0,
    "items": [
     {
      "orden": "LB-ORDEN-04348",
@@ -1690,6 +1698,8 @@
    "facturas": 1,
    "monto": 1030.08,
    "unidades": 2.0,
+   "admin": 309.0,
+   "costo": 462.85,
    "items": [
     {
      "orden": "LB-ORDEN-04436",
