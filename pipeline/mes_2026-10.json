@@ -2,6 +2,16 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04467",
+   "cliente": "YAMIRA CHACON CONTRERAS",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 852.66,
+   "costo": 356.85,
+   "admin": 296.95,
+   "status": "Aprobado",
+   "fecha": "2026-10-27"
+  },
+  {
    "orden": "LB-ORDEN-04462",
    "cliente": "FERNANDO JAVIER ALBARRAN MALDONADO",
    "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
@@ -784,11 +794,11 @@
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 13388.42,
-   "costo": 6202.34,
-   "margen": 7186.08,
-   "facturas": 19,
-   "unidades": 31.0
+   "facturado": 14241.08,
+   "costo": 6559.19,
+   "margen": 7681.89,
+   "facturas": 20,
+   "unidades": 34.0
   },
   {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
@@ -866,8 +876,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 69,
-   "monto": 16856.88
+   "cantidad": 70,
+   "monto": 17153.83
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -960,6 +970,11 @@
    "monto": 859.38
   },
   {
+   "nombre": "[CEL000-01018] Samsung Galaxy A17 8GB/256GB",
+   "cantidad": 2,
+   "monto": 844.58
+  },
+  {
    "nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).",
    "cantidad": 2,
    "monto": 769.77
@@ -1025,11 +1040,6 @@
    "monto": 435.63
   },
   {
-   "nombre": "[CEL000-01018] Samsung Galaxy A17 8GB/256GB",
-   "cantidad": 1,
-   "monto": 422.29
-  },
-  {
    "nombre": "[CEL000-01073] Samsung Galaxy A37 6GB/128GB",
    "cantidad": 1,
    "monto": 420.95
@@ -1055,14 +1065,14 @@
    "monto": 298.56
   },
   {
+   "nombre": "[ACE009-00072] Samsung Power Adapter 45W (EP-T4511), Low Standby USB-C Cable",
+   "cantidad": 5,
+   "monto": 257.89
+  },
+  {
    "nombre": "CAUCHO 185/60R14 APLUS",
    "cantidad": 4,
    "monto": 215.14
-  },
-  {
-   "nombre": "[ACE009-00072] Samsung Power Adapter 45W (EP-T4511), Low Standby USB-C Cable",
-   "cantidad": 4,
-   "monto": 205.44
   },
   {
    "nombre": "Mini DC UPS Pro 20000 Olax mAh",
@@ -1090,14 +1100,14 @@
    "monto": 126.09
   },
   {
+   "nombre": "[0001-56] Seguro de Reserva de Dominio",
+   "cantidad": 25,
+   "monto": 125.77
+  },
+  {
    "nombre": "CAUCHO 165/95R15 APLUS",
    "cantidad": 2,
    "monto": 121.03
-  },
-  {
-   "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 24,
-   "monto": 120.76
   },
   {
    "nombre": "[AUD008-00011] Huawei Freebuds SE 3 T0016",
@@ -1120,15 +1130,15 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 61357.11,
- "total_facturas": 77,
- "total_clientes": 73,
- "total_productos": 44500.23,
- "total_admin": 16856.88,
+ "total_facturado": 62209.77,
+ "total_facturas": 78,
+ "total_clientes": 74,
+ "total_productos": 45055.94,
+ "total_admin": 17153.83,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 31145.05,
- "total_margen": 30212.06,
+ "total_costo": 31501.9,
+ "total_margen": 30707.87,
  "campanas": [
   {
    "nombre": "Sin campaña",
@@ -1635,12 +1645,19 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 6,
-   "monto": 4806.07,
-   "unidades": 12.0,
-   "admin": 1673.04,
-   "costo": 2012.1,
+   "facturas": 7,
+   "monto": 5658.73,
+   "unidades": 15.0,
+   "admin": 1969.99,
+   "costo": 2368.95,
    "items": [
+    {
+     "orden": "LB-ORDEN-04467",
+     "cliente": "YAMIRA CHACON CONTRERAS",
+     "unidades": 3.0,
+     "monto": 852.66,
+     "fecha": "2026-10-27"
+    },
     {
      "orden": "LB-ORDEN-04453",
      "cliente": "EDGAR ALEXANDER CERRADA ARAQUE",
@@ -1722,7 +1739,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 61357.11,
- "count": 77,
+ "total": 62209.77,
+ "count": 78,
  "colaboradores": []
 }

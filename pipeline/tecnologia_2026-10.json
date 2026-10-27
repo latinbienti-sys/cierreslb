@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 25,
-   "sc": 25,
-   "sm": 20100.32,
-   "sp": 14759.92,
-   "sk": 9643.04,
-   "sa": 5340.4,
-   "sg": 10457.28,
+   "sf": 26,
+   "sc": 26,
+   "sm": 20952.98,
+   "sp": 15315.63,
+   "sk": 9999.89,
+   "sa": 5637.35,
+   "sg": 10953.09,
    "se": [
+    {
+     "o": "LB-ORDEN-04467",
+     "c": "YAMIRA CHACON CONTRERAS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-27",
+     "m": 852.66,
+     "k": 356.85,
+     "a": 296.95
+    },
     {
      "o": "LB-ORDEN-04460",
      "c": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
@@ -815,10 +824,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 77,
-  "oct_facturado": 61357.11,
-  "oct_precio": 44500.23,
-  "oct_costo": 31145.05,
-  "oct_admin": 16856.88
+  "oct_facturas": 78,
+  "oct_facturado": 62209.77,
+  "oct_precio": 45055.94,
+  "oct_costo": 31501.9,
+  "oct_admin": 17153.83
  }
 }
