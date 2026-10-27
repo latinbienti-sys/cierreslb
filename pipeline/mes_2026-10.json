@@ -1132,11 +1132,11 @@
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 68,
-   "monto": 45698.91,
-   "unidades": 99.0,
-   "admin": 10358.29,
-   "costo": 23381.8,
+   "facturas": 66,
+   "monto": 44289.08,
+   "unidades": 95.0,
+   "admin": 9868.0,
+   "costo": 22791.1,
    "items": [
     {
      "orden": "LB-ORDEN-04462",
@@ -1171,20 +1171,6 @@
      "cliente": "ALEXIS GIOVANNI MARQUEZ SULBARAN",
      "unidades": 1.0,
      "monto": 326.05,
-     "fecha": "2026-10-25"
-    },
-    {
-     "orden": "LB-ORDEN-04445",
-     "cliente": "JARLY KARIN ARAQUE ARAQUE",
-     "unidades": 2.0,
-     "monto": 650.86,
-     "fecha": "2026-10-25"
-    },
-    {
-     "orden": "LB-ORDEN-04441",
-     "cliente": "ANA VIRGINIA GONZALEZ",
-     "unidades": 2.0,
-     "monto": 758.97,
      "fecha": "2026-10-25"
     },
     {
@@ -1649,11 +1635,11 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 4,
-   "monto": 3396.24,
-   "unidades": 8.0,
-   "admin": 1182.75,
-   "costo": 1421.4,
+   "facturas": 6,
+   "monto": 4806.07,
+   "unidades": 12.0,
+   "admin": 1673.04,
+   "costo": 2012.1,
    "items": [
     {
      "orden": "LB-ORDEN-04453",
@@ -1663,10 +1649,24 @@
      "fecha": "2026-10-26"
     },
     {
+     "orden": "LB-ORDEN-04445",
+     "cliente": "JARLY KARIN ARAQUE ARAQUE",
+     "unidades": 2.0,
+     "monto": 650.86,
+     "fecha": "2026-10-25"
+    },
+    {
      "orden": "LB-ORDEN-04443",
      "cliente": "LESLIE ALESSANDRA MOROS VILORIA",
      "unidades": 2.0,
      "monto": 650.86,
+     "fecha": "2026-10-25"
+    },
+    {
+     "orden": "LB-ORDEN-04441",
+     "cliente": "ANA VIRGINIA GONZALEZ",
+     "unidades": 2.0,
+     "monto": 758.97,
      "fecha": "2026-10-25"
     },
     {
