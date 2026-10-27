@@ -1131,27 +1131,574 @@
   {
    "nombre": "Sin campaña",
    "facturas": 67,
-   "monto": 45554.33
+   "monto": 45554.33,
+   "unidades": 98.0,
+   "items": [
+    {
+     "orden": "LB-ORDEN-04460",
+     "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
+     "unidades": 2.0,
+     "monto": 506.7,
+     "fecha": "2026-10-27"
+    },
+    {
+     "orden": "LB-ORDEN-04457",
+     "cliente": "MIGUELANGEL QUISCA ALBORNOZ",
+     "unidades": 1.0,
+     "monto": 209.44,
+     "fecha": "2026-10-26"
+    },
+    {
+     "orden": "LB-ORDEN-04425",
+     "cliente": "MARTHA GABRIELA VERA FLORES",
+     "unidades": 1.0,
+     "monto": 88.0,
+     "fecha": "2026-10-26"
+    },
+    {
+     "orden": "LB-ORDEN-04446",
+     "cliente": "ALEXIS GIOVANNI MARQUEZ SULBARAN",
+     "unidades": 1.0,
+     "monto": 326.05,
+     "fecha": "2026-10-25"
+    },
+    {
+     "orden": "LB-ORDEN-04445",
+     "cliente": "JARLY KARIN ARAQUE ARAQUE",
+     "unidades": 2.0,
+     "monto": 650.86,
+     "fecha": "2026-10-25"
+    },
+    {
+     "orden": "LB-ORDEN-04441",
+     "cliente": "ANA VIRGINIA GONZALEZ",
+     "unidades": 2.0,
+     "monto": 758.97,
+     "fecha": "2026-10-25"
+    },
+    {
+     "orden": "LB-ORDEN-04439",
+     "cliente": "JESUS ALEXANDER ROSALES CORTEZ",
+     "unidades": 1.0,
+     "monto": 452.42,
+     "fecha": "2026-10-25"
+    },
+    {
+     "orden": "LB-ORDEN-04423",
+     "cliente": "JHONY OCTAVIANO PEÑA SANCHEZ",
+     "unidades": 1.0,
+     "monto": 69.19,
+     "fecha": "2026-10-21"
+    },
+    {
+     "orden": "LB-ORDEN-04422",
+     "cliente": "ALECNY HERNANDEZ JEREZ",
+     "unidades": 1.0,
+     "monto": 519.5,
+     "fecha": "2026-10-21"
+    },
+    {
+     "orden": "LB-ORDEN-04421",
+     "cliente": "EDUARDO RAMIREZ MORA",
+     "unidades": 1.0,
+     "monto": 178.71,
+     "fecha": "2026-10-21"
+    },
+    {
+     "orden": "LB-ORDEN-04418",
+     "cliente": "QUIAVANA DEL SOL FLORES VILLASMIL",
+     "unidades": 3.0,
+     "monto": 2464.31,
+     "fecha": "2026-10-20"
+    },
+    {
+     "orden": "LB-ORDEN-04416",
+     "cliente": "YONATHAN RUBEN SULBARAN RIVAS",
+     "unidades": 1.0,
+     "monto": 936.04,
+     "fecha": "2026-10-20"
+    },
+    {
+     "orden": "LB-ORDEN-04415",
+     "cliente": "ARQUIMEDES DANIEL SANCHEZ MARTINEZ",
+     "unidades": 3.0,
+     "monto": 1094.86,
+     "fecha": "2026-10-20"
+    },
+    {
+     "orden": "LB-ORDEN-04414",
+     "cliente": "COLIBRI WOOD´S C.A",
+     "unidades": 1.0,
+     "monto": 1917.31,
+     "fecha": "2026-10-20"
+    },
+    {
+     "orden": "LB-ORDEN-04413",
+     "cliente": "COLIBRI WOOD´S C.A",
+     "unidades": 2.0,
+     "monto": 2090.48,
+     "fecha": "2026-10-20"
+    },
+    {
+     "orden": "LB-ORDEN-04419",
+     "cliente": "JENNYFER JORDANA CASANOVA RUIZ",
+     "unidades": 2.0,
+     "monto": 873.69,
+     "fecha": "2026-10-19"
+    },
+    {
+     "orden": "LB-ORDEN-04417",
+     "cliente": "DEICY CAROLINA MEZA",
+     "unidades": 2.0,
+     "monto": 694.98,
+     "fecha": "2026-10-19"
+    },
+    {
+     "orden": "LB-ORDEN-04410",
+     "cliente": "ALEJANDRA YOSELINE ZAMBRANO DIAZ",
+     "unidades": 1.0,
+     "monto": 1315.82,
+     "fecha": "2026-10-19"
+    },
+    {
+     "orden": "LB-ORDEN-04409",
+     "cliente": "JOHAN ANTONIO MONTES PALMERA",
+     "unidades": 1.0,
+     "monto": 495.94,
+     "fecha": "2026-10-19"
+    },
+    {
+     "orden": "LB-ORDEN-04411",
+     "cliente": "ANGY DEL CARMEN CORONA ROJAS",
+     "unidades": 1.0,
+     "monto": 1216.58,
+     "fecha": "2026-10-18"
+    },
+    {
+     "orden": "LB-ORDEN-04405",
+     "cliente": "ANGELO ENRIQUE SALAS ZERPA",
+     "unidades": 1.0,
+     "monto": 78.42,
+     "fecha": "2026-10-18"
+    },
+    {
+     "orden": "LB-ORDEN-04401",
+     "cliente": "EDGAR ALEXANDER CERRADA ARAQUE",
+     "unidades": 1.0,
+     "monto": 1561.57,
+     "fecha": "2026-10-18"
+    },
+    {
+     "orden": "LB-ORDEN-04408",
+     "cliente": "DANIEL JOSE RODRIGUEZ VALECILLOS",
+     "unidades": 1.0,
+     "monto": 109.46,
+     "fecha": "2026-10-17"
+    },
+    {
+     "orden": "LB-ORDEN-04407",
+     "cliente": "ESTEFANY GLAYRE GUERRERO BENCOMO",
+     "unidades": 3.0,
+     "monto": 1012.73,
+     "fecha": "2026-10-17"
+    },
+    {
+     "orden": "LB-ORDEN-04404",
+     "cliente": "KIMBERLY ALBIRENE ALBORNOZ DIAZ",
+     "unidades": 1.0,
+     "monto": 72.65,
+     "fecha": "2026-10-17"
+    },
+    {
+     "orden": "LB-ORDEN-04402",
+     "cliente": "JOAN CARLOS PEREIRA RIVAS",
+     "unidades": 1.0,
+     "monto": 1226.47,
+     "fecha": "2026-10-17"
+    },
+    {
+     "orden": "LB-ORDEN-04398",
+     "cliente": "YANN MANUEL RIVAS VELAZQUEZ",
+     "unidades": 1.0,
+     "monto": 78.42,
+     "fecha": "2026-10-17"
+    },
+    {
+     "orden": "LB-ORDEN-04397",
+     "cliente": "ADRIANA CAROLINA BAUTISTA ZAMBRANO",
+     "unidades": 2.0,
+     "monto": 873.69,
+     "fecha": "2026-10-17"
+    },
+    {
+     "orden": "LB-ORDEN-04400",
+     "cliente": "ALEX MANUEL CONTRERAS RAMOS",
+     "unidades": 2.0,
+     "monto": 703.91,
+     "fecha": "2026-10-16"
+    },
+    {
+     "orden": "LB-ORDEN-04399",
+     "cliente": "EDGAR HORACIO CERRADA VERGARA",
+     "unidades": 2.0,
+     "monto": 272.42,
+     "fecha": "2026-10-16"
+    },
+    {
+     "orden": "LB-ORDEN-04393",
+     "cliente": "ASDRUBAL JESUS VELASQUEZ MENDEZ",
+     "unidades": 1.0,
+     "monto": 332.87,
+     "fecha": "2026-10-16"
+    },
+    {
+     "orden": "LB-ORDEN-04391",
+     "cliente": "HILMAR DANIELA MENDEZ ESCALONA",
+     "unidades": 2.0,
+     "monto": 583.27,
+     "fecha": "2026-10-16"
+    },
+    {
+     "orden": "LB-ORDEN-04386",
+     "cliente": "HOTEL CABAÑAS TURISTICAS LOS LIRIOS C.A.",
+     "unidades": 1.0,
+     "monto": 1489.29,
+     "fecha": "2026-10-16"
+    },
+    {
+     "orden": "LB-ORDEN-04372",
+     "cliente": "SILVIA ANALI HERNANDEZ PEÑA",
+     "unidades": 1.0,
+     "monto": 492.29,
+     "fecha": "2026-10-16"
+    },
+    {
+     "orden": "LB-ORDEN-04392",
+     "cliente": "ERNESTO JOSUE FERNANDEZ VARGAS",
+     "unidades": 2.0,
+     "monto": 272.42,
+     "fecha": "2026-10-15"
+    },
+    {
+     "orden": "LB-ORDEN-04388",
+     "cliente": "ROSELYN NAZARETH PEÑA DAVILA",
+     "unidades": 1.0,
+     "monto": 580.68,
+     "fecha": "2026-10-15"
+    },
+    {
+     "orden": "LB-ORDEN-04387",
+     "cliente": "NESTOR GREGORIO ORDOÑEZ URBINA",
+     "unidades": 1.0,
+     "monto": 1137.11,
+     "fecha": "2026-10-15"
+    },
+    {
+     "orden": "LB-ORDEN-04382",
+     "cliente": "MARIA DE LOS ANGELES ROJAS ZAMBRANO",
+     "unidades": 1.0,
+     "monto": 1035.96,
+     "fecha": "2026-10-14"
+    },
+    {
+     "orden": "LB-ORDEN-04381",
+     "cliente": "YARLEY CAROLINA CARMONA HIDALGO",
+     "unidades": 1.0,
+     "monto": 70.34,
+     "fecha": "2026-10-13"
+    },
+    {
+     "orden": "LB-ORDEN-04376",
+     "cliente": "JOSE FROILAN MARQUINA BARRIOS",
+     "unidades": 1.0,
+     "monto": 61.1,
+     "fecha": "2026-10-11"
+    },
+    {
+     "orden": "LB-ORDEN-04375",
+     "cliente": "MARTINA DE LOS SANTOS RIVAS ALVARADO",
+     "unidades": 1.0,
+     "monto": 61.1,
+     "fecha": "2026-10-11"
+    },
+    {
+     "orden": "LB-ORDEN-04374",
+     "cliente": "JHEMIREET CRISTINA ERAZO RANGEL",
+     "unidades": 1.0,
+     "monto": 68.03,
+     "fecha": "2026-10-11"
+    },
+    {
+     "orden": "LB-ORDEN-04373",
+     "cliente": "JULIO CESAR MORENO PUENTES",
+     "unidades": 1.0,
+     "monto": 78.0,
+     "fecha": "2026-10-10"
+    },
+    {
+     "orden": "LB-ORDEN-04369",
+     "cliente": "REINA KARELIS MENDOZA BASTIDAS",
+     "unidades": 1.0,
+     "monto": 123.3,
+     "fecha": "2026-10-09"
+    },
+    {
+     "orden": "LB-ORDEN-04350",
+     "cliente": "ORIANA TIBISAY TORRES DE ROJAS",
+     "unidades": 1.0,
+     "monto": 490.27,
+     "fecha": "2026-10-09"
+    },
+    {
+     "orden": "LB-ORDEN-04367",
+     "cliente": "NINOSKA JOSEFINA FEBRES DE SOSA",
+     "unidades": 1.0,
+     "monto": 68.03,
+     "fecha": "2026-10-08"
+    },
+    {
+     "orden": "LB-ORDEN-04366",
+     "cliente": "LUIS ERNESTO ROSAS IRIARTE",
+     "unidades": 2.0,
+     "monto": 484.98,
+     "fecha": "2026-10-08"
+    },
+    {
+     "orden": "LB-ORDEN-04320",
+     "cliente": "GLADIMAR MORA MOLINA",
+     "unidades": 1.0,
+     "monto": 1268.92,
+     "fecha": "2026-10-08"
+    },
+    {
+     "orden": "LB-ORDEN-04356",
+     "cliente": "ANTHONY JOSUE REY QUINTERO",
+     "unidades": 1.0,
+     "monto": 70.34,
+     "fecha": "2026-10-06"
+    },
+    {
+     "orden": "LB-ORDEN-04355",
+     "cliente": "COLIBRI WOOD´S C.A",
+     "unidades": 3.0,
+     "monto": 2265.0,
+     "fecha": "2026-10-06"
+    },
+    {
+     "orden": "LB-ORDEN-04305",
+     "cliente": "ANTONY DAVID LOPEZ BENCOMO",
+     "unidades": 1.0,
+     "monto": 561.08,
+     "fecha": "2026-10-06"
+    },
+    {
+     "orden": "LB-ORDEN-04357",
+     "cliente": "EXARIANNY YULIE MONTILLA ZAMBRANO",
+     "unidades": 1.0,
+     "monto": 68.03,
+     "fecha": "2026-10-05"
+    },
+    {
+     "orden": "LB-ORDEN-04347",
+     "cliente": "JEAN CARLOS PUENTES GUILLEN",
+     "unidades": 4.0,
+     "monto": 357.37,
+     "fecha": "2026-10-05"
+    },
+    {
+     "orden": "LB-ORDEN-04335",
+     "cliente": "YNIRIDA DEL VALLE CASTRO NADALES",
+     "unidades": 1.0,
+     "monto": 2149.33,
+     "fecha": "2026-10-05"
+    },
+    {
+     "orden": "LB-ORDEN-04354",
+     "cliente": "DEISY DEL CARMEN BUSTAMANTE DUARTE",
+     "unidades": 1.0,
+     "monto": 1481.27,
+     "fecha": "2026-10-04"
+    },
+    {
+     "orden": "LB-ORDEN-04352",
+     "cliente": "CARLOS EDUARDO CARRERO PARRA",
+     "unidades": 1.0,
+     "monto": 1494.83,
+     "fecha": "2026-10-04"
+    },
+    {
+     "orden": "LB-ORDEN-04351",
+     "cliente": "DANIEL JOSE RODRIGUEZ VALECILLOS",
+     "unidades": 1.0,
+     "monto": 125.44,
+     "fecha": "2026-10-04"
+    },
+    {
+     "orden": "LB-ORDEN-04349",
+     "cliente": "YOSDAN RAFAEL HERRERA LEAL",
+     "unidades": 1.0,
+     "monto": 696.72,
+     "fecha": "2026-10-03"
+    },
+    {
+     "orden": "LB-ORDEN-04345",
+     "cliente": "YONNY YOSMAR MONSALVE MORENO",
+     "unidades": 3.0,
+     "monto": 872.14,
+     "fecha": "2026-10-02"
+    },
+    {
+     "orden": "LB-ORDEN-04343",
+     "cliente": "NEYLA ALEJANDRA RODRIGUEZ ROJAS",
+     "unidades": 1.0,
+     "monto": 659.41,
+     "fecha": "2026-10-02"
+    },
+    {
+     "orden": "LB-ORDEN-04342",
+     "cliente": "ZENAIDA MONCADA MORA",
+     "unidades": 3.0,
+     "monto": 886.48,
+     "fecha": "2026-10-02"
+    },
+    {
+     "orden": "LB-ORDEN-04331",
+     "cliente": "ANDRES CRISTOBAL GONCALVES VALDES",
+     "unidades": 2.0,
+     "monto": 261.28,
+     "fecha": "2026-10-02"
+    },
+    {
+     "orden": "LB-ORDEN-04341",
+     "cliente": "ESTEFANI PAOLA RANGEL ARAQUE",
+     "unidades": 2.0,
+     "monto": 436.56,
+     "fecha": "2026-10-01"
+    },
+    {
+     "orden": "LB-ORDEN-04340",
+     "cliente": "NELSON JESUS CHAVEZ VELAZCO",
+     "unidades": 1.0,
+     "monto": 506.11,
+     "fecha": "2026-10-01"
+    },
+    {
+     "orden": "LB-ORDEN-04339",
+     "cliente": "JESUS ALEXANDER LOBO MONSALVE",
+     "unidades": 1.0,
+     "monto": 619.27,
+     "fecha": "2026-10-01"
+    },
+    {
+     "orden": "LB-ORDEN-04336",
+     "cliente": "NILSE TRINIDAD SOSA UZCATEGUI",
+     "unidades": 2.0,
+     "monto": 193.47,
+     "fecha": "2026-10-01"
+    },
+    {
+     "orden": "LB-ORDEN-04314",
+     "cliente": "JAMES ALEXANDER CANO BRICEÑO",
+     "unidades": 2.0,
+     "monto": 302.65,
+     "fecha": "2026-10-01"
+    }
+   ]
   },
   {
    "nombre": "CREDIMOTO",
    "facturas": 3,
-   "monto": 9791.81
+   "monto": 9791.81,
+   "unidades": 3.0,
+   "items": [
+    {
+     "orden": "LB-ORDEN-04406",
+     "cliente": "DANIEL ALFONSO BRICEÑO GARCIA",
+     "unidades": 1.0,
+     "monto": 3402.56,
+     "fecha": "2026-10-20"
+    },
+    {
+     "orden": "LB-ORDEN-04371",
+     "cliente": "ADOLFO MORA NOGUERA",
+     "unidades": 1.0,
+     "monto": 2986.69,
+     "fecha": "2026-10-13"
+    },
+    {
+     "orden": "LB-ORDEN-04370",
+     "cliente": "MAXIMILIAN ANTONI ESCORCIA ANDRADE",
+     "unidades": 1.0,
+     "monto": 3402.56,
+     "fecha": "2026-10-13"
+    }
+   ]
   },
   {
    "nombre": "0INICIAL",
    "facturas": 4,
-   "monto": 3396.24
+   "monto": 3396.24,
+   "unidades": 8.0,
+   "items": [
+    {
+     "orden": "LB-ORDEN-04453",
+     "cliente": "EDGAR ALEXANDER CERRADA ARAQUE",
+     "unidades": 2.0,
+     "monto": 650.86,
+     "fecha": "2026-10-26"
+    },
+    {
+     "orden": "LB-ORDEN-04443",
+     "cliente": "LESLIE ALESSANDRA MOROS VILORIA",
+     "unidades": 2.0,
+     "monto": 650.86,
+     "fecha": "2026-10-25"
+    },
+    {
+     "orden": "LB-ORDEN-04438",
+     "cliente": "PATRICIO ANTONIO FIGUEROA NAVAS",
+     "unidades": 2.0,
+     "monto": 1131.35,
+     "fecha": "2026-10-24"
+    },
+    {
+     "orden": "LB-ORDEN-04437",
+     "cliente": "ANGEL EDUARDO RODRIGUEZ UZCATEGUI",
+     "unidades": 2.0,
+     "monto": 963.17,
+     "fecha": "2026-10-24"
+    }
+   ]
   },
   {
    "nombre": "FUNCIONARIOSDESEGURIDAD2026",
    "facturas": 1,
-   "monto": 1440.07
+   "monto": 1440.07,
+   "unidades": 1.0,
+   "items": [
+    {
+     "orden": "LB-ORDEN-04348",
+     "cliente": "RONALD JOSE RIVERO GOMEZ",
+     "unidades": 1.0,
+     "monto": 1440.07,
+     "fecha": "2026-10-02"
+    }
+   ]
   },
   {
    "nombre": "SEMANADELTERROR",
    "facturas": 1,
-   "monto": 1030.08
+   "monto": 1030.08,
+   "unidades": 2.0,
+   "items": [
+    {
+     "orden": "LB-ORDEN-04436",
+     "cliente": "LUIS HENRIQUE PAREDES CHIRINO",
+     "unidades": 2.0,
+     "monto": 1030.08,
+     "fecha": "2026-10-24"
+    }
+   ]
   }
  ],
  "cancelaciones_count": 6,

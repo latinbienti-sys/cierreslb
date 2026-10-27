@@ -41,7 +41,7 @@ def build_month(oc, year, month):
         if l["product_id"] and norm(l["product_id"][1]) == ADMIN_NAME:
             admin_ids.add(l["product_id"][0])
 
-    per = defaultdict(lambda: {"admin": 0.0, "costo": 0.0})
+    per = defaultdict(lambda: {"admin": 0.0, "costo": 0.0, "unidades": 0.0})
     prod_agg = defaultdict(lambda: {"cantidad": 0.0, "monto": 0.0})
     for l in lines:
         oid = l["order_id"][0]
@@ -53,12 +53,13 @@ def build_month(oc, year, month):
             per[oid]["admin"] += sub
         else:
             per[oid]["costo"] += (l["purchase_price"] or 0.0) * qty
+            per[oid]["unidades"] += qty
         prod_agg[nm]["cantidad"] += qty
         prod_agg[nm]["monto"] += sub
 
     facturas, ejec_agg, clientes, cancel_n, cancel_m = [], defaultdict(
         lambda: {"facturado": 0.0, "costo": 0.0, "facturas": 0, "unidades": 0}), set(), 0, 0.0
-    campana_agg = defaultdict(lambda: {"facturas": 0, "monto": 0.0})
+    campana_agg = defaultdict(lambda: {"facturas": 0, "monto": 0.0, "unidades": 0.0, "items": []})
     for o in orders:
         oid = o["id"]
         ops = (o["x_status_operativos"] or "").split(".")[0].strip()
@@ -87,6 +88,10 @@ def build_month(oc, year, month):
         camp = o["campaign_id"][1] if o.get("campaign_id") else "Sin campaña"
         campana_agg[camp]["facturas"] += 1
         campana_agg[camp]["monto"] += monto
+        campana_agg[camp]["unidades"] += per[oid]["unidades"]
+        campana_agg[camp]["items"].append({"orden": o["name"], "cliente": cliente,
+                                           "unidades": round(per[oid]["unidades"], 2),
+                                           "monto": monto, "fecha": d})
 
     total_facturado = round(sum(f["monto"] for f in facturas), 2)
     total_admin = round(sum(f["admin"] for f in facturas), 2)
@@ -98,8 +103,12 @@ def build_month(oc, year, month):
     top_productos = [{"nombre": k, "cantidad": round(v["cantidad"], 2) if v["cantidad"] % 1 else int(v["cantidad"]),
                       "monto": round(v["monto"], 2)} for k, v in prod_agg.items()]
     top_productos.sort(key=lambda p: p["monto"], reverse=True)
-    campanas = [{"nombre": k, "facturas": v["facturas"], "monto": round(v["monto"], 2)}
-                for k, v in campana_agg.items()]
+    campanas = []
+    for k, v in campana_agg.items():
+        items = sorted(v["items"], key=lambda i: (i["fecha"], i["orden"]), reverse=True)
+        unidades = round(v["unidades"], 2)
+        campanas.append({"nombre": k, "facturas": v["facturas"], "monto": round(v["monto"], 2),
+                         "unidades": int(unidades) if unidades % 1 else unidades, "items": items})
     campanas.sort(key=lambda c: c["monto"], reverse=True)
 
     return {
