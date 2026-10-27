@@ -32,12 +32,13 @@ def main():
     data = B.build_month(oc, year, month)
     json.dump(data, io.open(os.path.join(REPO, "pipeline", f"mes_{year:04d}-{month:02d}.json"),
                             "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=1)
-    new_line = "const MES = " + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n"
+    new_json = "const MES = " + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";"
     s = io.open(HTML, encoding="utf-8", newline="").read()
-    if re.search(r"^const MES = .*?;\n", s, re.M):
-        s = re.sub(r"^const MES = .*?;\n", new_line, s, count=1, flags=re.M)
+    m = re.search(r"^const MES = .*?;\s*$", s, re.M)
+    if m:
+        s = s[:m.start()] + new_json + s[m.end():]
     else:
-        s = s.replace("// ===== TAB SWITCH =====", new_line + "// ===== TAB SWITCH =====", 1)
+        s = s.replace("// ===== TAB SWITCH =====", new_json + "\n// ===== TAB SWITCH =====", 1)
     io.open(HTML, "w", encoding="utf-8", newline="").write(s)
     print(f"MES -> {year}-{month:02d}: facturas={data['total_facturas']} facturado={data['total_facturado']} "
           f"admin={data['total_admin']} costo={data['total_costo']}")

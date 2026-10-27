@@ -2,6 +2,36 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04460",
+   "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 506.7,
+   "costo": 212.85,
+   "admin": 175.64,
+   "status": "Entregado",
+   "fecha": "2026-10-27"
+  },
+  {
+   "orden": "LB-ORDEN-04457",
+   "cliente": "MIGUELANGEL QUISCA ALBORNOZ",
+   "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
+   "monto": 209.44,
+   "costo": 112.5,
+   "admin": 63.18,
+   "status": "Entregado",
+   "fecha": "2026-10-26"
+  },
+  {
+   "orden": "LB-ORDEN-04453",
+   "cliente": "EDGAR ALEXANDER CERRADA ARAQUE",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 650.86,
+   "costo": 272.85,
+   "admin": 226.19,
+   "status": "Entregado",
+   "fecha": "2026-10-26"
+  },
+  {
    "orden": "LB-ORDEN-04425",
    "cliente": "MARTHA GABRIELA VERA FLORES",
    "ejecutivo": "JUHENDIS ESTHER VALLADARES LOPEZ",
@@ -138,6 +168,16 @@
    "monto": 936.04,
    "costo": 419.0,
    "admin": 282.38,
+   "status": "Entregado",
+   "fecha": "2026-10-20"
+  },
+  {
+   "orden": "LB-ORDEN-04415",
+   "cliente": "ARQUIMEDES DANIEL SANCHEZ MARTINEZ",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 1094.86,
+   "costo": 491.85,
+   "admin": 328.54,
    "status": "Entregado",
    "fecha": "2026-10-20"
   },
@@ -726,11 +766,11 @@
  "ejecutivos": [
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 14146.55,
-   "costo": 6956.87,
-   "margen": 7189.68,
-   "facturas": 20,
-   "unidades": 31.0
+   "facturado": 15892.27,
+   "costo": 7721.57,
+   "margen": 8170.7,
+   "facturas": 22,
+   "unidades": 36.0
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -741,6 +781,14 @@
    "unidades": 31.0
   },
   {
+   "nombre": "MARSOLAIRE ANGULO RANGEL ",
+   "facturado": 5773.76,
+   "costo": 2937.82,
+   "margen": 2835.94,
+   "facturas": 9,
+   "unidades": 15.0
+  },
+  {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
    "facturado": 5700.28,
    "costo": 3570.0,
@@ -749,20 +797,12 @@
    "unidades": 7.0
   },
   {
-   "nombre": "MARSOLAIRE ANGULO RANGEL ",
-   "facturado": 5564.32,
-   "costo": 2825.32,
-   "margen": 2739.0,
-   "facturas": 8,
-   "unidades": 14.0
-  },
-  {
    "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 3683.16,
-   "costo": 1725.0,
-   "margen": 1958.16,
-   "facturas": 10,
-   "unidades": 10.0
+   "facturado": 4189.86,
+   "costo": 1937.85,
+   "margen": 2252.01,
+   "facturas": 11,
+   "unidades": 12.0
   },
   {
    "nombre": "DANIEL CASTELLANOS",
@@ -824,8 +864,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 64,
-   "monto": 16027.95
+   "cantidad": 68,
+   "monto": 16821.5
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -878,6 +918,21 @@
    "monto": 1252.09
   },
   {
+   "nombre": "[CEL000-01087] Samsung Galaxy A57 8GB/256GB",
+   "cantidad": 2,
+   "monto": 1207.7
+  },
+  {
+   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
+   "cantidad": 4,
+   "monto": 1111.01
+  },
+  {
+   "nombre": "[CEL003-00952] Xiaomi Redmi Note 15 8GB/256GB",
+   "cantidad": 3,
+   "monto": 1085.34
+  },
+  {
    "nombre": "[CEL000-01077] Samsung Galaxy A37 8GB/256GB",
    "cantidad": 2,
    "monto": 1024.52
@@ -903,11 +958,6 @@
    "monto": 859.38
   },
   {
-   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
-   "cantidad": 3,
-   "monto": 829.93
-  },
-  {
    "nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).",
    "cantidad": 2,
    "monto": 769.77
@@ -918,11 +968,6 @@
    "monto": 738.34
   },
   {
-   "nombre": "[CEL003-00952] Xiaomi Redmi Note 15 8GB/256GB",
-   "cantidad": 2,
-   "monto": 723.56
-  },
-  {
    "nombre": "Laptop Lenovo IdeaPad Slim 3i 82XB00C2US, Intel Core i3-N305, 8GB, 128GB UFS, 15.6\", US, W11.",
    "cantidad": 1,
    "monto": 684.54
@@ -931,11 +976,6 @@
    "nombre": "[CEL01B-00252] Infinix Note 60 Pro 5G 8GB/256GB",
    "cantidad": 1,
    "monto": 617.3
-  },
-  {
-   "nombre": "[CEL000-01087] Samsung Galaxy A57 8GB/256GB",
-   "cantidad": 1,
-   "monto": 603.85
   },
   {
    "nombre": "[EIH000-00002] Aiwa Congelador Horizontal, 141LT (5CuFt).",
@@ -1018,6 +1058,11 @@
    "monto": 215.14
   },
   {
+   "nombre": "[ACE009-00072] Samsung Power Adapter 45W (EP-T4511), Low Standby USB-C Cable",
+   "cantidad": 4,
+   "monto": 205.44
+  },
+  {
    "nombre": "[TV016-00002] Aiwa 32\" HD Smart TV, Google TV.",
    "cantidad": 1,
    "monto": 200.39
@@ -1028,14 +1073,14 @@
    "monto": 198.5
   },
   {
-   "nombre": "[ACE009-00072] Samsung Power Adapter 45W (EP-T4511), Low Standby USB-C Cable",
-   "cantidad": 3,
-   "monto": 152.99
-  },
-  {
    "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
    "cantidad": 2,
    "monto": 131.8
+  },
+  {
+   "nombre": "[AIARG-01] Alimentador Inteligente ARGOMTECH para Mascotas-Capacidad de 4 L",
+   "cantidad": 1,
+   "monto": 126.09
   },
   {
    "nombre": "CAUCHO 165/95R15 APLUS",
@@ -1043,14 +1088,14 @@
    "monto": 121.03
   },
   {
+   "nombre": "[0001-56] Seguro de Reserva de Dominio",
+   "cantidad": 24,
+   "monto": 120.76
+  },
+  {
    "nombre": "Mini DC UPS Pro 20000 Olax mAh",
    "cantidad": 1,
    "monto": 107.59
-  },
-  {
-   "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 21,
-   "monto": 105.73
   },
   {
    "nombre": "[AUD008-00011] Huawei Freebuds SE 3 T0016",
@@ -1073,18 +1118,18 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 58750.67,
- "total_facturas": 72,
- "total_clientes": 69,
- "total_productos": 42722.72,
- "total_admin": 16027.95,
+ "total_facturado": 61212.53,
+ "total_facturas": 76,
+ "total_clientes": 72,
+ "total_productos": 44391.03,
+ "total_admin": 16821.5,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 29985.0,
- "total_margen": 28765.67,
+ "total_costo": 31075.05,
+ "total_margen": 30137.48,
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 58750.67,
- "count": 72,
+ "total": 61212.53,
+ "count": 76,
  "colaboradores": []
 }
