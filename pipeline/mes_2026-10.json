@@ -2,6 +2,26 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04471",
+   "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
+   "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
+   "monto": 1372.78,
+   "costo": 779.0,
+   "admin": 157.5,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
+   "orden": "LB-ORDEN-04451",
+   "cliente": "MARIA GABRIELA CONTRERAS ARAQUE",
+   "ejecutivo": "JUHENDIS ESTHER VALLADARES LOPEZ",
+   "monto": 506.7,
+   "costo": 212.85,
+   "admin": 175.64,
+   "status": "Aprobado",
+   "fecha": "2026-10-28"
+  },
+  {
    "orden": "LB-ORDEN-04467",
    "cliente": "YAMIRA CHACON CONTRERAS",
    "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -168,7 +188,7 @@
    "monto": 178.71,
    "costo": 80.0,
    "admin": 53.91,
-   "status": "Presupuesto",
+   "status": "Aprobado",
    "fecha": "2026-10-21"
   },
   {
@@ -810,11 +830,11 @@
   },
   {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
-   "facturado": 5918.34,
-   "costo": 3007.82,
-   "margen": 2910.52,
-   "facturas": 10,
-   "unidades": 16.0
+   "facturado": 7291.12,
+   "costo": 3786.82,
+   "margen": 3504.3,
+   "facturas": 11,
+   "unidades": 17.0
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
@@ -866,18 +886,18 @@
   },
   {
    "nombre": "JUHENDIS ESTHER VALLADARES LOPEZ",
-   "facturado": 747.03,
-   "costo": 449.82,
-   "margen": 297.21,
-   "facturas": 4,
-   "unidades": 4.0
+   "facturado": 1253.73,
+   "costo": 662.67,
+   "margen": 591.06,
+   "facturas": 5,
+   "unidades": 6.0
   }
  ],
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 70,
-   "monto": 17153.83
+   "cantidad": 72,
+   "monto": 17486.97
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -888,6 +908,11 @@
    "nombre": "Motocicleta Bel TT 150",
    "cantidad": 2,
    "monto": 3103.44
+  },
+  {
+   "nombre": "Laptop Lenovo Ideapad Slim 3 82XM00LMUS, AMD Ryzen 7 5825U, 16GB, 512GB SSD, 15.6\" Touchscreen, US, W11.",
+   "cantidad": 2,
+   "monto": 2051.67
   },
   {
    "nombre": "Laptop Compaq QL15R5BM16256 – AMD Ryzen 5 7430U / 16 GB / 256 GB SSD / 15.6” / W11",
@@ -915,6 +940,11 @@
    "monto": 1482.06
   },
   {
+   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
+   "cantidad": 5,
+   "monto": 1392.09
+  },
+  {
    "nombre": "Motocicleta Bel By UM Nitrox Sport",
    "cantidad": 1,
    "monto": 1362.07
@@ -935,11 +965,6 @@
    "monto": 1207.7
   },
   {
-   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
-   "cantidad": 4,
-   "monto": 1111.01
-  },
-  {
    "nombre": "[CEL003-00952] Xiaomi Redmi Note 15 8GB/256GB",
    "cantidad": 3,
    "monto": 1085.34
@@ -948,11 +973,6 @@
    "nombre": "[CEL000-01077] Samsung Galaxy A37 8GB/256GB",
    "cantidad": 2,
    "monto": 1024.52
-  },
-  {
-   "nombre": "Laptop Lenovo Ideapad Slim 3 82XM00LMUS, AMD Ryzen 7 5825U, 16GB, 512GB SSD, 15.6\" Touchscreen, US, W11.",
-   "cantidad": 1,
-   "monto": 1004.01
   },
   {
    "nombre": "Laptop Acer Aspire Go 15 AG15-42P-R917 – AMD Ryzen 7 7730U / AMD Radeon / 16GB / 512GB SSD / 15.6” / US / W11",
@@ -1095,14 +1115,14 @@
    "monto": 131.8
   },
   {
+   "nombre": "[0001-56] Seguro de Reserva de Dominio",
+   "cantidad": 26,
+   "monto": 130.78
+  },
+  {
    "nombre": "[AIARG-01] Alimentador Inteligente ARGOMTECH para Mascotas-Capacidad de 4 L",
    "cantidad": 1,
    "monto": 126.09
-  },
-  {
-   "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 25,
-   "monto": 125.77
   },
   {
    "nombre": "CAUCHO 165/95R15 APLUS",
@@ -1130,24 +1150,38 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 62209.77,
- "total_facturas": 78,
- "total_clientes": 74,
- "total_productos": 45055.94,
- "total_admin": 17153.83,
+ "total_facturado": 64089.25,
+ "total_facturas": 80,
+ "total_clientes": 76,
+ "total_productos": 46602.28,
+ "total_admin": 17486.97,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 31501.9,
- "total_margen": 30707.87,
+ "total_costo": 32493.75,
+ "total_margen": 31595.5,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 66,
-   "monto": 44289.08,
-   "unidades": 95.0,
-   "admin": 9868.0,
-   "costo": 22791.1,
+   "facturas": 68,
+   "monto": 46168.56,
+   "unidades": 98.0,
+   "admin": 10201.14,
+   "costo": 23782.95,
    "items": [
+    {
+     "orden": "LB-ORDEN-04471",
+     "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
+     "unidades": 1.0,
+     "monto": 1372.78,
+     "fecha": "2026-10-29"
+    },
+    {
+     "orden": "LB-ORDEN-04451",
+     "cliente": "MARIA GABRIELA CONTRERAS ARAQUE",
+     "unidades": 2.0,
+     "monto": 506.7,
+     "fecha": "2026-10-28"
+    },
     {
      "orden": "LB-ORDEN-04462",
      "cliente": "FERNANDO JAVIER ALBARRAN MALDONADO",
@@ -1739,7 +1773,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 62209.77,
- "count": 78,
+ "total": 64089.25,
+ "count": 80,
  "colaboradores": []
 }

@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 26,
-   "sc": 26,
-   "sm": 20952.98,
-   "sp": 15315.63,
-   "sk": 9999.89,
-   "sa": 5637.35,
-   "sg": 10953.09,
+   "sf": 27,
+   "sc": 27,
+   "sm": 21459.68,
+   "sp": 15646.69,
+   "sk": 10212.74,
+   "sa": 5812.99,
+   "sg": 11246.94,
    "se": [
+    {
+     "o": "LB-ORDEN-04451",
+     "c": "MARIA GABRIELA CONTRERAS ARAQUE",
+     "e": "JUHENDIS ESTHER VALLADARES LOPEZ",
+     "f": "2026-10-28",
+     "m": 506.7,
+     "k": 212.85,
+     "a": 175.64
+    },
     {
      "o": "LB-ORDEN-04467",
      "c": "YAMIRA CHACON CONTRERAS",
@@ -248,14 +257,23 @@
   },
   {
    "t": "Computación",
-   "sf": 15,
-   "sc": 15,
-   "sm": 19001.82,
-   "sp": 14634.57,
-   "sk": 9686.67,
-   "sa": 4367.25,
-   "sg": 9315.15,
+   "sf": 16,
+   "sc": 16,
+   "sm": 20374.6,
+   "sp": 15849.85,
+   "sk": 10465.67,
+   "sa": 4524.75,
+   "sg": 9908.93,
    "se": [
+    {
+     "o": "LB-ORDEN-04471",
+     "c": "CARLOS ALONSO ESCALANTE RAMIREZ",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-29",
+     "m": 1372.78,
+     "k": 779.0,
+     "a": 157.5
+    },
     {
      "o": "LB-ORDEN-04422",
      "c": "ALECNY HERNANDEZ JEREZ",
@@ -824,10 +842,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 78,
-  "oct_facturado": 62209.77,
-  "oct_precio": 45055.94,
-  "oct_costo": 31501.9,
-  "oct_admin": 17153.83
+  "oct_facturas": 80,
+  "oct_facturado": 64089.25,
+  "oct_precio": 46602.28,
+  "oct_costo": 32493.75,
+  "oct_admin": 17486.97
  }
 }
