@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 29,
-   "sc": 29,
-   "sm": 23061.7,
-   "sp": 16691.03,
-   "sk": 10883.44,
-   "sa": 6370.67,
-   "sg": 12178.26,
+   "sf": 32,
+   "sc": 32,
+   "sm": 25614.88,
+   "sp": 18355.04,
+   "sk": 11951.99,
+   "sa": 7259.84,
+   "sg": 13662.89,
    "se": [
+    {
+     "o": "LB-ORDEN-04482",
+     "c": "FRANCO NICOLAH PEREIRA QUINTERO",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-29",
+     "m": 939.15,
+     "k": 392.85,
+     "a": 327.28
+    },
     {
      "o": "LB-ORDEN-04464",
      "c": "MARIA PATRICIA CHOURIO",
@@ -18,6 +27,15 @@
      "m": 758.97,
      "k": 317.85,
      "a": 264.1
+    },
+    {
+     "o": "LB-ORDEN-04481",
+     "c": "DORYS DEL VALLE VILORIA OLMOS",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-28",
+     "m": 506.7,
+     "k": 212.85,
+     "a": 175.64
     },
     {
      "o": "LB-ORDEN-04477",
@@ -63,6 +81,15 @@
      "m": 650.86,
      "k": 272.85,
      "a": 226.19
+    },
+    {
+     "o": "LB-ORDEN-04433",
+     "c": "YAILEANA WILZA URDANETA DE RINCON",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-26",
+     "m": 1107.33,
+     "k": 462.85,
+     "a": 386.25
     },
     {
      "o": "LB-ORDEN-04446",
@@ -275,13 +302,13 @@
   },
   {
    "t": "Computación",
-   "sf": 18,
-   "sc": 18,
-   "sm": 20793.73,
-   "sp": 16177.09,
-   "sk": 10675.43,
-   "sa": 4616.64,
-   "sg": 10118.3,
+   "sf": 19,
+   "sc": 19,
+   "sm": 22296.41,
+   "sp": 17267.57,
+   "sk": 11374.43,
+   "sa": 5028.84,
+   "sg": 10921.98,
    "se": [
     {
      "o": "LB-ORDEN-04474",
@@ -291,6 +318,15 @@
      "m": 184.83,
      "k": 104.88,
      "a": 21.21
+    },
+    {
+     "o": "LB-ORDEN-04475",
+     "c": "JESUS ALBERTO TORO HERNANDEZ",
+     "e": "MARIA ALEJANDRA RODRIGUEZ SOJO",
+     "f": "2026-10-29",
+     "m": 1502.68,
+     "k": 699.0,
+     "a": 412.2
     },
     {
      "o": "LB-ORDEN-04471",
@@ -488,14 +524,23 @@
   },
   {
    "t": "Hogar",
-   "sf": 4,
-   "sc": 4,
-   "sm": 5058.76,
-   "sp": 4239.48,
-   "sk": 2780.65,
-   "sa": 819.28,
-   "sg": 2278.11,
+   "sf": 5,
+   "sc": 5,
+   "sm": 5177.16,
+   "sp": 4322.16,
+   "sk": 2833.65,
+   "sa": 855.0,
+   "sg": 2343.51,
    "se": [
+    {
+     "o": "LB-ORDEN-04426",
+     "c": "MARISELA DEL CARMEN CEBALLOS SALAS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-21",
+     "m": 118.4,
+     "k": 53.0,
+     "a": 35.72
+    },
     {
      "o": "LB-ORDEN-04402",
      "c": "JOAN CARLOS PEREIRA RIVAS",
@@ -878,10 +923,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 84,
-  "oct_facturado": 66110.4,
-  "oct_precio": 47973.86,
-  "oct_costo": 33374.21,
-  "oct_admin": 18136.54
+  "oct_facturas": 89,
+  "oct_facturado": 70284.66,
+  "oct_precio": 50811.03,
+  "oct_costo": 35194.76,
+  "oct_admin": 19473.63
  }
 }

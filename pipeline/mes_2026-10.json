@@ -12,6 +12,26 @@
    "fecha": "2026-10-30"
   },
   {
+   "orden": "LB-ORDEN-04482",
+   "cliente": "FRANCO NICOLAH PEREIRA QUINTERO",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 939.15,
+   "costo": 392.85,
+   "admin": 327.28,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
+   "orden": "LB-ORDEN-04475",
+   "cliente": "JESUS ALBERTO TORO HERNANDEZ",
+   "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO",
+   "monto": 1502.68,
+   "costo": 699.0,
+   "admin": 412.2,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
    "orden": "LB-ORDEN-04471",
    "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
    "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
@@ -30,6 +50,16 @@
    "admin": 264.1,
    "status": "Entregado",
    "fecha": "2026-10-29"
+  },
+  {
+   "orden": "LB-ORDEN-04481",
+   "cliente": "DORYS DEL VALLE VILORIA OLMOS",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 506.7,
+   "costo": 212.85,
+   "admin": 175.64,
+   "status": "Entregado",
+   "fecha": "2026-10-28"
   },
   {
    "orden": "LB-ORDEN-04477",
@@ -108,6 +138,16 @@
    "monto": 650.86,
    "costo": 272.85,
    "admin": 226.19,
+   "status": "Entregado",
+   "fecha": "2026-10-26"
+  },
+  {
+   "orden": "LB-ORDEN-04433",
+   "cliente": "YAILEANA WILZA URDANETA DE RINCON",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 1107.33,
+   "costo": 462.85,
+   "admin": 386.25,
    "status": "Entregado",
    "fecha": "2026-10-26"
   },
@@ -200,6 +240,16 @@
    "admin": 309.0,
    "status": "Entregado",
    "fecha": "2026-10-24"
+  },
+  {
+   "orden": "LB-ORDEN-04426",
+   "cliente": "MARISELA DEL CARMEN CEBALLOS SALAS",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 118.4,
+   "costo": 53.0,
+   "admin": 35.72,
+   "status": "Entregado",
+   "fecha": "2026-10-21"
   },
   {
    "orden": "LB-ORDEN-04423",
@@ -846,19 +896,19 @@
  "ejecutivos": [
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 16735.32,
-   "costo": 8074.42,
-   "margen": 8660.9,
-   "facturas": 23,
-   "unidades": 38.0
+   "facturado": 17242.02,
+   "costo": 8287.27,
+   "margen": 8954.75,
+   "facturas": 24,
+   "unidades": 40.0
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 14241.08,
-   "costo": 6559.19,
-   "margen": 7681.89,
-   "facturas": 20,
-   "unidades": 34.0
+   "facturado": 14359.48,
+   "costo": 6612.19,
+   "margen": 7747.29,
+   "facturas": 21,
+   "unidades": 35.0
   },
   {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
@@ -878,11 +928,11 @@
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 4424.16,
-   "costo": 2042.73,
-   "margen": 2381.43,
-   "facturas": 12,
-   "unidades": 13.0
+   "facturado": 6470.64,
+   "costo": 2898.43,
+   "margen": 3572.21,
+   "facturas": 14,
+   "unidades": 17.0
   },
   {
    "nombre": "DANIEL CASTELLANOS",
@@ -901,6 +951,14 @@
    "unidades": 1.0
   },
   {
+   "nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO",
+   "facturado": 2991.97,
+   "costo": 1365.65,
+   "margen": 1626.32,
+   "facturas": 2,
+   "unidades": 2.0
+  },
+  {
    "nombre": "CLAUDIA MILENA ZAPATA",
    "facturado": 2986.69,
    "costo": 1580.0,
@@ -917,14 +975,6 @@
    "unidades": 3.0
   },
   {
-   "nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO",
-   "facturado": 1489.29,
-   "costo": 666.65,
-   "margen": 822.64,
-   "facturas": 1,
-   "unidades": 1.0
-  },
-  {
    "nombre": "JUHENDIS ESTHER VALLADARES LOPEZ",
    "facturado": 1253.73,
    "costo": 662.67,
@@ -936,13 +986,13 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 76,
-   "monto": 18136.54
+   "cantidad": 81,
+   "monto": 19473.63
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
-   "cantidad": 4,
-   "monto": 3580.1
+   "cantidad": 5,
+   "monto": 4520.17
   },
   {
    "nombre": "Motocicleta Bel TT 150",
@@ -958,6 +1008,11 @@
    "nombre": "Laptop Compaq QL15R5BM16256 – AMD Ryzen 5 7430U / 16 GB / 256 GB SSD / 15.6” / W11",
    "cantidad": 2,
    "monto": 1802.14
+  },
+  {
+   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
+   "cantidad": 6,
+   "monto": 1673.17
   },
   {
    "nombre": "[CEL000-01067] Samsung Galaxy S26 Ultra 12GB/512GB",
@@ -980,11 +1035,6 @@
    "monto": 1482.06
   },
   {
-   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
-   "cantidad": 5,
-   "monto": 1392.09
-  },
-  {
    "nombre": "Motocicleta Bel By UM Nitrox Sport",
    "cantidad": 1,
    "monto": 1362.07
@@ -1005,6 +1055,11 @@
    "monto": 1252.09
   },
   {
+   "nombre": "[CEL01B-00252] Infinix Note 60 Pro 5G 8GB/256GB",
+   "cantidad": 2,
+   "monto": 1234.6
+  },
+  {
    "nombre": "[CEL000-01087] Samsung Galaxy A57 8GB/256GB",
    "cantidad": 2,
    "monto": 1207.7
@@ -1013,6 +1068,11 @@
    "nombre": "[CEL003-00952] Xiaomi Redmi Note 15 8GB/256GB",
    "cantidad": 3,
    "monto": 1085.34
+  },
+  {
+   "nombre": "[CEL01A-00229] Tecno Camon 50 Pro – 6.78” 8GB/256GB",
+   "cantidad": 2,
+   "monto": 1046.32
   },
   {
    "nombre": "[CEL000-01077] Samsung Galaxy A37 8GB/256GB",
@@ -1050,11 +1110,6 @@
    "monto": 684.54
   },
   {
-   "nombre": "[CEL01B-00252] Infinix Note 60 Pro 5G 8GB/256GB",
-   "cantidad": 1,
-   "monto": 617.3
-  },
-  {
    "nombre": "[EIH000-00002] Aiwa Congelador Horizontal, 141LT (5CuFt).",
    "cantidad": 2,
    "monto": 603.12
@@ -1083,11 +1138,6 @@
    "nombre": "[CEL000-00970] Samsung Galaxy A56 5G 8GB/256GB",
    "cantidad": 1,
    "monto": 532.29
-  },
-  {
-   "nombre": "[CEL01A-00229] Tecno Camon 50 Pro – 6.78” 8GB/256GB",
-   "cantidad": 1,
-   "monto": 523.16
   },
   {
    "nombre": "Honor X8d – 6.77” 8 GB/256 GB",
@@ -1161,8 +1211,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 28,
-   "monto": 140.8
+   "cantidad": 31,
+   "monto": 155.83
   },
   {
    "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
@@ -1190,6 +1240,11 @@
    "monto": 87.41
   },
   {
+   "nombre": "[CAF004-00002] Aiwa Easy Life AWHCMD1501, Cafetera de 12 tazas con filtro permanente programable.",
+   "cantidad": 1,
+   "monto": 71.28
+  },
+  {
    "nombre": "Tostador KitchenAid Clasico 2 Rebanadas",
    "cantidad": 1,
    "monto": 67.24
@@ -1200,43 +1255,36 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 66110.4,
- "total_facturas": 84,
- "total_clientes": 79,
- "total_productos": 47973.86,
- "total_admin": 18136.54,
+ "total_facturado": 70284.66,
+ "total_facturas": 89,
+ "total_clientes": 84,
+ "total_productos": 50811.03,
+ "total_admin": 19473.63,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 33374.21,
- "total_margen": 32736.19,
+ "total_costo": 35194.76,
+ "total_margen": 35089.9,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 69,
-   "monto": 46605.66,
-   "unidades": 99.0,
-   "admin": 10310.81,
-   "costo": 23992.83,
+   "facturas": 67,
+   "monto": 46495.29,
+   "unidades": 97.0,
+   "admin": 10544.64,
+   "costo": 23753.45,
    "items": [
     {
-     "orden": "LB-ORDEN-04474",
-     "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
-     "unidades": 1.0,
-     "monto": 184.83,
-     "fecha": "2026-10-30"
-    },
-    {
-     "orden": "LB-ORDEN-04471",
-     "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
-     "unidades": 1.0,
-     "monto": 1372.78,
+     "orden": "LB-ORDEN-04482",
+     "cliente": "FRANCO NICOLAH PEREIRA QUINTERO",
+     "unidades": 2.0,
+     "monto": 939.15,
      "fecha": "2026-10-29"
     },
     {
-     "orden": "LB-ORDEN-04464",
-     "cliente": "MARIA PATRICIA CHOURIO",
-     "unidades": 2.0,
-     "monto": 758.97,
+     "orden": "LB-ORDEN-04475",
+     "cliente": "JESUS ALBERTO TORO HERNANDEZ",
+     "unidades": 1.0,
+     "monto": 1502.68,
      "fecha": "2026-10-29"
     },
     {
@@ -1245,20 +1293,6 @@
      "unidades": 2.0,
      "monto": 506.7,
      "fecha": "2026-10-28"
-    },
-    {
-     "orden": "LB-ORDEN-04462",
-     "cliente": "FERNANDO JAVIER ALBARRAN MALDONADO",
-     "unidades": 1.0,
-     "monto": 144.58,
-     "fecha": "2026-10-27"
-    },
-    {
-     "orden": "LB-ORDEN-04457",
-     "cliente": "MIGUELANGEL QUISCA ALBORNOZ",
-     "unidades": 1.0,
-     "monto": 209.44,
-     "fecha": "2026-10-26"
     },
     {
      "orden": "LB-ORDEN-04425",
@@ -1280,6 +1314,13 @@
      "unidades": 1.0,
      "monto": 452.42,
      "fecha": "2026-10-25"
+    },
+    {
+     "orden": "LB-ORDEN-04426",
+     "cliente": "MARISELA DEL CARMEN CEBALLOS SALAS",
+     "unidades": 1.0,
+     "monto": 118.4,
+     "fecha": "2026-10-21"
     },
     {
      "orden": "LB-ORDEN-04423",
@@ -1736,12 +1777,26 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 9,
-   "monto": 7008.48,
-   "unidades": 19.0,
-   "admin": 2439.21,
-   "costo": 2934.65,
+   "facturas": 12,
+   "monto": 9381.48,
+   "unidades": 25.0,
+   "admin": 3265.2,
+   "costo": 3928.2,
    "items": [
+    {
+     "orden": "LB-ORDEN-04464",
+     "cliente": "MARIA PATRICIA CHOURIO",
+     "unidades": 2.0,
+     "monto": 758.97,
+     "fecha": "2026-10-29"
+    },
+    {
+     "orden": "LB-ORDEN-04481",
+     "cliente": "DORYS DEL VALLE VILORIA OLMOS",
+     "unidades": 2.0,
+     "monto": 506.7,
+     "fecha": "2026-10-28"
+    },
     {
      "orden": "LB-ORDEN-04477",
      "cliente": "JOSE GREGORIO MORALES",
@@ -1768,6 +1823,13 @@
      "cliente": "EDGAR ALEXANDER CERRADA ARAQUE",
      "unidades": 2.0,
      "monto": 650.86,
+     "fecha": "2026-10-26"
+    },
+    {
+     "orden": "LB-ORDEN-04433",
+     "cliente": "YAILEANA WILZA URDANETA DE RINCON",
+     "unidades": 2.0,
+     "monto": 1107.33,
      "fecha": "2026-10-26"
     },
     {
@@ -1808,6 +1870,58 @@
    ]
   },
   {
+   "nombre": "SEMANADELTERROR",
+   "facturas": 6,
+   "monto": 3176.01,
+   "unidades": 7.0,
+   "admin": 656.95,
+   "costo": 1634.11,
+   "items": [
+    {
+     "orden": "LB-ORDEN-04474",
+     "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
+     "unidades": 1.0,
+     "monto": 184.83,
+     "fecha": "2026-10-30"
+    },
+    {
+     "orden": "LB-ORDEN-04471",
+     "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
+     "unidades": 1.0,
+     "monto": 1372.78,
+     "fecha": "2026-10-29"
+    },
+    {
+     "orden": "LB-ORDEN-04462",
+     "cliente": "FERNANDO JAVIER ALBARRAN MALDONADO",
+     "unidades": 1.0,
+     "monto": 144.58,
+     "fecha": "2026-10-27"
+    },
+    {
+     "orden": "LB-ORDEN-04455",
+     "cliente": "ROALD EDUARDO GOMEZ PEREZ",
+     "unidades": 1.0,
+     "monto": 234.3,
+     "fecha": "2026-10-27"
+    },
+    {
+     "orden": "LB-ORDEN-04457",
+     "cliente": "MIGUELANGEL QUISCA ALBORNOZ",
+     "unidades": 1.0,
+     "monto": 209.44,
+     "fecha": "2026-10-26"
+    },
+    {
+     "orden": "LB-ORDEN-04436",
+     "cliente": "LUIS HENRIQUE PAREDES CHIRINO",
+     "unidades": 2.0,
+     "monto": 1030.08,
+     "fecha": "2026-10-24"
+    }
+   ]
+  },
+  {
    "nombre": "FUNCIONARIOSDESEGURIDAD2026",
    "facturas": 1,
    "monto": 1440.07,
@@ -1823,35 +1937,11 @@
      "fecha": "2026-10-02"
     }
    ]
-  },
-  {
-   "nombre": "SEMANADELTERROR",
-   "facturas": 2,
-   "monto": 1264.38,
-   "unidades": 3.0,
-   "admin": 379.68,
-   "costo": 567.73,
-   "items": [
-    {
-     "orden": "LB-ORDEN-04455",
-     "cliente": "ROALD EDUARDO GOMEZ PEREZ",
-     "unidades": 1.0,
-     "monto": 234.3,
-     "fecha": "2026-10-27"
-    },
-    {
-     "orden": "LB-ORDEN-04436",
-     "cliente": "LUIS HENRIQUE PAREDES CHIRINO",
-     "unidades": 2.0,
-     "monto": 1030.08,
-     "fecha": "2026-10-24"
-    }
-   ]
   }
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 66110.4,
- "count": 84,
+ "total": 70284.66,
+ "count": 89,
  "colaboradores": []
 }
