@@ -22,9 +22,19 @@
    "fecha": "2026-10-29"
   },
   {
+   "orden": "LB-ORDEN-04479",
+   "cliente": "MARIA COROMOTO ARAQUE ALBARRAN",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 495.94,
+   "costo": 222.0,
+   "admin": 149.61,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
    "orden": "LB-ORDEN-04475",
    "cliente": "JESUS ALBERTO TORO HERNANDEZ",
-   "ejecutivo": "MARIA ALEJANDRA RODRIGUEZ SOJO",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
    "monto": 1502.68,
    "costo": 699.0,
    "admin": 412.2,
@@ -118,6 +128,16 @@
    "monto": 234.3,
    "costo": 104.88,
    "admin": 70.68,
+   "status": "Entregado",
+   "fecha": "2026-10-27"
+  },
+  {
+   "orden": "LB-ORDEN-04454",
+   "cliente": "MARIA COROMOTO ARAQUE ALBARRAN",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 939.15,
+   "costo": 392.85,
+   "admin": 327.28,
    "status": "Entregado",
    "fecha": "2026-10-27"
   },
@@ -911,6 +931,14 @@
    "unidades": 35.0
   },
   {
+   "nombre": "LADY DIANA TORO RIVERA",
+   "facturado": 9408.41,
+   "costo": 4212.28,
+   "margen": 5196.13,
+   "facturas": 17,
+   "unidades": 21.0
+  },
+  {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
    "facturado": 7790.76,
    "costo": 4910.0,
@@ -925,14 +953,6 @@
    "margen": 3584.25,
    "facturas": 12,
    "unidades": 18.0
-  },
-  {
-   "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 6470.64,
-   "costo": 2898.43,
-   "margen": 3572.21,
-   "facturas": 14,
-   "unidades": 17.0
   },
   {
    "nombre": "DANIEL CASTELLANOS",
@@ -951,14 +971,6 @@
    "unidades": 1.0
   },
   {
-   "nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO",
-   "facturado": 2991.97,
-   "costo": 1365.65,
-   "margen": 1626.32,
-   "facturas": 2,
-   "unidades": 2.0
-  },
-  {
    "nombre": "CLAUDIA MILENA ZAPATA",
    "facturado": 2986.69,
    "costo": 1580.0,
@@ -975,6 +987,14 @@
    "unidades": 3.0
   },
   {
+   "nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO",
+   "facturado": 1489.29,
+   "costo": 666.65,
+   "margen": 822.64,
+   "facturas": 1,
+   "unidades": 1.0
+  },
+  {
    "nombre": "JUHENDIS ESTHER VALLADARES LOPEZ",
    "facturado": 1253.73,
    "costo": 662.67,
@@ -986,8 +1006,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 81,
-   "monto": 19473.63
+   "cantidad": 83,
+   "monto": 19950.52
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1023,6 +1043,11 @@
    "nombre": "[LDELL-15250] Laptop Dell LDC15250-5315BLK, Intel Core i5-1334U, 8GB, 512GB SSD, 15.6\" 2K Touchscreen, US, W11.",
    "cantidad": 2,
    "monto": 1584.26
+  },
+  {
+   "nombre": "[CEL01A-00229] Tecno Camon 50 Pro – 6.78” 8GB/256GB",
+   "cantidad": 3,
+   "monto": 1569.48
   },
   {
    "nombre": "[AAC002-00015] Aiwa Home AWHACC24DI03P Aire Acondicionado Split Efficient Inverter 24K BTU Wi-Fi.",
@@ -1070,11 +1095,6 @@
    "monto": 1085.34
   },
   {
-   "nombre": "[CEL01A-00229] Tecno Camon 50 Pro – 6.78” 8GB/256GB",
-   "cantidad": 2,
-   "monto": 1046.32
-  },
-  {
    "nombre": "[CEL000-01077] Samsung Galaxy A37 8GB/256GB",
    "cantidad": 2,
    "monto": 1024.52
@@ -1118,6 +1138,11 @@
    "nombre": "[CEL01B-00242] Infinix Smart 20, 4GB/128GB",
    "cantidad": 3,
    "monto": 600.62
+  },
+  {
+   "nombre": "[TV016-00027] Aiwa QLED 43\"1080p  Smart TV Google TV.",
+   "cantidad": 2,
+   "monto": 597.12
   },
   {
    "nombre": "[UPS003-00002] MARSRIVA en KP3 -10000mAh/ 18W",
@@ -1175,11 +1200,6 @@
    "monto": 343.86
   },
   {
-   "nombre": "[TV016-00027] Aiwa QLED 43\"1080p  Smart TV Google TV.",
-   "cantidad": 1,
-   "monto": 298.56
-  },
-  {
    "nombre": "Toshiba Portable Storage 2TB Canvio Flex (HDTX120XSCAA), Silver.",
    "cantidad": 2,
    "monto": 282.1
@@ -1211,8 +1231,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 31,
-   "monto": 155.83
+   "cantidad": 32,
+   "monto": 160.84
   },
   {
    "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
@@ -1255,29 +1275,36 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 70284.66,
- "total_facturas": 89,
- "total_clientes": 84,
- "total_productos": 50811.03,
- "total_admin": 19473.63,
+ "total_facturado": 71719.75,
+ "total_facturas": 91,
+ "total_clientes": 85,
+ "total_productos": 51769.23,
+ "total_admin": 19950.52,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 35194.76,
- "total_margen": 35089.9,
+ "total_costo": 35809.61,
+ "total_margen": 35910.14,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 67,
-   "monto": 46495.29,
-   "unidades": 97.0,
-   "admin": 10544.64,
-   "costo": 23753.45,
+   "facturas": 68,
+   "monto": 46991.23,
+   "unidades": 98.0,
+   "admin": 10694.25,
+   "costo": 23975.45,
    "items": [
     {
      "orden": "LB-ORDEN-04482",
      "cliente": "FRANCO NICOLAH PEREIRA QUINTERO",
      "unidades": 2.0,
      "monto": 939.15,
+     "fecha": "2026-10-29"
+    },
+    {
+     "orden": "LB-ORDEN-04479",
+     "cliente": "MARIA COROMOTO ARAQUE ALBARRAN",
+     "unidades": 1.0,
+     "monto": 495.94,
      "fecha": "2026-10-29"
     },
     {
@@ -1871,11 +1898,11 @@
   },
   {
    "nombre": "SEMANADELTERROR",
-   "facturas": 6,
-   "monto": 3176.01,
-   "unidades": 7.0,
-   "admin": 656.95,
-   "costo": 1634.11,
+   "facturas": 7,
+   "monto": 4115.16,
+   "unidades": 9.0,
+   "admin": 984.23,
+   "costo": 2026.96,
    "items": [
     {
      "orden": "LB-ORDEN-04474",
@@ -1903,6 +1930,13 @@
      "cliente": "ROALD EDUARDO GOMEZ PEREZ",
      "unidades": 1.0,
      "monto": 234.3,
+     "fecha": "2026-10-27"
+    },
+    {
+     "orden": "LB-ORDEN-04454",
+     "cliente": "MARIA COROMOTO ARAQUE ALBARRAN",
+     "unidades": 2.0,
+     "monto": 939.15,
      "fecha": "2026-10-27"
     },
     {
@@ -1941,7 +1975,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 70284.66,
- "count": 89,
+ "total": 71719.75,
+ "count": 91,
  "colaboradores": []
 }

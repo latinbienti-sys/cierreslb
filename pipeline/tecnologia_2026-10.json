@@ -2,13 +2,13 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 32,
-   "sc": 32,
-   "sm": 25614.88,
-   "sp": 18355.04,
-   "sk": 11951.99,
-   "sa": 7259.84,
-   "sg": 13662.89,
+   "sf": 33,
+   "sc": 33,
+   "sm": 26554.03,
+   "sp": 18966.91,
+   "sk": 12344.84,
+   "sa": 7587.12,
+   "sg": 14209.19,
    "se": [
     {
      "o": "LB-ORDEN-04482",
@@ -72,6 +72,15 @@
      "m": 506.7,
      "k": 212.85,
      "a": 175.64
+    },
+    {
+     "o": "LB-ORDEN-04454",
+     "c": "MARIA COROMOTO ARAQUE ALBARRAN",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-27",
+     "m": 939.15,
+     "k": 392.85,
+     "a": 327.28
     },
     {
      "o": "LB-ORDEN-04453",
@@ -322,7 +331,7 @@
     {
      "o": "LB-ORDEN-04475",
      "c": "JESUS ALBERTO TORO HERNANDEZ",
-     "e": "MARIA ALEJANDRA RODRIGUEZ SOJO",
+     "e": "LADY DIANA TORO RIVERA",
      "f": "2026-10-29",
      "m": 1502.68,
      "k": 699.0,
@@ -674,14 +683,23 @@
   },
   {
    "t": "Televisores",
-   "sf": 3,
-   "sc": 3,
-   "sm": 1764.85,
-   "sp": 1232.44,
-   "sk": 790.0,
-   "sa": 532.41,
-   "sg": 974.85,
+   "sf": 4,
+   "sc": 4,
+   "sm": 2260.79,
+   "sp": 1578.77,
+   "sk": 1012.0,
+   "sa": 682.02,
+   "sg": 1248.79,
    "se": [
+    {
+     "o": "LB-ORDEN-04479",
+     "c": "MARIA COROMOTO ARAQUE ALBARRAN",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-29",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
     {
      "o": "LB-ORDEN-04416",
      "c": "YONATHAN RUBEN SULBARAN RIVAS",
@@ -923,10 +941,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 89,
-  "oct_facturado": 70284.66,
-  "oct_precio": 50811.03,
-  "oct_costo": 35194.76,
-  "oct_admin": 19473.63
+  "oct_facturas": 91,
+  "oct_facturado": 71719.75,
+  "oct_precio": 51769.23,
+  "oct_costo": 35809.61,
+  "oct_admin": 19950.52
  }
 }
