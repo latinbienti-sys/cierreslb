@@ -2,13 +2,13 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 28,
-   "sc": 28,
-   "sm": 22218.65,
-   "sp": 16141.56,
-   "sk": 10530.59,
-   "sa": 6077.09,
-   "sg": 11688.06,
+   "sf": 29,
+   "sc": 29,
+   "sm": 23061.7,
+   "sp": 16691.03,
+   "sk": 10883.44,
+   "sa": 6370.67,
+   "sg": 12178.26,
    "se": [
     {
      "o": "LB-ORDEN-04464",
@@ -18,6 +18,15 @@
      "m": 758.97,
      "k": 317.85,
      "a": 264.1
+    },
+    {
+     "o": "LB-ORDEN-04477",
+     "c": "JOSE GREGORIO MORALES",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-28",
+     "m": 843.05,
+     "k": 352.85,
+     "a": 293.58
     },
     {
      "o": "LB-ORDEN-04451",
@@ -869,10 +878,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 83,
-  "oct_facturado": 65267.35,
-  "oct_precio": 47424.39,
-  "oct_costo": 33021.36,
-  "oct_admin": 17842.96
+  "oct_facturas": 84,
+  "oct_facturado": 66110.4,
+  "oct_precio": 47973.86,
+  "oct_costo": 33374.21,
+  "oct_admin": 18136.54
  }
 }

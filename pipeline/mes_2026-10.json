@@ -32,6 +32,16 @@
    "fecha": "2026-10-29"
   },
   {
+   "orden": "LB-ORDEN-04477",
+   "cliente": "JOSE GREGORIO MORALES",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 843.05,
+   "costo": 352.85,
+   "admin": 293.58,
+   "status": "Entregado",
+   "fecha": "2026-10-28"
+  },
+  {
    "orden": "LB-ORDEN-04451",
    "cliente": "MARIA GABRIELA CONTRERAS ARAQUE",
    "ejecutivo": "JUHENDIS ESTHER VALLADARES LOPEZ",
@@ -836,11 +846,11 @@
  "ejecutivos": [
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 15892.27,
-   "costo": 7721.57,
-   "margen": 8170.7,
-   "facturas": 22,
-   "unidades": 36.0
+   "facturado": 16735.32,
+   "costo": 8074.42,
+   "margen": 8660.9,
+   "facturas": 23,
+   "unidades": 38.0
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -926,8 +936,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 75,
-   "monto": 17842.96
+   "cantidad": 76,
+   "monto": 18136.54
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1080,6 +1090,11 @@
    "monto": 523.16
   },
   {
+   "nombre": "Honor X8d – 6.77” 8 GB/256 GB",
+   "cantidad": 1,
+   "monto": 469.36
+  },
+  {
    "nombre": "[AAC002-00006] Aiwa Home AWHACC12D01 Aire Acondicionado Split Essential 12K BTU.",
    "cantidad": 1,
    "monto": 436.91
@@ -1146,8 +1161,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 27,
-   "monto": 135.79
+   "cantidad": 28,
+   "monto": 140.8
   },
   {
    "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
@@ -1185,23 +1200,23 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 65267.35,
- "total_facturas": 83,
- "total_clientes": 78,
- "total_productos": 47424.39,
- "total_admin": 17842.96,
+ "total_facturado": 66110.4,
+ "total_facturas": 84,
+ "total_clientes": 79,
+ "total_productos": 47973.86,
+ "total_admin": 18136.54,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 33021.36,
- "total_margen": 32245.99,
+ "total_costo": 33374.21,
+ "total_margen": 32736.19,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 70,
-   "monto": 47112.36,
-   "unidades": 101.0,
-   "admin": 10486.45,
-   "costo": 24205.68,
+   "facturas": 69,
+   "monto": 46605.66,
+   "unidades": 99.0,
+   "admin": 10310.81,
+   "costo": 23992.83,
    "items": [
     {
      "orden": "LB-ORDEN-04474",
@@ -1236,13 +1251,6 @@
      "cliente": "FERNANDO JAVIER ALBARRAN MALDONADO",
      "unidades": 1.0,
      "monto": 144.58,
-     "fecha": "2026-10-27"
-    },
-    {
-     "orden": "LB-ORDEN-04460",
-     "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
-     "unidades": 2.0,
-     "monto": 506.7,
      "fecha": "2026-10-27"
     },
     {
@@ -1728,17 +1736,31 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 7,
-   "monto": 5658.73,
-   "unidades": 15.0,
-   "admin": 1969.99,
-   "costo": 2368.95,
+   "facturas": 9,
+   "monto": 7008.48,
+   "unidades": 19.0,
+   "admin": 2439.21,
+   "costo": 2934.65,
    "items": [
+    {
+     "orden": "LB-ORDEN-04477",
+     "cliente": "JOSE GREGORIO MORALES",
+     "unidades": 2.0,
+     "monto": 843.05,
+     "fecha": "2026-10-28"
+    },
     {
      "orden": "LB-ORDEN-04467",
      "cliente": "YAMIRA CHACON CONTRERAS",
      "unidades": 3.0,
      "monto": 852.66,
+     "fecha": "2026-10-27"
+    },
+    {
+     "orden": "LB-ORDEN-04460",
+     "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
+     "unidades": 2.0,
+     "monto": 506.7,
      "fecha": "2026-10-27"
     },
     {
@@ -1829,7 +1851,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 65267.35,
- "count": 83,
+ "total": 66110.4,
+ "count": 84,
  "colaboradores": []
 }
