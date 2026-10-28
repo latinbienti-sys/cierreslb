@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 27,
-   "sc": 27,
-   "sm": 21459.68,
-   "sp": 15646.69,
-   "sk": 10212.74,
-   "sa": 5812.99,
-   "sg": 11246.94,
+   "sf": 28,
+   "sc": 28,
+   "sm": 22218.65,
+   "sp": 16141.56,
+   "sk": 10530.59,
+   "sa": 6077.09,
+   "sg": 11688.06,
    "se": [
+    {
+     "o": "LB-ORDEN-04464",
+     "c": "MARIA PATRICIA CHOURIO",
+     "e": "ELIO CHAMATE",
+     "f": "2026-10-29",
+     "m": 758.97,
+     "k": 317.85,
+     "a": 264.1
+    },
     {
      "o": "LB-ORDEN-04451",
      "c": "MARIA GABRIELA CONTRERAS ARAQUE",
@@ -257,14 +266,23 @@
   },
   {
    "t": "Computación",
-   "sf": 16,
-   "sc": 16,
-   "sm": 20374.6,
-   "sp": 15849.85,
-   "sk": 10465.67,
-   "sa": 4524.75,
-   "sg": 9908.93,
+   "sf": 18,
+   "sc": 18,
+   "sm": 20793.73,
+   "sp": 16177.09,
+   "sk": 10675.43,
+   "sa": 4616.64,
+   "sg": 10118.3,
    "se": [
+    {
+     "o": "LB-ORDEN-04474",
+     "c": "CARLOS ALONSO ESCALANTE RAMIREZ",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-30",
+     "m": 184.83,
+     "k": 104.88,
+     "a": 21.21
+    },
     {
      "o": "LB-ORDEN-04471",
      "c": "CARLOS ALONSO ESCALANTE RAMIREZ",
@@ -273,6 +291,15 @@
      "m": 1372.78,
      "k": 779.0,
      "a": 157.5
+    },
+    {
+     "o": "LB-ORDEN-04455",
+     "c": "ROALD EDUARDO GOMEZ PEREZ",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-27",
+     "m": 234.3,
+     "k": 104.88,
+     "a": 70.68
     },
     {
      "o": "LB-ORDEN-04422",
@@ -842,10 +869,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 80,
-  "oct_facturado": 64089.25,
-  "oct_precio": 46602.28,
-  "oct_costo": 32493.75,
-  "oct_admin": 17486.97
+  "oct_facturas": 83,
+  "oct_facturado": 65267.35,
+  "oct_precio": 47424.39,
+  "oct_costo": 33021.36,
+  "oct_admin": 17842.96
  }
 }
