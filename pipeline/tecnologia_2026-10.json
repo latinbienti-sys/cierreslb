@@ -2,14 +2,41 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 33,
-   "sc": 33,
-   "sm": 26554.03,
-   "sp": 18966.91,
-   "sk": 12344.84,
-   "sa": 7587.12,
-   "sg": 14209.19,
+   "sf": 36,
+   "sc": 36,
+   "sm": 29052.27,
+   "sp": 20663.68,
+   "sk": 13434.39,
+   "sa": 8388.59,
+   "sg": 15617.88,
    "se": [
+    {
+     "o": "LB-ORDEN-04488",
+     "c": "ZAYDA COROMOTO PEÑA ALBARRAN",
+     "e": "ELIO CHAMATE",
+     "f": "2026-10-29",
+     "m": 1131.35,
+     "k": 472.85,
+     "a": 394.67
+    },
+    {
+     "o": "LB-ORDEN-04484",
+     "c": "JOSE ELIMEDES RONDON BRICEÑO",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-29",
+     "m": 401.32,
+     "k": 212.85,
+     "a": 70.26
+    },
+    {
+     "o": "LB-ORDEN-04449",
+     "c": "CIPRIANO ENRIJESUS ALVARADO BLANCO",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-29",
+     "m": 965.57,
+     "k": 403.85,
+     "a": 336.54
+    },
     {
      "o": "LB-ORDEN-04482",
      "c": "FRANCO NICOLAH PEREIRA QUINTERO",
@@ -941,10 +968,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 91,
-  "oct_facturado": 71719.75,
-  "oct_precio": 51769.23,
-  "oct_costo": 35809.61,
-  "oct_admin": 19950.52
+  "oct_facturas": 94,
+  "oct_facturado": 74217.99,
+  "oct_precio": 53466.0,
+  "oct_costo": 36899.16,
+  "oct_admin": 20751.99
  }
 }

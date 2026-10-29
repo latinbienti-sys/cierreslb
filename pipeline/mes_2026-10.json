@@ -12,6 +12,36 @@
    "fecha": "2026-10-30"
   },
   {
+   "orden": "LB-ORDEN-04488",
+   "cliente": "ZAYDA COROMOTO PEÑA ALBARRAN",
+   "ejecutivo": "ELIO CHAMATE",
+   "monto": 1131.35,
+   "costo": 472.85,
+   "admin": 394.67,
+   "status": "Aprobado",
+   "fecha": "2026-10-29"
+  },
+  {
+   "orden": "LB-ORDEN-04484",
+   "cliente": "JOSE ELIMEDES RONDON BRICEÑO",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 401.32,
+   "costo": 212.85,
+   "admin": 70.26,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
+   "orden": "LB-ORDEN-04449",
+   "cliente": "CIPRIANO ENRIJESUS ALVARADO BLANCO",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 965.57,
+   "costo": 403.85,
+   "admin": 336.54,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
    "orden": "LB-ORDEN-04482",
    "cliente": "FRANCO NICOLAH PEREIRA QUINTERO",
    "ejecutivo": "LADY DIANA TORO RIVERA",
@@ -916,19 +946,19 @@
  "ejecutivos": [
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 17242.02,
-   "costo": 8287.27,
-   "margen": 8954.75,
-   "facturas": 24,
-   "unidades": 40.0
+   "facturado": 17643.34,
+   "costo": 8500.12,
+   "margen": 9143.22,
+   "facturas": 25,
+   "unidades": 42.0
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 14359.48,
-   "costo": 6612.19,
-   "margen": 7747.29,
-   "facturas": 21,
-   "unidades": 35.0
+   "facturado": 15325.05,
+   "costo": 7016.04,
+   "margen": 8309.01,
+   "facturas": 22,
+   "unidades": 37.0
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
@@ -955,6 +985,14 @@
    "unidades": 18.0
   },
   {
+   "nombre": "ELIO CHAMATE",
+   "facturado": 4039.65,
+   "costo": 1859.7,
+   "margen": 2179.95,
+   "facturas": 3,
+   "unidades": 5.0
+  },
+  {
    "nombre": "DANIEL CASTELLANOS",
    "facturado": 3402.56,
    "costo": 1800.0,
@@ -979,14 +1017,6 @@
    "unidades": 1.0
   },
   {
-   "nombre": "ELIO CHAMATE",
-   "facturado": 2908.3,
-   "costo": 1386.85,
-   "margen": 1521.45,
-   "facturas": 2,
-   "unidades": 3.0
-  },
-  {
    "nombre": "MARIA ALEJANDRA RODRIGUEZ SOJO",
    "facturado": 1489.29,
    "costo": 666.65,
@@ -1006,8 +1036,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 83,
-   "monto": 19950.52
+   "cantidad": 86,
+   "monto": 20751.99
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1025,14 +1055,19 @@
    "monto": 2051.67
   },
   {
+   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
+   "cantidad": 7,
+   "monto": 1954.25
+  },
+  {
+   "nombre": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB",
+   "cantidad": 3,
+   "monto": 1882.84
+  },
+  {
    "nombre": "Laptop Compaq QL15R5BM16256 – AMD Ryzen 5 7430U / 16 GB / 256 GB SSD / 15.6” / W11",
    "cantidad": 2,
    "monto": 1802.14
-  },
-  {
-   "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
-   "cantidad": 6,
-   "monto": 1673.17
   },
   {
    "nombre": "[CEL000-01067] Samsung Galaxy S26 Ultra 12GB/512GB",
@@ -1073,11 +1108,6 @@
    "nombre": "[CEL000-01018] Samsung Galaxy A17 8GB/256GB",
    "cantidad": 3,
    "monto": 1266.87
-  },
-  {
-   "nombre": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB",
-   "cantidad": 2,
-   "monto": 1252.09
   },
   {
    "nombre": "[CEL01B-00252] Infinix Note 60 Pro 5G 8GB/256GB",
@@ -1153,6 +1183,11 @@
    "nombre": "[TV016-00032] Aiwa 55\" QLED UHD 4K AW55B4Q Google TV.",
    "cantidad": 1,
    "monto": 563.5
+  },
+  {
+   "nombre": "Xiaomi Redmi Note 15 Pro+ 5G 8GB/256GB",
+   "cantidad": 1,
+   "monto": 537.95
   },
   {
    "nombre": "[CEL003-00956] Xiaomi Redmi Note 15 Pro  5G 8GB/256GB",
@@ -1231,8 +1266,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 32,
-   "monto": 160.84
+   "cantidad": 35,
+   "monto": 175.87
   },
   {
    "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
@@ -1275,24 +1310,31 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 71719.75,
- "total_facturas": 91,
- "total_clientes": 85,
- "total_productos": 51769.23,
- "total_admin": 19950.52,
+ "total_facturado": 74217.99,
+ "total_facturas": 94,
+ "total_clientes": 88,
+ "total_productos": 53466.0,
+ "total_admin": 20751.99,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 35809.61,
- "total_margen": 35910.14,
+ "total_costo": 36899.16,
+ "total_margen": 37318.83,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 68,
-   "monto": 46991.23,
-   "unidades": 98.0,
-   "admin": 10694.25,
-   "costo": 23975.45,
+   "facturas": 69,
+   "monto": 48122.58,
+   "unidades": 100.0,
+   "admin": 11088.92,
+   "costo": 24448.3,
    "items": [
+    {
+     "orden": "LB-ORDEN-04488",
+     "cliente": "ZAYDA COROMOTO PEÑA ALBARRAN",
+     "unidades": 2.0,
+     "monto": 1131.35,
+     "fecha": "2026-10-29"
+    },
     {
      "orden": "LB-ORDEN-04482",
      "cliente": "FRANCO NICOLAH PEREIRA QUINTERO",
@@ -1772,49 +1814,25 @@
    ]
   },
   {
-   "nombre": "CREDIMOTO",
-   "facturas": 3,
-   "monto": 9791.81,
-   "unidades": 3.0,
-   "admin": 4611.81,
-   "costo": 5180.0,
-   "items": [
-    {
-     "orden": "LB-ORDEN-04406",
-     "cliente": "DANIEL ALFONSO BRICEÑO GARCIA",
-     "unidades": 1.0,
-     "monto": 3402.56,
-     "fecha": "2026-10-20"
-    },
-    {
-     "orden": "LB-ORDEN-04371",
-     "cliente": "ADOLFO MORA NOGUERA",
-     "unidades": 1.0,
-     "monto": 2986.69,
-     "fecha": "2026-10-13"
-    },
-    {
-     "orden": "LB-ORDEN-04370",
-     "cliente": "MAXIMILIAN ANTONI ESCORCIA ANDRADE",
-     "unidades": 1.0,
-     "monto": 3402.56,
-     "fecha": "2026-10-13"
-    }
-   ]
-  },
-  {
    "nombre": "0INICIAL",
-   "facturas": 12,
-   "monto": 9381.48,
-   "unidades": 25.0,
-   "admin": 3265.2,
-   "costo": 3928.2,
+   "facturas": 13,
+   "monto": 10347.05,
+   "unidades": 27.0,
+   "admin": 3601.74,
+   "costo": 4332.05,
    "items": [
     {
      "orden": "LB-ORDEN-04464",
      "cliente": "MARIA PATRICIA CHOURIO",
      "unidades": 2.0,
      "monto": 758.97,
+     "fecha": "2026-10-29"
+    },
+    {
+     "orden": "LB-ORDEN-04449",
+     "cliente": "CIPRIANO ENRIJESUS ALVARADO BLANCO",
+     "unidades": 2.0,
+     "monto": 965.57,
      "fecha": "2026-10-29"
     },
     {
@@ -1897,12 +1915,43 @@
    ]
   },
   {
+   "nombre": "CREDIMOTO",
+   "facturas": 3,
+   "monto": 9791.81,
+   "unidades": 3.0,
+   "admin": 4611.81,
+   "costo": 5180.0,
+   "items": [
+    {
+     "orden": "LB-ORDEN-04406",
+     "cliente": "DANIEL ALFONSO BRICEÑO GARCIA",
+     "unidades": 1.0,
+     "monto": 3402.56,
+     "fecha": "2026-10-20"
+    },
+    {
+     "orden": "LB-ORDEN-04371",
+     "cliente": "ADOLFO MORA NOGUERA",
+     "unidades": 1.0,
+     "monto": 2986.69,
+     "fecha": "2026-10-13"
+    },
+    {
+     "orden": "LB-ORDEN-04370",
+     "cliente": "MAXIMILIAN ANTONI ESCORCIA ANDRADE",
+     "unidades": 1.0,
+     "monto": 3402.56,
+     "fecha": "2026-10-13"
+    }
+   ]
+  },
+  {
    "nombre": "SEMANADELTERROR",
-   "facturas": 7,
-   "monto": 4115.16,
-   "unidades": 9.0,
-   "admin": 984.23,
-   "costo": 2026.96,
+   "facturas": 8,
+   "monto": 4516.48,
+   "unidades": 11.0,
+   "admin": 1054.49,
+   "costo": 2239.81,
    "items": [
     {
      "orden": "LB-ORDEN-04474",
@@ -1910,6 +1959,13 @@
      "unidades": 1.0,
      "monto": 184.83,
      "fecha": "2026-10-30"
+    },
+    {
+     "orden": "LB-ORDEN-04484",
+     "cliente": "JOSE ELIMEDES RONDON BRICEÑO",
+     "unidades": 2.0,
+     "monto": 401.32,
+     "fecha": "2026-10-29"
     },
     {
      "orden": "LB-ORDEN-04471",
@@ -1975,7 +2031,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 71719.75,
- "count": 91,
+ "total": 74217.99,
+ "count": 94,
  "colaboradores": []
 }
