@@ -9,6 +9,24 @@ from collections import defaultdict
 import erp
 TZ = timezone(timedelta(hours=-4))
 ADMIN_NAME = "gasto administrativo y gestion de cobranza"
+# --- unidades: solo EQUIPOS FISICOS ---
+SEG_PAT = ("seguro",)  # 'Seguro de Reserva de Dominio' (y futuros seguros) -> columna aparte
+NO_EQUIP_PAT = (  # accesorios/servicios/consumibles -> fuera de Unidades
+    "cargador", "adapter", "adaptador", "cable", "caucho", "llanta",
+    "audifono", "buds", "freebuds", "manos libre", "airdots",
+    "power bank", "powerbank", "ups", "mah", "bateria",
+    "memoria externa", "storage", "canvio", "micro sd", "sd card", " memoria",
+    "mica", "forro", "case", "estuche", "vidrio templado", "templado",
+    "chip", " sim ", "simcard", "sim card", "linea",
+    "soporte", "base para",
+    "poliza", "aseguranza", "garantia", "dominio", "plan",
+)
+def is_seguro_unidad(nm):
+    n = norm(nm)
+    return any(k in n for k in SEG_PAT)
+def is_equipo_unidad(nm):
+    n = norm(nm)
+    return not (is_seguro_unidad(nm) or any(k in n for k in NO_EQUIP_PAT))
 STATUS_LABEL = {"6": "Entregado", "8": "Cancelación Total", "12": "Congelado (Entregado)",
                 "0": "Presupuesto", "4": "Aprobado", "11": "Cambio de Plan",
                 "5": "Negado - Retiro", "7": "Retirado Devolución", "9": "Exclusión por Mora",
@@ -41,7 +59,7 @@ def build_month(oc, year, month):
         if l["product_id"] and norm(l["product_id"][1]) == ADMIN_NAME:
             admin_ids.add(l["product_id"][0])
 
-    per = defaultdict(lambda: {"admin": 0.0, "costo": 0.0, "unidades": 0.0})
+    per = defaultdict(lambda: {"admin": 0.0, "costo": 0.0, "unidades": 0.0, "seguros": 0.0})
     prod_agg = defaultdict(lambda: {"cantidad": 0.0, "monto": 0.0})
     for l in lines:
         oid = l["order_id"][0]
@@ -53,14 +71,17 @@ def build_month(oc, year, month):
             per[oid]["admin"] += sub
         else:
             per[oid]["costo"] += (l["purchase_price"] or 0.0) * qty
-            per[oid]["unidades"] += qty
+            if is_seguro_unidad(nm):
+                per[oid]["seguros"] += qty
+            elif is_equipo_unidad(nm):
+                per[oid]["unidades"] += qty
         prod_agg[nm]["cantidad"] += qty
         prod_agg[nm]["monto"] += sub
 
     facturas, ejec_agg, clientes, cancel_n, cancel_m = [], defaultdict(
-        lambda: {"facturado": 0.0, "costo": 0.0, "facturas": 0, "unidades": 0}), set(), 0, 0.0
+        lambda: {"facturado": 0.0, "costo": 0.0, "facturas": 0, "unidades": 0, "seguros": 0}), set(), 0, 0.0
     campana_agg = defaultdict(lambda: {"facturas": 0, "monto": 0.0, "unidades": 0.0,
-                                       "admin": 0.0, "costo": 0.0, "items": []})
+                                       "admin": 0.0, "costo": 0.0, "seguros": 0.0, "items": []})
     for o in orders:
         oid = o["id"]
         ops = (o["x_status_operativos"] or "").split(".")[0].strip()
@@ -79,10 +100,9 @@ def build_month(oc, year, month):
         ejec_agg[ejecutivo]["facturado"] += monto
         ejec_agg[ejecutivo]["costo"] += costo
         ejec_agg[ejecutivo]["facturas"] += 1
-        # unidades: cantidad de lineas no-admin
-        for l in lines:
-            if l["order_id"][0] == oid and (l["product_id"][0] if l["product_id"] else None) not in admin_ids:
-                ejec_agg[ejecutivo]["unidades"] += l["product_uom_qty"] or 0
+        # unidades de equipos fisicos y seguros (calculados por orden en el loop de lineas)
+        ejec_agg[ejecutivo]["unidades"] += per[oid]["unidades"]
+        ejec_agg[ejecutivo]["seguros"] += per[oid]["seguros"]
         if ops == "8":
             cancel_n += 1
             cancel_m += monto
@@ -92,6 +112,7 @@ def build_month(oc, year, month):
         campana_agg[camp]["admin"] += admin
         campana_agg[camp]["costo"] += costo
         campana_agg[camp]["unidades"] += per[oid]["unidades"]
+        campana_agg[camp]["seguros"] += per[oid]["seguros"]
         campana_agg[camp]["items"].append({"orden": o["name"], "cliente": cliente,
                                            "unidades": round(per[oid]["unidades"], 2),
                                            "monto": monto, "fecha": d})
@@ -101,7 +122,7 @@ def build_month(oc, year, month):
     total_costo = round(sum(f["costo"] for f in facturas), 2)
     ejecutivos = [{"nombre": k, "facturado": round(v["facturado"], 2), "costo": round(v["costo"], 2),
                    "margen": round(v["facturado"] - v["costo"], 2), "facturas": v["facturas"],
-                   "unidades": v["unidades"]} for k, v in ejec_agg.items()]
+                   "unidades": v["unidades"], "seguros": v["seguros"]} for k, v in ejec_agg.items()]
     ejecutivos.sort(key=lambda e: e["facturado"], reverse=True)
     top_productos = [{"nombre": k, "cantidad": round(v["cantidad"], 2) if v["cantidad"] % 1 else int(v["cantidad"]),
                       "monto": round(v["monto"], 2)} for k, v in prod_agg.items()]
@@ -112,7 +133,8 @@ def build_month(oc, year, month):
         unidades = round(v["unidades"], 2)
         campanas.append({"nombre": k, "facturas": v["facturas"], "monto": round(v["monto"], 2),
                          "unidades": int(unidades) if unidades % 1 else unidades,
-                         "admin": round(v["admin"], 2), "costo": round(v["costo"], 2), "items": items})
+                         "admin": round(v["admin"], 2), "costo": round(v["costo"], 2),
+                         "seguros": int(v["seguros"]) if v["seguros"] % 1 else v["seguros"], "items": items})
     campanas.sort(key=lambda c: c["monto"], reverse=True)
 
     return {
