@@ -1,16 +1,19 @@
-name: Horario - Cierre LB
+name: Actualizacion Diaria - Cierre LB
 
 on:
   schedule:
-    # Cada hora en el minuto 53 (equivale al :53 en hora de Caracas, UTC-4)
-    - cron: "53 * * * *"
+    # Dos veces al dia (hora Caracas, UTC-4):
+    #   02:00 Caracas = 06:00 UTC
+    #   21:00 Caracas = 01:00 UTC (dia siguiente)
+    - cron: "0 6 * * *"
+    - cron: "0 1 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: cierrlb-horario
+  group: cierrlb-diario
   cancel-in-progress: false
 
 jobs:
