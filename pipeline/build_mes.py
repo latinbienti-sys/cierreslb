@@ -9,24 +9,11 @@ from collections import defaultdict
 import erp
 TZ = timezone(timedelta(hours=-4))
 ADMIN_NAME = "gasto administrativo y gestion de cobranza"
-# --- unidades: solo EQUIPOS FISICOS ---
-SEG_PAT = ("seguro",)  # 'Seguro de Reserva de Dominio' (y futuros seguros) -> columna aparte
-NO_EQUIP_PAT = (  # accesorios/servicios/consumibles -> fuera de Unidades
-    "cargador", "adapter", "adaptador", "cable", "caucho", "llanta",
-    "audifono", "buds", "freebuds", "manos libre", "airdots",
-    "power bank", "powerbank", "ups", "mah", "bateria",
-    "memoria externa", "storage", "canvio", "micro sd", "sd card", " memoria",
-    "mica", "forro", "case", "estuche", "vidrio templado", "templado",
-    "chip", " sim ", "simcard", "sim card", "linea",
-    "soporte", "base para",
-    "poliza", "aseguranza", "garantia", "dominio", "plan",
-)
+# --- unidades: TODAS las salidas de producto; el SEGURO va en su propia columna ---
+SEG_PAT = ("seguro",)  # 'Seguro de Reserva de Dominio' -> columna 'Seguros'
 def is_seguro_unidad(nm):
     n = norm(nm)
     return any(k in n for k in SEG_PAT)
-def is_equipo_unidad(nm):
-    n = norm(nm)
-    return not (is_seguro_unidad(nm) or any(k in n for k in NO_EQUIP_PAT))
 STATUS_LABEL = {"6": "Entregado", "8": "Cancelación Total", "12": "Congelado (Entregado)",
                 "0": "Presupuesto", "4": "Aprobado", "11": "Cambio de Plan",
                 "5": "Negado - Retiro", "7": "Retirado Devolución", "9": "Exclusión por Mora",
@@ -73,8 +60,8 @@ def build_month(oc, year, month):
             per[oid]["costo"] += (l["purchase_price"] or 0.0) * qty
             if is_seguro_unidad(nm):
                 per[oid]["seguros"] += qty
-            elif is_equipo_unidad(nm):
-                per[oid]["unidades"] += qty
+            else:
+                per[oid]["unidades"] += qty  # toda salida de producto cuenta
         prod_agg[nm]["cantidad"] += qty
         prod_agg[nm]["monto"] += sub
 
