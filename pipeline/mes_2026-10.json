@@ -2,6 +2,46 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04507",
+   "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 434.63,
+   "costo": 182.85,
+   "admin": 150.37,
+   "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04505",
+   "cliente": "EMMANUEL LOBO ANGULO",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 87.12,
+   "costo": 39.0,
+   "admin": 26.28,
+   "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04500",
+   "cliente": "EMMANUEL LOBO ANGULO",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 996.8,
+   "costo": 416.85,
+   "admin": 347.49,
+   "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04501",
+   "cliente": "DELIA MARIA BUITRAGO SANDOVAL",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 965.57,
+   "costo": 403.85,
+   "admin": 336.54,
+   "status": "Entregado",
+   "fecha": "2026-10-30"
+  },
+  {
    "orden": "LB-ORDEN-04474",
    "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
    "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
@@ -138,6 +178,16 @@
    "monto": 758.97,
    "costo": 317.85,
    "admin": 264.1,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
+   "orden": "LB-ORDEN-04459",
+   "cliente": "LEONARDO JAVIER PINO QUINTERO",
+   "ejecutivo": "DANIEL CASTELLANOS",
+   "monto": 2196.48,
+   "costo": 1260.0,
+   "admin": 936.48,
    "status": "Entregado",
    "fecha": "2026-10-29"
   },
@@ -1005,21 +1055,21 @@
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 16463.2,
-   "costo": 7673.68,
-   "margen": 8789.52,
-   "facturas": 24,
-   "unidades": 28.0,
-   "seguros": 12.0
+   "facturado": 17428.77,
+   "costo": 8077.53,
+   "margen": 9351.24,
+   "facturas": 25,
+   "unidades": 29.0,
+   "seguros": 13.0
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 9408.41,
-   "costo": 4212.28,
-   "margen": 5196.13,
-   "facturas": 17,
-   "unidades": 17.0,
-   "seguros": 4.0
+   "facturado": 10926.96,
+   "costo": 4850.98,
+   "margen": 6075.98,
+   "facturas": 20,
+   "unidades": 20.0,
+   "seguros": 6.0
   },
   {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
@@ -1040,6 +1090,15 @@
    "seguros": 0.0
   },
   {
+   "nombre": "DANIEL CASTELLANOS",
+   "facturado": 5599.04,
+   "costo": 3060.0,
+   "margen": 2539.04,
+   "facturas": 2,
+   "unidades": 2.0,
+   "seguros": 0.0
+  },
+  {
    "nombre": "ELIO CHAMATE",
    "facturado": 4039.65,
    "costo": 1859.7,
@@ -1047,15 +1106,6 @@
    "facturas": 3,
    "unidades": 3.0,
    "seguros": 2.0
-  },
-  {
-   "nombre": "DANIEL CASTELLANOS",
-   "facturado": 3402.56,
-   "costo": 1800.0,
-   "margen": 1602.56,
-   "facturas": 1,
-   "unidades": 1.0,
-   "seguros": 0.0
   },
   {
    "nombre": "YOHANA AUDREY LOPEZ",
@@ -1097,8 +1147,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 91,
-   "monto": 21921.6
+   "cantidad": 96,
+   "monto": 23718.76
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1136,9 +1186,14 @@
    "monto": 1802.14
   },
   {
-   "nombre": "[CEL000-01067] Samsung Galaxy S26 Ultra 12GB/512GB",
+   "nombre": "[CEL000-01067] Telefono Samsung Galaxy S26 Ultra 12GB/512GB",
    "cantidad": 1,
    "monto": 1652.85
+  },
+  {
+   "nombre": "Telefono Xiaomi Redmi Note 15 Pro+ 5G 8GB/256GB",
+   "cantidad": 3,
+   "monto": 1613.85
   },
   {
    "nombre": "[LDELL-15250] Laptop Dell LDC15250-5315BLK, Intel Core i5-1334U, 8GB, 512GB SSD, 15.6\" 2K Touchscreen, US, W11.",
@@ -1181,14 +1236,19 @@
    "monto": 1234.6
   },
   {
+   "nombre": "[CEL000-00970] Telefono Samsung Galaxy A56 5G 8GB/256GB",
+   "cantidad": 2,
+   "monto": 1087.72
+  },
+  {
+   "nombre": "Motocicleta Bel KEIKO 150",
+   "cantidad": 1,
+   "monto": 1086.21
+  },
+  {
    "nombre": "[CEL003-00952] Xiaomi Redmi Note 15 8GB/256GB",
    "cantidad": 3,
    "monto": 1085.34
-  },
-  {
-   "nombre": "Xiaomi Redmi Note 15 Pro+ 5G 8GB/256GB",
-   "cantidad": 2,
-   "monto": 1075.9
   },
   {
    "nombre": "[CEL003-00956] Xiaomi Redmi Note 15 Pro  5G 8GB/256GB",
@@ -1201,7 +1261,7 @@
    "monto": 1031.58
   },
   {
-   "nombre": "[CEL000-01077] Samsung Galaxy A37 8GB/256GB",
+   "nombre": "[CEL000-01077] Telefono Samsung Galaxy A37 8GB/256GB",
    "cantidad": 2,
    "monto": 1024.52
   },
@@ -1241,7 +1301,7 @@
    "monto": 603.12
   },
   {
-   "nombre": "[CEL01B-00242] Infinix Smart 20, 4GB/128GB",
+   "nombre": "[CEL01B-00242] Telefono Infinix Smart 20, 4GB/128GB",
    "cantidad": 3,
    "monto": 600.62
   },
@@ -1261,11 +1321,6 @@
    "monto": 563.5
   },
   {
-   "nombre": "[CEL000-00970] Samsung Galaxy A56 5G 8GB/256GB",
-   "cantidad": 1,
-   "monto": 532.29
-  },
-  {
    "nombre": "Honor X8d – 6.77” 8 GB/256 GB",
    "cantidad": 1,
    "monto": 469.36
@@ -1281,7 +1336,7 @@
    "monto": 435.63
   },
   {
-   "nombre": "[CEL000-01073] Samsung Galaxy A37 6GB/128GB",
+   "nombre": "[CEL000-01073] Telefono Samsung Galaxy A37 6GB/128GB",
    "cantidad": 1,
    "monto": 420.95
   },
@@ -1296,19 +1351,29 @@
    "monto": 348.32
   },
   {
+   "nombre": "[ACE009-00072] Samsung Power Adapter 45W (EP-T4511), Low Standby USB-C Cable",
+   "cantidad": 6,
+   "monto": 310.34
+  },
+  {
    "nombre": "Toshiba Portable Storage 2TB Canvio Flex (HDTX120XSCAA), Silver.",
    "cantidad": 2,
    "monto": 282.1
   },
   {
-   "nombre": "[ACE009-00072] Samsung Power Adapter 45W (EP-T4511), Low Standby USB-C Cable",
-   "cantidad": 5,
-   "monto": 257.89
+   "nombre": "Telefono Honor Play 20A – 6.9”  4GB/128GB",
+   "cantidad": 1,
+   "monto": 240.73
   },
   {
    "nombre": "CAUCHO 185/60R14 APLUS",
    "cantidad": 4,
    "monto": 215.14
+  },
+  {
+   "nombre": "[0001-56] Seguro de Reserva de Dominio",
+   "cantidad": 41,
+   "monto": 205.93
   },
   {
    "nombre": "Mini DC UPS Pro 20000 Olax mAh",
@@ -1324,11 +1389,6 @@
    "nombre": "[TAB026-00003] Compaq Tablet 12\" 6GB/128GB",
    "cantidad": 1,
    "monto": 198.5
-  },
-  {
-   "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 38,
-   "monto": 190.9
   },
   {
    "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
@@ -1376,24 +1436,24 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 78298.14,
- "total_facturas": 99,
- "total_clientes": 92,
- "total_productos": 56376.54,
- "total_admin": 21921.6,
+ "total_facturado": 82978.74,
+ "total_facturas": 104,
+ "total_clientes": 95,
+ "total_productos": 59259.98,
+ "total_admin": 23718.76,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 38876.35,
- "total_margen": 39421.79,
+ "total_costo": 41178.9,
+ "total_margen": 41799.84,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 71,
-   "monto": 49788.95,
-   "unidades": 84.0,
-   "admin": 11500.13,
-   "costo": 25311.97,
-   "seguros": 20.0,
+   "facturas": 69,
+   "monto": 49047.66,
+   "unidades": 82.0,
+   "admin": 11547.52,
+   "costo": 25258.12,
+   "seguros": 19.0,
    "items": [
     {
      "orden": "LB-ORDEN-04489",
@@ -1417,24 +1477,10 @@
      "fecha": "2026-10-29"
     },
     {
-     "orden": "LB-ORDEN-04482",
-     "cliente": "FRANCO NICOLAH PEREIRA QUINTERO",
+     "orden": "LB-ORDEN-04459",
+     "cliente": "LEONARDO JAVIER PINO QUINTERO",
      "unidades": 1.0,
-     "monto": 939.15,
-     "fecha": "2026-10-29"
-    },
-    {
-     "orden": "LB-ORDEN-04479",
-     "cliente": "MARIA COROMOTO ARAQUE ALBARRAN",
-     "unidades": 1.0,
-     "monto": 495.94,
-     "fecha": "2026-10-29"
-    },
-    {
-     "orden": "LB-ORDEN-04475",
-     "cliente": "JESUS ALBERTO TORO HERNANDEZ",
-     "unidades": 1.0,
-     "monto": 1502.68,
+     "monto": 2196.48,
      "fecha": "2026-10-29"
     },
     {
@@ -1896,18 +1942,46 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 15,
-   "monto": 12275.79,
-   "unidades": 16.0,
-   "admin": 4273.98,
-   "costo": 5138.75,
-   "seguros": 15.0,
+   "facturas": 20,
+   "monto": 16551.09,
+   "unidades": 21.0,
+   "admin": 5762.94,
+   "costo": 6928.0,
+   "seguros": 20.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04507",
+     "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
+     "unidades": 1.0,
+     "monto": 434.63,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04500",
+     "cliente": "EMMANUEL LOBO ANGULO",
+     "unidades": 1.0,
+     "monto": 996.8,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04501",
+     "cliente": "DELIA MARIA BUITRAGO SANDOVAL",
+     "unidades": 1.0,
+     "monto": 965.57,
+     "fecha": "2026-10-30"
+    },
     {
      "orden": "LB-ORDEN-04493",
      "cliente": "TERESA MONROY DE HERNANDEZ",
      "unidades": 1.0,
      "monto": 965.57,
+     "fecha": "2026-10-29"
+    },
+    {
+     "orden": "LB-ORDEN-04482",
+     "cliente": "FRANCO NICOLAH PEREIRA QUINTERO",
+     "unidades": 1.0,
+     "monto": 939.15,
      "fecha": "2026-10-29"
     },
     {
@@ -1957,6 +2031,13 @@
      "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
      "unidades": 1.0,
      "monto": 506.7,
+     "fecha": "2026-10-27"
+    },
+    {
+     "orden": "LB-ORDEN-04454",
+     "cliente": "MARIA COROMOTO ARAQUE ALBARRAN",
+     "unidades": 1.0,
+     "monto": 939.15,
      "fecha": "2026-10-27"
     },
     {
@@ -2044,13 +2125,20 @@
   },
   {
    "nombre": "SEMANADELTERROR",
-   "facturas": 9,
-   "monto": 5001.52,
-   "unidades": 9.0,
-   "admin": 1140.65,
-   "costo": 2546.63,
-   "seguros": 3.0,
+   "facturas": 11,
+   "monto": 6148.11,
+   "unidades": 11.0,
+   "admin": 1401.46,
+   "costo": 3113.78,
+   "seguros": 2.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04505",
+     "cliente": "EMMANUEL LOBO ANGULO",
+     "unidades": 1.0,
+     "monto": 87.12,
+     "fecha": "2026-10-31"
+    },
     {
      "orden": "LB-ORDEN-04474",
      "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
@@ -2073,6 +2161,20 @@
      "fecha": "2026-10-29"
     },
     {
+     "orden": "LB-ORDEN-04479",
+     "cliente": "MARIA COROMOTO ARAQUE ALBARRAN",
+     "unidades": 1.0,
+     "monto": 495.94,
+     "fecha": "2026-10-29"
+    },
+    {
+     "orden": "LB-ORDEN-04475",
+     "cliente": "JESUS ALBERTO TORO HERNANDEZ",
+     "unidades": 1.0,
+     "monto": 1502.68,
+     "fecha": "2026-10-29"
+    },
+    {
      "orden": "LB-ORDEN-04471",
      "cliente": "CARLOS ALONSO ESCALANTE RAMIREZ",
      "unidades": 1.0,
@@ -2091,13 +2193,6 @@
      "cliente": "ROALD EDUARDO GOMEZ PEREZ",
      "unidades": 1.0,
      "monto": 234.3,
-     "fecha": "2026-10-27"
-    },
-    {
-     "orden": "LB-ORDEN-04454",
-     "cliente": "MARIA COROMOTO ARAQUE ALBARRAN",
-     "unidades": 1.0,
-     "monto": 939.15,
      "fecha": "2026-10-27"
     },
     {
@@ -2137,7 +2232,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 78298.14,
- "count": 99,
+ "total": 82978.74,
+ "count": 104,
  "colaboradores": []
 }

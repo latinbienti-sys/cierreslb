@@ -2,14 +2,41 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 39,
-   "sc": 39,
-   "sm": 31994.27,
-   "sp": 22719.26,
-   "sk": 14753.94,
-   "sa": 9275.01,
-   "sg": 17240.33,
+   "sf": 42,
+   "sc": 42,
+   "sm": 34391.27,
+   "sp": 24281.86,
+   "sk": 15757.49,
+   "sa": 10109.41,
+   "sg": 18633.78,
    "se": [
+    {
+     "o": "LB-ORDEN-04507",
+     "c": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-31",
+     "m": 434.63,
+     "k": 182.85,
+     "a": 150.37
+    },
+    {
+     "o": "LB-ORDEN-04500",
+     "c": "EMMANUEL LOBO ANGULO",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-31",
+     "m": 996.8,
+     "k": 416.85,
+     "a": 347.49
+    },
+    {
+     "o": "LB-ORDEN-04501",
+     "c": "DELIA MARIA BUITRAGO SANDOVAL",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-30",
+     "m": 965.57,
+     "k": 403.85,
+     "a": 336.54
+    },
     {
      "o": "LB-ORDEN-04493",
      "c": "TERESA MONROY DE HERNANDEZ",
@@ -566,14 +593,23 @@
   },
   {
    "t": "Motos",
-   "sf": 3,
-   "sc": 3,
-   "sm": 9791.81,
-   "sp": 5180.0,
-   "sk": 5180.0,
-   "sa": 4611.81,
-   "sg": 4611.81,
+   "sf": 4,
+   "sc": 4,
+   "sm": 11988.29,
+   "sp": 6440.0,
+   "sk": 6440.0,
+   "sa": 5548.29,
+   "sg": 5548.29,
    "se": [
+    {
+     "o": "LB-ORDEN-04459",
+     "c": "LEONARDO JAVIER PINO QUINTERO",
+     "e": "DANIEL CASTELLANOS",
+     "f": "2026-10-29",
+     "m": 2196.48,
+     "k": 1260.0,
+     "a": 936.48
+    },
     {
      "o": "LB-ORDEN-04406",
      "c": "DANIEL ALFONSO BRICEÑO GARCIA",
@@ -662,14 +698,23 @@
   },
   {
    "t": "Accesorios",
-   "sf": 9,
-   "sc": 9,
-   "sm": 2755.93,
-   "sp": 2222.88,
-   "sk": 1504.5,
-   "sa": 533.05,
-   "sg": 1251.43,
+   "sf": 10,
+   "sc": 10,
+   "sm": 2843.05,
+   "sp": 2283.72,
+   "sk": 1543.5,
+   "sa": 559.33,
+   "sg": 1299.55,
    "se": [
+    {
+     "o": "LB-ORDEN-04505",
+     "c": "EMMANUEL LOBO ANGULO",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-31",
+     "m": 87.12,
+     "k": 39.0,
+     "a": 26.28
+    },
     {
      "o": "LB-ORDEN-04457",
      "c": "MIGUELANGEL QUISCA ALBORNOZ",
@@ -1013,10 +1058,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 99,
-  "oct_facturado": 78298.14,
-  "oct_precio": 56376.54,
-  "oct_costo": 38876.35,
-  "oct_admin": 21921.6
+  "oct_facturas": 104,
+  "oct_facturado": 82978.74,
+  "oct_precio": 59259.98,
+  "oct_costo": 41178.9,
+  "oct_admin": 23718.76
  }
 }
