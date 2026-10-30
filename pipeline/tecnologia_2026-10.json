@@ -2,14 +2,41 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 36,
-   "sc": 36,
-   "sm": 29052.27,
-   "sp": 20663.68,
-   "sk": 13434.39,
-   "sa": 8388.59,
-   "sg": 15617.88,
+   "sf": 39,
+   "sc": 39,
+   "sm": 31994.27,
+   "sp": 22719.26,
+   "sk": 14753.94,
+   "sa": 9275.01,
+   "sg": 17240.33,
    "se": [
+    {
+     "o": "LB-ORDEN-04493",
+     "c": "TERESA MONROY DE HERNANDEZ",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-29",
+     "m": 965.57,
+     "k": 403.85,
+     "a": 336.54
+    },
+    {
+     "o": "LB-ORDEN-04487",
+     "c": "JOHANSRY AMANDA MENA VELASCO",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-29",
+     "m": 1013.26,
+     "k": 512.85,
+     "a": 214.18
+    },
+    {
+     "o": "LB-ORDEN-04480",
+     "c": "FERNANDO JOSE RONDON ARAUJO",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-29",
+     "m": 963.17,
+     "k": 402.85,
+     "a": 335.7
+    },
     {
      "o": "LB-ORDEN-04488",
      "c": "ZAYDA COROMOTO PEÑA ALBARRAN",
@@ -338,13 +365,13 @@
   },
   {
    "t": "Computación",
-   "sf": 19,
-   "sc": 19,
-   "sm": 22296.41,
-   "sp": 17267.57,
-   "sk": 11374.43,
-   "sa": 5028.84,
-   "sg": 10921.98,
+   "sf": 21,
+   "sc": 21,
+   "sm": 23434.56,
+   "sp": 18122.53,
+   "sk": 12032.07,
+   "sa": 5312.03,
+   "sg": 11402.49,
    "se": [
     {
      "o": "LB-ORDEN-04474",
@@ -354,6 +381,24 @@
      "m": 184.83,
      "k": 104.88,
      "a": 21.21
+    },
+    {
+     "o": "LB-ORDEN-04494",
+     "c": "EDGAR HORACIO CERRADA VERGARA",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-29",
+     "m": 485.04,
+     "k": 306.82,
+     "a": 86.16
+    },
+    {
+     "o": "LB-ORDEN-04489",
+     "c": "DILCIA BOLIVIA ARELLANO RAMIREZ",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-29",
+     "m": 653.11,
+     "k": 350.82,
+     "a": 197.03
     },
     {
      "o": "LB-ORDEN-04475",
@@ -968,10 +1013,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 94,
-  "oct_facturado": 74217.99,
-  "oct_precio": 53466.0,
-  "oct_costo": 36899.16,
-  "oct_admin": 20751.99
+  "oct_facturas": 99,
+  "oct_facturado": 78298.14,
+  "oct_precio": 56376.54,
+  "oct_costo": 38876.35,
+  "oct_admin": 21921.6
  }
 }

@@ -12,6 +12,36 @@
    "fecha": "2026-10-30"
   },
   {
+   "orden": "LB-ORDEN-04494",
+   "cliente": "EDGAR HORACIO CERRADA VERGARA",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 485.04,
+   "costo": 306.82,
+   "admin": 86.16,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
+   "orden": "LB-ORDEN-04493",
+   "cliente": "TERESA MONROY DE HERNANDEZ",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 965.57,
+   "costo": 403.85,
+   "admin": 336.54,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
+   "orden": "LB-ORDEN-04489",
+   "cliente": "DILCIA BOLIVIA ARELLANO RAMIREZ",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 653.11,
+   "costo": 350.82,
+   "admin": 197.03,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
    "orden": "LB-ORDEN-04487",
    "cliente": "JOHANSRY AMANDA MENA VELASCO",
    "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
@@ -966,20 +996,20 @@
  "ejecutivos": [
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 18606.51,
-   "costo": 8902.97,
-   "margen": 9703.54,
-   "facturas": 26,
-   "unidades": 31.0,
-   "seguros": 13.0
+   "facturado": 19572.08,
+   "costo": 9306.82,
+   "margen": 10265.26,
+   "facturas": 27,
+   "unidades": 32.0,
+   "seguros": 14.0
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 15325.05,
-   "costo": 7016.04,
-   "margen": 8309.01,
-   "facturas": 22,
-   "unidades": 25.0,
+   "facturado": 16463.2,
+   "costo": 7673.68,
+   "margen": 8789.52,
+   "facturas": 24,
+   "unidades": 28.0,
    "seguros": 12.0
   },
   {
@@ -1067,8 +1097,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 88,
-   "monto": 21301.87
+   "cantidad": 91,
+   "monto": 21921.6
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1156,9 +1186,19 @@
    "monto": 1085.34
   },
   {
+   "nombre": "Xiaomi Redmi Note 15 Pro+ 5G 8GB/256GB",
+   "cantidad": 2,
+   "monto": 1075.9
+  },
+  {
    "nombre": "[CEL003-00956] Xiaomi Redmi Note 15 Pro  5G 8GB/256GB",
    "cantidad": 2,
    "monto": 1073.2
+  },
+  {
+   "nombre": "Impresora Epson Tinta Continua EcoTank L3350 (Multifuncional/Color).",
+   "cantidad": 3,
+   "monto": 1031.58
   },
   {
    "nombre": "[CEL000-01077] Samsung Galaxy A37 8GB/256GB",
@@ -1221,11 +1261,6 @@
    "monto": 563.5
   },
   {
-   "nombre": "Xiaomi Redmi Note 15 Pro+ 5G 8GB/256GB",
-   "cantidad": 1,
-   "monto": 537.95
-  },
-  {
    "nombre": "[CEL000-00970] Samsung Galaxy A56 5G 8GB/256GB",
    "cantidad": 1,
    "monto": 532.29
@@ -1261,11 +1296,6 @@
    "monto": 348.32
   },
   {
-   "nombre": "Impresora Epson Tinta Continua EcoTank L3350 (Multifuncional/Color).",
-   "cantidad": 1,
-   "monto": 343.86
-  },
-  {
    "nombre": "Toshiba Portable Storage 2TB Canvio Flex (HDTX120XSCAA), Silver.",
    "cantidad": 2,
    "monto": 282.1
@@ -1297,8 +1327,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 37,
-   "monto": 185.89
+   "cantidad": 38,
+   "monto": 190.9
   },
   {
    "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
@@ -1336,30 +1366,42 @@
    "monto": 67.24
   },
   {
+   "nombre": "[AC12G] Router Mercusys AC1300 Dual Band Gigabit",
+   "cantidad": 1,
+   "monto": 49.31
+  },
+  {
    "nombre": "[0001-7] Base para Televisor Aiwa Soporte Fijo Pared 32/70 pulgadas",
    "cantidad": 0,
    "monto": 0.0
   }
  ],
- "total_facturado": 76194.42,
- "total_facturas": 96,
- "total_clientes": 90,
- "total_productos": 54892.55,
- "total_admin": 21301.87,
+ "total_facturado": 78298.14,
+ "total_facturas": 99,
+ "total_clientes": 92,
+ "total_productos": 56376.54,
+ "total_admin": 21921.6,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 37814.86,
- "total_margen": 38379.56,
+ "total_costo": 38876.35,
+ "total_margen": 39421.79,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 70,
-   "monto": 49135.84,
-   "unidades": 82.0,
-   "admin": 11303.1,
-   "costo": 24961.15,
+   "facturas": 71,
+   "monto": 49788.95,
+   "unidades": 84.0,
+   "admin": 11500.13,
+   "costo": 25311.97,
    "seguros": 20.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04489",
+     "cliente": "DILCIA BOLIVIA ARELLANO RAMIREZ",
+     "unidades": 2.0,
+     "monto": 653.11,
+     "fecha": "2026-10-29"
+    },
     {
      "orden": "LB-ORDEN-04488",
      "cliente": "ZAYDA COROMOTO PEÑA ALBARRAN",
@@ -1854,13 +1896,20 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 14,
-   "monto": 11310.22,
-   "unidades": 15.0,
-   "admin": 3937.44,
-   "costo": 4734.9,
-   "seguros": 14.0,
+   "facturas": 15,
+   "monto": 12275.79,
+   "unidades": 16.0,
+   "admin": 4273.98,
+   "costo": 5138.75,
+   "seguros": 15.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04493",
+     "cliente": "TERESA MONROY DE HERNANDEZ",
+     "unidades": 1.0,
+     "monto": 965.57,
+     "fecha": "2026-10-29"
+    },
     {
      "orden": "LB-ORDEN-04480",
      "cliente": "FERNANDO JOSE RONDON ARAUJO",
@@ -1995,11 +2044,11 @@
   },
   {
    "nombre": "SEMANADELTERROR",
-   "facturas": 8,
-   "monto": 4516.48,
-   "unidades": 8.0,
-   "admin": 1054.49,
-   "costo": 2239.81,
+   "facturas": 9,
+   "monto": 5001.52,
+   "unidades": 9.0,
+   "admin": 1140.65,
+   "costo": 2546.63,
    "seguros": 3.0,
    "items": [
     {
@@ -2008,6 +2057,13 @@
      "unidades": 1.0,
      "monto": 184.83,
      "fecha": "2026-10-30"
+    },
+    {
+     "orden": "LB-ORDEN-04494",
+     "cliente": "EDGAR HORACIO CERRADA VERGARA",
+     "unidades": 1.0,
+     "monto": 485.04,
+     "fecha": "2026-10-29"
     },
     {
      "orden": "LB-ORDEN-04484",
@@ -2081,7 +2137,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 76194.42,
- "count": 96,
+ "total": 78298.14,
+ "count": 99,
  "colaboradores": []
 }
