@@ -2,6 +2,26 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04513",
+   "cliente": "YENCY ADRIANA CUEVAS ALARCON",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 996.8,
+   "costo": 416.85,
+   "admin": 347.49,
+   "status": "Aprobado",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04516",
+   "cliente": "MAIDA DEL CARMEN QUINTERO VERA",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 939.15,
+   "costo": 392.85,
+   "admin": 327.28,
+   "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
    "orden": "LB-ORDEN-04507",
    "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
    "ejecutivo": "LADY DIANA TORO RIVERA",
@@ -32,12 +52,52 @@
    "fecha": "2026-10-31"
   },
   {
+   "orden": "LB-ORDEN-04508",
+   "cliente": "LUZ MARYURI RANGEL ARAQUE",
+   "ejecutivo": "ELIO CHAMATE",
+   "monto": 1534.24,
+   "costo": 739.67,
+   "admin": 461.09,
+   "status": "Entregado",
+   "fecha": "2026-10-30"
+  },
+  {
+   "orden": "LB-ORDEN-04506",
+   "cliente": "DARCY COROMOTO GUERRERO VILLASMIL",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 756.56,
+   "costo": 316.85,
+   "admin": 263.25,
+   "status": "Entregado",
+   "fecha": "2026-10-30"
+  },
+  {
    "orden": "LB-ORDEN-04501",
    "cliente": "DELIA MARIA BUITRAGO SANDOVAL",
    "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
    "monto": 965.57,
    "costo": 403.85,
    "admin": 336.54,
+   "status": "Entregado",
+   "fecha": "2026-10-30"
+  },
+  {
+   "orden": "LB-ORDEN-04495",
+   "cliente": "RAFAEL ANTONIO SANCHEZ MARQUEZ",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 1516.89,
+   "costo": 679.0,
+   "admin": 457.61,
+   "status": "Entregado",
+   "fecha": "2026-10-30"
+  },
+  {
+   "orden": "LB-ORDEN-04469",
+   "cliente": "LUSMAR ELIZABETH RIVAS GARCIA",
+   "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
+   "monto": 939.15,
+   "costo": 392.85,
+   "admin": 327.28,
    "status": "Entregado",
    "fecha": "2026-10-30"
   },
@@ -188,6 +248,16 @@
    "monto": 2196.48,
    "costo": 1260.0,
    "admin": 936.48,
+   "status": "Entregado",
+   "fecha": "2026-10-29"
+  },
+  {
+   "orden": "LB-ORDEN-04456",
+   "cliente": "EDGAR ALEXANDER CERRADA ARAQUE",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 268.07,
+   "costo": 120.0,
+   "admin": 80.87,
    "status": "Entregado",
    "fecha": "2026-10-29"
   },
@@ -1046,39 +1116,39 @@
  "ejecutivos": [
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 19572.08,
-   "costo": 9306.82,
-   "margen": 10265.26,
-   "facturas": 27,
-   "unidades": 32.0,
+   "facturado": 19840.15,
+   "costo": 9426.82,
+   "margen": 10413.33,
+   "facturas": 28,
+   "unidades": 34.0,
    "seguros": 14.0
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 17428.77,
-   "costo": 8077.53,
-   "margen": 9351.24,
-   "facturas": 25,
-   "unidades": 29.0,
-   "seguros": 13.0
+   "facturado": 18185.33,
+   "costo": 8394.38,
+   "margen": 9790.95,
+   "facturas": 26,
+   "unidades": 30.0,
+   "seguros": 14.0
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 10926.96,
-   "costo": 4850.98,
-   "margen": 6075.98,
-   "facturas": 20,
-   "unidades": 20.0,
-   "seguros": 6.0
+   "facturado": 14379.8,
+   "costo": 6339.68,
+   "margen": 8040.12,
+   "facturas": 23,
+   "unidades": 23.0,
+   "seguros": 8.0
   },
   {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
-   "facturado": 8489.21,
-   "costo": 4404.55,
-   "margen": 4084.66,
-   "facturas": 13,
-   "unidades": 15.0,
-   "seguros": 5.0
+   "facturado": 9428.36,
+   "costo": 4797.4,
+   "margen": 4630.96,
+   "facturas": 14,
+   "unidades": 16.0,
+   "seguros": 6.0
   },
   {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
@@ -1100,12 +1170,12 @@
   },
   {
    "nombre": "ELIO CHAMATE",
-   "facturado": 4039.65,
-   "costo": 1859.7,
-   "margen": 2179.95,
-   "facturas": 3,
-   "unidades": 3.0,
-   "seguros": 2.0
+   "facturado": 5573.89,
+   "costo": 2599.37,
+   "margen": 2974.52,
+   "facturas": 4,
+   "unidades": 5.0,
+   "seguros": 3.0
   },
   {
    "nombre": "YOHANA AUDREY LOPEZ",
@@ -1147,8 +1217,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 96,
-   "monto": 23718.76
+   "cantidad": 103,
+   "monto": 25983.63
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1159,6 +1229,16 @@
    "nombre": "Motocicleta Bel TT 150",
    "cantidad": 2,
    "monto": 3103.44
+  },
+  {
+   "nombre": "[LDELL-15250] Laptop Dell LDC15250-5315BLK, Intel Core i5-1334U, 8GB, 512GB SSD, 15.6\" 2K Touchscreen, US, W11.",
+   "cantidad": 3,
+   "monto": 2497.43
+  },
+  {
+   "nombre": "[CEL000-01077] Telefono Samsung Galaxy A37 8GB/256GB",
+   "cantidad": 4,
+   "monto": 2070.84
   },
   {
    "nombre": "Laptop Lenovo Ideapad Slim 3 82XM00LMUS, AMD Ryzen 7 5825U, 16GB, 512GB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1191,14 +1271,14 @@
    "monto": 1652.85
   },
   {
+   "nombre": "[CEL000-00970] Telefono Samsung Galaxy A56 5G 8GB/256GB",
+   "cantidad": 3,
+   "monto": 1643.15
+  },
+  {
    "nombre": "Telefono Xiaomi Redmi Note 15 Pro+ 5G 8GB/256GB",
    "cantidad": 3,
    "monto": 1613.85
-  },
-  {
-   "nombre": "[LDELL-15250] Laptop Dell LDC15250-5315BLK, Intel Core i5-1334U, 8GB, 512GB SSD, 15.6\" 2K Touchscreen, US, W11.",
-   "cantidad": 2,
-   "monto": 1584.26
   },
   {
    "nombre": "[CEL01A-00229] Tecno Camon 50 Pro – 6.78” 8GB/256GB",
@@ -1214,6 +1294,11 @@
    "nombre": "[A.S000-00012] Starlink Mini Dual-Band Wi-Fi System",
    "cantidad": 4,
    "monto": 1482.06
+  },
+  {
+   "nombre": "Impresora Epson Tinta Continua EcoTank L3350 (Multifuncional/Color).",
+   "cantidad": 4,
+   "monto": 1375.44
   },
   {
    "nombre": "Motocicleta Bel By UM Nitrox Sport",
@@ -1236,11 +1321,6 @@
    "monto": 1234.6
   },
   {
-   "nombre": "[CEL000-00970] Telefono Samsung Galaxy A56 5G 8GB/256GB",
-   "cantidad": 2,
-   "monto": 1087.72
-  },
-  {
    "nombre": "Motocicleta Bel KEIKO 150",
    "cantidad": 1,
    "monto": 1086.21
@@ -1256,16 +1336,6 @@
    "monto": 1073.2
   },
   {
-   "nombre": "Impresora Epson Tinta Continua EcoTank L3350 (Multifuncional/Color).",
-   "cantidad": 3,
-   "monto": 1031.58
-  },
-  {
-   "nombre": "[CEL000-01077] Telefono Samsung Galaxy A37 8GB/256GB",
-   "cantidad": 2,
-   "monto": 1024.52
-  },
-  {
    "nombre": "Laptop Acer Aspire Go 15 AG15-42P-R917 – AMD Ryzen 7 7730U / AMD Radeon / 16GB / 512GB SSD / 15.6” / US / W11",
    "cantidad": 1,
    "monto": 926.67
@@ -1279,6 +1349,11 @@
    "nombre": "Laptop Lenovo V15 G4 IRU 83A100PBUS Intel Core i3-1315U, 16GB, 512GB SSD, 15.6\", US, W11",
    "cantidad": 1,
    "monto": 859.38
+  },
+  {
+   "nombre": "[CEL000-01073] Telefono Samsung Galaxy A37 6GB/128GB",
+   "cantidad": 2,
+   "monto": 841.9
   },
   {
    "nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).",
@@ -1316,6 +1391,11 @@
    "monto": 579.37
   },
   {
+   "nombre": "[CEL007-00131] Telefono Honor Magic 8 Lite 8GB/256GB",
+   "cantidad": 1,
+   "monto": 576.95
+  },
+  {
    "nombre": "[TV016-00032] Aiwa 55\" QLED UHD 4K AW55B4Q Google TV.",
    "cantidad": 1,
    "monto": 563.5
@@ -1336,11 +1416,6 @@
    "monto": 435.63
   },
   {
-   "nombre": "[CEL000-01073] Telefono Samsung Galaxy A37 6GB/128GB",
-   "cantidad": 1,
-   "monto": 420.95
-  },
-  {
    "nombre": "[CEL007-00115] Honor X7D 8GB/256GB",
    "cantidad": 1,
    "monto": 415.57
@@ -1351,7 +1426,7 @@
    "monto": 348.32
   },
   {
-   "nombre": "[ACE009-00072] Samsung Power Adapter 45W (EP-T4511), Low Standby USB-C Cable",
+   "nombre": "[ACE009-00072] Cargador Samsung Power Adapter 45W (EP-T4511), Low Standby USB-C Cable",
    "cantidad": 6,
    "monto": 310.34
   },
@@ -1366,14 +1441,14 @@
    "monto": 240.73
   },
   {
+   "nombre": "[0001-56] Seguro de Reserva de Dominio",
+   "cantidad": 46,
+   "monto": 230.98
+  },
+  {
    "nombre": "CAUCHO 185/60R14 APLUS",
    "cantidad": 4,
    "monto": 215.14
-  },
-  {
-   "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 41,
-   "monto": 205.93
   },
   {
    "nombre": "Mini DC UPS Pro 20000 Olax mAh",
@@ -1389,6 +1464,11 @@
    "nombre": "[TAB026-00003] Compaq Tablet 12\" 6GB/128GB",
    "cantidad": 1,
    "monto": 198.5
+  },
+  {
+   "nombre": "Caucho 205/70/R15 Marca Zmax modelo AT",
+   "cantidad": 2,
+   "monto": 161.38
   },
   {
    "nombre": "[AUD009-00052] Audifonos inalámbricos Xiaomi Redmi Buds 6",
@@ -1436,25 +1516,53 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 82978.74,
- "total_facturas": 104,
- "total_clientes": 95,
- "total_productos": 59259.98,
- "total_admin": 23718.76,
+ "total_facturado": 89929.6,
+ "total_facturas": 111,
+ "total_clientes": 101,
+ "total_productos": 63945.97,
+ "total_admin": 25983.63,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 41178.9,
- "total_margen": 41799.84,
+ "total_costo": 44236.97,
+ "total_margen": 45692.63,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 69,
-   "monto": 49047.66,
-   "unidades": 82.0,
-   "admin": 11547.52,
-   "costo": 25258.12,
-   "seguros": 19.0,
+   "facturas": 74,
+   "monto": 53725.07,
+   "unidades": 89.0,
+   "admin": 13091.53,
+   "costo": 27320.34,
+   "seguros": 23.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04516",
+     "cliente": "MAIDA DEL CARMEN QUINTERO VERA",
+     "unidades": 1.0,
+     "monto": 939.15,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04513",
+     "cliente": "YENCY ADRIANA CUEVAS ALARCON",
+     "unidades": 1.0,
+     "monto": 996.8,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04508",
+     "cliente": "LUZ MARYURI RANGEL ARAQUE",
+     "unidades": 2.0,
+     "monto": 1534.24,
+     "fecha": "2026-10-30"
+    },
+    {
+     "orden": "LB-ORDEN-04469",
+     "cliente": "LUSMAR ELIZABETH RIVAS GARCIA",
+     "unidades": 1.0,
+     "monto": 939.15,
+     "fecha": "2026-10-30"
+    },
     {
      "orden": "LB-ORDEN-04489",
      "cliente": "DILCIA BOLIVIA ARELLANO RAMIREZ",
@@ -1481,6 +1589,13 @@
      "cliente": "LEONARDO JAVIER PINO QUINTERO",
      "unidades": 1.0,
      "monto": 2196.48,
+     "fecha": "2026-10-29"
+    },
+    {
+     "orden": "LB-ORDEN-04456",
+     "cliente": "EDGAR ALEXANDER CERRADA ARAQUE",
+     "unidades": 2.0,
+     "monto": 268.07,
      "fecha": "2026-10-29"
     },
     {
@@ -1942,12 +2057,12 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 20,
-   "monto": 16551.09,
-   "unidades": 21.0,
-   "admin": 5762.94,
-   "costo": 6928.0,
-   "seguros": 20.0,
+   "facturas": 21,
+   "monto": 17307.65,
+   "unidades": 22.0,
+   "admin": 6026.19,
+   "costo": 7244.85,
+   "seguros": 21.0,
    "items": [
     {
      "orden": "LB-ORDEN-04507",
@@ -1962,6 +2077,13 @@
      "unidades": 1.0,
      "monto": 996.8,
      "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04506",
+     "cliente": "DARCY COROMOTO GUERRERO VILLASMIL",
+     "unidades": 1.0,
+     "monto": 756.56,
+     "fecha": "2026-10-30"
     },
     {
      "orden": "LB-ORDEN-04501",
@@ -2125,11 +2247,11 @@
   },
   {
    "nombre": "SEMANADELTERROR",
-   "facturas": 11,
-   "monto": 6148.11,
-   "unidades": 11.0,
-   "admin": 1401.46,
-   "costo": 3113.78,
+   "facturas": 12,
+   "monto": 7665.0,
+   "unidades": 12.0,
+   "admin": 1859.07,
+   "costo": 3792.78,
    "seguros": 2.0,
    "items": [
     {
@@ -2138,6 +2260,13 @@
      "unidades": 1.0,
      "monto": 87.12,
      "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04495",
+     "cliente": "RAFAEL ANTONIO SANCHEZ MARQUEZ",
+     "unidades": 1.0,
+     "monto": 1516.89,
+     "fecha": "2026-10-30"
     },
     {
      "orden": "LB-ORDEN-04474",
@@ -2232,7 +2361,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 82978.74,
- "count": 104,
+ "total": 89929.6,
+ "count": 111,
  "colaboradores": []
 }

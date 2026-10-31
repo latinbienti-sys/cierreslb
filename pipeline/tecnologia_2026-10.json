@@ -2,14 +2,32 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 42,
-   "sc": 42,
-   "sm": 34391.27,
-   "sp": 24281.86,
-   "sk": 15757.49,
-   "sa": 10109.41,
-   "sg": 18633.78,
+   "sf": 47,
+   "sc": 47,
+   "sm": 39557.17,
+   "sp": 27721.37,
+   "sk": 18016.56,
+   "sa": 11835.8,
+   "sg": 21540.61,
    "se": [
+    {
+     "o": "LB-ORDEN-04513",
+     "c": "YENCY ADRIANA CUEVAS ALARCON",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-31",
+     "m": 996.8,
+     "k": 416.85,
+     "a": 347.49
+    },
+    {
+     "o": "LB-ORDEN-04516",
+     "c": "MAIDA DEL CARMEN QUINTERO VERA",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-31",
+     "m": 939.15,
+     "k": 392.85,
+     "a": 327.28
+    },
     {
      "o": "LB-ORDEN-04507",
      "c": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
@@ -29,6 +47,24 @@
      "a": 347.49
     },
     {
+     "o": "LB-ORDEN-04508",
+     "c": "LUZ MARYURI RANGEL ARAQUE",
+     "e": "ELIO CHAMATE",
+     "f": "2026-10-30",
+     "m": 1534.24,
+     "k": 739.67,
+     "a": 461.09
+    },
+    {
+     "o": "LB-ORDEN-04506",
+     "c": "DARCY COROMOTO GUERRERO VILLASMIL",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-30",
+     "m": 756.56,
+     "k": 316.85,
+     "a": 263.25
+    },
+    {
      "o": "LB-ORDEN-04501",
      "c": "DELIA MARIA BUITRAGO SANDOVAL",
      "e": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -36,6 +72,15 @@
      "m": 965.57,
      "k": 403.85,
      "a": 336.54
+    },
+    {
+     "o": "LB-ORDEN-04469",
+     "c": "LUSMAR ELIZABETH RIVAS GARCIA",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-30",
+     "m": 939.15,
+     "k": 392.85,
+     "a": 327.28
     },
     {
      "o": "LB-ORDEN-04493",
@@ -392,14 +437,23 @@
   },
   {
    "t": "Computación",
-   "sf": 21,
-   "sc": 21,
-   "sm": 23434.56,
-   "sp": 18122.53,
-   "sk": 12032.07,
-   "sa": 5312.03,
-   "sg": 11402.49,
+   "sf": 22,
+   "sc": 22,
+   "sm": 24951.45,
+   "sp": 19181.81,
+   "sk": 12711.07,
+   "sa": 5769.64,
+   "sg": 12240.38,
    "se": [
+    {
+     "o": "LB-ORDEN-04495",
+     "c": "RAFAEL ANTONIO SANCHEZ MARQUEZ",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-30",
+     "m": 1516.89,
+     "k": 679.0,
+     "a": 457.61
+    },
     {
      "o": "LB-ORDEN-04474",
      "c": "CARLOS ALONSO ESCALANTE RAMIREZ",
@@ -847,45 +901,24 @@
    ]
   },
   {
-   "t": "Refrigeración",
-   "sf": 2,
-   "sc": 2,
-   "sm": 982.56,
-   "sp": 699.62,
-   "sk": 458.0,
-   "sa": 282.94,
-   "sg": 524.56,
-   "se": [
-    {
-     "o": "LB-ORDEN-04372",
-     "c": "SILVIA ANALI HERNANDEZ PEÑA",
-     "e": "LADY DIANA TORO RIVERA",
-     "f": "2026-10-16",
-     "m": 492.29,
-     "k": 229.0,
-     "a": 135.04
-    },
-    {
-     "o": "LB-ORDEN-04350",
-     "c": "ORIANA TIBISAY TORRES DE ROJAS",
-     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
-     "f": "2026-10-09",
-     "m": 490.27,
-     "k": 229.0,
-     "a": 147.9
-    }
-   ]
-  },
-  {
    "t": "Otros",
-   "sf": 4,
-   "sc": 4,
-   "sm": 874.13,
-   "sp": 623.96,
-   "sk": 416.92,
-   "sa": 250.17,
-   "sg": 457.21,
+   "sf": 5,
+   "sc": 5,
+   "sm": 1142.2,
+   "sp": 811.16,
+   "sk": 536.92,
+   "sa": 331.04,
+   "sg": 605.28,
    "se": [
+    {
+     "o": "LB-ORDEN-04456",
+     "c": "EDGAR ALEXANDER CERRADA ARAQUE",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-29",
+     "m": 268.07,
+     "k": 120.0,
+     "a": 80.87
+    },
     {
      "o": "LB-ORDEN-04462",
      "c": "FERNANDO JAVIER ALBARRAN MALDONADO",
@@ -921,6 +954,36 @@
      "m": 193.47,
      "k": 100.0,
      "a": 53.07
+    }
+   ]
+  },
+  {
+   "t": "Refrigeración",
+   "sf": 2,
+   "sc": 2,
+   "sm": 982.56,
+   "sp": 699.62,
+   "sk": 458.0,
+   "sa": 282.94,
+   "sg": 524.56,
+   "se": [
+    {
+     "o": "LB-ORDEN-04372",
+     "c": "SILVIA ANALI HERNANDEZ PEÑA",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-16",
+     "m": 492.29,
+     "k": 229.0,
+     "a": 135.04
+    },
+    {
+     "o": "LB-ORDEN-04350",
+     "c": "ORIANA TIBISAY TORRES DE ROJAS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-09",
+     "m": 490.27,
+     "k": 229.0,
+     "a": 147.9
     }
    ]
   },
@@ -1058,10 +1121,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 104,
-  "oct_facturado": 82978.74,
-  "oct_precio": 59259.98,
-  "oct_costo": 41178.9,
-  "oct_admin": 23718.76
+  "oct_facturas": 111,
+  "oct_facturado": 89929.6,
+  "oct_precio": 63945.97,
+  "oct_costo": 44236.97,
+  "oct_admin": 25983.63
  }
 }
