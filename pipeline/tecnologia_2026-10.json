@@ -2,14 +2,68 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 50,
-   "sc": 50,
-   "sm": 41497.64,
-   "sp": 29026.57,
-   "sk": 18855.11,
-   "sa": 12471.07,
-   "sg": 22642.53,
+   "sf": 57,
+   "sc": 57,
+   "sm": 45449.82,
+   "sp": 31696.58,
+   "sk": 20571.06,
+   "sa": 13753.24,
+   "sg": 24878.76,
    "se": [
+    {
+     "o": "LB-ORDEN-04534",
+     "c": "LEONARDO JOSE GONZALEZ GONZALEZ",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-31",
+     "m": 348.71,
+     "k": 157.85,
+     "a": 103.45
+    },
+    {
+     "o": "LB-ORDEN-04533",
+     "c": "LUIS EDWIN ARAQUE GONZALEZ",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-31",
+     "m": 1085.71,
+     "k": 453.85,
+     "a": 378.67
+    },
+    {
+     "o": "LB-ORDEN-04528",
+     "c": "YORMAN ROLANDO MENDEZ CUDRIS",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-31",
+     "m": 348.71,
+     "k": 157.85,
+     "a": 103.45
+    },
+    {
+     "o": "LB-ORDEN-04517",
+     "c": "JOSE ALEJANDRO VASQUEZ MARIN",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-31",
+     "m": 404.56,
+     "k": 182.85,
+     "a": 120.3
+    },
+    {
+     "o": "LB-ORDEN-04478",
+     "c": "RONY ANGEL BASABE TELLEZ",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-31",
+     "m": 1011.22,
+     "k": 422.85,
+     "a": 352.55
+    },
+    {
+     "o": "LB-ORDEN-04529",
+     "c": "RENSO JOSE PIRELA TERAN",
+     "e": "ELIO CHAMATE",
+     "f": "2026-10-31",
+     "m": 348.71,
+     "k": 157.85,
+     "a": 103.45
+    },
     {
      "o": "LB-ORDEN-04526",
      "c": "CAMILA ARLEHY RODRIGUEZ VIVAS",
@@ -36,6 +90,15 @@
      "m": 939.15,
      "k": 392.85,
      "a": 327.28
+    },
+    {
+     "o": "LB-ORDEN-04514",
+     "c": "AYNETH SCARLET ALBARRAN HERRERA",
+     "e": "ELIO CHAMATE",
+     "f": "2026-10-31",
+     "m": 404.56,
+     "k": 182.85,
+     "a": 120.3
     },
     {
      "o": "LB-ORDEN-04507",
@@ -787,6 +850,72 @@
    ]
   },
   {
+   "t": "Televisores",
+   "sf": 6,
+   "sc": 6,
+   "sm": 3252.67,
+   "sp": 2271.43,
+   "sk": 1456.0,
+   "sa": 981.24,
+   "sg": 1796.67,
+   "se": [
+    {
+     "o": "LB-ORDEN-04523",
+     "c": "VICTOR MANUEL CESAR MENDEZ",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-31",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04521",
+     "c": "EVER ALEXANDER OCHOA MOLINA",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-31",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04479",
+     "c": "MARIA COROMOTO ARAQUE ALBARRAN",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-29",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04416",
+     "c": "YONATHAN RUBEN SULBARAN RIVAS",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-20",
+     "m": 936.04,
+     "k": 419.0,
+     "a": 282.38
+    },
+    {
+     "o": "LB-ORDEN-04409",
+     "c": "JOHAN ANTONIO MONTES PALMERA",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-19",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04393",
+     "c": "ASDRUBAL JESUS VELASQUEZ MENDEZ",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-16",
+     "m": 332.87,
+     "k": 149.0,
+     "a": 100.42
+    }
+   ]
+  },
+  {
    "t": "Accesorios",
    "sf": 10,
    "sc": 10,
@@ -885,54 +1014,6 @@
      "m": 506.11,
      "k": 290.0,
      "a": 98.94
-    }
-   ]
-  },
-  {
-   "t": "Televisores",
-   "sf": 4,
-   "sc": 4,
-   "sm": 2260.79,
-   "sp": 1578.77,
-   "sk": 1012.0,
-   "sa": 682.02,
-   "sg": 1248.79,
-   "se": [
-    {
-     "o": "LB-ORDEN-04479",
-     "c": "MARIA COROMOTO ARAQUE ALBARRAN",
-     "e": "LADY DIANA TORO RIVERA",
-     "f": "2026-10-29",
-     "m": 495.94,
-     "k": 222.0,
-     "a": 149.61
-    },
-    {
-     "o": "LB-ORDEN-04416",
-     "c": "YONATHAN RUBEN SULBARAN RIVAS",
-     "e": "LADY DIANA TORO RIVERA",
-     "f": "2026-10-20",
-     "m": 936.04,
-     "k": 419.0,
-     "a": 282.38
-    },
-    {
-     "o": "LB-ORDEN-04409",
-     "c": "JOHAN ANTONIO MONTES PALMERA",
-     "e": "LADY DIANA TORO RIVERA",
-     "f": "2026-10-19",
-     "m": 495.94,
-     "k": 222.0,
-     "a": 149.61
-    },
-    {
-     "o": "LB-ORDEN-04393",
-     "c": "ASDRUBAL JESUS VELASQUEZ MENDEZ",
-     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
-     "f": "2026-10-16",
-     "m": 332.87,
-     "k": 149.0,
-     "a": 100.42
     }
    ]
   },
@@ -1157,10 +1238,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 115,
-  "oct_facturado": 93007.18,
-  "oct_precio": 66045.24,
-  "oct_costo": 45584.52,
-  "oct_admin": 26961.94
+  "oct_facturas": 124,
+  "oct_facturado": 97951.24,
+  "oct_precio": 69407.91,
+  "oct_costo": 47744.47,
+  "oct_admin": 28543.33
  }
 }

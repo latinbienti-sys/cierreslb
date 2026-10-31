@@ -2,6 +2,66 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04534",
+   "cliente": "LEONARDO JOSE GONZALEZ GONZALEZ",
+   "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
+   "monto": 348.71,
+   "costo": 157.85,
+   "admin": 103.45,
+   "status": "Presupuesto",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04533",
+   "cliente": "LUIS EDWIN ARAQUE GONZALEZ",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 1085.71,
+   "costo": 453.85,
+   "admin": 378.67,
+   "status": "Presupuesto",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04528",
+   "cliente": "YORMAN ROLANDO MENDEZ CUDRIS",
+   "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
+   "monto": 348.71,
+   "costo": 157.85,
+   "admin": 103.45,
+   "status": "Presupuesto",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04517",
+   "cliente": "JOSE ALEJANDRO VASQUEZ MARIN",
+   "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
+   "monto": 404.56,
+   "costo": 182.85,
+   "admin": 120.3,
+   "status": "Presupuesto",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04478",
+   "cliente": "RONY ANGEL BASABE TELLEZ",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 1011.22,
+   "costo": 422.85,
+   "admin": 352.55,
+   "status": "Presupuesto",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04529",
+   "cliente": "RENSO JOSE PIRELA TERAN",
+   "ejecutivo": "ELIO CHAMATE",
+   "monto": 348.71,
+   "costo": 157.85,
+   "admin": 103.45,
+   "status": "Presupuesto",
+   "fecha": "2026-10-31"
+  },
+  {
    "orden": "LB-ORDEN-04526",
    "cliente": "CAMILA ARLEHY RODRIGUEZ VIVAS",
    "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
@@ -9,6 +69,26 @@
    "costo": 182.85,
    "admin": 120.3,
    "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04523",
+   "cliente": "VICTOR MANUEL CESAR MENDEZ",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 495.94,
+   "costo": 222.0,
+   "admin": 149.61,
+   "status": "Aprobado",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04521",
+   "cliente": "EVER ALEXANDER OCHOA MOLINA",
+   "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
+   "monto": 495.94,
+   "costo": 222.0,
+   "admin": 149.61,
+   "status": "Presupuesto",
    "fecha": "2026-10-31"
   },
   {
@@ -38,6 +118,16 @@
    "monto": 1137.11,
    "costo": 509.0,
    "admin": 343.04,
+   "status": "Presupuesto",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04514",
+   "cliente": "AYNETH SCARLET ALBARRAN HERRERA",
+   "ejecutivo": "ELIO CHAMATE",
+   "monto": 404.56,
+   "costo": 182.85,
+   "admin": 120.3,
    "status": "Presupuesto",
    "fecha": "2026-10-31"
   },
@@ -1156,12 +1246,12 @@
  "ejecutivos": [
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 22513.17,
-   "costo": 10591.52,
-   "margen": 11921.65,
-   "facturas": 31,
-   "unidades": 37.0,
-   "seguros": 16.0
+   "facturado": 24094.82,
+   "costo": 11267.37,
+   "margen": 12827.45,
+   "facturas": 33,
+   "unidades": 39.0,
+   "seguros": 17.0
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -1174,21 +1264,21 @@
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 14379.8,
-   "costo": 6339.68,
-   "margen": 8040.12,
-   "facturas": 23,
-   "unidades": 23.0,
-   "seguros": 8.0
+   "facturado": 15391.02,
+   "costo": 6762.53,
+   "margen": 8628.49,
+   "facturas": 24,
+   "unidades": 24.0,
+   "seguros": 9.0
   },
   {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
-   "facturado": 9428.36,
-   "costo": 4797.4,
-   "margen": 4630.96,
-   "facturas": 14,
-   "unidades": 16.0,
-   "seguros": 6.0
+   "facturado": 11026.28,
+   "costo": 5517.95,
+   "margen": 5508.33,
+   "facturas": 18,
+   "unidades": 20.0,
+   "seguros": 9.0
   },
   {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
@@ -1201,12 +1291,12 @@
   },
   {
    "nombre": "ELIO CHAMATE",
-   "facturado": 5978.45,
-   "costo": 2782.22,
-   "margen": 3196.23,
-   "facturas": 5,
-   "unidades": 6.0,
-   "seguros": 4.0
+   "facturado": 6731.72,
+   "costo": 3122.92,
+   "margen": 3608.8,
+   "facturas": 7,
+   "unidades": 8.0,
+   "seguros": 6.0
   },
   {
    "nombre": "DANIEL CASTELLANOS",
@@ -1257,8 +1347,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 107,
-   "monto": 26961.94
+   "cantidad": 116,
+   "monto": 28543.33
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1299,6 +1389,11 @@
    "nombre": "[CEL000-01087] Samsung Galaxy A57 8GB/256GB",
    "cantidad": 3,
    "monto": 1892.24
+  },
+  {
+   "nombre": "[CEL01B-00252] Telefono Infinix Note 60 Pro 5G 8GB/256GB",
+   "cantidad": 3,
+   "monto": 1839.8
   },
   {
    "nombre": "Laptop Compaq QL15R5BM16256 – AMD Ryzen 5 7430U / 16 GB / 256 GB SSD / 15.6” / W11",
@@ -1356,14 +1451,24 @@
    "monto": 1293.91
   },
   {
-   "nombre": "[CEL000-01018] Samsung Galaxy A17 8GB/256GB",
+   "nombre": "[CEL000-01018] Telefono Samsung Galaxy A17 5G 8GB/256GB",
    "cantidad": 3,
    "monto": 1266.87
   },
   {
-   "nombre": "[CEL01B-00252] Telefono Infinix Note 60 Pro 5G 8GB/256GB",
-   "cantidad": 2,
-   "monto": 1234.6
+   "nombre": "[CEL01B-00242] Telefono Infinix Smart 20, 4GB/128GB",
+   "cantidad": 6,
+   "monto": 1221.95
+  },
+  {
+   "nombre": "Telefono Honor Play 20A – 6.9”  4GB/128GB",
+   "cantidad": 5,
+   "monto": 1203.65
+  },
+  {
+   "nombre": "[TV016-00027] Aiwa QLED 43\"1080p  Smart TV Google TV.",
+   "cantidad": 4,
+   "monto": 1194.24
   },
   {
    "nombre": "Motocicleta Bel KEIKO 150",
@@ -1411,24 +1516,9 @@
    "monto": 738.34
   },
   {
-   "nombre": "Telefono Honor Play 20A – 6.9”  4GB/128GB",
-   "cantidad": 3,
-   "monto": 722.19
-  },
-  {
    "nombre": "[EIH000-00002] Aiwa Congelador Horizontal, 141LT (5CuFt).",
    "cantidad": 2,
    "monto": 603.12
-  },
-  {
-   "nombre": "[CEL01B-00242] Telefono Infinix Smart 20, 4GB/128GB",
-   "cantidad": 3,
-   "monto": 600.62
-  },
-  {
-   "nombre": "[TV016-00027] Aiwa QLED 43\"1080p  Smart TV Google TV.",
-   "cantidad": 2,
-   "monto": 597.12
   },
   {
    "nombre": "[UPS003-00002] MARSRIVA en KP3 -10000mAh/ 18W",
@@ -1439,6 +1529,11 @@
    "nombre": "[CEL007-00131] Telefono Honor Magic 8 Lite 8GB/256GB",
    "cantidad": 1,
    "monto": 576.95
+  },
+  {
+   "nombre": "Telefono Infinix Zero Flip 8GB/512GB (X6962)",
+   "cantidad": 1,
+   "monto": 563.5
   },
   {
    "nombre": "[TV016-00032] Aiwa 55\" QLED UHD 4K AW55B4Q Google TV.",
@@ -1482,8 +1577,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 49,
-   "monto": 246.01
+   "cantidad": 56,
+   "monto": 281.08
   },
   {
    "nombre": "CAUCHO 185/60R14 APLUS",
@@ -1556,28 +1651,70 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 93007.18,
- "total_facturas": 115,
- "total_clientes": 105,
- "total_productos": 66045.24,
- "total_admin": 26961.94,
+ "total_facturado": 97951.24,
+ "total_facturas": 124,
+ "total_clientes": 114,
+ "total_productos": 69407.91,
+ "total_admin": 28543.33,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 45584.52,
- "total_margen": 47422.66,
+ "total_costo": 47744.47,
+ "total_margen": 50206.77,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 76,
-   "monto": 54534.19,
-   "unidades": 91.0,
-   "admin": 13332.13,
-   "costo": 27686.04,
-   "seguros": 25.0,
+   "facturas": 83,
+   "monto": 57381.32,
+   "unidades": 98.0,
+   "admin": 14182.3,
+   "costo": 28969.29,
+   "seguros": 30.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04534",
+     "cliente": "LEONARDO JOSE GONZALEZ GONZALEZ",
+     "unidades": 1.0,
+     "monto": 348.71,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04529",
+     "cliente": "RENSO JOSE PIRELA TERAN",
+     "unidades": 1.0,
+     "monto": 348.71,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04528",
+     "cliente": "YORMAN ROLANDO MENDEZ CUDRIS",
+     "unidades": 1.0,
+     "monto": 348.71,
+     "fecha": "2026-10-31"
+    },
     {
      "orden": "LB-ORDEN-04526",
      "cliente": "CAMILA ARLEHY RODRIGUEZ VIVAS",
+     "unidades": 1.0,
+     "monto": 404.56,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04523",
+     "cliente": "VICTOR MANUEL CESAR MENDEZ",
+     "unidades": 1.0,
+     "monto": 495.94,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04521",
+     "cliente": "EVER ALEXANDER OCHOA MOLINA",
+     "unidades": 1.0,
+     "monto": 495.94,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04517",
+     "cliente": "JOSE ALEJANDRO VASQUEZ MARIN",
      "unidades": 1.0,
      "monto": 404.56,
      "fecha": "2026-10-31"
@@ -1587,6 +1724,13 @@
      "cliente": "MAIDA DEL CARMEN QUINTERO VERA",
      "unidades": 1.0,
      "monto": 939.15,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04514",
+     "cliente": "AYNETH SCARLET ALBARRAN HERRERA",
+     "unidades": 1.0,
+     "monto": 404.56,
      "fecha": "2026-10-31"
     },
     {
@@ -2111,13 +2255,20 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 22,
-   "monto": 18439.0,
-   "unidades": 23.0,
-   "admin": 6420.86,
-   "costo": 7717.7,
-   "seguros": 22.0,
+   "facturas": 24,
+   "monto": 20535.93,
+   "unidades": 25.0,
+   "admin": 7152.08,
+   "costo": 8594.4,
+   "seguros": 24.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04533",
+     "cliente": "LUIS EDWIN ARAQUE GONZALEZ",
+     "unidades": 1.0,
+     "monto": 1085.71,
+     "fecha": "2026-10-31"
+    },
     {
      "orden": "LB-ORDEN-04507",
      "cliente": "MARLEY ALEJANDRA DEL CASTILLO UZCATEGUI",
@@ -2137,6 +2288,13 @@
      "cliente": "ANDY YERLIQUE SUAREZ MORET",
      "unidades": 1.0,
      "monto": 1131.35,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04478",
+     "cliente": "RONY ANGEL BASABE TELLEZ",
+     "unidades": 1.0,
+     "monto": 1011.22,
      "fecha": "2026-10-31"
     },
     {
@@ -2429,7 +2587,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 93007.18,
- "count": 115,
+ "total": 97951.24,
+ "count": 124,
  "colaboradores": []
 }
