@@ -2,6 +2,16 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04526",
+   "cliente": "CAMILA ARLEHY RODRIGUEZ VIVAS",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 404.56,
+   "costo": 182.85,
+   "admin": 120.3,
+   "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
    "orden": "LB-ORDEN-04513",
    "cliente": "YENCY ADRIANA CUEVAS ALARCON",
    "ejecutivo": "LADY DIANA TORO RIVERA",
@@ -19,6 +29,16 @@
    "costo": 392.85,
    "admin": 327.28,
    "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04510",
+   "cliente": "KATTELLINE JOSEFINA GOMEZ GUIZA",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 1137.11,
+   "costo": 509.0,
+   "admin": 343.04,
+   "status": "Presupuesto",
    "fecha": "2026-10-31"
   },
   {
@@ -52,6 +72,16 @@
    "fecha": "2026-10-31"
   },
   {
+   "orden": "LB-ORDEN-04498",
+   "cliente": "ANDY YERLIQUE SUAREZ MORET",
+   "ejecutivo": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+   "monto": 1131.35,
+   "costo": 472.85,
+   "admin": 394.67,
+   "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
    "orden": "LB-ORDEN-04508",
    "cliente": "LUZ MARYURI RANGEL ARAQUE",
    "ejecutivo": "ELIO CHAMATE",
@@ -68,7 +98,7 @@
    "monto": 404.56,
    "costo": 182.85,
    "admin": 120.3,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-30"
   },
   {
@@ -1126,12 +1156,12 @@
  "ejecutivos": [
   {
    "nombre": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-   "facturado": 19840.15,
-   "costo": 9426.82,
-   "margen": 10413.33,
-   "facturas": 28,
-   "unidades": 34.0,
-   "seguros": 14.0
+   "facturado": 22513.17,
+   "costo": 10591.52,
+   "margen": 11921.65,
+   "facturas": 31,
+   "unidades": 37.0,
+   "seguros": 16.0
   },
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -1227,8 +1257,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 104,
-   "monto": 26103.93
+   "cantidad": 107,
+   "monto": 26961.94
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1239,6 +1269,11 @@
    "nombre": "Motocicleta Bel TT 150",
    "cantidad": 2,
    "monto": 3103.44
+  },
+  {
+   "nombre": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB",
+   "cantidad": 4,
+   "monto": 2513.59
   },
   {
    "nombre": "[LDELL-15250] Laptop Dell LDC15250-5315BLK, Intel Core i5-1334U, 8GB, 512GB SSD, 15.6\" 2K Touchscreen, US, W11.",
@@ -1264,11 +1299,6 @@
    "nombre": "[CEL000-01087] Samsung Galaxy A57 8GB/256GB",
    "cantidad": 3,
    "monto": 1892.24
-  },
-  {
-   "nombre": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB",
-   "cantidad": 3,
-   "monto": 1882.84
   },
   {
    "nombre": "Laptop Compaq QL15R5BM16256 – AMD Ryzen 5 7430U / 16 GB / 256 GB SSD / 15.6” / W11",
@@ -1311,6 +1341,11 @@
    "monto": 1375.44
   },
   {
+   "nombre": "Laptop Lenovo IdeaPad Slim 3i 82XB00C2US, Intel Core i3-N305, 8GB, 128GB UFS, 15.6\", US, W11.",
+   "cantidad": 2,
+   "monto": 1369.08
+  },
+  {
    "nombre": "Motocicleta Bel By UM Nitrox Sport",
    "cantidad": 1,
    "monto": 1362.07
@@ -1326,7 +1361,7 @@
    "monto": 1266.87
   },
   {
-   "nombre": "[CEL01B-00252] Infinix Note 60 Pro 5G 8GB/256GB",
+   "nombre": "[CEL01B-00252] Telefono Infinix Note 60 Pro 5G 8GB/256GB",
    "cantidad": 2,
    "monto": 1234.6
   },
@@ -1376,9 +1411,9 @@
    "monto": 738.34
   },
   {
-   "nombre": "Laptop Lenovo IdeaPad Slim 3i 82XB00C2US, Intel Core i3-N305, 8GB, 128GB UFS, 15.6\", US, W11.",
-   "cantidad": 1,
-   "monto": 684.54
+   "nombre": "Telefono Honor Play 20A – 6.9”  4GB/128GB",
+   "cantidad": 3,
+   "monto": 722.19
   },
   {
    "nombre": "[EIH000-00002] Aiwa Congelador Horizontal, 141LT (5CuFt).",
@@ -1411,12 +1446,7 @@
    "monto": 563.5
   },
   {
-   "nombre": "Telefono Honor Play 20A – 6.9”  4GB/128GB",
-   "cantidad": 2,
-   "monto": 481.46
-  },
-  {
-   "nombre": "Honor X8d – 6.77” 8 GB/256 GB",
+   "nombre": "Telefono Honor X8d – 6.77” 8 GB/256 GB",
    "cantidad": 1,
    "monto": 469.36
   },
@@ -1436,7 +1466,7 @@
    "monto": 415.57
   },
   {
-   "nombre": "Infinix Hot 70 (X6895) 8GB/256GB",
+   "nombre": "Telefono Infinix Hot 70 (X6895) 8GB/256GB",
    "cantidad": 1,
    "monto": 348.32
   },
@@ -1452,8 +1482,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 47,
-   "monto": 235.99
+   "cantidad": 49,
+   "monto": 246.01
   },
   {
    "nombre": "CAUCHO 185/60R14 APLUS",
@@ -1526,25 +1556,32 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 90334.16,
- "total_facturas": 112,
- "total_clientes": 102,
- "total_productos": 64230.23,
- "total_admin": 26103.93,
+ "total_facturado": 93007.18,
+ "total_facturas": 115,
+ "total_clientes": 105,
+ "total_productos": 66045.24,
+ "total_admin": 26961.94,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 44419.82,
- "total_margen": 45914.34,
+ "total_costo": 45584.52,
+ "total_margen": 47422.66,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 75,
-   "monto": 54129.63,
-   "unidades": 90.0,
-   "admin": 13211.83,
-   "costo": 27503.19,
-   "seguros": 24.0,
+   "facturas": 76,
+   "monto": 54534.19,
+   "unidades": 91.0,
+   "admin": 13332.13,
+   "costo": 27686.04,
+   "seguros": 25.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04526",
+     "cliente": "CAMILA ARLEHY RODRIGUEZ VIVAS",
+     "unidades": 1.0,
+     "monto": 404.56,
+     "fecha": "2026-10-31"
+    },
     {
      "orden": "LB-ORDEN-04516",
      "cliente": "MAIDA DEL CARMEN QUINTERO VERA",
@@ -2074,12 +2111,12 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 21,
-   "monto": 17307.65,
-   "unidades": 22.0,
-   "admin": 6026.19,
-   "costo": 7244.85,
-   "seguros": 21.0,
+   "facturas": 22,
+   "monto": 18439.0,
+   "unidades": 23.0,
+   "admin": 6420.86,
+   "costo": 7717.7,
+   "seguros": 22.0,
    "items": [
     {
      "orden": "LB-ORDEN-04507",
@@ -2093,6 +2130,13 @@
      "cliente": "EMMANUEL LOBO ANGULO",
      "unidades": 1.0,
      "monto": 996.8,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04498",
+     "cliente": "ANDY YERLIQUE SUAREZ MORET",
+     "unidades": 1.0,
+     "monto": 1131.35,
      "fecha": "2026-10-31"
     },
     {
@@ -2264,13 +2308,20 @@
   },
   {
    "nombre": "SEMANADELTERROR",
-   "facturas": 12,
-   "monto": 7665.0,
-   "unidades": 12.0,
-   "admin": 1859.07,
-   "costo": 3792.78,
+   "facturas": 13,
+   "monto": 8802.11,
+   "unidades": 13.0,
+   "admin": 2202.11,
+   "costo": 4301.78,
    "seguros": 2.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04510",
+     "cliente": "KATTELLINE JOSEFINA GOMEZ GUIZA",
+     "unidades": 1.0,
+     "monto": 1137.11,
+     "fecha": "2026-10-31"
+    },
     {
      "orden": "LB-ORDEN-04505",
      "cliente": "EMMANUEL LOBO ANGULO",
@@ -2378,7 +2429,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 90334.16,
- "count": 112,
+ "total": 93007.18,
+ "count": 115,
  "colaboradores": []
 }

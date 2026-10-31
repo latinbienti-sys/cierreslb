@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 48,
-   "sc": 48,
-   "sm": 39961.73,
-   "sp": 28005.63,
-   "sk": 18199.41,
-   "sa": 11956.1,
-   "sg": 21762.32,
+   "sf": 50,
+   "sc": 50,
+   "sm": 41497.64,
+   "sp": 29026.57,
+   "sk": 18855.11,
+   "sa": 12471.07,
+   "sg": 22642.53,
    "se": [
+    {
+     "o": "LB-ORDEN-04526",
+     "c": "CAMILA ARLEHY RODRIGUEZ VIVAS",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-31",
+     "m": 404.56,
+     "k": 182.85,
+     "a": 120.3
+    },
     {
      "o": "LB-ORDEN-04513",
      "c": "YENCY ADRIANA CUEVAS ALARCON",
@@ -45,6 +54,15 @@
      "m": 996.8,
      "k": 416.85,
      "a": 347.49
+    },
+    {
+     "o": "LB-ORDEN-04498",
+     "c": "ANDY YERLIQUE SUAREZ MORET",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-31",
+     "m": 1131.35,
+     "k": 472.85,
+     "a": 394.67
     },
     {
      "o": "LB-ORDEN-04508",
@@ -446,14 +464,23 @@
   },
   {
    "t": "Computación",
-   "sf": 22,
-   "sc": 22,
-   "sm": 24951.45,
-   "sp": 19181.81,
-   "sk": 12711.07,
-   "sa": 5769.64,
-   "sg": 12240.38,
+   "sf": 23,
+   "sc": 23,
+   "sm": 26088.56,
+   "sp": 19975.88,
+   "sk": 13220.07,
+   "sa": 6112.68,
+   "sg": 12868.49,
    "se": [
+    {
+     "o": "LB-ORDEN-04510",
+     "c": "KATTELLINE JOSEFINA GOMEZ GUIZA",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-31",
+     "m": 1137.11,
+     "k": 509.0,
+     "a": 343.04
+    },
     {
      "o": "LB-ORDEN-04495",
      "c": "RAFAEL ANTONIO SANCHEZ MARQUEZ",
@@ -1130,10 +1157,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 112,
-  "oct_facturado": 90334.16,
-  "oct_precio": 64230.23,
-  "oct_costo": 44419.82,
-  "oct_admin": 26103.93
+  "oct_facturas": 115,
+  "oct_facturado": 93007.18,
+  "oct_precio": 66045.24,
+  "oct_costo": 45584.52,
+  "oct_admin": 26961.94
  }
 }
