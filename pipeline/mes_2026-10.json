@@ -62,6 +62,16 @@
    "fecha": "2026-10-30"
   },
   {
+   "orden": "LB-ORDEN-04502",
+   "cliente": "JULIETTE PAOLA CHIPIA GUTIERREZ",
+   "ejecutivo": "ELIO CHAMATE",
+   "monto": 404.56,
+   "costo": 182.85,
+   "admin": 120.3,
+   "status": "Aprobado",
+   "fecha": "2026-10-30"
+  },
+  {
    "orden": "LB-ORDEN-04506",
    "cliente": "DARCY COROMOTO GUERRERO VILLASMIL",
    "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -1160,6 +1170,15 @@
    "seguros": 0.0
   },
   {
+   "nombre": "ELIO CHAMATE",
+   "facturado": 5978.45,
+   "costo": 2782.22,
+   "margen": 3196.23,
+   "facturas": 5,
+   "unidades": 6.0,
+   "seguros": 4.0
+  },
+  {
    "nombre": "DANIEL CASTELLANOS",
    "facturado": 5599.04,
    "costo": 3060.0,
@@ -1167,15 +1186,6 @@
    "facturas": 2,
    "unidades": 2.0,
    "seguros": 0.0
-  },
-  {
-   "nombre": "ELIO CHAMATE",
-   "facturado": 5573.89,
-   "costo": 2599.37,
-   "margen": 2974.52,
-   "facturas": 4,
-   "unidades": 5.0,
-   "seguros": 3.0
   },
   {
    "nombre": "YOHANA AUDREY LOPEZ",
@@ -1217,8 +1227,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 103,
-   "monto": 25983.63
+   "cantidad": 104,
+   "monto": 26103.93
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1401,6 +1411,11 @@
    "monto": 563.5
   },
   {
+   "nombre": "Telefono Honor Play 20A – 6.9”  4GB/128GB",
+   "cantidad": 2,
+   "monto": 481.46
+  },
+  {
    "nombre": "Honor X8d – 6.77” 8 GB/256 GB",
    "cantidad": 1,
    "monto": 469.36
@@ -1436,14 +1451,9 @@
    "monto": 282.1
   },
   {
-   "nombre": "Telefono Honor Play 20A – 6.9”  4GB/128GB",
-   "cantidad": 1,
-   "monto": 240.73
-  },
-  {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 46,
-   "monto": 230.98
+   "cantidad": 47,
+   "monto": 235.99
   },
   {
    "nombre": "CAUCHO 185/60R14 APLUS",
@@ -1516,24 +1526,24 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 89929.6,
- "total_facturas": 111,
- "total_clientes": 101,
- "total_productos": 63945.97,
- "total_admin": 25983.63,
+ "total_facturado": 90334.16,
+ "total_facturas": 112,
+ "total_clientes": 102,
+ "total_productos": 64230.23,
+ "total_admin": 26103.93,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 44236.97,
- "total_margen": 45692.63,
+ "total_costo": 44419.82,
+ "total_margen": 45914.34,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 74,
-   "monto": 53725.07,
-   "unidades": 89.0,
-   "admin": 13091.53,
-   "costo": 27320.34,
-   "seguros": 23.0,
+   "facturas": 75,
+   "monto": 54129.63,
+   "unidades": 90.0,
+   "admin": 13211.83,
+   "costo": 27503.19,
+   "seguros": 24.0,
    "items": [
     {
      "orden": "LB-ORDEN-04516",
@@ -1554,6 +1564,13 @@
      "cliente": "LUZ MARYURI RANGEL ARAQUE",
      "unidades": 2.0,
      "monto": 1534.24,
+     "fecha": "2026-10-30"
+    },
+    {
+     "orden": "LB-ORDEN-04502",
+     "cliente": "JULIETTE PAOLA CHIPIA GUTIERREZ",
+     "unidades": 1.0,
+     "monto": 404.56,
      "fecha": "2026-10-30"
     },
     {
@@ -2361,7 +2378,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 89929.6,
- "count": 111,
+ "total": 90334.16,
+ "count": 112,
  "colaboradores": []
 }

@@ -2,13 +2,13 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 47,
-   "sc": 47,
-   "sm": 39557.17,
-   "sp": 27721.37,
-   "sk": 18016.56,
-   "sa": 11835.8,
-   "sg": 21540.61,
+   "sf": 48,
+   "sc": 48,
+   "sm": 39961.73,
+   "sp": 28005.63,
+   "sk": 18199.41,
+   "sa": 11956.1,
+   "sg": 21762.32,
    "se": [
     {
      "o": "LB-ORDEN-04513",
@@ -54,6 +54,15 @@
      "m": 1534.24,
      "k": 739.67,
      "a": 461.09
+    },
+    {
+     "o": "LB-ORDEN-04502",
+     "c": "JULIETTE PAOLA CHIPIA GUTIERREZ",
+     "e": "ELIO CHAMATE",
+     "f": "2026-10-30",
+     "m": 404.56,
+     "k": 182.85,
+     "a": 120.3
     },
     {
      "o": "LB-ORDEN-04506",
@@ -1121,10 +1130,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 111,
-  "oct_facturado": 89929.6,
-  "oct_precio": 63945.97,
-  "oct_costo": 44236.97,
-  "oct_admin": 25983.63
+  "oct_facturas": 112,
+  "oct_facturado": 90334.16,
+  "oct_precio": 64230.23,
+  "oct_costo": 44419.82,
+  "oct_admin": 26103.93
  }
 }
