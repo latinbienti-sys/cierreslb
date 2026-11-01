@@ -554,13 +554,13 @@
   },
   {
    "t": "Computación",
-   "sf": 27,
-   "sc": 27,
-   "sm": 32738.23,
-   "sp": 24665.33,
-   "sk": 16277.16,
-   "sa": 8072.9,
-   "sg": 16461.07,
+   "sf": 28,
+   "sc": 28,
+   "sm": 34240.91,
+   "sp": 25755.81,
+   "sk": 16976.16,
+   "sa": 8485.1,
+   "sg": 17264.75,
    "se": [
     {
      "o": "LB-ORDEN-04539",
@@ -669,6 +669,15 @@
      "m": 234.3,
      "k": 104.88,
      "a": 70.68
+    },
+    {
+     "o": "LB-ORDEN-04435",
+     "c": "NORAIMA MARYELIN ALVAREZ GUILLEN",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-25",
+     "m": 1502.68,
+     "k": 699.0,
+     "a": 412.2
     },
     {
      "o": "LB-ORDEN-04422",
@@ -809,14 +818,23 @@
   },
   {
    "t": "Motos",
-   "sf": 4,
-   "sc": 4,
-   "sm": 11988.29,
-   "sp": 6440.0,
-   "sk": 6440.0,
-   "sa": 5548.29,
-   "sg": 5548.29,
+   "sf": 5,
+   "sc": 5,
+   "sm": 14207.56,
+   "sp": 7765.0,
+   "sk": 7765.0,
+   "sa": 6442.56,
+   "sg": 6442.56,
    "se": [
+    {
+     "o": "LB-ORDEN-04504",
+     "c": "ALEXANDER PEREZ PEREZ",
+     "e": "DANIEL CASTELLANOS",
+     "f": "2026-10-30",
+     "m": 2219.27,
+     "k": 1325.0,
+     "a": 894.27
+    },
     {
      "o": "LB-ORDEN-04459",
      "c": "LEONARDO JAVIER PINO QUINTERO",
@@ -1349,10 +1367,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 135,
-  "oct_facturado": 109097.93,
-  "oct_precio": 77340.29,
-  "oct_costo": 52882.21,
-  "oct_admin": 31757.64
+  "oct_facturas": 137,
+  "oct_facturado": 112819.88,
+  "oct_precio": 79755.77,
+  "oct_costo": 54906.21,
+  "oct_admin": 33064.11
  }
 }

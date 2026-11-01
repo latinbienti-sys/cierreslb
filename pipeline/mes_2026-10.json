@@ -8,7 +8,7 @@
    "monto": 227.83,
    "costo": 120.1,
    "admin": 40.47,
-   "status": "Presupuesto",
+   "status": "Aprobado",
    "fecha": "2026-10-31"
   },
   {
@@ -18,7 +18,7 @@
    "monto": 1740.28,
    "costo": 779.0,
    "admin": 525.0,
-   "status": "Presupuesto",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -38,7 +38,7 @@
    "monto": 939.15,
    "costo": 392.85,
    "admin": 327.28,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -48,7 +48,7 @@
    "monto": 1278.04,
    "costo": 573.85,
    "admin": 383.8,
-   "status": "Presupuesto",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -58,7 +58,7 @@
    "monto": 132.16,
    "costo": 75.0,
    "admin": 15.16,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -68,7 +68,7 @@
    "monto": 348.71,
    "costo": 157.85,
    "admin": 103.45,
-   "status": "Presupuesto",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -78,7 +78,7 @@
    "monto": 1085.71,
    "costo": 453.85,
    "admin": 378.67,
-   "status": "Presupuesto",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -88,7 +88,7 @@
    "monto": 571.2,
    "costo": 306.82,
    "admin": 172.32,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -98,7 +98,7 @@
    "monto": 348.71,
    "costo": 157.85,
    "admin": 103.45,
-   "status": "Presupuesto",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -108,7 +108,7 @@
    "monto": 404.56,
    "costo": 182.85,
    "admin": 120.3,
-   "status": "Presupuesto",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -289,6 +289,16 @@
    "costo": 182.85,
    "admin": 120.3,
    "status": "Entregado",
+   "fecha": "2026-10-30"
+  },
+  {
+   "orden": "LB-ORDEN-04504",
+   "cliente": "ALEXANDER PEREZ PEREZ",
+   "ejecutivo": "DANIEL CASTELLANOS",
+   "monto": 2219.27,
+   "costo": 1325.0,
+   "admin": 894.27,
+   "status": "Aprobado",
    "fecha": "2026-10-30"
   },
   {
@@ -669,6 +679,16 @@
    "costo": 290.0,
    "admin": 0.0,
    "status": "Cancelación Total",
+   "fecha": "2026-10-25"
+  },
+  {
+   "orden": "LB-ORDEN-04435",
+   "cliente": "NORAIMA MARYELIN ALVAREZ GUILLEN",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 1502.68,
+   "costo": 699.0,
+   "admin": 412.2,
+   "status": "Aprobado",
    "fecha": "2026-10-25"
   },
   {
@@ -1374,11 +1394,11 @@
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 18244.45,
-   "costo": 8113.53,
-   "margen": 10130.92,
-   "facturas": 26,
-   "unidades": 26.0,
+   "facturado": 19747.13,
+   "costo": 8812.53,
+   "margen": 10934.6,
+   "facturas": 27,
+   "unidades": 27.0,
    "seguros": 9.0
   },
   {
@@ -1400,21 +1420,21 @@
    "seguros": 6.0
   },
   {
+   "nombre": "DANIEL CASTELLANOS",
+   "facturado": 7818.31,
+   "costo": 4385.0,
+   "margen": 3433.31,
+   "facturas": 3,
+   "unidades": 3.0,
+   "seguros": 0.0
+  },
+  {
    "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
    "facturado": 7790.76,
    "costo": 4910.0,
    "margen": 2880.76,
    "facturas": 6,
    "unidades": 9.0,
-   "seguros": 0.0
-  },
-  {
-   "nombre": "DANIEL CASTELLANOS",
-   "facturado": 5599.04,
-   "costo": 3060.0,
-   "margen": 2539.04,
-   "facturas": 2,
-   "unidades": 2.0,
    "seguros": 0.0
   },
   {
@@ -1457,13 +1477,13 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 127,
-   "monto": 31757.64
+   "cantidad": 129,
+   "monto": 33064.11
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
-   "cantidad": 5,
-   "monto": 4520.17
+   "cantidad": 6,
+   "monto": 5460.24
   },
   {
    "nombre": "Laptop Lenovo Ideapad Slim 3 82XM00LMUS, AMD Ryzen 7 5825U, 16GB, 512GB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1584,6 +1604,11 @@
    "nombre": "[TV016-00027] Aiwa QLED 43\"1080p  Smart TV Google TV.",
    "cantidad": 4,
    "monto": 1194.24
+  },
+  {
+   "nombre": "Motocicleta Bel Natsu 150",
+   "cantidad": 1,
+   "monto": 1142.24
   },
   {
    "nombre": "Motocicleta Bel KEIKO 150",
@@ -1791,23 +1816,23 @@
    "monto": 0.0
   }
  ],
- "total_facturado": 109097.93,
- "total_facturas": 135,
- "total_clientes": 124,
- "total_productos": 77340.29,
- "total_admin": 31757.64,
+ "total_facturado": 112819.88,
+ "total_facturas": 137,
+ "total_clientes": 125,
+ "total_productos": 79755.77,
+ "total_admin": 33064.11,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 52882.21,
- "total_margen": 56215.72,
+ "total_costo": 54906.21,
+ "total_margen": 57913.67,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 87,
-   "monto": 61199.23,
-   "unidades": 103.0,
-   "admin": 15321.18,
-   "costo": 30738.33,
+   "facturas": 88,
+   "monto": 63418.5,
+   "unidades": 104.0,
+   "admin": 16215.45,
+   "costo": 32063.33,
    "seguros": 31.0,
    "items": [
     {
@@ -1913,6 +1938,13 @@
      "cliente": "LUZ MARYURI RANGEL ARAQUE",
      "unidades": 2.0,
      "monto": 1534.24,
+     "fecha": "2026-10-30"
+    },
+    {
+     "orden": "LB-ORDEN-04504",
+     "cliente": "ALEXANDER PEREZ PEREZ",
+     "unidades": 1.0,
+     "monto": 2219.27,
      "fecha": "2026-10-30"
     },
     {
@@ -2602,11 +2634,11 @@
   },
   {
    "nombre": "SEMANADELTERROR",
-   "facturas": 20,
-   "monto": 16130.89,
-   "unidades": 20.0,
-   "admin": 4277.54,
-   "costo": 7670.48,
+   "facturas": 21,
+   "monto": 17633.57,
+   "unidades": 21.0,
+   "admin": 4689.74,
+   "costo": 8369.48,
    "seguros": 4.0,
    "items": [
     {
@@ -2743,6 +2775,13 @@
      "fecha": "2026-10-26"
     },
     {
+     "orden": "LB-ORDEN-04435",
+     "cliente": "NORAIMA MARYELIN ALVAREZ GUILLEN",
+     "unidades": 1.0,
+     "monto": 1502.68,
+     "fecha": "2026-10-25"
+    },
+    {
      "orden": "LB-ORDEN-04436",
      "cliente": "LUIS HENRIQUE PAREDES CHIRINO",
      "unidades": 1.0,
@@ -2804,7 +2843,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 109097.93,
- "count": 135,
+ "total": 112819.88,
+ "count": 137,
  "colaboradores": []
 }
