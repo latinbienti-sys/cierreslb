@@ -2,13 +2,33 @@
  "mes": "2026-10",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04513",
+   "cliente": "YENCY ADRIANA CUEVAS ALARCON",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 996.8,
+   "costo": 416.85,
+   "admin": 347.49,
+   "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
+   "orden": "LB-ORDEN-04547",
+   "cliente": "ANTHONY JOSUE REY QUINTERO",
+   "ejecutivo": "GERARDO JOSE RAMIREZ FERNANDEZ",
+   "monto": 120.57,
+   "costo": 63.0,
+   "admin": 22.29,
+   "status": "Entregado",
+   "fecha": "2026-10-31"
+  },
+  {
    "orden": "LB-ORDEN-04515",
    "cliente": "RAIZA VILLARREAL BALZA",
    "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
    "monto": 227.83,
    "costo": 120.1,
    "admin": 40.47,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -158,7 +178,7 @@
    "monto": 366.5,
    "costo": 189.0,
    "admin": 71.65,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -258,7 +278,7 @@
    "monto": 1674.66,
    "costo": 779.0,
    "admin": 459.38,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -268,7 +288,7 @@
    "monto": 2663.53,
    "costo": 1192.27,
    "admin": 803.52,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-31"
   },
   {
@@ -298,7 +318,7 @@
    "monto": 2219.27,
    "costo": 1325.0,
    "admin": 894.27,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-30"
   },
   {
@@ -528,7 +548,7 @@
    "monto": 506.7,
    "costo": 212.85,
    "admin": 175.64,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-28"
   },
   {
@@ -588,7 +608,7 @@
    "monto": 1197.99,
    "costo": 580.0,
    "admin": 293.16,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-27"
   },
   {
@@ -688,7 +708,7 @@
    "monto": 1502.68,
    "costo": 699.0,
    "admin": 412.2,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-25"
   },
   {
@@ -758,7 +778,7 @@
    "monto": 178.71,
    "costo": 80.0,
    "admin": 53.91,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-21"
   },
   {
@@ -928,7 +948,7 @@
    "monto": 1226.47,
    "costo": 549.0,
    "admin": 370.0,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-10-17"
   },
   {
@@ -1394,12 +1414,12 @@
   },
   {
    "nombre": "LADY DIANA TORO RIVERA",
-   "facturado": 19747.13,
-   "costo": 8812.53,
-   "margen": 10934.6,
-   "facturas": 27,
-   "unidades": 27.0,
-   "seguros": 9.0
+   "facturado": 20743.93,
+   "costo": 9229.38,
+   "margen": 11514.55,
+   "facturas": 28,
+   "unidades": 28.0,
+   "seguros": 10.0
   },
   {
    "nombre": "MARSOLAIRE ANGULO RANGEL ",
@@ -1420,21 +1440,21 @@
    "seguros": 6.0
   },
   {
+   "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
+   "facturado": 7911.33,
+   "costo": 4973.0,
+   "margen": 2938.33,
+   "facturas": 7,
+   "unidades": 11.0,
+   "seguros": 0.0
+  },
+  {
    "nombre": "DANIEL CASTELLANOS",
    "facturado": 7818.31,
    "costo": 4385.0,
    "margen": 3433.31,
    "facturas": 3,
    "unidades": 3.0,
-   "seguros": 0.0
-  },
-  {
-   "nombre": "GERARDO JOSE RAMIREZ FERNANDEZ",
-   "facturado": 7790.76,
-   "costo": 4910.0,
-   "margen": 2880.76,
-   "facturas": 6,
-   "unidades": 9.0,
    "seguros": 0.0
   },
   {
@@ -1477,8 +1497,8 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 129,
-   "monto": 33064.11
+   "cantidad": 131,
+   "monto": 33433.89
   },
   {
    "nombre": "Laptop Acer Aspire 3 AMD A315-24PT-R288, AMD Ryzen 5 7520U, 16GB, 1TB SSD, 15.6\" Touchscreen, US, W11.",
@@ -1511,6 +1531,11 @@
    "monto": 2497.43
   },
   {
+   "nombre": "[CEL000-00970] Telefono Samsung Galaxy A56 5G 8GB/256GB",
+   "cantidad": 4,
+   "monto": 2187.82
+  },
+  {
    "nombre": "[CEL003-00908] Xiaomi Redmi 15C 8GB/256GB",
    "cantidad": 7,
    "monto": 1954.25
@@ -1539,11 +1564,6 @@
    "nombre": "[CEL000-01067] Telefono Samsung Galaxy S26 Ultra 12GB/512GB",
    "cantidad": 1,
    "monto": 1652.85
-  },
-  {
-   "nombre": "[CEL000-00970] Telefono Samsung Galaxy A56 5G 8GB/256GB",
-   "cantidad": 3,
-   "monto": 1632.39
   },
   {
    "nombre": "Telefono Xiaomi Redmi Note 15 Pro+ 5G 8GB/256GB",
@@ -1722,8 +1742,8 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 59,
-   "monto": 296.11
+   "cantidad": 60,
+   "monto": 301.12
   },
   {
    "nombre": "Toshiba Portable Storage 2TB Canvio Flex (HDTX120XSCAA), Silver.",
@@ -1811,30 +1831,47 @@
    "monto": 49.31
   },
   {
+   "nombre": "Cargador Apple 40W Dynamic Power con potencia máxima de 60 W – MGKN4AM/A",
+   "cantidad": 1,
+   "monto": 47.07
+  },
+  {
+   "nombre": "[CAB002-00013] Cable de Carga Apple MU2G3ZM/A – 240W / USB-C / 2m",
+   "cantidad": 1,
+   "monto": 37.66
+  },
+  {
    "nombre": "[0001-7] Base para Televisor Aiwa Soporte Fijo Pared 32/70 pulgadas",
    "cantidad": 0,
    "monto": 0.0
   }
  ],
- "total_facturado": 112819.88,
- "total_facturas": 137,
+ "total_facturado": 113937.25,
+ "total_facturas": 139,
  "total_clientes": 125,
- "total_productos": 79755.77,
- "total_admin": 33064.11,
+ "total_productos": 80503.36,
+ "total_admin": 33433.89,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 54906.21,
- "total_margen": 57913.67,
+ "total_costo": 55386.06,
+ "total_margen": 58551.19,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 88,
-   "monto": 63418.5,
-   "unidades": 104.0,
-   "admin": 16215.45,
-   "costo": 32063.33,
+   "facturas": 89,
+   "monto": 63539.07,
+   "unidades": 106.0,
+   "admin": 16237.74,
+   "costo": 32126.33,
    "seguros": 31.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04547",
+     "cliente": "ANTHONY JOSUE REY QUINTERO",
+     "unidades": 2.0,
+     "monto": 120.57,
+     "fecha": "2026-10-31"
+    },
     {
      "orden": "LB-ORDEN-04543",
      "cliente": "YENCY ADRIANA CUEVAS ALARCON",
@@ -2455,18 +2492,25 @@
   },
   {
    "nombre": "0INICIAL",
-   "facturas": 24,
-   "monto": 20535.93,
-   "unidades": 25.0,
-   "admin": 7152.08,
-   "costo": 8594.4,
-   "seguros": 24.0,
+   "facturas": 25,
+   "monto": 21532.73,
+   "unidades": 26.0,
+   "admin": 7499.57,
+   "costo": 9011.25,
+   "seguros": 25.0,
    "items": [
     {
      "orden": "LB-ORDEN-04533",
      "cliente": "LUIS EDWIN ARAQUE GONZALEZ",
      "unidades": 1.0,
      "monto": 1085.71,
+     "fecha": "2026-10-31"
+    },
+    {
+     "orden": "LB-ORDEN-04513",
+     "cliente": "YENCY ADRIANA CUEVAS ALARCON",
+     "unidades": 1.0,
+     "monto": 996.8,
      "fecha": "2026-10-31"
     },
     {
@@ -2843,7 +2887,7 @@
  ],
  "cancelaciones_count": 6,
  "cancelaciones_monto": 2014.63,
- "total": 112819.88,
- "count": 137,
+ "total": 113937.25,
+ "count": 139,
  "colaboradores": []
 }

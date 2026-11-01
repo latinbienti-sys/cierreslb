@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 60,
-   "sc": 60,
-   "sm": 48022.36,
-   "sp": 33435.47,
-   "sk": 21687.61,
-   "sa": 14586.89,
-   "sg": 26334.75,
+   "sf": 61,
+   "sc": 61,
+   "sm": 49019.16,
+   "sp": 34084.78,
+   "sk": 22104.46,
+   "sa": 14934.38,
+   "sg": 26914.7,
    "se": [
+    {
+     "o": "LB-ORDEN-04513",
+     "c": "YENCY ADRIANA CUEVAS ALARCON",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-31",
+     "m": 996.8,
+     "k": 416.85,
+     "a": 347.49
+    },
     {
      "o": "LB-ORDEN-04543",
      "c": "YENCY ADRIANA CUEVAS ALARCON",
@@ -949,81 +958,24 @@
    ]
   },
   {
-   "t": "Televisores",
-   "sf": 6,
-   "sc": 6,
-   "sm": 3252.67,
-   "sp": 2271.43,
-   "sk": 1456.0,
-   "sa": 981.24,
-   "sg": 1796.67,
-   "se": [
-    {
-     "o": "LB-ORDEN-04523",
-     "c": "VICTOR MANUEL CESAR MENDEZ",
-     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
-     "f": "2026-10-31",
-     "m": 495.94,
-     "k": 222.0,
-     "a": 149.61
-    },
-    {
-     "o": "LB-ORDEN-04521",
-     "c": "EVER ALEXANDER OCHOA MOLINA",
-     "e": "MARSOLAIRE ANGULO RANGEL ",
-     "f": "2026-10-31",
-     "m": 495.94,
-     "k": 222.0,
-     "a": 149.61
-    },
-    {
-     "o": "LB-ORDEN-04479",
-     "c": "MARIA COROMOTO ARAQUE ALBARRAN",
-     "e": "LADY DIANA TORO RIVERA",
-     "f": "2026-10-29",
-     "m": 495.94,
-     "k": 222.0,
-     "a": 149.61
-    },
-    {
-     "o": "LB-ORDEN-04416",
-     "c": "YONATHAN RUBEN SULBARAN RIVAS",
-     "e": "LADY DIANA TORO RIVERA",
-     "f": "2026-10-20",
-     "m": 936.04,
-     "k": 419.0,
-     "a": 282.38
-    },
-    {
-     "o": "LB-ORDEN-04409",
-     "c": "JOHAN ANTONIO MONTES PALMERA",
-     "e": "LADY DIANA TORO RIVERA",
-     "f": "2026-10-19",
-     "m": 495.94,
-     "k": 222.0,
-     "a": 149.61
-    },
-    {
-     "o": "LB-ORDEN-04393",
-     "c": "ASDRUBAL JESUS VELASQUEZ MENDEZ",
-     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
-     "f": "2026-10-16",
-     "m": 332.87,
-     "k": 149.0,
-     "a": 100.42
-    }
-   ]
-  },
-  {
    "t": "Accesorios",
-   "sf": 11,
-   "sc": 11,
-   "sm": 3209.55,
-   "sp": 2578.57,
-   "sk": 1732.5,
-   "sa": 630.98,
-   "sg": 1477.05,
+   "sf": 12,
+   "sc": 12,
+   "sm": 3330.12,
+   "sp": 2676.85,
+   "sk": 1795.5,
+   "sa": 653.27,
+   "sg": 1534.62,
    "se": [
+    {
+     "o": "LB-ORDEN-04547",
+     "c": "ANTHONY JOSUE REY QUINTERO",
+     "e": "GERARDO JOSE RAMIREZ FERNANDEZ",
+     "f": "2026-10-31",
+     "m": 120.57,
+     "k": 63.0,
+     "a": 22.29
+    },
     {
      "o": "LB-ORDEN-04519",
      "c": "LUVIN ENRIQUE PEREZ ACURERO",
@@ -1122,6 +1074,72 @@
      "m": 506.11,
      "k": 290.0,
      "a": 98.94
+    }
+   ]
+  },
+  {
+   "t": "Televisores",
+   "sf": 6,
+   "sc": 6,
+   "sm": 3252.67,
+   "sp": 2271.43,
+   "sk": 1456.0,
+   "sa": 981.24,
+   "sg": 1796.67,
+   "se": [
+    {
+     "o": "LB-ORDEN-04523",
+     "c": "VICTOR MANUEL CESAR MENDEZ",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-31",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04521",
+     "c": "EVER ALEXANDER OCHOA MOLINA",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-31",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04479",
+     "c": "MARIA COROMOTO ARAQUE ALBARRAN",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-29",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04416",
+     "c": "YONATHAN RUBEN SULBARAN RIVAS",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-20",
+     "m": 936.04,
+     "k": 419.0,
+     "a": 282.38
+    },
+    {
+     "o": "LB-ORDEN-04409",
+     "c": "JOHAN ANTONIO MONTES PALMERA",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-19",
+     "m": 495.94,
+     "k": 222.0,
+     "a": 149.61
+    },
+    {
+     "o": "LB-ORDEN-04393",
+     "c": "ASDRUBAL JESUS VELASQUEZ MENDEZ",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-16",
+     "m": 332.87,
+     "k": 149.0,
+     "a": 100.42
     }
    ]
   },
@@ -1367,10 +1385,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 137,
-  "oct_facturado": 112819.88,
-  "oct_precio": 79755.77,
-  "oct_costo": 54906.21,
-  "oct_admin": 33064.11
+  "oct_facturas": 139,
+  "oct_facturado": 113937.25,
+  "oct_precio": 80503.36,
+  "oct_costo": 55386.06,
+  "oct_admin": 33433.89
  }
 }
