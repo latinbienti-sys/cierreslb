@@ -1,0 +1,22 @@
+{
+ "mes": "2026-11",
+ "facturas": [],
+ "facturas_dscto": [],
+ "ejecutivos": [],
+ "top_productos": [],
+ "total_facturado": 0,
+ "total_facturas": 0,
+ "total_clientes": 0,
+ "total_productos": 0,
+ "total_admin": 0,
+ "total_admin_dscto": 0.0,
+ "total_ahorro_dscto": 0.0,
+ "total_costo": 0,
+ "total_margen": 0,
+ "campanas": [],
+ "cancelaciones_count": 0,
+ "cancelaciones_monto": 0.0,
+ "total": 0,
+ "count": 0,
+ "colaboradores": []
+}
