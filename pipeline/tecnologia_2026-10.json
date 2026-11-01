@@ -2,14 +2,41 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 57,
-   "sc": 57,
-   "sm": 45449.82,
-   "sp": 31696.58,
-   "sk": 20571.06,
-   "sa": 13753.24,
-   "sg": 24878.76,
+   "sf": 60,
+   "sc": 60,
+   "sm": 48022.36,
+   "sp": 33435.47,
+   "sk": 21687.61,
+   "sa": 14586.89,
+   "sg": 26334.75,
    "se": [
+    {
+     "o": "LB-ORDEN-04543",
+     "c": "YENCY ADRIANA CUEVAS ALARCON",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-31",
+     "m": 977.58,
+     "k": 408.85,
+     "a": 340.75
+    },
+    {
+     "o": "LB-ORDEN-04540",
+     "c": "MARIA DEL CARMEN MALDONADO BARRIOS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-31",
+     "m": 939.15,
+     "k": 392.85,
+     "a": 327.28
+    },
+    {
+     "o": "LB-ORDEN-04535",
+     "c": "EFENVER JOSE VILLEGAS HERRERA",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-31",
+     "m": 1278.04,
+     "k": 573.85,
+     "a": 383.8
+    },
     {
      "o": "LB-ORDEN-04534",
      "c": "LEONARDO JOSE GONZALEZ GONZALEZ",
@@ -65,6 +92,15 @@
      "a": 103.45
     },
     {
+     "o": "LB-ORDEN-04527",
+     "c": "LUIS GERARDO SOTO IBARRA",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-31",
+     "m": 374.57,
+     "k": 157.85,
+     "a": 129.31
+    },
+    {
      "o": "LB-ORDEN-04526",
      "c": "CAMILA ARLEHY RODRIGUEZ VIVAS",
      "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
@@ -72,15 +108,6 @@
      "m": 404.56,
      "k": 182.85,
      "a": 120.3
-    },
-    {
-     "o": "LB-ORDEN-04513",
-     "c": "YENCY ADRIANA CUEVAS ALARCON",
-     "e": "LADY DIANA TORO RIVERA",
-     "f": "2026-10-31",
-     "m": 996.8,
-     "k": 416.85,
-     "a": 347.49
     },
     {
      "o": "LB-ORDEN-04516",
@@ -527,14 +554,32 @@
   },
   {
    "t": "Computación",
-   "sf": 23,
-   "sc": 23,
-   "sm": 26088.56,
-   "sp": 19975.88,
-   "sk": 13220.07,
-   "sa": 6112.68,
-   "sg": 12868.49,
+   "sf": 27,
+   "sc": 27,
+   "sm": 32738.23,
+   "sp": 24665.33,
+   "sk": 16277.16,
+   "sa": 8072.9,
+   "sg": 16461.07,
    "se": [
+    {
+     "o": "LB-ORDEN-04539",
+     "c": "LOYDA EUNICE MARTINEZ DE RIVAS",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-10-31",
+     "m": 1740.28,
+     "k": 779.0,
+     "a": 525.0
+    },
+    {
+     "o": "LB-ORDEN-04531",
+     "c": "JULIO CESAR GALLARDO SEGOVIA",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-31",
+     "m": 571.2,
+     "k": 306.82,
+     "a": 172.32
+    },
     {
      "o": "LB-ORDEN-04510",
      "c": "KATTELLINE JOSEFINA GOMEZ GUIZA",
@@ -543,6 +588,24 @@
      "m": 1137.11,
      "k": 509.0,
      "a": 343.04
+    },
+    {
+     "o": "LB-ORDEN-04483",
+     "c": "NORAIMA MARYELIN ALVAREZ GUILLEN",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-31",
+     "m": 1674.66,
+     "k": 779.0,
+     "a": 459.38
+    },
+    {
+     "o": "LB-ORDEN-04466",
+     "c": "MARIA JOSE ROMAN VILLASMIL",
+     "e": "ELIO CHAMATE",
+     "f": "2026-10-31",
+     "m": 2663.53,
+     "k": 1192.27,
+     "a": 803.52
     },
     {
      "o": "LB-ORDEN-04495",
@@ -794,14 +857,32 @@
   },
   {
    "t": "Hogar",
-   "sf": 5,
-   "sc": 5,
-   "sm": 5177.16,
-   "sp": 4322.16,
-   "sk": 2833.65,
-   "sa": 855.0,
-   "sg": 2343.51,
+   "sf": 7,
+   "sc": 7,
+   "sm": 6602.98,
+   "sp": 5414.35,
+   "sk": 3533.75,
+   "sa": 1188.63,
+   "sg": 3069.23,
    "se": [
+    {
+     "o": "LB-ORDEN-04515",
+     "c": "RAIZA VILLARREAL BALZA",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-10-31",
+     "m": 227.83,
+     "k": 120.1,
+     "a": 40.47
+    },
+    {
+     "o": "LB-ORDEN-04452",
+     "c": "DANIEL JOSE RODRIGUEZ VALECILLOS",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-10-27",
+     "m": 1197.99,
+     "k": 580.0,
+     "a": 293.16
+    },
     {
      "o": "LB-ORDEN-04426",
      "c": "MARISELA DEL CARMEN CEBALLOS SALAS",
@@ -917,14 +998,23 @@
   },
   {
    "t": "Accesorios",
-   "sf": 10,
-   "sc": 10,
-   "sm": 2843.05,
-   "sp": 2283.72,
-   "sk": 1543.5,
-   "sa": 559.33,
-   "sg": 1299.55,
+   "sf": 11,
+   "sc": 11,
+   "sm": 3209.55,
+   "sp": 2578.57,
+   "sk": 1732.5,
+   "sa": 630.98,
+   "sg": 1477.05,
    "se": [
+    {
+     "o": "LB-ORDEN-04519",
+     "c": "LUVIN ENRIQUE PEREZ ACURERO",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-31",
+     "m": 366.5,
+     "k": 189.0,
+     "a": 71.65
+    },
     {
      "o": "LB-ORDEN-04505",
      "c": "EMMANUEL LOBO ANGULO",
@@ -1235,13 +1325,34 @@
      "a": 26.02
     }
    ]
+  },
+  {
+   "t": "Salud",
+   "sf": 1,
+   "sc": 1,
+   "sm": 132.16,
+   "sp": 117.0,
+   "sk": 75.0,
+   "sa": 15.16,
+   "sg": 57.16,
+   "se": [
+    {
+     "o": "LB-ORDEN-04536",
+     "c": "SIMAHU ARGENTINA AYALA DE REYES",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-10-31",
+     "m": 132.16,
+     "k": 75.0,
+     "a": 15.16
+    }
+   ]
   }
  ],
  "totales": {
-  "oct_facturas": 124,
-  "oct_facturado": 97951.24,
-  "oct_precio": 69407.91,
-  "oct_costo": 47744.47,
-  "oct_admin": 28543.33
+  "oct_facturas": 135,
+  "oct_facturado": 109097.93,
+  "oct_precio": 77340.29,
+  "oct_costo": 52882.21,
+  "oct_admin": 31757.64
  }
 }
