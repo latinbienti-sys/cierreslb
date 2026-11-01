@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Regenera la facturacion del mes en curso de la pestana Cartera/Tecnologia (const TECNO_OCT).
+"""Regenera la facturacion del mes en curso de la pestana Cartera/Tecnologia (const TECNO_MES).
 
 - Calcula por tecnologia (categoria web raiz del producto de mayor monto) el mes pedido.
-- Reemplaza la linea `const TECNO_OCT = {...};` en index.html (sin tocar el resto).
+- Reemplaza la linea `const TECNO_MES = {...};` en index.html (sin tocar el resto).
+- TECNO_OCT queda congelada con los datos finales de octubre 2026.
 - NO modifica las columnas de cartera ni Flujo de Cuotas.
 - Guarda copia en pipeline/tecnologia_YYYY-MM.json.
 
@@ -52,14 +53,14 @@ def main():
     payload = {"por_tecnologia": data["por_tecnologia"], "totales": data["totales"]}
 
     s = io.open(HTML, encoding="utf-8", newline="").read()
-    i = s.index("const TECNO_OCT =")
+    i = s.index("const TECNO_MES =")
     b = s.index("{", i)
     e = find_obj(s, b)
     new_txt = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     s = s[:b] + new_txt + s[e:]
     io.open(HTML, "w", encoding="utf-8", newline="").write(s)
     t = data["totales"]
-    print(f"TECNO_OCT -> {year}-{month:02d}: facturas={t['oct_facturas']} facturado={t['oct_facturado']} "
+    print(f"TECNO_MES -> {year}-{month:02d}: facturas={t['oct_facturas']} facturado={t['oct_facturado']} "
           f"admin={t['oct_admin']} costo={t['oct_costo']}")
 
 if __name__ == "__main__":

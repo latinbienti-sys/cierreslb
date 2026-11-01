@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Regenera la pestana Categorias del mes en curso (const CATS_OCT) en index.html.
+"""Regenera la pestana Categorias del mes en curso (const CATS_MES) en index.html.
 
 - Categorias = price_total por linea agrupado por palabras clave del nombre del producto.
 - Calcula el mes pedido (por defecto el mes actual en America/Caracas).
-- Reemplaza la linea `const CATS_OCT = [...];` (sin tocar el resto).
+- Reemplaza la linea `const CATS_MES = [...];` (sin tocar el resto).
+- CATS_OCT queda congelada con los datos finales de octubre 2026.
 - Guarda copia en pipeline/categorias_YYYY-MM.json.
 
 SOLO LECTURA en Odoo.
@@ -39,14 +40,14 @@ def main():
               "w", encoding="utf-8", newline="\n"), ensure_ascii=False)
 
     s = io.open(HTML, encoding="utf-8", newline="").read()
-    new_line = "const CATS_OCT = " + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n"
-    if not re.search(r"^const CATS_OCT = .*?;\s*$", s, re.M):
-        raise SystemExit("No se encontro la linea 'const CATS_OCT = ...;' en index.html")
-    s = re.sub(r"^const CATS_OCT = .*?;\s*$", new_line, s, count=1, flags=re.M)
+    new_line = "const CATS_MES = " + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n"
+    if not re.search(r"^const CATS_MES = .*?;\s*$", s, re.M):
+        raise SystemExit("No se encontro la linea 'const CATS_MES = ...;' en index.html")
+    s = re.sub(r"^const CATS_MES = .*?;\s*$", new_line, s, count=1, flags=re.M)
     io.open(HTML, "w", encoding="utf-8", newline="").write(s)
 
     total = sum(c["monto"] for c in data)
-    print(f"CATS_OCT -> {year}-{month:02d}: filas={len(data)} total={round(total,2)}")
+    print(f"CATS_MES -> {year}-{month:02d}: filas={len(data)} total={round(total,2)}")
 
 if __name__ == "__main__":
     main()
