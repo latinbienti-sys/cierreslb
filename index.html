@@ -418,9 +418,7 @@ tbody tr.cancel-row{border-left:4px solid var(--danger);background:var(--danger-
         <div class="scroll-table" style="max-height:280px"><table><thead><tr><th>Ejecutivo</th><th class="text-right">Aprobadas</th><th class="text-right">Activadas</th><th class="text-right">Facturadas</th><th class="text-right">Activadas sin facturar</th><th class="text-right">Monto</th></tr></thead><tbody id="oct-act-ejec"></tbody></table></div>
       </div>
     </div>
-    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:14px 0 8px" id="oct-act-filtro">
-      <span style="font-size:12px;color:#64748B;font-weight:600">Ver:</span>
-    </div>
+    <div class="section-title" style="margin-top:14px;font-size:13px">💳 Clientes con línea activada en octubre</div>
     <div class="scroll-table" style="max-height:420px"><table><thead><tr><th>#</th><th>Cliente</th><th>Fecha Aprobación</th><th>Fecha Activación</th><th>Ejecutivo</th><th>Estado</th><th>Pedidos</th><th class="text-right">Monto</th></tr></thead><tbody id="oct-act-table"></tbody></table></div>
   </div>
   <div class="section" id="oct-tipo-section">
@@ -1345,9 +1343,6 @@ function switchTab(name, el) {
     const m=rows.reduce((s,c)=>s+c.monto,0);
     const tr=document.createElement('tr'); tr.style.fontWeight='600'; tr.innerHTML='<td></td><td>Σ '+rows.length+' clientes</td><td></td><td></td><td></td><td></td><td></td><td class="text-right money">'+fmt(m)+'</td>'; tb.appendChild(tr);
   }
-  const fl=document.getElementById('oct-act-filtro');
-  VISTAS.forEach(([k,t,L],i)=>{const b=document.createElement('button'); b.className='tab-btn'+(i===0?' active':''); b.textContent=t;
-    b.onclick=()=>{fl.querySelectorAll('button').forEach(x=>x.classList.remove('active')); b.classList.add('active'); render(L);}; fl.appendChild(b);});
   render(ACTV);
 
   // ===== Clientes facturados por tipo =====
