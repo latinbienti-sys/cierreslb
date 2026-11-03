@@ -1,22 +1,78 @@
 {
  "mes": "2026-11",
- "facturas": [],
+ "facturas": [
+  {
+   "orden": "LB-ORDEN-04552",
+   "cliente": "JOSE GREGORIO PEREIRA PEREIRA",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 321.99,
+   "costo": 157.85,
+   "admin": 86.74,
+   "status": "Entregado",
+   "fecha": "2026-11-02"
+  }
+ ],
  "facturas_dscto": [],
- "ejecutivos": [],
- "top_productos": [],
- "total_facturado": 0,
- "total_facturas": 0,
- "total_clientes": 0,
- "total_productos": 0,
- "total_admin": 0,
+ "ejecutivos": [
+  {
+   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": 321.99,
+   "costo": 157.85,
+   "margen": 164.14,
+   "facturas": 1,
+   "unidades": 1.0,
+   "seguros": 1.0
+  }
+ ],
+ "top_productos": [
+  {
+   "nombre": "[CEL01B-00242] Telefono Infinix Smart 20, 4GB/128GB",
+   "cantidad": 1,
+   "monto": 198.48
+  },
+  {
+   "nombre": "Gasto Administrativo y Gestion de Cobranza",
+   "cantidad": 1,
+   "monto": 86.74
+  },
+  {
+   "nombre": "[0001-56] Seguro de Reserva de Dominio",
+   "cantidad": 1,
+   "monto": 5.01
+  }
+ ],
+ "total_facturado": 321.99,
+ "total_facturas": 1,
+ "total_clientes": 1,
+ "total_productos": 235.25,
+ "total_admin": 86.74,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 0,
- "total_margen": 0,
- "campanas": [],
+ "total_costo": 157.85,
+ "total_margen": 164.14,
+ "campanas": [
+  {
+   "nombre": "Sin campaña",
+   "facturas": 1,
+   "monto": 321.99,
+   "unidades": 1.0,
+   "admin": 86.74,
+   "costo": 157.85,
+   "seguros": 1.0,
+   "items": [
+    {
+     "orden": "LB-ORDEN-04552",
+     "cliente": "JOSE GREGORIO PEREIRA PEREIRA",
+     "unidades": 1.0,
+     "monto": 321.99,
+     "fecha": "2026-11-02"
+    }
+   ]
+  }
+ ],
  "cancelaciones_count": 0,
  "cancelaciones_monto": 0.0,
- "total": 0,
- "count": 0,
+ "total": 321.99,
+ "count": 1,
  "colaboradores": []
 }

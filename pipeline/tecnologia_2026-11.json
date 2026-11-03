@@ -1,10 +1,32 @@
 {
- "por_tecnologia": [],
+ "por_tecnologia": [
+  {
+   "t": "Telefonos",
+   "sf": 1,
+   "sc": 1,
+   "sm": 321.99,
+   "sp": 235.25,
+   "sk": 157.85,
+   "sa": 86.74,
+   "sg": 164.14,
+   "se": [
+    {
+     "o": "LB-ORDEN-04552",
+     "c": "JOSE GREGORIO PEREIRA PEREIRA",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-11-02",
+     "m": 321.99,
+     "k": 157.85,
+     "a": 86.74
+    }
+   ]
+  }
+ ],
  "totales": {
-  "oct_facturas": 0,
-  "oct_facturado": 0,
-  "oct_precio": 0,
-  "oct_costo": 0,
-  "oct_admin": 0
+  "oct_facturas": 1,
+  "oct_facturado": 321.99,
+  "oct_precio": 235.25,
+  "oct_costo": 157.85,
+  "oct_admin": 86.74
  }
 }
