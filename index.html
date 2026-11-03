@@ -427,15 +427,6 @@ tbody tr.cancel-row{border-left:4px solid var(--danger);background:var(--danger-
     <div class="section-title">🧭 Clientes Facturados del Mes por Tipo (activación + historial de compras)</div>
     <div class="scroll-table"><table><thead><tr><th>Tipo de cliente</th><th>Criterio</th><th class="text-right">Clientes</th><th class="text-right">Pedidos</th><th class="text-right">Monto</th><th class="text-right">% del Mes</th></tr></thead><tbody id="oct-tipo-table"></tbody></table></div>
   </div>
-  <div class="section" id="oct-calidad-section" style="display:none">
-    <div class="section-title">🔎 Calidad del Dato — Líneas de Crédito y Clientes Facturados</div>
-    <div style="font-size:11px;color:#64748B;margin:-4px 0 10px">Revisión de solo lectura en Odoo. No se modificó ningún registro: las correcciones se hacen en Odoo › Contactos y se reflejan en la próxima lectura.</div>
-    <div class="kpi-grid" id="oct-calidad-kpis"></div>
-    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0 8px" id="oct-calidad-filtro">
-      <span style="font-size:12px;color:#64748B;font-weight:600">Ver:</span>
-    </div>
-    <div class="scroll-table" style="max-height:420px"><table><thead><tr><th>#</th><th>Cliente</th><th>Revisión</th><th>Detalle</th><th>Fecha Aprobación</th><th>Fecha Activación</th><th>Pedido(s)</th><th>Ejecutivo</th><th class="text-right">Monto</th></tr></thead><tbody id="oct-calidad-table"></tbody></table></div>
-  </div>
 </div>
 
 <!-- ===== CATEGORÍAS TAB ===== -->
@@ -1408,46 +1399,6 @@ function switchTab(name, el) {
   const t2=document.createElement('tr'); t2.style.fontWeight='600';
   t2.innerHTML='<td>Σ Total</td><td></td><td class="text-right">'+clientes.length+'</td><td class="text-right">'+FX.length+'</td><td class="text-right money">'+fmt(tsum)+'</td><td class="text-right">'+pct(tsum,totMes)+'</td>'; tb.appendChild(t2);
 
-  // ===== Calidad del dato =====
-  if(!document.getElementById('oct-calidad-section')) return;
-  const minP=c=>c.fped.slice().sort()[0];
-  const OBS=[
-    // sobre clientes facturados
-    {k:'post', g:'fac', t:'Activación posterior al pedido', b:'badge-cancel', f:c=>c.linea_activa&&c.fecha_act&&c.fped.length&&minP(c)<c.fecha_act, d:c=>'Pedido '+fdt(minP(c))+' antes de la activación '+fdt(c.fecha_act)},
-    {k:'actsinf', g:'fac', t:'Línea activa sin fecha de activación', b:'badge-cancel', f:c=>c.linea_activa&&!c.fecha_act, d:c=>'Completar Fecha de Activación en Contactos'},
-    {k:'react', g:'fac', t:'Activada en el mes con compras previas', b:'badge-congelado', f:c=>c.tipo==='react', d:c=>c.q.compras_previas+' compra(s) previa(s), primera '+fdt(c.q.primera_compra)+'. ¿Reactivación o fecha sobrescrita?'},
-    {k:'homo', g:'fac', t:'Contacto duplicado (homónimo)', b:'badge-congelado', f:c=>c.q.homonimos>1, d:c=>c.q.homonimos+' contactos con el mismo nombre ('+c.q.homonimos_con_fecha+' con fecha de activación)'},
-    {k:'nolinea', g:'fac', info:true, t:'Facturado sin línea activa', b:'badge-aprobado', f:c=>!c.linea_activa, d:c=>'Status: '+stl(c.status)+(c.fecha_act?' · tiene Fecha de Activación '+fdt(c.fecha_act)+' pero Línea Activada = No':'')},
-    // sobre contactos del mes
-    {k:'fsl', g:'mes', t:'Fecha de activación en el mes con Línea Activada = No', b:'badge-cancel', d:c=>'Status: '+stl(c.status)},
-    {k:'actsinap', g:'mes', t:'Activada sin fecha de aprobación', b:'badge-congelado', d:c=>'Completar Fecha de Resolución Final'},
-    {k:'actantes', g:'mes', t:'Activada antes de aprobarse', b:'badge-cancel', d:c=>'Activación '+fdt(c.fecha_act)+' antes de la aprobación '+fdt(c.fecha_aprob)}];
-  const rows=[];
-  clientes.forEach(c=>OBS.filter(o=>o.g==='fac').forEach(o=>{ if(o.f(c)) rows.push({c:c,o:o}); }));
-  const fila=a=>{const ped=a.pedidos.filter(o=>FMAP.has(o)); return {cliente:a.cliente, fecha_act:a.fecha_act||'', fecha_aprob:a.fecha_aprob||'', status:a.status||'', pedidos:ped, ejecutivo:ped.length?FMAP.get(ped[0]).ejecutivo:a.ejecutivo, monto:ped.reduce((s,o)=>s+FMAP.get(o).monto,0)};};
-  const O=k=>OBS.find(o=>o.k===k);
-  (ACT_OCT.fecha_sin_linea||[]).forEach(a=>rows.push({c:fila(a),o:O('fsl')}));
-  (ACT_OCT.activados||[]).forEach(a=>{ if(!a.fecha_aprob) rows.push({c:fila(a),o:O('actsinap')}); else if(a.fecha_act && a.fecha_aprob>a.fecha_act) rows.push({c:fila(a),o:O('actantes')}); });
-  const conObs=new Set(rows.filter(r=>r.o.g==='fac'&&!r.o.info).map(r=>r.c));
-  const cnt=k=>rows.filter(r=>r.o.k===k).length;
-  kpi(document.getElementById('oct-calidad-kpis'),[
-    {icon:'👥',value:clientes.length,label:'Clientes facturados revisados'},
-    {icon:'✅',value:(clientes.length-conObs.size)+small('('+pct(clientes.length-conObs.size,clientes.length)+')'),label:'Facturados sin observaciones',cls:'green'}]
-    .concat(OBS.map(o=>({icon:o.info?'ℹ️':(o.b==='badge-cancel'?'⛔':'⚠️'),value:cnt(o.k),label:o.t}))));
-  let modo='all';
-  function renderQ(){
-    const t=document.getElementById('oct-calidad-table'); t.innerHTML='';
-    const rs=rows.filter(r=>modo==='all'?!r.o.info:r.o.k===modo);
-    if(!rs.length){ t.innerHTML='<tr><td colspan="9" style="text-align:center;color:#8892a6;padding:16px">Sin observaciones</td></tr>'; return; }
-    rs.forEach((r,i)=>{const c=r.c; const tr=document.createElement('tr');
-      tr.innerHTML='<td>'+(i+1)+'</td><td>'+c.cliente+'</td><td><span class="badge '+r.o.b+'">'+r.o.t+'</span></td><td style="font-size:12px">'+r.o.d(c)+'</td><td>'+fdt(c.fecha_aprob)+'</td><td>'+fdt(c.fecha_act)+'</td><td style="font-size:12px">'+(c.pedidos.join(', ')||'—')+'</td><td style="font-size:12px">'+c.ejecutivo+'</td><td class="text-right money">'+(c.monto?fmt(c.monto):'—')+'</td>'; t.appendChild(tr);});
-  }
-  const fq=document.getElementById('oct-calidad-filtro');
-  [['all','Todas las alertas ('+rows.filter(r=>!r.o.info).length+')']].concat(OBS.filter(o=>cnt(o.k)).map(o=>[o.k,o.t+' ('+cnt(o.k)+')'])).forEach(([k,t],i)=>{
-    const b=document.createElement('button'); b.className='tab-btn'+(i===0?' active':''); b.textContent=t;
-    b.onclick=()=>{modo=k; fq.querySelectorAll('button').forEach(x=>x.classList.remove('active')); b.classList.add('active'); renderQ();};
-    fq.appendChild(b);});
-  renderQ();
 })();
 </script>
 <script>
