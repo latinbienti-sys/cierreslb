@@ -1,0 +1,359 @@
+{
+ "mes": "2026-11",
+ "generado": "2026-11-04 15:00",
+ "criterio": {
+  "activacion": "x_fecha_activacion en el mes y x_activacion_linea = True",
+  "aprobacion": "x_fecha_resolucion_final en el mes"
+ },
+ "status_labels": {
+  "0migracion": "0.1 Cliente Latinbien (Migración)",
+  "0.2registro": "0.2 Cliente Latinbien (Registro)",
+  "0.3contado": "0.3 Cliente Latinbien (Contado)",
+  "1solicitado": "1. Solicitud de Línea de Crédito",
+  "1.1Pre-calificado": "1.1Pre-calificado",
+  "2tramite_recaudos": "2. Consignación de Recaudos - en Trámite",
+  "3consignacion": "3. Consignación de Recaudos - Finalizada",
+  "4evaluacion": "4. Expediente - en evaluación",
+  "5resolver": "5. Expediente - por resolver",
+  "6aceptado": "6. Expediente - aceptado -> Comité",
+  "7pre": "7. Línea de Crédito - Aprobada",
+  "8rechazado": "8. Línea de Crédito - Rechazada",
+  "9diferrido": "9. Línea de Crédito - Diferida",
+  "-condicion": "10. Condición Especial"
+ },
+ "total_activados": 5,
+ "activados_facturados": 3,
+ "total_aprobadas": 14,
+ "facturas": {
+  "LB-ORDEN-04557": {
+   "partner_id": 46056,
+   "linea_activa": true,
+   "status": "7pre",
+   "fecha_act": "2026-11-03",
+   "act_mes": true,
+   "fecha_aprob": "2026-11-03",
+   "aprob_mes": true,
+   "fecha_pedido": "2026-11-03"
+  },
+  "LB-ORDEN-04555": {
+   "partner_id": 18639,
+   "linea_activa": true,
+   "status": "7pre",
+   "fecha_act": "2026-11-03",
+   "act_mes": true,
+   "fecha_aprob": "2026-11-03",
+   "aprob_mes": true,
+   "fecha_pedido": "2026-11-03"
+  },
+  "LB-ORDEN-04554": {
+   "partner_id": 9341,
+   "linea_activa": true,
+   "status": "7pre",
+   "fecha_act": "2026-08-25",
+   "act_mes": false,
+   "fecha_aprob": "2026-08-25",
+   "aprob_mes": false,
+   "fecha_pedido": "2026-11-03"
+  },
+  "LB-ORDEN-04552": {
+   "partner_id": 62290,
+   "linea_activa": true,
+   "status": "7pre",
+   "fecha_act": "2026-11-02",
+   "act_mes": true,
+   "fecha_aprob": "2026-11-02",
+   "aprob_mes": true,
+   "fecha_pedido": "2026-11-02"
+  }
+ },
+ "activados": [
+  {
+   "id": 62290,
+   "cliente": "JOSE GREGORIO PEREIRA PEREIRA",
+   "fecha_act": "2026-11-02",
+   "fecha_aprob": "2026-11-02",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": true,
+   "pedidos": [
+    "LB-ORDEN-04552"
+   ],
+   "monto": 321.99
+  },
+  {
+   "id": 46056,
+   "cliente": "GABRIEL EDUARDO PAREDES ALARCON",
+   "fecha_act": "2026-11-03",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "ELIO CHAMATE",
+   "facturado": true,
+   "pedidos": [
+    "LB-ORDEN-04557"
+   ],
+   "monto": 309.59
+  },
+  {
+   "id": 18639,
+   "cliente": "MAILYN YEPES ARAQUE",
+   "fecha_act": "2026-11-03",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": true,
+   "pedidos": [
+    "LB-ORDEN-04555"
+   ],
+   "monto": 129.79
+  },
+  {
+   "id": 61600,
+   "cliente": "ALEJANDRA MOLINA MORA",
+   "fecha_act": "2026-11-02",
+   "fecha_aprob": "2026-11-02",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62412,
+   "cliente": "KEIBER OTILIO PADILLA GARCIA",
+   "fecha_act": "2026-11-04",
+   "fecha_aprob": "2026-11-04",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "CLAUDIA MILENA ZAPATA",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  }
+ ],
+ "aprobadas": [
+  {
+   "id": 62290,
+   "cliente": "JOSE GREGORIO PEREIRA PEREIRA",
+   "fecha_act": "2026-11-02",
+   "fecha_aprob": "2026-11-02",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": true,
+   "pedidos": [
+    "LB-ORDEN-04552"
+   ],
+   "monto": 321.99
+  },
+  {
+   "id": 46056,
+   "cliente": "GABRIEL EDUARDO PAREDES ALARCON",
+   "fecha_act": "2026-11-03",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "ELIO CHAMATE",
+   "facturado": true,
+   "pedidos": [
+    "LB-ORDEN-04557"
+   ],
+   "monto": 309.59
+  },
+  {
+   "id": 18639,
+   "cliente": "MAILYN YEPES ARAQUE",
+   "fecha_act": "2026-11-03",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": true,
+   "pedidos": [
+    "LB-ORDEN-04555"
+   ],
+   "monto": 129.79
+  },
+  {
+   "id": 61600,
+   "cliente": "ALEJANDRA MOLINA MORA",
+   "fecha_act": "2026-11-02",
+   "fecha_aprob": "2026-11-02",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62412,
+   "cliente": "KEIBER OTILIO PADILLA GARCIA",
+   "fecha_act": "2026-11-04",
+   "fecha_aprob": "2026-11-04",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "CLAUDIA MILENA ZAPATA",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62459,
+   "cliente": "CORYMAR PATRICIA ANDRADE",
+   "fecha_act": "",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": false,
+   "act_mes": false,
+   "status": "7pre",
+   "ejecutivo": "BASE DE DATOS PROSPECTOS",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62460,
+   "cliente": "ENMANUEL BUSTAMANTE",
+   "fecha_act": "",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": false,
+   "act_mes": false,
+   "status": "7pre",
+   "ejecutivo": "BASE DE DATOS PROSPECTOS",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62455,
+   "cliente": "JESUS RAFAEL ROJAS CUEVAS",
+   "fecha_act": "",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": false,
+   "act_mes": false,
+   "status": "7pre",
+   "ejecutivo": "BASE DE DATOS PROSPECTOS",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62456,
+   "cliente": "JOSUE DAVID GONZALEZ UZCATEGUI",
+   "fecha_act": "",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": false,
+   "act_mes": false,
+   "status": "7pre",
+   "ejecutivo": "BASE DE DATOS PROSPECTOS",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62458,
+   "cliente": "KARLA DURAIKY ABREU MORENO",
+   "fecha_act": "",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": false,
+   "act_mes": false,
+   "status": "7pre",
+   "ejecutivo": "BASE DE DATOS PROSPECTOS",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62461,
+   "cliente": "LISETH CORINA RONDON VALERO",
+   "fecha_act": "",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": false,
+   "act_mes": false,
+   "status": "7pre",
+   "ejecutivo": "BASE DE DATOS PROSPECTOS",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62462,
+   "cliente": "LUIS ALBERTO GUEVARA ZAMBRANO",
+   "fecha_act": "",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": false,
+   "act_mes": false,
+   "status": "7pre",
+   "ejecutivo": "BASE DE DATOS PROSPECTOS",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62463,
+   "cliente": "MARIA FERNANDA SANTIAGO OSUNA",
+   "fecha_act": "",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": false,
+   "act_mes": false,
+   "status": "7pre",
+   "ejecutivo": "BASE DE DATOS PROSPECTOS",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  },
+  {
+   "id": 62457,
+   "cliente": "VICTORIA KARIBAY QUINTERO VALECILLOS",
+   "fecha_act": "",
+   "fecha_aprob": "2026-11-03",
+   "linea_activa": false,
+   "act_mes": false,
+   "status": "7pre",
+   "ejecutivo": "BASE DE DATOS PROSPECTOS",
+   "facturado": false,
+   "pedidos": [],
+   "monto": 0
+  }
+ ],
+ "fecha_sin_linea": [],
+ "calidad": {
+  "9341": {
+   "compras_previas": 1,
+   "primera_compra": "2026-08-26",
+   "homonimos": 1,
+   "homonimos_con_fecha": 1
+  },
+  "18639": {
+   "compras_previas": 0,
+   "primera_compra": "",
+   "homonimos": 1,
+   "homonimos_con_fecha": 1
+  },
+  "46056": {
+   "compras_previas": 0,
+   "primera_compra": "",
+   "homonimos": 1,
+   "homonimos_con_fecha": 1
+  },
+  "62290": {
+   "compras_previas": 0,
+   "primera_compra": "",
+   "homonimos": 1,
+   "homonimos_con_fecha": 1
+  }
+ }
+}

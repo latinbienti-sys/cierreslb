@@ -1,0 +1,32 @@
+{
+ "mes": "2026-12",
+ "generado": "2026-11-04 15:00",
+ "criterio": {
+  "activacion": "x_fecha_activacion en el mes y x_activacion_linea = True",
+  "aprobacion": "x_fecha_resolucion_final en el mes"
+ },
+ "status_labels": {
+  "0migracion": "0.1 Cliente Latinbien (Migración)",
+  "0.2registro": "0.2 Cliente Latinbien (Registro)",
+  "0.3contado": "0.3 Cliente Latinbien (Contado)",
+  "1solicitado": "1. Solicitud de Línea de Crédito",
+  "1.1Pre-calificado": "1.1Pre-calificado",
+  "2tramite_recaudos": "2. Consignación de Recaudos - en Trámite",
+  "3consignacion": "3. Consignación de Recaudos - Finalizada",
+  "4evaluacion": "4. Expediente - en evaluación",
+  "5resolver": "5. Expediente - por resolver",
+  "6aceptado": "6. Expediente - aceptado -> Comité",
+  "7pre": "7. Línea de Crédito - Aprobada",
+  "8rechazado": "8. Línea de Crédito - Rechazada",
+  "9diferrido": "9. Línea de Crédito - Diferida",
+  "-condicion": "10. Condición Especial"
+ },
+ "total_activados": 0,
+ "activados_facturados": 0,
+ "total_aprobadas": 0,
+ "facturas": {},
+ "activados": [],
+ "aprobadas": [],
+ "fecha_sin_linea": [],
+ "calidad": {}
+}

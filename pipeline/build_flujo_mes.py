@@ -22,8 +22,10 @@ TZ = timezone(timedelta(hours=-4))
 EST = {"paid": "P", "draft": "D", "vencido": "V"}
 
 
-def build(oc, year, month):
-    mes = json.load(io.open(os.path.join(HERE, f"mes_{year:04d}-{month:02d}.json"), encoding="utf-8"))
+def build(oc, year, month, mes=None):
+    """mes: estructura de build_mes (facturas del mes). Si no se pasa, se lee pipeline/mes_YYYY-MM.json."""
+    if mes is None:
+        mes = json.load(io.open(os.path.join(HERE, f"mes_{year:04d}-{month:02d}.json"), encoding="utf-8"))
     cierre = {f["orden"]: f for f in mes["facturas"]}
     orders = oc.search_read("sale.order", [("name", "in", list(cierre))],
                             ["name", "invoice_ids", "tenure", "tenure_plan", "x_monto_inicial"])
