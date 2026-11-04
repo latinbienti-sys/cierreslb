@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 1,
-   "sc": 1,
-   "sm": 321.99,
-   "sp": 235.25,
-   "sk": 157.85,
-   "sa": 86.74,
-   "sg": 164.14,
+   "sf": 2,
+   "sc": 2,
+   "sm": 631.58,
+   "sp": 470.5,
+   "sk": 315.7,
+   "sa": 161.08,
+   "sg": 315.88,
    "se": [
+    {
+     "o": "LB-ORDEN-04557",
+     "c": "GABRIEL EDUARDO PAREDES ALARCON",
+     "e": "ELIO CHAMATE",
+     "f": "2026-11-03",
+     "m": 309.59,
+     "k": 157.85,
+     "a": 74.34
+    },
     {
      "o": "LB-ORDEN-04552",
      "c": "JOSE GREGORIO PEREIRA PEREIRA",
@@ -20,13 +29,55 @@
      "a": 86.74
     }
    ]
+  },
+  {
+   "t": "Accesorios",
+   "sf": 1,
+   "sc": 1,
+   "sm": 129.79,
+   "sp": 94.19,
+   "sk": 63.0,
+   "sa": 35.6,
+   "sg": 66.79,
+   "se": [
+    {
+     "o": "LB-ORDEN-04555",
+     "c": "MAILYN YEPES ARAQUE",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-11-03",
+     "m": 129.79,
+     "k": 63.0,
+     "a": 35.6
+    }
+   ]
+  },
+  {
+   "t": "Estacion de carga",
+   "sf": 1,
+   "sc": 1,
+   "sm": 72.65,
+   "sp": 61.1,
+   "sk": 47.0,
+   "sa": 11.55,
+   "sg": 25.65,
+   "se": [
+    {
+     "o": "LB-ORDEN-04554",
+     "c": "KEILI KARINA SALAS PEREIRA",
+     "e": "MARSOLAIRE ANGULO RANGEL ",
+     "f": "2026-11-03",
+     "m": 72.65,
+     "k": 47.0,
+     "a": 11.55
+    }
+   ]
   }
  ],
  "totales": {
-  "oct_facturas": 1,
-  "oct_facturado": 321.99,
-  "oct_precio": 235.25,
-  "oct_costo": 157.85,
-  "oct_admin": 86.74
+  "oct_facturas": 4,
+  "oct_facturado": 834.02,
+  "oct_precio": 625.79,
+  "oct_costo": 425.7,
+  "oct_admin": 208.23
  }
 }

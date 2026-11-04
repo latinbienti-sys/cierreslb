@@ -2,6 +2,36 @@
  "mes": "2026-11",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04557",
+   "cliente": "GABRIEL EDUARDO PAREDES ALARCON",
+   "ejecutivo": "ELIO CHAMATE",
+   "monto": 309.59,
+   "costo": 157.85,
+   "admin": 74.34,
+   "status": "Aprobado",
+   "fecha": "2026-11-03"
+  },
+  {
+   "orden": "LB-ORDEN-04555",
+   "cliente": "MAILYN YEPES ARAQUE",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 129.79,
+   "costo": 63.0,
+   "admin": 35.6,
+   "status": "Entregado",
+   "fecha": "2026-11-03"
+  },
+  {
+   "orden": "LB-ORDEN-04554",
+   "cliente": "KEILI KARINA SALAS PEREIRA",
+   "ejecutivo": "MARSOLAIRE ANGULO RANGEL ",
+   "monto": 72.65,
+   "costo": 47.0,
+   "admin": 11.55,
+   "status": "Entregado",
+   "fecha": "2026-11-03"
+  },
+  {
    "orden": "LB-ORDEN-04552",
    "cliente": "JOSE GREGORIO PEREIRA PEREIRA",
    "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -16,50 +46,99 @@
  "ejecutivos": [
   {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 321.99,
+   "facturado": 451.78,
+   "costo": 220.85,
+   "margen": 230.93,
+   "facturas": 2,
+   "unidades": 2.0,
+   "seguros": 1.0
+  },
+  {
+   "nombre": "ELIO CHAMATE",
+   "facturado": 309.59,
    "costo": 157.85,
-   "margen": 164.14,
+   "margen": 151.74,
    "facturas": 1,
    "unidades": 1.0,
    "seguros": 1.0
+  },
+  {
+   "nombre": "MARSOLAIRE ANGULO RANGEL ",
+   "facturado": 72.65,
+   "costo": 47.0,
+   "margen": 25.65,
+   "facturas": 1,
+   "unidades": 1.0,
+   "seguros": 0.0
   }
  ],
  "top_productos": [
   {
    "nombre": "[CEL01B-00242] Telefono Infinix Smart 20, 4GB/128GB",
-   "cantidad": 1,
-   "monto": 198.48
+   "cantidad": 2,
+   "monto": 396.96
   },
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
+   "cantidad": 4,
+   "monto": 208.23
+  },
+  {
+   "nombre": "[XBAND6] Xiaomi Smart Band 9 (M2345B1)",
    "cantidad": 1,
-   "monto": 86.74
+   "monto": 81.2
+  },
+  {
+   "nombre": "[UPS003-00002] MARSRIVA en KP3 -10000mAh/ 18W",
+   "cantidad": 1,
+   "monto": 52.67
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 1,
-   "monto": 5.01
+   "cantidad": 2,
+   "monto": 10.02
   }
  ],
- "total_facturado": 321.99,
- "total_facturas": 1,
- "total_clientes": 1,
- "total_productos": 235.25,
- "total_admin": 86.74,
+ "total_facturado": 834.02,
+ "total_facturas": 4,
+ "total_clientes": 4,
+ "total_productos": 625.79,
+ "total_admin": 208.23,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 157.85,
- "total_margen": 164.14,
+ "total_costo": 425.7,
+ "total_margen": 408.32,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 1,
-   "monto": 321.99,
-   "unidades": 1.0,
-   "admin": 86.74,
-   "costo": 157.85,
-   "seguros": 1.0,
+   "facturas": 4,
+   "monto": 834.02,
+   "unidades": 4.0,
+   "admin": 208.23,
+   "costo": 425.7,
+   "seguros": 2.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04557",
+     "cliente": "GABRIEL EDUARDO PAREDES ALARCON",
+     "unidades": 1.0,
+     "monto": 309.59,
+     "fecha": "2026-11-03"
+    },
+    {
+     "orden": "LB-ORDEN-04555",
+     "cliente": "MAILYN YEPES ARAQUE",
+     "unidades": 1.0,
+     "monto": 129.79,
+     "fecha": "2026-11-03"
+    },
+    {
+     "orden": "LB-ORDEN-04554",
+     "cliente": "KEILI KARINA SALAS PEREIRA",
+     "unidades": 1.0,
+     "monto": 72.65,
+     "fecha": "2026-11-03"
+    },
     {
      "orden": "LB-ORDEN-04552",
      "cliente": "JOSE GREGORIO PEREIRA PEREIRA",
@@ -72,7 +151,7 @@
  ],
  "cancelaciones_count": 0,
  "cancelaciones_monto": 0.0,
- "total": 321.99,
- "count": 1,
+ "total": 834.02,
+ "count": 4,
  "colaboradores": []
 }
