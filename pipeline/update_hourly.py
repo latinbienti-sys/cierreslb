@@ -44,6 +44,12 @@ def main():
     ok &= run("update_tecnologia.py")
     ok &= run("update_categorias.py")
     ok &= run("update_tendencia.py")
+    # Pestana "Analisis por Mes" (MES_/ACT_/FLUJO_<XXX>) del mes en curso. SOLO LECTURA en Odoo.
+    # Octubre 2026 esta congelado (el script se niega). Si falla, no bloquea el resto.
+    now = datetime.now(TZ)
+    if (now.year, now.month) != (2026, 10):
+        if not run("update_analisis_mes.py", str(now.year), str(now.month), "--forzar-mes"):
+            log("Analisis por Mes no se actualizo (no bloquea el resto).")
     if not ok:
         log("Actualizacion Odoo incompleta; no se hace commit.")
         return 1
