@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 2,
-   "sc": 2,
-   "sm": 631.58,
-   "sp": 470.5,
-   "sk": 315.7,
-   "sa": 161.08,
-   "sg": 315.88,
+   "sf": 3,
+   "sc": 3,
+   "sm": 1036.14,
+   "sp": 754.76,
+   "sk": 498.55,
+   "sa": 281.38,
+   "sg": 537.59,
    "se": [
+    {
+     "o": "LB-ORDEN-04546",
+     "c": "BRIGGYTH KATHERINE SANCHEZ MARQUINA",
+     "e": "ELIO CHAMATE",
+     "f": "2026-11-04",
+     "m": 404.56,
+     "k": 182.85,
+     "a": 120.3
+    },
     {
      "o": "LB-ORDEN-04557",
      "c": "GABRIEL EDUARDO PAREDES ALARCON",
@@ -74,10 +83,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 4,
-  "oct_facturado": 834.02,
-  "oct_precio": 625.79,
-  "oct_costo": 425.7,
-  "oct_admin": 208.23
+  "oct_facturas": 5,
+  "oct_facturado": 1238.58,
+  "oct_precio": 910.05,
+  "oct_costo": 608.55,
+  "oct_admin": 328.53
  }
 }

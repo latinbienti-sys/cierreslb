@@ -2,13 +2,23 @@
  "mes": "2026-11",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04546",
+   "cliente": "BRIGGYTH KATHERINE SANCHEZ MARQUINA",
+   "ejecutivo": "ELIO CHAMATE",
+   "monto": 404.56,
+   "costo": 182.85,
+   "admin": 120.3,
+   "status": "Entregado",
+   "fecha": "2026-11-04"
+  },
+  {
    "orden": "LB-ORDEN-04557",
    "cliente": "GABRIEL EDUARDO PAREDES ALARCON",
    "ejecutivo": "ELIO CHAMATE",
    "monto": 309.59,
    "costo": 157.85,
    "admin": 74.34,
-   "status": "Aprobado",
+   "status": "Entregado",
    "fecha": "2026-11-03"
   },
   {
@@ -45,21 +55,21 @@
  "facturas_dscto": [],
  "ejecutivos": [
   {
+   "nombre": "ELIO CHAMATE",
+   "facturado": 714.15,
+   "costo": 340.7,
+   "margen": 373.45,
+   "facturas": 2,
+   "unidades": 2.0,
+   "seguros": 2.0
+  },
+  {
    "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
    "facturado": 451.78,
    "costo": 220.85,
    "margen": 230.93,
    "facturas": 2,
    "unidades": 2.0,
-   "seguros": 1.0
-  },
-  {
-   "nombre": "ELIO CHAMATE",
-   "facturado": 309.59,
-   "costo": 157.85,
-   "margen": 151.74,
-   "facturas": 1,
-   "unidades": 1.0,
    "seguros": 1.0
   },
   {
@@ -80,8 +90,13 @@
   },
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 4,
-   "monto": 208.23
+   "cantidad": 5,
+   "monto": 328.53
+  },
+  {
+   "nombre": "Telefono Honor Play 20A – 6.9”  4GB/128GB",
+   "cantidad": 1,
+   "monto": 240.73
   },
   {
    "nombre": "[XBAND6] Xiaomi Smart Band 9 (M2345B1)",
@@ -95,29 +110,36 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 2,
-   "monto": 10.02
+   "cantidad": 3,
+   "monto": 15.03
   }
  ],
- "total_facturado": 834.02,
- "total_facturas": 4,
- "total_clientes": 4,
- "total_productos": 625.79,
- "total_admin": 208.23,
+ "total_facturado": 1238.58,
+ "total_facturas": 5,
+ "total_clientes": 5,
+ "total_productos": 910.05,
+ "total_admin": 328.53,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 425.7,
- "total_margen": 408.32,
+ "total_costo": 608.55,
+ "total_margen": 630.03,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 4,
-   "monto": 834.02,
-   "unidades": 4.0,
-   "admin": 208.23,
-   "costo": 425.7,
-   "seguros": 2.0,
+   "facturas": 5,
+   "monto": 1238.58,
+   "unidades": 5.0,
+   "admin": 328.53,
+   "costo": 608.55,
+   "seguros": 3.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04546",
+     "cliente": "BRIGGYTH KATHERINE SANCHEZ MARQUINA",
+     "unidades": 1.0,
+     "monto": 404.56,
+     "fecha": "2026-11-04"
+    },
     {
      "orden": "LB-ORDEN-04557",
      "cliente": "GABRIEL EDUARDO PAREDES ALARCON",
@@ -151,7 +173,7 @@
  ],
  "cancelaciones_count": 0,
  "cancelaciones_monto": 0.0,
- "total": 834.02,
- "count": 4,
+ "total": 1238.58,
+ "count": 5,
  "colaboradores": []
 }
