@@ -2,13 +2,13 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 5,
-   "sc": 5,
-   "sm": 2507.54,
-   "sp": 1785.77,
-   "sk": 1180.25,
-   "sa": 721.77,
-   "sg": 1327.29,
+   "sf": 6,
+   "sc": 6,
+   "sm": 3391.43,
+   "sp": 2361.76,
+   "sk": 1550.1,
+   "sa": 1029.67,
+   "sg": 1841.33,
    "se": [
     {
      "o": "LB-ORDEN-04567",
@@ -18,6 +18,15 @@
      "m": 1008.76,
      "k": 472.85,
      "a": 302.57
+    },
+    {
+     "o": "LB-ORDEN-04542",
+     "c": "GENESIS BEATRIZ GUERRERO GUERRERO",
+     "e": "ANGE N RAMIREZ FERNANDEZ",
+     "f": "2026-11-04",
+     "m": 883.89,
+     "k": 369.85,
+     "a": 307.9
     },
     {
      "o": "LB-ORDEN-04546",
@@ -54,6 +63,27 @@
      "m": 321.99,
      "k": 157.85,
      "a": 86.74
+    }
+   ]
+  },
+  {
+   "t": "Otros",
+   "sf": 1,
+   "sc": 1,
+   "sm": 667.78,
+   "sp": 520.28,
+   "sk": 348.0,
+   "sa": 147.5,
+   "sg": 319.78,
+   "se": [
+    {
+     "o": "LB-ORDEN-04565",
+     "c": "GENESIS ADRIANA POZO RONDON",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-11-06",
+     "m": 667.78,
+     "k": 348.0,
+     "a": 147.5
     }
    ]
   },
@@ -110,10 +140,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 8,
-  "oct_facturado": 2843.89,
-  "oct_precio": 2038.24,
-  "oct_costo": 1355.25,
-  "oct_admin": 805.65
+  "oct_facturas": 10,
+  "oct_facturado": 4395.56,
+  "oct_precio": 3134.51,
+  "oct_costo": 2073.1,
+  "oct_admin": 1261.05
  }
 }
