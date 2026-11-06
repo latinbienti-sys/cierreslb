@@ -2,14 +2,23 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 3,
-   "sc": 3,
-   "sm": 1036.14,
-   "sp": 754.76,
-   "sk": 498.55,
-   "sa": 281.38,
-   "sg": 537.59,
+   "sf": 5,
+   "sc": 5,
+   "sm": 2507.54,
+   "sp": 1785.77,
+   "sk": 1180.25,
+   "sa": 721.77,
+   "sg": 1327.29,
    "se": [
+    {
+     "o": "LB-ORDEN-04567",
+     "c": "CARLY ZARAI RIVAS OSUNA",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-11-05",
+     "m": 1008.76,
+     "k": 472.85,
+     "a": 302.57
+    },
     {
      "o": "LB-ORDEN-04546",
      "c": "BRIGGYTH KATHERINE SANCHEZ MARQUINA",
@@ -18,6 +27,15 @@
      "m": 404.56,
      "k": 182.85,
      "a": 120.3
+    },
+    {
+     "o": "LB-ORDEN-04538",
+     "c": "GRECIA HUILMAR GARCIA ROJAS",
+     "e": "ELIO CHAMATE",
+     "f": "2026-11-04",
+     "m": 462.64,
+     "k": 208.85,
+     "a": 137.82
     },
     {
      "o": "LB-ORDEN-04557",
@@ -41,14 +59,23 @@
   },
   {
    "t": "Accesorios",
-   "sf": 1,
-   "sc": 1,
-   "sm": 129.79,
-   "sp": 94.19,
-   "sk": 63.0,
-   "sa": 35.6,
-   "sg": 66.79,
+   "sf": 2,
+   "sc": 2,
+   "sm": 263.7,
+   "sp": 191.37,
+   "sk": 128.0,
+   "sa": 72.33,
+   "sg": 135.7,
    "se": [
+    {
+     "o": "LB-ORDEN-04568",
+     "c": "CARLY ZARAI RIVAS OSUNA",
+     "e": "LUIS ANDRES DE JESUS ROJAS RODRIGUEZ",
+     "f": "2026-11-05",
+     "m": 133.91,
+     "k": 65.0,
+     "a": 36.73
+    },
     {
      "o": "LB-ORDEN-04555",
      "c": "MAILYN YEPES ARAQUE",
@@ -83,10 +110,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 5,
-  "oct_facturado": 1238.58,
-  "oct_precio": 910.05,
-  "oct_costo": 608.55,
-  "oct_admin": 328.53
+  "oct_facturas": 8,
+  "oct_facturado": 2843.89,
+  "oct_precio": 2038.24,
+  "oct_costo": 1355.25,
+  "oct_admin": 805.65
  }
 }
