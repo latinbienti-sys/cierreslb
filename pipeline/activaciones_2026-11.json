@@ -1,6 +1,6 @@
 {
  "mes": "2026-11",
- "generado": "2026-11-06 22:38",
+ "generado": "2026-11-07 02:52",
  "criterio": {
   "activacion": "x_fecha_activacion en el mes y x_activacion_linea = True",
   "aprobacion": "x_fecha_resolucion_final en el mes"
