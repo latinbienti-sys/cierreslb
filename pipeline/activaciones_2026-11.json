@@ -1,6 +1,6 @@
 {
  "mes": "2026-11",
- "generado": "2026-11-06 14:46",
+ "generado": "2026-11-06 22:38",
  "criterio": {
   "activacion": "x_fecha_activacion en el mes y x_activacion_linea = True",
   "aprobacion": "x_fecha_resolucion_final en el mes"
@@ -21,10 +21,40 @@
   "9diferrido": "9. Línea de Crédito - Diferida",
   "-condicion": "10. Condición Especial"
  },
- "total_activados": 9,
- "activados_facturados": 5,
+ "total_activados": 10,
+ "activados_facturados": 6,
  "total_aprobadas": 18,
  "facturas": {
+  "LB-ORDEN-04574": {
+   "partner_id": 58666,
+   "linea_activa": true,
+   "status": "7pre",
+   "fecha_act": "2026-07-17",
+   "act_mes": false,
+   "fecha_aprob": "2026-07-17",
+   "aprob_mes": false,
+   "fecha_pedido": "2026-11-06"
+  },
+  "LB-ORDEN-04562": {
+   "partner_id": 14468,
+   "linea_activa": true,
+   "status": "7pre",
+   "fecha_act": "2026-11-06",
+   "act_mes": true,
+   "fecha_aprob": "2025-10-26",
+   "aprob_mes": false,
+   "fecha_pedido": "2026-11-05"
+  },
+  "LB-ORDEN-04572": {
+   "partner_id": 10855,
+   "linea_activa": true,
+   "status": "7pre",
+   "fecha_act": "2025-12-05",
+   "act_mes": false,
+   "fecha_aprob": "2025-12-05",
+   "aprob_mes": false,
+   "fecha_pedido": "2026-11-06"
+  },
   "LB-ORDEN-04567": {
    "partner_id": 20626,
    "linea_activa": true,
@@ -202,6 +232,21 @@
     "LB-ORDEN-04565"
    ],
    "monto": 667.78
+  },
+  {
+   "id": 14468,
+   "cliente": "ANNY YUDISAY RANGEL MORENO",
+   "fecha_act": "2026-11-06",
+   "fecha_aprob": "2025-10-26",
+   "linea_activa": true,
+   "act_mes": true,
+   "status": "7pre",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "facturado": true,
+   "pedidos": [
+    "LB-ORDEN-04562"
+   ],
+   "monto": 334.38
   },
   {
    "id": 61600,
@@ -505,14 +550,14 @@
  ],
  "fecha_sin_linea": [
   {
-   "id": 14468,
-   "cliente": "ANNY YUDISAY RANGEL MORENO",
+   "id": 18021,
+   "cliente": "JESUS GERARDO DUGARTE PEREIRA",
    "fecha_act": "2026-11-06",
-   "fecha_aprob": "2025-10-26",
+   "fecha_aprob": "2025-08-29",
    "linea_activa": false,
    "act_mes": false,
-   "status": "7pre",
-   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "status": "5resolver",
+   "ejecutivo": "YOHANA AUDREY LOPEZ",
    "facturado": false,
    "pedidos": [],
    "monto": 0
@@ -528,6 +573,18 @@
   "10418": {
    "compras_previas": 2,
    "primera_compra": "2025-10-19",
+   "homonimos": 1,
+   "homonimos_con_fecha": 1
+  },
+  "10855": {
+   "compras_previas": 3,
+   "primera_compra": "2024-10-25",
+   "homonimos": 2,
+   "homonimos_con_fecha": 1
+  },
+  "14468": {
+   "compras_previas": 1,
+   "primera_compra": "2025-01-31",
    "homonimos": 1,
    "homonimos_con_fecha": 1
   },
@@ -558,6 +615,12 @@
   "55938": {
    "compras_previas": 0,
    "primera_compra": "",
+   "homonimos": 1,
+   "homonimos_con_fecha": 1
+  },
+  "58666": {
+   "compras_previas": 5,
+   "primera_compra": "2026-07-17",
    "homonimos": 1,
    "homonimos_con_fecha": 1
   },

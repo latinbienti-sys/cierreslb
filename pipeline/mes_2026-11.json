@@ -2,6 +2,26 @@
  "mes": "2026-11",
  "facturas": [
   {
+   "orden": "LB-ORDEN-04574",
+   "cliente": "MARIA JOSE ROMAN VILLASMIL",
+   "ejecutivo": "ELIO CHAMATE",
+   "monto": 659.41,
+   "costo": 308.0,
+   "admin": 198.93,
+   "status": "Entregado",
+   "fecha": "2026-11-06"
+  },
+  {
+   "orden": "LB-ORDEN-04572",
+   "cliente": "YOLMER ALEXIS ROMERO SOSA",
+   "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "monto": 717.59,
+   "costo": 336.85,
+   "admin": 214.73,
+   "status": "Entregado",
+   "fecha": "2026-11-06"
+  },
+  {
    "orden": "LB-ORDEN-04565",
    "cliente": "GENESIS ADRIANA POZO RONDON",
    "ejecutivo": "GABRIEL ALEJANDRO PARRA MOLINA",
@@ -10,6 +30,16 @@
    "admin": 147.5,
    "status": "Entregado",
    "fecha": "2026-11-06"
+  },
+  {
+   "orden": "LB-ORDEN-04562",
+   "cliente": "ANNY YUDISAY RANGEL MORENO",
+   "ejecutivo": "LADY DIANA TORO RIVERA",
+   "monto": 334.38,
+   "costo": 157.85,
+   "admin": 99.13,
+   "status": "Entregado",
+   "fecha": "2026-11-05"
   },
   {
    "orden": "LB-ORDEN-04567",
@@ -105,12 +135,21 @@
  "facturas_dscto": [],
  "ejecutivos": [
   {
+   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
+   "facturado": 1837.15,
+   "costo": 905.7,
+   "margen": 931.45,
+   "facturas": 4,
+   "unidades": 7.0,
+   "seguros": 2.0
+  },
+  {
    "nombre": "ELIO CHAMATE",
-   "facturado": 1176.79,
-   "costo": 549.55,
-   "margen": 627.24,
-   "facturas": 3,
-   "unidades": 3.0,
+   "facturado": 1836.2,
+   "costo": 857.55,
+   "margen": 978.65,
+   "facturas": 4,
+   "unidades": 4.0,
    "seguros": 3.0
   },
   {
@@ -123,19 +162,19 @@
    "seguros": 1.0
   },
   {
-   "nombre": "GABRIEL ALEJANDRO PARRA MOLINA",
-   "facturado": 1119.56,
-   "costo": 568.85,
-   "margen": 550.71,
-   "facturas": 3,
-   "unidades": 6.0,
-   "seguros": 1.0
-  },
-  {
    "nombre": "ANGE N RAMIREZ FERNANDEZ",
    "facturado": 883.89,
    "costo": 369.85,
    "margen": 514.04,
+   "facturas": 1,
+   "unidades": 1.0,
+   "seguros": 1.0
+  },
+  {
+   "nombre": "LADY DIANA TORO RIVERA",
+   "facturado": 334.38,
+   "costo": 157.85,
+   "margen": 176.53,
    "facturas": 1,
    "unidades": 1.0,
    "seguros": 1.0
@@ -153,13 +192,18 @@
  "top_productos": [
   {
    "nombre": "Gasto Administrativo y Gestion de Cobranza",
-   "cantidad": 10,
-   "monto": 1261.05
+   "cantidad": 13,
+   "monto": 1773.84
   },
   {
    "nombre": "Telefono Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB",
    "cantidad": 1,
    "monto": 604.47
+  },
+  {
+   "nombre": "[CEL01B-00242] Telefono Infinix Smart 20, 4GB/128GB",
+   "cantidad": 3,
+   "monto": 595.44
   },
   {
    "nombre": "Telefono Xiaomi Redmi Note 17 Pro 5G 8GB/256GB",
@@ -172,9 +216,14 @@
    "monto": 448.52
   },
   {
-   "nombre": "[CEL01B-00242] Telefono Infinix Smart 20, 4GB/128GB",
-   "cantidad": 2,
-   "monto": 396.96
+   "nombre": "[CEL003-00956] Telefono Xiaomi Redmi Note 15 Pro  5G 8GB/256GB",
+   "cantidad": 1,
+   "monto": 429.18
+  },
+  {
+   "nombre": "Impresora Epson Tinta Continua EcoTank L4360 (Color).",
+   "cantidad": 1,
+   "monto": 396.97
   },
   {
    "nombre": "[CEL003-00908] Telefono Xiaomi Redmi 15C 8GB/256GB",
@@ -203,29 +252,43 @@
   },
   {
    "nombre": "[0001-56] Seguro de Reserva de Dominio",
-   "cantidad": 6,
-   "monto": 30.06
+   "cantidad": 8,
+   "monto": 40.08
   }
  ],
- "total_facturado": 4395.56,
- "total_facturas": 10,
- "total_clientes": 9,
- "total_productos": 3134.51,
- "total_admin": 1261.05,
+ "total_facturado": 6106.94,
+ "total_facturas": 13,
+ "total_clientes": 12,
+ "total_productos": 4333.1,
+ "total_admin": 1773.84,
  "total_admin_dscto": 0.0,
  "total_ahorro_dscto": 0.0,
- "total_costo": 2073.1,
- "total_margen": 2322.46,
+ "total_costo": 2875.8,
+ "total_margen": 3231.14,
  "campanas": [
   {
    "nombre": "Sin campaña",
-   "facturas": 10,
-   "monto": 4395.56,
-   "unidades": 13.0,
-   "admin": 1261.05,
-   "costo": 2073.1,
-   "seguros": 6.0,
+   "facturas": 13,
+   "monto": 6106.94,
+   "unidades": 16.0,
+   "admin": 1773.84,
+   "costo": 2875.8,
+   "seguros": 8.0,
    "items": [
+    {
+     "orden": "LB-ORDEN-04574",
+     "cliente": "MARIA JOSE ROMAN VILLASMIL",
+     "unidades": 1.0,
+     "monto": 659.41,
+     "fecha": "2026-11-06"
+    },
+    {
+     "orden": "LB-ORDEN-04572",
+     "cliente": "YOLMER ALEXIS ROMERO SOSA",
+     "unidades": 1.0,
+     "monto": 717.59,
+     "fecha": "2026-11-06"
+    },
     {
      "orden": "LB-ORDEN-04565",
      "cliente": "GENESIS ADRIANA POZO RONDON",
@@ -245,6 +308,13 @@
      "cliente": "CARLY ZARAI RIVAS OSUNA",
      "unidades": 1.0,
      "monto": 1008.76,
+     "fecha": "2026-11-05"
+    },
+    {
+     "orden": "LB-ORDEN-04562",
+     "cliente": "ANNY YUDISAY RANGEL MORENO",
+     "unidades": 1.0,
+     "monto": 334.38,
      "fecha": "2026-11-05"
     },
     {
@@ -301,7 +371,7 @@
  ],
  "cancelaciones_count": 0,
  "cancelaciones_monto": 0.0,
- "total": 4395.56,
- "count": 10,
+ "total": 6106.94,
+ "count": 13,
  "colaboradores": []
 }

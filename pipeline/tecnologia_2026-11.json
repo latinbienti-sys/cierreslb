@@ -2,14 +2,32 @@
  "por_tecnologia": [
   {
    "t": "Telefonos",
-   "sf": 6,
-   "sc": 6,
-   "sm": 3391.43,
-   "sp": 2361.76,
-   "sk": 1550.1,
-   "sa": 1029.67,
-   "sg": 1841.33,
+   "sf": 8,
+   "sc": 8,
+   "sm": 4443.4,
+   "sp": 3099.87,
+   "sk": 2044.8,
+   "sa": 1343.53,
+   "sg": 2398.6,
    "se": [
+    {
+     "o": "LB-ORDEN-04572",
+     "c": "YOLMER ALEXIS ROMERO SOSA",
+     "e": "GABRIEL ALEJANDRO PARRA MOLINA",
+     "f": "2026-11-06",
+     "m": 717.59,
+     "k": 336.85,
+     "a": 214.73
+    },
+    {
+     "o": "LB-ORDEN-04562",
+     "c": "ANNY YUDISAY RANGEL MORENO",
+     "e": "LADY DIANA TORO RIVERA",
+     "f": "2026-11-05",
+     "m": 334.38,
+     "k": 157.85,
+     "a": 99.13
+    },
     {
      "o": "LB-ORDEN-04567",
      "c": "CARLY ZARAI RIVAS OSUNA",
@@ -88,6 +106,27 @@
    ]
   },
   {
+   "t": "Computación",
+   "sf": 1,
+   "sc": 1,
+   "sm": 659.41,
+   "sp": 460.48,
+   "sk": 308.0,
+   "sa": 198.93,
+   "sg": 351.41,
+   "se": [
+    {
+     "o": "LB-ORDEN-04574",
+     "c": "MARIA JOSE ROMAN VILLASMIL",
+     "e": "ELIO CHAMATE",
+     "f": "2026-11-06",
+     "m": 659.41,
+     "k": 308.0,
+     "a": 198.93
+    }
+   ]
+  },
+  {
    "t": "Accesorios",
    "sf": 2,
    "sc": 2,
@@ -140,10 +179,10 @@
   }
  ],
  "totales": {
-  "oct_facturas": 10,
-  "oct_facturado": 4395.56,
-  "oct_precio": 3134.51,
-  "oct_costo": 2073.1,
-  "oct_admin": 1261.05
+  "oct_facturas": 13,
+  "oct_facturado": 6106.94,
+  "oct_precio": 4333.1,
+  "oct_costo": 2875.8,
+  "oct_admin": 1773.84
  }
 }
